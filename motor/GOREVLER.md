@@ -205,6 +205,7 @@ Her haber için:
 - Kaynaklarda farklı geçen cümle olursa: resmî kaynaktaki hâli kullanılır; resmî kaynak yoksa yalnız iki kaynakta aynı geçen cümleler verilir ve çıkarılan yerler "…" ile gösterilir.
 - Kaynakta yazar/muhabir yorumuyla aktarılan (dolaylı) kısımlar söz gibi verilmez; yalnız tırnak içindeki ya da doğrudan aktarılan sözler alınır.
 - Çeviri sözlerde (yabancı teknik direktör ya da oyuncu) Türkçe basının ortak aktardığı metin kullanılır; çevirisi kaynaklar arasında farklıysa resmî kulüp çevirisi, o yoksa tam metni veren tek güvenilir kaynak (kaynak adı belirtilerek) kullanılır ve diğer kaynakla anlamca aynı olduğu kontrol edilir.
+- Web aracı haber sitelerinden çoğu zaman yalnız kısa alıntı döndürür. Tam metin alınamazsa kaynakta birebir bulunduğu teyit edilen **bütün** cümleler kaynaktaki sırayla verilir, aralarına "…" konur. Kısa tutmak için cümle elenmez.
 - Gazeteci soruları gerekirse kısa "Soru: …" satırı olarak eklenebilir.
 
 **Çıkarılacak kısımlar:**
