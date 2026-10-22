@@ -1,0 +1,2 @@
+Resmî kulüp logoları buraya: <sade-ad>.png (şeffaf PNG tercih), ör. besiktas.png, galatasaray.png, fenerbahce.png, trabzonspor.png, turkiye.png.
+Rakip takım: ad Türkçe harfler sadeleşmiş, boşluksuz küçük harf (Crystal Palace -> crystalpalace.png).

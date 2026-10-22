@@ -40,7 +40,9 @@ Gönderi = kart(lar) + takip kartı · Hikâye = hikaye.jpg
  - Hikâye: bütün turnuvalarda bizim takımların sırası ve puanı tek ekranda.
 
 Renkler: ana takımlar için hazır; diğerleri için "renkler":{"KASIMPAŞA":["#1B3A8C","#FFFFFF"]} eklenebilir.
-Kulüp logosu ASLA çizilmez; takımlar renk şeritleriyle temsil edilir.
+Kulüp logosu kodla ÇİZİLMEZ. motor/logolar/ klasöründe resmî logo dosyası varsa (ör. besiktas.png, galatasaray.png,
+fenerbahce.png, trabzonspor.png, turkiye.png; rakipler için ör. crystalpalace.png) renk şeridi yerine o dosya
+değiştirilmeden kullanılır; dosya yoksa renk şeridine düşülür.
 """
 import json, os, sys, subprocess
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -67,13 +69,42 @@ def renk(ad, d):
     return tuple(r) if r else RENKLER.get(ad, VARSAYILAN)
 
 
+LOGO_DIR = os.path.join(HERE, "logolar")
+
+
+def _sade(ad):
+    tr = str.maketrans("ÇĞİIÖŞÜçğıiöşü", "cgiiosucgiiosu")
+    return "".join(ch for ch in ad.translate(tr).lower() if ch.isalnum())
+
+
+def logo(ad):
+    """motor/logolar/<sade-ad>.png|.svg|.webp varsa data URI döndürür (ör. besiktas.png, turkiye.png)."""
+    import base64
+    for uz, mt in ((".png", "image/png"), (".svg", "image/svg+xml"), (".webp", "image/webp")):
+        f = os.path.join(LOGO_DIR, _sade(ad) + uz)
+        if os.path.exists(f):
+            return f"data:{mt};base64," + base64.b64encode(open(f, "rb").read()).decode()
+    return None
+
+
+def _logo_img(src, s):
+    return (f"<span style='display:inline-flex;flex:none;width:{s}px;height:{s}px;align-items:center;justify-content:center'>"
+            f"<img src='{src}' style='max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.45))'></span>")
+
+
 def serit(ad, d, w=18, h=84):
+    src = logo(ad)
+    if src:
+        return _logo_img(src, h)
     a, b = renk(ad, d)
     return (f"<span style='display:inline-flex;flex:none;width:{w}px;height:{h}px;border-radius:6px;overflow:hidden;"
             f"box-shadow:0 0 0 2px rgba(255,255,255,.25)'><i style='flex:1;background:{a}'></i><i style='flex:1;background:{b}'></i></span>")
 
 
 def rozet(ad, d, s=150):
+    src = logo(ad)
+    if src:
+        return f"<div style='width:{s}px;height:{s}px;margin:0 auto;display:flex;align-items:center;justify-content:center'>{_logo_img(src, s)}</div>"
     a, b = renk(ad, d)
     return (f"<div style='width:{s}px;height:{s}px;border-radius:50%;margin:0 auto;border:6px solid rgba(255,255,255,.85);"
             f"background:linear-gradient(90deg,{a} 0 50%,{b} 50% 100%);box-shadow:0 14px 30px rgba(0,0,0,.45)'></div>")

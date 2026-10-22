@@ -62,7 +62,8 @@ Kartı SendUserFile ile gönder (status "proactive").
 Bir şey doğrulanamazsa ya da bir adım başarısız olursa **paylaşma**. Bunun yerine neyin olmadığını kısaca bildir.
 
 ### KURALLAR
-- Kulüp logosu, gerçek kişi fotoğrafı ya da maç görüntüsü kullanılmaz; kartlar `motor/ozel.py` ile üretilir.
+- Kulüp logoları kullanılabilir (sayfa sahibinin izni): yalnız `motor/logolar/` klasöründeki resmî logo dosyaları, değiştirilmeden; `motor/ozel.py` bunları otomatik koyar. Logo kodla çizilmez, internetten rastgele logo sitelerinden indirilmez; dosyası olmayan takım renk şeridiyle gösterilir.
+- Gerçek kişi fotoğrafı ya da maç görüntüsü kullanılmaz; kartlar `motor/ozel.py` ile üretilir.
 - Doğrulama şartı: resmî kaynak (kulübün resmî sitesi/hesabı, KAP, TFF, UEFA, FIFA) tek başına yeterlidir. Diğer bilgiler en az **iki bağımsız** güvenilir kaynakta aynı olmalıdır.
 - Güvenilir kaynaklar: AA, TRT Spor, NTV Spor, beIN Sports, A Spor, Fanatik, Ajansspor, Sporx, Hürriyet, Milliyet, Habertürk, BBC Sport, Reuters, ESPN ve benzerleri.
 - Söylenti haber gibi verilmez. Taraf tutulmaz; dil saygılı ve sade olur.
