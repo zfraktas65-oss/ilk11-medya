@@ -220,7 +220,7 @@ def demec_kart(d, s, soz, n, total, devam=False, surer=False):
             f"{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc(d.get('baslik', 'MAÇ SONU'))}</span>"
             f"<span style='font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</span></div>"
             "<div style='position:absolute;left:70px;right:70px;top:260px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:44px'>"
-            f"<p style='font:800 {fs}px/1.3 Inter;color:#fff;letter-spacing:-.3px'>{'…' if devam else '“'}{govde}{'…' if surer else '”'}</p>"
+            f"<p style='font:800 {fs}px/1.3 Inter;color:#fff;letter-spacing:-.3px'>{'… ' if devam else '“'}{govde}{' …' if surer else '”'}</p>"
             "<div style='display:flex;align-items:center;gap:22px'>"
             + (serit(ad, d, 16, 96) if ad else "") +
             f"<div><div style='font:400 58px/1.05 Anton;letter-spacing:.5px'>{esc(s['kim'])}</div>"
