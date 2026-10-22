@@ -22,11 +22,14 @@ Gönderi = kart(lar) + takip kartı · Hikâye = hikaye.jpg
 3) SON DAKİKA
 {"tip":"sondakika","takim":"FENERBAHÇE","baslik":"…","ozet":"…","kaynaklar":["KAP","AA"]}
 
-4) DEMEÇ  (maç öncesi / sonrası röportaj; aynı maça ait 1–4 söz tek gönderide, her söz ayrı kart)
+4) DEMEÇ  (maç öncesi / sonrası röportaj; aynı maça ait demeçler TAM METİN olarak tek gönderide)
 {"tip":"demec","baslik":"MAÇ SONU","mac":"BEŞİKTAŞ – CRYSTAL PALACE · AVRUPA LİGİ",
- "sozler":[{"kim":"Ad Soyad","rol":"Teknik direktör","takim":"BEŞİKTAŞ","soz":"Kaynaktaki sözün birebir kendisi (≤ 220 karakter)."}],
+ "sozler":[{"kim":"Ad Soyad","rol":"Teknik direktör","takim":"BEŞİKTAŞ","soz":"Kaynaktaki demecin TAMAMI, birebir. Paragraflar \\n ile ayrılabilir."}],
  "kaynaklar":["AA","beIN Sports"]}
- - baslik: "MAÇ ÖNCESİ" ya da "MAÇ SONU". Söz kaynaktakiyle birebir aynı olur; kısaltılırsa "…" kullanılır, kelime değiştirilmez.
+ - baslik: "MAÇ ÖNCESİ" ya da "MAÇ SONU". Söz kaynaktakiyle birebir aynı olur; çıkarılan yer olursa "…" kullanılır, kelime değiştirilmez.
+ - Uzunluk sınırı yok: uzun demeç cümle sınırlarından otomatik bölünür ve birkaç karta yayılır (gönderide en fazla 19 kart + takip).
+ - Gazeteci sorusu vermek istersen söz metnine "Soru: …" satırı olarak ekleyebilirsin (isteğe bağlı).
+ - hikaye.jpg: bütün demeçler tek ekranda, yazı boyu sığacak şekilde otomatik küçülür.
 
 Renkler: ana takımlar için hazır; diğerleri için "renkler":{"KASIMPAŞA":["#1B3A8C","#FFFFFF"]} eklenebilir.
 Kulüp logosu ASLA çizilmez; takımlar renk şeritleriyle temsil edilir.
@@ -174,24 +177,107 @@ MIC = ("<svg width='54' height='54' viewBox='0 0 24 24' fill='none' stroke='#C6F
        "<rect x='9' y='2' width='6' height='12' rx='3'/><path d='M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8'/></svg>")
 
 
-def demec_kart(d, s, n, total):
-    soz = s["soz"].strip().strip('"“”')
+PARCA = 360  # bir karttaki en fazla karakter (demeç)
+
+
+def parcala(metin, sinir=PARCA):
+    """Metni cümle/paragraf sınırlarından kelime değiştirmeden parçalara böler."""
+    import re
+    cumleler = []
+    for par in [x.strip() for x in metin.split("\n") if x.strip()]:
+        cumleler += [c for c in re.split(r"(?<=[.!?…])\s+", par) if c]
+        cumleler.append("\n")
+    parcalar, cur = [], ""
+    for c in cumleler:
+        if c == "\n":
+            if cur:
+                cur += "\n"
+            continue
+        while len(c) > sinir:  # tek cümle çok uzunsa kelime sınırından böl
+            k = c.rfind(" ", 0, sinir)
+            k = k if k > 0 else sinir
+            if cur.strip():
+                parcalar.append(cur.strip()); cur = ""
+            parcalar.append(c[:k].strip()); c = c[k:].strip()
+        aday = (cur + ("" if not cur or cur.endswith("\n") else " ") + c)
+        if len(aday.strip()) > sinir and cur.strip():
+            parcalar.append(cur.strip()); cur = c
+        else:
+            cur = aday
+    if cur.strip():
+        parcalar.append(cur.strip())
+    return parcalar
+
+
+def demec_kart(d, s, soz, n, total, devam=False, surer=False):
     L = len(soz)
-    fs = 64 if L <= 70 else 56 if L <= 110 else 48 if L <= 160 else 42 if L <= 220 else 37
+    fs = 64 if L <= 70 else 56 if L <= 110 else 48 if L <= 160 else 42 if L <= 220 else 38 if L <= 290 else 34
     ad = s.get("takim", "")
+    govde = "<br>".join(esc(x) for x in soz.split("\n"))
     return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}"
             "<div style='position:absolute;right:40px;top:640px;font:400 640px/1 Anton;color:rgba(198,255,0,.09)'>”</div>"
             "<div style='position:absolute;left:70px;right:70px;top:150px;display:flex;align-items:center;gap:20px;flex-wrap:wrap'>"
             f"{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc(d.get('baslik', 'MAÇ SONU'))}</span>"
             f"<span style='font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</span></div>"
-            "<div style='position:absolute;left:70px;right:70px;top:260px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:52px'>"
-            f"<p style='font:800 {fs}px/1.28 Inter;color:#fff;letter-spacing:-.3px'>“{esc(soz)}”</p>"
+            "<div style='position:absolute;left:70px;right:70px;top:260px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:44px'>"
+            f"<p style='font:800 {fs}px/1.3 Inter;color:#fff;letter-spacing:-.3px'>{'…' if devam else '“'}{govde}{'…' if surer else '”'}</p>"
             "<div style='display:flex;align-items:center;gap:22px'>"
             + (serit(ad, d, 16, 96) if ad else "") +
             f"<div><div style='font:400 58px/1.05 Anton;letter-spacing:.5px'>{esc(s['kim'])}</div>"
             f"<div style='margin-top:8px;font:700 31px Inter;color:#B9C7BE'>{esc(s.get('rol', ''))}{' · ' + esc(ad) if ad else ''}</div></div></div>"
             + (f"<p style='font:700 28px Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(' · '.join(d['kaynaklar']))}</p>" if d.get("kaynaklar") else "")
             + f"</div>{foot('KAYDIR →')}</div>")
+
+
+def demec_hikaye(d, out):
+    """Bütün demeçleri tek 1080x1920 ekranda veren hikâye (yazı boyu otomatik sığdırılır)."""
+    from haber import CSS as _CSS
+    bloklar = ""
+    for s in d["sozler"]:
+        soz = s["soz"].strip().strip('"“”')
+        ad = s.get("takim", "")
+        govde = "<br>".join(esc(x) for x in soz.split("\n"))
+        bloklar += ("<div class='blk'><div style='display:flex;align-items:center;gap:16px;margin-bottom:.5em'>"
+                    + (serit(ad, d, 12, 64) if ad else "") +
+                    f"<div><div style='font:400 1.45em/1.05 Anton;letter-spacing:.5px'>{esc(s['kim'])}</div>"
+                    f"<div style='font:700 .72em Inter;color:#B9C7BE'>{esc(s.get('rol', ''))}{' · ' + esc(ad) if ad else ''}</div></div></div>"
+                    f"<p style='font-weight:700;line-height:1.36;color:#fff'>“{govde}”</p></div>")
+    kay = (f"<p style='margin-top:.9em;font:700 .66em Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(' · '.join(d['kaynaklar']))}</p>"
+           if d.get("kaynaklar") else "")
+    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{_CSS}"
+            ".s{width:1080px;height:1920px;position:relative;overflow:hidden;color:#fff;font-family:Inter,sans-serif;"
+            "background:radial-gradient(110% 70% at 50% 40%,#1E5636 0%,#0B2416 55%,#030805 100%)}"
+            ".blk+.blk{margin-top:1.1em;padding-top:1.1em;border-top:2px solid rgba(255,255,255,.12)}"
+            "</style></head><body><div class='s'><div class='stripes'></div>"
+            "<div style='position:absolute;left:70px;right:70px;top:90px;display:flex;align-items:center;gap:18px;flex-wrap:wrap'>"
+            f"<div class='brand' style='font:400 46px Anton;display:flex;align-items:center;gap:14px'><div class='logo'>11</div>İLK 11</div>"
+            f"{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc((d.get('baslik') or 'MAÇ SONU') + ' KONUŞTU')}</span></div>"
+            f"<div style='position:absolute;left:70px;right:70px;top:250px;font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</div>"
+            f"<div id='box' style='position:absolute;left:70px;right:70px;top:320px;bottom:250px;overflow:hidden'><div id='txt' style='font-size:46px'>{bloklar}{kay}</div></div>"
+            "<div style='position:absolute;left:150px;right:150px;bottom:70px;display:flex;align-items:center;gap:22px;padding:20px 26px;"
+            "border-radius:90px;background:#0B0F0C;border:5px solid #C6FF00'><div class='logo'>11</div>"
+            "<div style='flex:1'><div style='font:400 40px Anton'>İLK 11</div><div style='font:700 26px Inter;color:#B9C2BB'>@ilk.onbir11</div></div>"
+            "<div style='padding:16px 28px;border-radius:50px;background:#C6FF00;color:#0A0A0A;font:400 38px Anton;letter-spacing:2px'>TAKİP ET</div></div>"
+            "</div></body></html>")
+    p = os.path.abspath(out + ".html")
+    open(p, "w", encoding="utf-8").write(page)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        br = pw.chromium.launch()
+        pg = br.new_page(viewport={"width": 1080, "height": 1920})
+        pg.goto("file://" + p)
+        pg.evaluate("document.fonts.ready")
+        fs = pg.evaluate("""() => {const b=document.getElementById('box'), t=document.getElementById('txt'); let f=46;
+            while (t.scrollHeight > b.clientHeight && f > 14) { f -= 1; t.style.fontSize = f + 'px'; } return f; }""")
+        sigdi = pg.evaluate("() => document.getElementById('txt').scrollHeight <= document.getElementById('box').clientHeight")
+        pg.wait_for_timeout(200)
+        pg.query_selector(".s").screenshot(path=out, type="jpeg", quality=92)
+        br.close()
+    os.remove(p)
+    if not sigdi:
+        sys.exit("HATA: demeç hikâyeye 14px ile bile sığmadı; hikâyeyi bölmeden paylaşma, durumu bildir.")
+    if fs < 22:
+        print(f"UYARI: hikâye yazı boyu {fs}px; okunurluğu Read ile kontrol et.", file=sys.stderr)
 
 
 def main():
@@ -212,8 +298,15 @@ def main():
         slides = [sondakika_kart(d, 1, total)]
         ust = "SON DAKİKA"
     elif tip == "demec":
-        total = len(d["sozler"]) + 1
-        slides = [demec_kart(d, s, i + 1, total) for i, s in enumerate(d["sozler"])]
+        isler = []
+        for s in d["sozler"]:
+            pp = parcala(s["soz"].strip().strip('"“”'))
+            for j, parca in enumerate(pp):
+                isler.append((s, parca, j > 0, j < len(pp) - 1))
+        if len(isler) > 19:
+            sys.exit(f"HATA: {len(isler)} kart çıktı; Instagram en fazla 20 görsel alır. Demeçleri iki gönderiye ayır.")
+        total = len(isler) + 1
+        slides = [demec_kart(d, s, parca, i + 1, total, dv, sr) for i, (s, parca, dv, sr) in enumerate(isler)]
         ust = (d.get("baslik") or "MAÇ SONU") + " KONUŞTU"
     else:
         sys.exit("bilinmeyen tip: " + tip)
@@ -233,8 +326,11 @@ def main():
             el.screenshot(path=os.path.join(out, nm + ".jpg"), type="jpeg", quality=92)
         br.close()
     os.remove(p)
-    subprocess.run([sys.executable, os.path.join(HERE, "story.py"), os.path.join(out, "01_kart.jpg"),
-                    os.path.join(out, "hikaye.jpg"), ust, "Detaylar profilde"], check=True, stdout=subprocess.DEVNULL)
+    if tip == "demec":
+        demec_hikaye(d, os.path.join(out, "hikaye.jpg"))
+    else:
+        subprocess.run([sys.executable, os.path.join(HERE, "story.py"), os.path.join(out, "01_kart.jpg"),
+                        os.path.join(out, "hikaye.jpg"), ust, "Detaylar profilde"], check=True, stdout=subprocess.DEVNULL)
     print("\n".join(os.path.join(out, nm + ".jpg") for nm in names + ["hikaye"]))
 
 

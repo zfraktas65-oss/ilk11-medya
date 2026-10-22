@@ -26,12 +26,13 @@ Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kı
 `<tur>` kadro, sonuc, sondakika veya demec olur; `<ANAHTAR>` kayıttaki anahtardır.
 ```
 cd ~/ilk11-medya && rm -rf ~/medya && git worktree prune
-git worktree add --detach ~/medya HEAD && cd ~/medya && git checkout -q --orphan medya-<tur> && git rm -rqf .
-mkdir -p <ANAHTAR> && cp ~/cikti/*.jpg <ANAHTAR>/ && git add <ANAHTAR> && git commit -qm "<tur> <ANAHTAR>" && git push -qf origin HEAD:medya-<tur>
+git worktree add --detach ~/medya HEAD && cd ~/medya && git checkout -q --orphan medya-<tur>-<ANAHTAR> && git rm -rqf .
+mkdir -p <ANAHTAR> && cp ~/cikti/*.jpg <ANAHTAR>/ && git add <ANAHTAR> && git commit -qm "<tur> <ANAHTAR>" && git push -q origin HEAD:refs/heads/medya-<tur>-<ANAHTAR>
 SHA=$(git rev-parse HEAD)
 ```
 - Bağlantı: `https://raw.githubusercontent.com/zfraktas65-oss/ilk11-medya/$SHA/<ANAHTAR>/<dosya>`.
 - Dal adı yerine **mutlaka SHA** kullan; dal adlı bağlantı ilk dakikalarda 404 verir.
+- Force-push (`-f`) kullanma; her paylaşım kendi yeni dalına normal push ile yüklenir. Dal zaten varsa adın sonuna `-2` ekle.
 - Her dosya için curl ile 200 döndüğünü doğrula.
 
 ### P · Paylaş (Metricool, blogId "7504196", Instagram)
@@ -198,29 +199,37 @@ Her haber için:
 - maç sonu flaş röportaj ya da basın toplantısı.
 
 **Kaynak şartı:**
-- Söz kaynaktakiyle **birebir** aynı olur. Kısaltırken "…" kullanılır; kelime asla değiştirilmez, söz uydurulmaz.
-- Söz ya resmî kaynakta (kulübün resmî sitesi/hesabı, UEFA, TFF yayını) ya da en az iki bağımsız güvenilir kaynakta aynı geçmelidir.
-- Çeviri sözlerde (yabancı teknik direktör ya da oyuncu) Türkçe basının ortak aktardığı ifade kullanılır.
+- Demeç **TAM METİN** verilir: kişinin kaynakta yer alan sözlerinin hepsi, kaynaktaki sırayla. Seçme ya da kısa alıntı yapılmaz (sayfa sahibinin isteği).
+- Söz kaynaktakiyle **birebir** aynı olur; kelime asla değiştirilmez, söz uydurulmaz.
+- Tam metin şu kaynaklardan birinden alınır: resmî kaynak (kulübün resmî sitesi/hesabı, UEFA, TFF yayını) ya da tam metni veren güvenilir bir haber (tercihen AA/İHA/DHA metni). Metin, ikinci bağımsız güvenilir kaynakla karşılaştırılır.
+- Kaynaklarda farklı geçen cümle olursa: resmî kaynaktaki hâli kullanılır; resmî kaynak yoksa yalnız iki kaynakta aynı geçen cümleler verilir ve çıkarılan yerler "…" ile gösterilir.
+- Kaynakta yazar/muhabir yorumuyla aktarılan (dolaylı) kısımlar söz gibi verilmez; yalnız tırnak içindeki ya da doğrudan aktarılan sözler alınır.
+- Çeviri sözlerde (yabancı teknik direktör ya da oyuncu) Türkçe basının ortak aktardığı metin kullanılır; çevirisi kaynaklar arasında farklıysa resmî kulüp çevirisi, o yoksa tam metni veren tek güvenilir kaynak (kaynak adı belirtilerek) kullanılır ve diğer kaynakla anlamca aynı olduğu kontrol edilir.
+- Gazeteci soruları gerekirse kısa "Soru: …" satırı olarak eklenebilir.
 
-**Seçim:**
-- Konuşmanın en çarpıcı ve anlamlı 1–2 cümlesini seç (≤ 220 karakter).
-- Hakaret, küfür ya da bir kişiyi suçla itham eden ifadeler içeren kısımları alma; başka bir cümle seç ya da o sözü hiç paylaşma.
-- Hakem ve federasyon eleştirileri, kaynakta nasıl söylendiyse öyle ve yorum katmadan verilebilir.
+**Çıkarılacak kısımlar:**
+- Hakaret, küfür ya da bir kişiyi suçla itham eden ifadeler metinden çıkarılır ve yerine "…" konur. Bunlar metnin ana kısmıysa o demeç hiç paylaşılmaz.
+- Hakem ve federasyon eleştirileri, kaynakta nasıl söylendiyse öyle ve yorum katmadan verilir.
+
+**Kartlara dağıtım:**
+- Gönderide uzun demeç birkaç karta bölünür; `motor/ozel.py` bunu cümle sınırlarından otomatik yapar (kart başına ≈ 360 karakter). Devam eden kart "…" ile başlar.
+- Instagram en fazla 20 görsel alır (19 demeç kartı + takip kartı). Daha uzunsa demeçler iki gönderiye ayrılır (ör. teknik direktör ayrı, oyuncular ayrı; anahtarlar `-1`, `-2`).
+- **Hikâyede bütün demeçler TEK ekranda** verilir; `motor/ozel.py` hikaye.jpg'yi yazı boyunu otomatik küçülterek üretir. Read ile aç ve okunurluğu kontrol et; sığmazsa betik hata verir: o durumda hikâyeyi her kişi için ayrı tek ekran olarak üret (her kişiyle ayrı demec.json) ve hepsini sırayla hikâye olarak paylaş.
 
 **Gruplama:**
-- Aynı maça ve aynı ana (maç öncesi ya da maç sonu) ait sözler TEK gönderide toplanır: en fazla 4 söz, her söz ayrı kart.
+- Aynı maça ve aynı ana (maç öncesi ya da maç sonu) ait demeçler TEK gönderide toplanır (karakter sınırı içinde).
 - Bir takım için bir maçta en fazla 1 "maç öncesi" ve 2 "maç sonu" demeç gönderisi paylaşılır (ör. önce flaş röportaj, sonra basın toplantısı).
 - Anahtar biçimi: `TARIH-<ev>-<dep>-once-<takım>` veya `TARIH-<ev>-<dep>-sonra-<takım>-1/2`.
 
 Her gönderi için:
 1. `~/demec.json` yaz. Biçim motor/ozel.py başındaki "4) DEMEÇ" bölümünde. baslik "MAÇ ÖNCESİ" ya da "MAÇ SONU" olur; mac alanı "EV – DEP · TURNUVA" biçimindedir.
 2. Kartları üret ve kontrol et (yukarıdaki gibi).
-3. Y'yi uygula (tur demec), sonra P'yi. Açıklama:
+3. Y'yi uygula (tur demec), sonra P'yi. Hikâye adımında media'ya hikaye.jpg (gerekirse kişi başına ayrı hikâyeler, sırayla +5, +6… dk) konur. Açıklama:
    ```
    🎙️ <MAÇ SONU / MAÇ ÖNCESİ> KONUŞTULAR | <EV> – <DEP>
 
-   <Kim, rol>: "<söz>"
-   (her söz için bir satır)
+   <Kim, rol>: "<demecin tam metni>"
+   (her kişi için bir paragraf)
 
    Sence haklılar mı? Yorumlara yaz 👇
 
@@ -230,4 +239,5 @@ Her gönderi için:
 
    #<takım> #<turnuva> #ilk11 #futbol
    ```
+   Instagram açıklaması en fazla 2.200 karakterdir. Tam metin sığmazsa açıklamada her kişinin ilk 1–2 cümlesi birebir verilir ve "Demeçlerin tamamı kartlarda 👉" satırı eklenir; tam metin her durumda kartlarda ve hikâyede bulunur.
 4. KAYIT ve B adımlarını uygula.
