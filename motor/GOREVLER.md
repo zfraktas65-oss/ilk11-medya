@@ -16,14 +16,14 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 5. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
 
 ### KAYIT · motor/paylasilan.txt
-Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc veya sondakika olur.
+Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika veya demec olur.
 - Anahtar örnekleri: kadro/sonuç için `2026-10-24-galatasaray-kasimpasa`, son dakika için `2026-10-24-fenerbahce-teknik-direktor`.
 - **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma.
 - Son dakikada aynı olay farklı kelimelerle de olsa son 3 günde paylaşıldıysa paylaşma.
 - Paylaşımdan sonra satırı ekle ve gönder: `cd ~/ilk11-medya && git pull --rebase -q && echo "<satır>" >> motor/paylasilan.txt && git add motor/paylasilan.txt && git commit -qm "kayıt" && git push -q`. Çakışma olursa en fazla 3 kez tekrar dene.
 
 ### Y · Kartları yükle
-`<tur>` kadro, sonuc veya sondakika olur; `<ANAHTAR>` kayıttaki anahtardır.
+`<tur>` kadro, sonuc, sondakika veya demec olur; `<ANAHTAR>` kayıttaki anahtardır.
 ```
 cd ~/ilk11-medya && rm -rf ~/medya && git worktree prune
 git worktree add --detach ~/medya HEAD && cd ~/medya && git checkout -q --orphan medya-<tur> && git rm -rqf .
@@ -139,43 +139,94 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 6. KAYIT ve B adımlarını uygula.
 
 ## SON DAKİKA GÖREVİ
+Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) maç öncesi / sonrası demeçler.**
+
 1. K0'ı uygula. motor/paylasilan.txt dosyasını ve getScheduledPosts ile bugünkü gönderileri oku.
-2. Takip edilen 5 takımla ilgili **son 4 saatin** haberlerini tara: her takım için ayrı arama yap, kulüplerin resmî açıklamalarına ve KAP'a bak.
-3. **Önemli sayılanlar:**
-   - resmî transfer (imza, KAP bildirimi) ya da resmî ayrılık,
-   - teknik direktör ataması ya da ayrılığı,
-   - resmî açıklanan ciddi sakatlık ya da uzun süre forma giyememe,
-   - PFDK, UEFA veya FIFA cezaları,
-   - milli takım aday kadrosu,
-   - maç ertelemesi ya da saat/stat değişikliği,
-   - kulüp başkanı ya da yönetim değişikliği,
-   - kırılan önemli bir rekor,
-   - çok konuşulan resmî bir açıklama.
-4. **Paylaşılmayanlar:**
-   - söylentiler ("iddia", "masada" gibi),
-   - muhtemel 11'ler,
-   - maç sonuçları ve ilk 11'ler (bunları diğer görevler paylaşır),
-   - sıradan antrenman haberleri,
-   - magazin,
-   - doğrulanmamış her şey.
-5. Her aday haberi doğrula (KURALLAR). KAYIT'la ve bugünkü Metricool gönderileriyle karşılaştır; daha önce paylaşıldıysa atla.
-6. Bir çalışmada **en fazla 2** haber paylaş; bugün toplam 6 son dakika paylaşıldıysa dur. Önemli haber yoksa hiçbir şey paylaşma ve tek satırla bitir; bildirim gönderme.
-7. Her haber için şunları yap:
-   - `~/sondakika.json` yaz: takim, baslik (≤ 70 karakter), ozet (2–3 cümle, ≤ 240 karakter, kendi cümlelerinle), kaynaklar.
-   - Kartı üret ve kontrol et.
-   - Y'yi uygula (tur sondakika).
-   - P'yi uygula. Açıklama:
-     ```
-     🚨 SON DAKİKA | <TAKIM>
+2. Takip edilen 5 takımla ilgili **son 2 saatin** haberlerini ve röportajlarını tara. Her takım için ayrı arama yap; kulüplerin resmî açıklamalarına ve KAP'a da bak.
+3. Bulunanları KAYIT'la ve bugünkü Metricool gönderileriyle karşılaştır. Daha önce paylaşılanı atla.
+4. Sınırlar:
+   - Bir çalışmada en fazla 2 son dakika ve 2 demeç gönderisi paylaşılır.
+   - Bir günde en fazla 8 son dakika ve 8 demeç paylaşılır.
+   - Paylaşılacak bir şey yoksa hiçbir şey paylaşma ve tek satırla bitir; bildirim gönderme.
 
-     <özet>
+### A) Son dakika
+**Önemli sayılanlar:**
+- resmî transfer (imza, KAP bildirimi) ya da resmî ayrılık,
+- teknik direktör ataması ya da ayrılığı,
+- resmî açıklanan ciddi sakatlık ya da uzun süre forma giyememe,
+- PFDK, UEFA veya FIFA cezaları,
+- milli takım aday kadrosu,
+- maç ertelemesi ya da saat/stat değişikliği,
+- kulüp başkanı ya da yönetim değişikliği,
+- kırılan önemli bir rekor,
+- çok konuşulan resmî bir açıklama.
 
-     Sen ne düşünüyorsun? Yorumlara yaz 👇
+**Paylaşılmayanlar:**
+- söylentiler ("iddia", "masada" gibi),
+- muhtemel 11'ler,
+- maç sonuçları ve ilk 11'ler (bunları diğer görevler paylaşır),
+- sıradan antrenman haberleri,
+- magazin,
+- doğrulanmamış her şey.
 
-     Kaynak: <…>
+Her haber için:
+1. KURALLAR'a göre doğrula.
+2. `~/sondakika.json` yaz: takim, baslik (≤ 70 karakter), ozet (2–3 cümle, ≤ 240 karakter, kendi cümlelerinle), kaynaklar.
+3. Kartı üret ve kontrol et: `rm -rf ~/cikti && python3 motor/ozel.py ~/sondakika.json ~/cikti`, ardından Read ile aç.
+4. Y'yi uygula (tur sondakika), sonra P'yi. Açıklama:
+   ```
+   🚨 SON DAKİKA | <TAKIM>
 
-     Daha fazlası için @ilk.onbir11'i takip et ⚽
+   <özet>
 
-     #<takım> #sondakika #ilk11 #futbol
-     ```
-   - KAYIT ve B adımlarını uygula.
+   Sen ne düşünüyorsun? Yorumlara yaz 👇
+
+   Kaynak: <…>
+
+   Daha fazlası için @ilk.onbir11'i takip et ⚽
+
+   #<takım> #sondakika #ilk11 #futbol
+   ```
+5. KAYIT ve B adımlarını uygula.
+
+### B) Demeçler (maç öncesi / maç sonrası röportajlar)
+**Kimin sözleri:** takip edilen 5 takımın oyuncuları, teknik direktörleri, başkanları ve yöneticileri.
+
+**Hangi sözler:** yalnız maçlarla ilgili olanlar:
+- maç öncesi basın toplantısı ya da maç önü röportajı,
+- maç sonu flaş röportaj ya da basın toplantısı.
+
+**Kaynak şartı:**
+- Söz kaynaktakiyle **birebir** aynı olur. Kısaltırken "…" kullanılır; kelime asla değiştirilmez, söz uydurulmaz.
+- Söz ya resmî kaynakta (kulübün resmî sitesi/hesabı, UEFA, TFF yayını) ya da en az iki bağımsız güvenilir kaynakta aynı geçmelidir.
+- Çeviri sözlerde (yabancı teknik direktör ya da oyuncu) Türkçe basının ortak aktardığı ifade kullanılır.
+
+**Seçim:**
+- Konuşmanın en çarpıcı ve anlamlı 1–2 cümlesini seç (≤ 220 karakter).
+- Hakaret, küfür ya da bir kişiyi suçla itham eden ifadeler içeren kısımları alma; başka bir cümle seç ya da o sözü hiç paylaşma.
+- Hakem ve federasyon eleştirileri, kaynakta nasıl söylendiyse öyle ve yorum katmadan verilebilir.
+
+**Gruplama:**
+- Aynı maça ve aynı ana (maç öncesi ya da maç sonu) ait sözler TEK gönderide toplanır: en fazla 4 söz, her söz ayrı kart.
+- Bir takım için bir maçta en fazla 1 "maç öncesi" ve 2 "maç sonu" demeç gönderisi paylaşılır (ör. önce flaş röportaj, sonra basın toplantısı).
+- Anahtar biçimi: `TARIH-<ev>-<dep>-once-<takım>` veya `TARIH-<ev>-<dep>-sonra-<takım>-1/2`.
+
+Her gönderi için:
+1. `~/demec.json` yaz. Biçim motor/ozel.py başındaki "4) DEMEÇ" bölümünde. baslik "MAÇ ÖNCESİ" ya da "MAÇ SONU" olur; mac alanı "EV – DEP · TURNUVA" biçimindedir.
+2. Kartları üret ve kontrol et (yukarıdaki gibi).
+3. Y'yi uygula (tur demec), sonra P'yi. Açıklama:
+   ```
+   🎙️ <MAÇ SONU / MAÇ ÖNCESİ> KONUŞTULAR | <EV> – <DEP>
+
+   <Kim, rol>: "<söz>"
+   (her söz için bir satır)
+
+   Sence haklılar mı? Yorumlara yaz 👇
+
+   Kaynak: <…>
+
+   Daha fazlası için @ilk.onbir11'i takip et ⚽
+
+   #<takım> #<turnuva> #ilk11 #futbol
+   ```
+4. KAYIT ve B adımlarını uygula.

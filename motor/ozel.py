@@ -22,6 +22,12 @@ Gönderi = kart(lar) + takip kartı · Hikâye = hikaye.jpg
 3) SON DAKİKA
 {"tip":"sondakika","takim":"FENERBAHÇE","baslik":"…","ozet":"…","kaynaklar":["KAP","AA"]}
 
+4) DEMEÇ  (maç öncesi / sonrası röportaj; aynı maça ait 1–4 söz tek gönderide, her söz ayrı kart)
+{"tip":"demec","baslik":"MAÇ SONU","mac":"BEŞİKTAŞ – CRYSTAL PALACE · AVRUPA LİGİ",
+ "sozler":[{"kim":"Ad Soyad","rol":"Teknik direktör","takim":"BEŞİKTAŞ","soz":"Kaynaktaki sözün birebir kendisi (≤ 220 karakter)."}],
+ "kaynaklar":["AA","beIN Sports"]}
+ - baslik: "MAÇ ÖNCESİ" ya da "MAÇ SONU". Söz kaynaktakiyle birebir aynı olur; kısaltılırsa "…" kullanılır, kelime değiştirilmez.
+
 Renkler: ana takımlar için hazır; diğerleri için "renkler":{"KASIMPAŞA":["#1B3A8C","#FFFFFF"]} eklenebilir.
 Kulüp logosu ASLA çizilmez; takımlar renk şeritleriyle temsil edilir.
 """
@@ -164,6 +170,30 @@ def sondakika_kart(d, n, total):
             + f"</div>{foot()}</div>")
 
 
+MIC = ("<svg width='54' height='54' viewBox='0 0 24 24' fill='none' stroke='#C6FF00' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'>"
+       "<rect x='9' y='2' width='6' height='12' rx='3'/><path d='M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8'/></svg>")
+
+
+def demec_kart(d, s, n, total):
+    soz = s["soz"].strip().strip('"“”')
+    L = len(soz)
+    fs = 64 if L <= 70 else 56 if L <= 110 else 48 if L <= 160 else 42 if L <= 220 else 37
+    ad = s.get("takim", "")
+    return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}"
+            "<div style='position:absolute;right:40px;top:640px;font:400 640px/1 Anton;color:rgba(198,255,0,.09)'>”</div>"
+            "<div style='position:absolute;left:70px;right:70px;top:150px;display:flex;align-items:center;gap:20px;flex-wrap:wrap'>"
+            f"{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc(d.get('baslik', 'MAÇ SONU'))}</span>"
+            f"<span style='font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</span></div>"
+            "<div style='position:absolute;left:70px;right:70px;top:260px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:52px'>"
+            f"<p style='font:800 {fs}px/1.28 Inter;color:#fff;letter-spacing:-.3px'>“{esc(soz)}”</p>"
+            "<div style='display:flex;align-items:center;gap:22px'>"
+            + (serit(ad, d, 16, 96) if ad else "") +
+            f"<div><div style='font:400 58px/1.05 Anton;letter-spacing:.5px'>{esc(s['kim'])}</div>"
+            f"<div style='margin-top:8px;font:700 31px Inter;color:#B9C7BE'>{esc(s.get('rol', ''))}{' · ' + esc(ad) if ad else ''}</div></div></div>"
+            + (f"<p style='font:700 28px Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(' · '.join(d['kaynaklar']))}</p>" if d.get("kaynaklar") else "")
+            + f"</div>{foot('KAYDIR →')}</div>")
+
+
 def main():
     d = json.load(open(sys.argv[1], encoding="utf-8"))
     out = sys.argv[2] if len(sys.argv) > 2 else "ozel_cikti"
@@ -181,6 +211,10 @@ def main():
         total = 2
         slides = [sondakika_kart(d, 1, total)]
         ust = "SON DAKİKA"
+    elif tip == "demec":
+        total = len(d["sozler"]) + 1
+        slides = [demec_kart(d, s, i + 1, total) for i, s in enumerate(d["sozler"])]
+        ust = (d.get("baslik") or "MAÇ SONU") + " KONUŞTU"
     else:
         sys.exit("bilinmeyen tip: " + tip)
     slides.append(takip(total))
