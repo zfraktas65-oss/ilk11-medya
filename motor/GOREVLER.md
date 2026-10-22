@@ -35,6 +35,7 @@ SHA=$(git rev-parse HEAD)
 - Her dosya için curl ile 200 döndüğünü doğrula.
 
 ### P · Paylaş (Metricool, blogId "7504196", Instagram)
+0. **Son kontrol:** Paylaşmadan hemen önce `git pull` ile motor/paylasilan.txt dosyasına ve getScheduledPosts ile son 6 saatin gönderilerine yeniden bak. Aynı içerik (aynı maçın sonucu/kadrosu ya da aynı haber) paylaşılmış ya da planlanmışsa paylaşma ve dur.
 1. **Gönderi:**
    - createScheduledPost, date = şu an + 3 dk (+03:00).
    - info: providers [{"network":"instagram"}], instagramData {"type":"POST","isAiGenerated":false}.
