@@ -76,16 +76,18 @@ def foot(text="KAYDIR →"):
 
 def kapak(d, total):
     rows = ""
+    sik = len(d["haberler"]) > 4
+    pad, gap, mt = ("15px 24px", 12, 36) if sik else ("22px 26px", 18, 54)
     for h in d["haberler"]:
         bg, fg = RENK.get(h["etiket"], ("#C6FF00", "#0A0F0A"))
-        rows += (f"<div style='display:flex;align-items:center;gap:22px;padding:22px 26px;border-radius:24px;background:rgba(0,0,0,.35);"
+        rows += (f"<div style='display:flex;align-items:center;gap:22px;padding:{pad};border-radius:24px;background:rgba(0,0,0,.35);"
                  f"border:2px solid rgba(255,255,255,.08)'><span class='chip' style='background:{bg};color:{fg};font-size:26px;padding:8px 18px;flex:none'>{esc(h['etiket'])}</span>"
                  f"<span style='font:700 34px/1.2 Inter;color:#F1F5F2'>{esc(h.get('kisa') or h['baslik'][:40])}</span></div>")
     return (f"<div class='slide'><div class='stripes'></div>{top(1, total)}"
             "<div style='position:absolute;left:70px;right:70px;top:200px'>"
             "<h1 style='font-size:170px'>GÜNÜN</h1><h1 class='hl' style='font-size:170px;margin-top:-6px'>HABERLERİ</h1>"
             f"<div style='margin-top:26px;font:800 36px Inter;letter-spacing:5px;color:#C9D6CE'>{tarih_str(d['tarih'])}</div>"
-            f"<div style='margin-top:54px;display:flex;flex-direction:column;gap:18px'>{rows}</div></div>"
+            f"<div style='margin-top:{mt}px;display:flex;flex-direction:column;gap:{gap}px'>{rows}</div></div>"
             f"{foot()}</div>")
 
 
