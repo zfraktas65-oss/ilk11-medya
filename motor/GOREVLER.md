@@ -13,7 +13,11 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 2. ToolSearch ile şu araçları yükle: `select:mcp__Metricool_Social_Media_Management__createScheduledPost,mcp__Metricool_Social_Media_Management__getScheduledPosts,SendUserMessage,SendUserFile,mcp__claude-code-remote__add_repo,mcp__claude-code-remote__create_trigger`.
 3. `add_repo` çağır: owner `zfraktas65-oss`, repo `ilk11-medya`, access `push`.
 4. `~/ilk11-medya` yoksa klonla: `git clone --depth 1 https://github.com/zfraktas65-oss/ilk11-medya ~/ilk11-medya`. Sonra şunu çalıştır: `git config user.name "Claude" && git config user.email "noreply@anthropic.com"` (depo içinde).
-5. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
+5. **Logolar (bir kez):** `motor/logolar/` içinde turkiye/besiktas/galatasaray/fenerbahce/trabzonspor dosyalarından eksik olan varsa indirmeyi dene; erişim yoksa (403/bağlantı reddi) sessizce geç, paylaşımı aksatma.
+   - Türkiye: `curl -sfo motor/logolar/turkiye.png https://www.tff.org/Resources/TFF/Images/0000000015/TFF/TFF-Logolar/Orjinal/tff01.png`
+   - Kulüpler: yalnız resmî siteden (bjk.com.tr, galatasaray.org, fenerbahce.org, trabzonspor.org.tr); sayfadaki arma dosyasını bul ve indir. Logo sitelerinden indirme.
+   - İndirileni Read ile aç, doğru ve bozulmamış armaysa commit edip gönder (`git add motor/logolar && git commit -qm "logo" && git push -q`).
+6. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
 
 ### KAYIT · motor/paylasilan.txt
 Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika veya demec olur.
