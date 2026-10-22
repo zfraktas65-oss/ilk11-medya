@@ -31,6 +31,14 @@ Gönderi = kart(lar) + takip kartı · Hikâye = hikaye.jpg
  - Gazeteci sorusu vermek istersen söz metnine "Soru: …" satırı olarak ekleyebilirsin (isteğe bağlı).
  - hikaye.jpg: bütün demeçler tek ekranda, yazı boyu sığacak şekilde otomatik küçülür.
 
+5) PUAN DURUMU  (Avrupa kupaları; her turnuva ayrı kart, bizim takımlar vurgulu)
+{"tip":"puan","tablolar":[{"turnuva":"ŞAMPİYONLAR LİGİ","alt":"LİG AŞAMASI · 3. HAFTA SONU",
+   "satirlar":[[1,"PSG",9],[2,"Aston Villa",9], ...36 satır: [sıra, takım, puan]]}],
+ "bizim":{"Galatasaray":"GALATASARAY","Fenerbahçe":"FENERBAHÇE"},   # tablodaki ad → renk anahtarı
+ "kaynaklar":["UEFA","AA"]}
+ - Sıra ve puanlar yalnız doğrulanmış tablodan (resmî ya da iki bağımsız kaynakta aynı) yazılır.
+ - Hikâye: bütün turnuvalarda bizim takımların sırası ve puanı tek ekranda.
+
 Renkler: ana takımlar için hazır; diğerleri için "renkler":{"KASIMPAŞA":["#1B3A8C","#FFFFFF"]} eklenebilir.
 Kulüp logosu ASLA çizilmez; takımlar renk şeritleriyle temsil edilir.
 """
@@ -280,6 +288,74 @@ def demec_hikaye(d, out):
         print(f"UYARI: hikâye yazı boyu {fs}px; okunurluğu Read ile kontrol et.", file=sys.stderr)
 
 
+
+def puan_kart(d, t, n, total):
+    bizim = d.get("bizim", {})
+    rows = t["satirlar"]
+    yarim = (len(rows) + 1) // 2
+
+    def kol(parca):
+        h = ""
+        for sira, ad, pu in parca:
+            vurgu = ad in bizim
+            bg = "background:#C6FF00;color:#0A0F0A" if vurgu else "background:rgba(0,0,0,.30);color:#EAF1EC"
+            sr = serit(bizim[ad], d, 8, 30) if vurgu else ""
+            h += (f"<div style='display:flex;align-items:center;gap:10px;height:40px;padding:0 14px;border-radius:10px;{bg};"
+                  f"font:{'800' if vurgu else '600'} 23px Inter'><span style='width:34px;text-align:right;opacity:.8'>{sira}</span>"
+                  f"{sr}<span style='flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(ad)}</span>"
+                  f"<span style='font:400 26px Anton;width:34px;text-align:right'>{pu}</span></div>")
+        return f"<div style='flex:1;display:flex;flex-direction:column;gap:4px'>{h}</div>"
+    return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}"
+            "<div style='position:absolute;left:60px;right:60px;top:150px'>"
+            f"<span class='chip' style='background:#C6FF00;color:#0A0F0A'>PUAN DURUMU</span>"
+            f"<div style='margin-top:18px;font:400 60px/1 Anton;letter-spacing:1px'>{esc(t['turnuva'])}</div>"
+            f"<div style='margin-top:8px;font:800 26px Inter;color:#B9C7BE;letter-spacing:2px'>{esc(t.get('alt', ''))}</div>"
+            f"<div style='margin-top:22px;display:flex;gap:16px'>{kol(rows[:yarim])}{kol(rows[yarim:])}</div>"
+            + (f"<p style='margin-top:16px;font:700 22px Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(' · '.join(t.get('kaynaklar') or d.get('kaynaklar', [])))}</p>")
+            + f"</div>{foot('KAYDIR →')}</div>")
+
+
+def puan_hikaye(d, out):
+    from haber import CSS as _CSS
+    bizim = d.get("bizim", {})
+    bl = ""
+    for t in d["tablolar"]:
+        n = len(t["satirlar"])
+        for sira, ad, pu in t["satirlar"]:
+            if ad in bizim:
+                bl += ("<div style='display:flex;align-items:center;gap:24px;padding:26px 30px;border-radius:28px;background:rgba(0,0,0,.38);"
+                       "border:2px solid rgba(255,255,255,.1)'>" + serit(bizim[ad], d, 16, 110) +
+                       f"<div style='flex:1'><div style='font:400 58px/1 Anton'>{esc(bizim[ad])}</div>"
+                       f"<div style='margin-top:8px;font:800 28px Inter;color:#B9C7BE'>{esc(t['turnuva'])}</div></div>"
+                       f"<div style='text-align:right'><div style='font:400 74px/1 Anton;color:#C6FF00'>{sira}.</div>"
+                       f"<div style='font:800 30px Inter'>{pu} puan</div></div></div>")
+    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{_CSS}"
+            ".s{width:1080px;height:1920px;position:relative;overflow:hidden;color:#fff;font-family:Inter,sans-serif;"
+            "background:radial-gradient(110% 70% at 50% 40%,#1E5636 0%,#0B2416 55%,#030805 100%)}</style></head><body><div class='s'><div class='stripes'></div>"
+            "<div style='position:absolute;left:0;right:0;top:110px;display:flex;flex-direction:column;align-items:center;gap:24px'>"
+            "<div class='brand' style='font:400 50px Anton;display:flex;align-items:center;gap:16px'><div class='logo'>11</div>İLK 11</div>"
+            "<span class='chip' style='background:#C6FF00;color:#0A0F0A;font-size:46px'>AVRUPA'DA PUAN DURUMU</span></div>"
+            f"<div style='position:absolute;left:80px;right:80px;top:400px;display:flex;flex-direction:column;gap:26px'>{bl}</div>"
+            "<div style='position:absolute;left:0;right:0;bottom:250px;text-align:center;font:700 38px Inter;color:#DCE6DF'>Tüm tablolar profilde</div>"
+            "<div style='position:absolute;left:150px;right:150px;bottom:70px;display:flex;align-items:center;gap:22px;padding:20px 26px;"
+            "border-radius:90px;background:#0B0F0C;border:5px solid #C6FF00'><div class='logo'>11</div>"
+            "<div style='flex:1'><div style='font:400 40px Anton'>İLK 11</div><div style='font:700 26px Inter;color:#B9C2BB'>@ilk.onbir11</div></div>"
+            "<div style='padding:16px 28px;border-radius:50px;background:#C6FF00;color:#0A0A0A;font:400 38px Anton;letter-spacing:2px'>TAKİP ET</div></div>"
+            "</div></body></html>")
+    p = os.path.abspath(out + ".html")
+    open(p, "w", encoding="utf-8").write(page)
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        br = pw.chromium.launch()
+        pg = br.new_page(viewport={"width": 1080, "height": 1920})
+        pg.goto("file://" + p)
+        pg.evaluate("document.fonts.ready")
+        pg.wait_for_timeout(200)
+        pg.query_selector(".s").screenshot(path=out, type="jpeg", quality=92)
+        br.close()
+    os.remove(p)
+
+
 def main():
     d = json.load(open(sys.argv[1], encoding="utf-8"))
     out = sys.argv[2] if len(sys.argv) > 2 else "ozel_cikti"
@@ -308,6 +384,10 @@ def main():
         total = len(isler) + 1
         slides = [demec_kart(d, s, parca, i + 1, total, dv, sr) for i, (s, parca, dv, sr) in enumerate(isler)]
         ust = (d.get("baslik") or "MAÇ SONU") + " KONUŞTU"
+    elif tip == "puan":
+        total = len(d["tablolar"]) + 1
+        slides = [puan_kart(d, t, i + 1, total) for i, t in enumerate(d["tablolar"])]
+        ust = "PUAN DURUMU"
     else:
         sys.exit("bilinmeyen tip: " + tip)
     slides.append(takip(total))
@@ -328,6 +408,8 @@ def main():
     os.remove(p)
     if tip == "demec":
         demec_hikaye(d, os.path.join(out, "hikaye.jpg"))
+    elif tip == "puan":
+        puan_hikaye(d, os.path.join(out, "hikaye.jpg"))
     else:
         subprocess.run([sys.executable, os.path.join(HERE, "story.py"), os.path.join(out, "01_kart.jpg"),
                         os.path.join(out, "hikaye.jpg"), ust, "Detaylar profilde"], check=True, stdout=subprocess.DEVNULL)
