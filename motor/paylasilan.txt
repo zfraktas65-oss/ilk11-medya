@@ -7,3 +7,4 @@
 2026-10-23 01:24 puan 2026-10-23-avrupa-puan-durumu | ŞL/AL/KL puan durumu (GS 23., FB 31., BJK 8., TS 4.)
 2026-10-23 10:16 fikstur 2026-10-23-avrupa-kalan-maclar | GS/FB ŞL, BJK AL, TS KL kalan maçlar (logolu)
 2026-10-23 15:50 puan 2026-10-23-kim-sampiyon-olur | Kim şampiyon olur? hikâyesi, dört büyükler puan durumu (8. hafta sonu, TFF) (manuel)
+2026-10-23 16:05 sondakika 2026-10-22-pfdk-dort-buyuklere-para-cezasi | PFDK: BJK 1.060.000, TS 710.000, FB 280.000, GS 280.000 TL (TFF) (manuel)
