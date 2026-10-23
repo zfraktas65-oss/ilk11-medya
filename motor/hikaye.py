@@ -733,14 +733,40 @@ def main():
 
     css = open(os.path.join(HERE, "stil.css"), encoding="utf-8").read().replace("FONTDIR", "file://" + os.path.join(HERE, "fonts"))
     js = open(os.path.join(HERE, "oynat.js"), encoding="utf-8").read()
+    # Video ortasındaki takip rozeti: üst etiketin yerine geçer, kapanış sahnesine kadar kalır.
+    # Varsayılan: 3. cümlenin başında (en erken 5 sn). spec: "rozet" (metin) / "rozet_sn" (saniye) / "rozet": "" kapatır.
+    rozet_txt = spec.get("rozet", "HER AKŞAM 19:00 · YENİ HİKÂYE")
+    rozetA = None
+    if rozet_txt:
+        rozetA = float(spec.get("rozet_sn", max(5.0, spans[min(2, len(spans) - 1)][0])))
+        if rozetA > cta_scene_start - 3:
+            rozetA = None
+    rozet_html = ""
+    if rozetA is not None:
+        hand = ("<svg width='120' height='140' viewBox='-30 -140 160 230'><g transform='rotate(-25)'><path d='M0 0 C-8 -60 -6 -120 6 -128 "
+                "C18 -136 28 -126 28 -112 L30 -70 C40 -82 60 -78 62 -62 C74 -72 92 -66 92 -50 C104 -58 120 -50 118 -32 L114 20 C110 60 80 80 40 80 "
+                "L20 80 C0 74 -10 50 -14 30Z' fill='#FFFFFF' stroke='#0A0A0A' stroke-width='8' stroke-linejoin='round'/></g></svg>")
+        rozet_html = (f"<div id='rozet'><span class='rz11'>11</span><span class='rzt'>{esc(tr_upper(rozet_txt))}</span>"
+                      f"<span class='rzb'>TAKİP ET</span><div class='rzel tapin' style='--d:{rozetA + .5:.2f}s'>{hand}</div></div>")
+        events.append((rozetA, "pop")); events.append((rozetA + 1.1, "tap"))
+    rozet_css = ("#rozet{position:absolute;top:204px;left:50%;transform:translateX(-50%);z-index:9;opacity:0;display:flex;align-items:center;gap:16px;"
+                 "white-space:nowrap;padding:8px 10px;border-radius:40px;background:rgba(11,15,12,.88);border:4px solid #C6FF00;"
+                 "box-shadow:0 10px 30px rgba(0,0,0,.45)}"
+                 "#rozet .rz11{width:52px;height:52px;border-radius:50%;border:5px solid #C6FF00;display:flex;align-items:center;justify-content:center;"
+                 "font:400 30px Anton;color:#C6FF00}"
+                 "#rozet .rzt{font:400 31px Anton;letter-spacing:2px;color:#FFFFFF}"
+                 "#rozet .rzb{font:400 31px Anton;letter-spacing:2px;color:#0A0F0A;background:#C6FF00;border-radius:30px;padding:6px 20px;"
+                 "animation:rzpulse 1.1s ease-in-out infinite}"
+                 "@keyframes rzpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}"
+                 "#rozet .rzel{position:absolute;right:-6px;top:22px;width:120px;height:140px}")
     data = {"scenes": [{"start": s["start"], "end": s["end"]} for s in scenes], "chunks": chunks(allWT, T), "T": T,
-            "labelEnd": cta_scene_start}
-    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body>{secs}"
-            "<div id='label'>İLK 11 · FUTBOL HİKÂYELERİ</div><div id='band'></div><div id='subs'></div>"
+            "labelEnd": cta_scene_start, "rozetA": rozetA}
+    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{css}{rozet_css}</style></head><body>{secs}"
+            f"<div id='label'>İLK 11 · FUTBOL HİKÂYELERİ</div>{rozet_html}<div id='band'></div><div id='subs'></div>"
             f"<script>window.__DATA={json.dumps(data, ensure_ascii=False)};{js}</script></body></html>")
     hp = os.path.join(out, "_sayfa.html")
     open(hp, "w", encoding="utf-8").write(page)
-    print("Süre:", T, "sn | sahneler:", [(s["tip"], s["start"]) for s in scenes])
+    print("Süre:", T, "sn | sahneler:", [(s["tip"], s["start"]) for s in scenes], "| takip rozeti:", rozetA)
 
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:

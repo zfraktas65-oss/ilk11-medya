@@ -18,6 +18,7 @@
 - Sayılar seslendirmede yazıyla (`"soz"`), altyazıda rakamla (`"altyazi"`) yazılır.
 - `sahneler`: her sahne hangi cümleleri kapsadığını `cumleler` ile söyler; cümleler sırayla ve eksiksiz paylaştırılmalı. 5–7 sahne ideal, her sahne 3–7 sn.
 - Kapanış (Hoca: "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" + takip butonu + `soru`) OTOMATİK eklenir; metne yazma.
+- **Takip rozeti** (OTOMATİK): 3. cümlenin başında (en erken 5. sn) üst etiketin yerine "<rozet> · TAKİP ET" rozeti çıkar, el ikonu butona dokunur ve kapanışa kadar kalır. `"rozet"`: rozet metni (varsayılan "HER AKŞAM 19:00 · YENİ HİKÂYE"; portre: "HER GÜN 13:00 · BİR EFSANE"; `""` kapatır), `"rozet_sn"`: başlama saniyesi (isteğe bağlı). Rozet y≈204–300 bandındadır; sahnelerde bu bandın içine yazı koyma.
 - `at`: o anın söylendiği kelimenin başı (küçük harf, ör. `"madrid"`, rakamlı altyazıda `"2-2"`) ya da sahne başından saniye (sayı).
 - Metinlerde Türkçe büyük harf kullan (İ, Ş, Ğ…). Yabancı adlar özgün yazımıyla: LILLE, LIVERPOOL.
 - `*kelime*` vurgulu (neon yeşil) yazar. Başlıkta `|` ikinci satıra geçer.
@@ -63,4 +64,4 @@
 
 ## Kurallar
 - Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla ve kredisiyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
-- İlk cümle en çarpıcı an. Toplam anlatım 55–80 kelime (≈25–35 sn). Kapanış soru + takip otomatik.
+- İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış soru + takip + orta rozet otomatik.
