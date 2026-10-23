@@ -6,3 +6,6 @@
 2026-10-23 01:13 demec 2026-10-22-besiktas-crystal-palace-sonra-besiktas-2 | Italiano + Ndidi maç sonu (Beşiktaş 2-2 Crystal Palace)
 2026-10-23 01:24 puan 2026-10-23-avrupa-puan-durumu | ŞL/AL/KL puan durumu (GS 23., FB 31., BJK 8., TS 4.)
 2026-10-23 10:16 fikstur 2026-10-23-avrupa-kalan-maclar | GS/FB ŞL, BJK AL, TS KL kalan maçlar (logolu)
+2026-10-23 15:16 demec 2026-10-21-lille-galatasaray-sonra-galatasaray-1 | Okan Buruk maç sonu, tam metin (Lille 2-4 Galatasaray) — yalnız hikâye, 2 ekran, fotoğraflı
+2026-10-23 15:18 demec 2026-10-20-fenerbahce-slavia-prag-sonra-fenerbahce-1 | İsmail Kartal maç sonu, tam metin (Fenerbahçe 2-2 Slavia Prag) — yalnız hikâye, fotoğraflı
+2026-10-23 15:19 sondakika 2026-10-21-fenerbahce-asensio-ake-sakatlik | Fenerbahçe resmî: Asensio ~3 ay, Aké ~3 hafta — yalnız hikâye, fotoğraflı
