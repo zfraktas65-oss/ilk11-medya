@@ -8,6 +8,8 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 
 ## ORTAK ADIMLAR
 
+> **MANUEL MOD:** `motor/MANUEL_MOD` dosyası varsa (Metricool hesap sınırı dolu; sayfa sahibi paylaşımları bir süre elle yapıyor) Y ve P adımlarını ATLA, yerine **M** adımını uygula. Dosya yoksa normal akış (Y → P → B) geçerlidir. Sayfa sahibi Metricool planını yükseltince dosya silinir.
+
 ### K0 · Kurulum
 1. Tarih ve saati al: `TZ=Europe/Istanbul date '+%F %H:%M'`.
 2. ToolSearch ile şu araçları yükle: `select:mcp__Metricool_Social_Media_Management__createScheduledPost,mcp__Metricool_Social_Media_Management__getScheduledPosts,SendUserMessage,SendUserFile,mcp__claude-code-remote__add_repo,mcp__claude-code-remote__create_trigger`.
@@ -54,6 +56,17 @@ SHA=$(git rev-parse HEAD)
 3. Yanıtlarda media bağlantılarının static.metricool.com'a taşındığını kontrol et.
 
 Her açıklamanın sonunda şu satır bulunur: `Daha fazlası için @ilk.onbir11'i takip et ⚽`. Ardından en fazla 5 hashtag gelir.
+
+### M · Manuel paylaşım paketi (yalnız MANUEL MOD'da)
+Metricool'a hiçbir şey gönderme (createScheduledPost çağırma). Bunun yerine:
+1. **Son kontrol:** `git pull` ile motor/paylasilan.txt'ye yeniden bak; aynı içerik kayıtlıysa gönderme ve dur.
+2. SendUserFile ile (status "proactive") paylaşılacak görselleri sırayla gönder: önce gönderi kartları (01_…, 02_…, en sonda takip kartı), en sonda hikaye.jpg. caption: "Gönderi: 01–NN sırayla kaydırmalı · Hikâye: hikaye.jpg".
+3. SendUserMessage ile kısa bir paylaşım notu gönder:
+   - İlk satır: `📲 ELLE PAYLAŞ · <ne> · <önerilen saat: şimdi>`
+   - Gönderi açıklama metni, kolay kopyalansın diye tek bir kod bloğu (```) içinde.
+   - Altında "Hikâye: hikaye.jpg (açıklama yok)" satırı ve kaynak bağlantıları ([Başlık](URL)).
+4. KAYIT satırının sonuna `(manuel)` ekle; paylaşılmış sayılır (aynı içerik tekrar gönderilmez).
+5. Ayrıca B adımına gerek yok; bu mesaj bildirim yerine geçer.
 
 ### B · Bildir
 SendUserMessage ile kısa bir özet gönder:

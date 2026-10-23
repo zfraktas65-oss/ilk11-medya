@@ -1,0 +1,3 @@
+Bu dosya varken otomatik görevler Metricool'a paylaşım GÖNDERMEZ; hazırlanan görselleri/videoları ve açıklama metnini
+sayfa sahibine gönderir, o elle paylaşır. Sebep: Metricool "You have reached your Metricool account limit" (2026-10-23).
+Sayfa sahibi Metricool planını yükseltince bu dosyayı sil: git rm motor/MANUEL_MOD && git commit -m "manuel mod kapandı" && git push
