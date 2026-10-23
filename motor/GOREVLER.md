@@ -15,12 +15,12 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 4. `~/ilk11-medya` yoksa klonla: `git clone --depth 1 https://github.com/zfraktas65-oss/ilk11-medya ~/ilk11-medya`. Sonra şunu çalıştır: `git config user.name "Claude" && git config user.email "noreply@anthropic.com"` (depo içinde).
 5. **Logolar (bir kez):** `motor/logolar/` içinde turkiye/besiktas/galatasaray/fenerbahce/trabzonspor dosyalarından eksik olan varsa indirmeyi dene; erişim yoksa (403/bağlantı reddi) sessizce geç, paylaşımı aksatma.
    - Türkiye: `curl -sfo motor/logolar/turkiye.png https://www.tff.org/Resources/TFF/Images/0000000015/TFF/TFF-Logolar/Orjinal/tff01.png`
-   - Kulüpler: yalnız resmî siteden (bjk.com.tr, galatasaray.org, fenerbahce.org, trabzonspor.org.tr); sayfadaki arma dosyasını bul ve indir. Logo sitelerinden indirme.
+   - Kulüpler: yalnız resmî siteden (bjk.com.tr, galatasaray.org, fenerbahce.org, trabzonspor.org.tr) ya da UEFA'nın takım logosu dosyasından (bkz. motor/logolar/KAYNAK.txt); logo sitelerinden indirme.
    - İndirileni Read ile aç, doğru ve bozulmamış armaysa commit edip gönder (`git add motor/logolar && git commit -qm "logo" && git push -q`).
 6. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
 
 ### KAYIT · motor/paylasilan.txt
-Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika veya demec olur.
+Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika, demec, puan veya fikstur olur.
 - Anahtar örnekleri: kadro/sonuç için `2026-10-24-galatasaray-kasimpasa`, son dakika için `2026-10-24-fenerbahce-teknik-direktor`.
 - **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma.
 - Son dakikada aynı olay farklı kelimelerle de olsa son 3 günde paylaşıldıysa paylaşma.
@@ -247,3 +247,11 @@ Her gönderi için:
    ```
    Instagram açıklaması en fazla 2.200 karakterdir. Tam metin sığmazsa açıklamada her kişinin ilk 1–2 cümlesi birebir verilir ve "Demeçlerin tamamı kartlarda 👉" satırı eklenir; tam metin her durumda kartlarda ve hikâyede bulunur.
 4. KAYIT ve B adımlarını uygula.
+
+## FİKSTÜR / KALAN MAÇLAR
+Kullanıcı istediğinde (ya da yeni tur kurası çekildiğinde) Avrupa'daki ya da bir turnuvadaki kalan maçlar paylaşılır.
+1. K0'ı uygula. Anahtar `TARIH-avrupa-kalan-maclar` (ya da `TARIH-<turnuva>-kalan-maclar`). Kayıtta `fikstur <anahtar>` varsa dur.
+2. Her takımın kalan maçlarını (tarih, ev, deplasman) resmî kaynaktan ya da iki bağımsız kaynaktan doğrula. Saat yalnız iki kaynakta aynıysa yazılır.
+3. `fikstur.json` yaz (biçim motor/ozel.py başındaki "6) FİKSTÜR"), rakip logosu yoksa motor/logolar/KAYNAK.txt'e göre ekle; üret ve Read ile kontrol et.
+4. Y'yi uygula (tur fikstur), sonra P'yi. Açıklama: `📅 AVRUPA'DA KALAN MAÇLAR | …`, her takım için "TAKIM · Turnuva" başlığı ve altında `Gün Ay: Ev – Dep` satırları, soru, Kaynak, takip satırı, en fazla 5 hashtag.
+5. KAYIT ve B adımlarını uygula.
