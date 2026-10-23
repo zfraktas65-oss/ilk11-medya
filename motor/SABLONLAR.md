@@ -49,6 +49,12 @@
 `{"tip":"zafer","cumleler":[9,10,11],"kelime":"ŞAMPİYON","renk":"#0053A0","bayrak":"eng","at":"şampiyon","kart_at":"ve","alt":"PREMIER LIG · 2016","alt_at":"tarih"}`
 - `bayrak` yoksa sadece renk zemini; kelime ≤ 10 harf ideal
 
+### foto — gerçek fotoğraf kartı (yalnız lisansı uygun fotoğraf)
+`{"tip":"foto","cumleler":[0],"foto":"arda.jpg","kredi":"Foto: Ad · Wikimedia · CC BY-SA 4.0","baslik":"*ARDA GÜLER*|19 YAŞINDA REKOR","damga":{"metin":"REKOR","at":"rekorunu"}}`
+`{"tip":"foto","cumleler":[2],"foto":"fb.jpg","kredi":"Foto: beIN SPORTS Türkiye · CC BY 3.0","ust":"2019 · FENERBAHÇE","alt":"16 YAŞINDA A TAKIM","alt_at":"forma"}`
+- `foto` yolu senaryo.json'a göre; `kredi` ZORUNLU (yazar + lisans). Kaynak yalnız Wikimedia Commons'taki CC/kamu malı dosyalar (bkz. motor/fotolar/KAYNAK.txt).
+- `baslik` ya da `ust`'ten biri; `odak`: "ust" (varsayılan, yüz üstte) | "orta". Gönderi açıklamasına da "📷 Fotoğraflar: …" kredi satırı eklenir.
+
 ## Seçenekler
 - **ikon**: top, kupa, duduk, saat, kart_kirmizi, kart_sari, para, sozlesme, kale, soru, unlem, fanus, mikrofon, `bayrak:<kod>`, `forma:<renk1>,<renk2>,<numara>` (ör. `forma:#E30A17,#FFFFFF,10`)
 - **arka**: karanlik (spot ışığı), gece (stadyum gecesi), gunbatimi, roma (Kolezyum), soyunma, marka
@@ -56,5 +62,5 @@
 - `ozel_svg` (isteğe bağlı): sahneye eklenecek ham SVG (1080x1920 koordinat).
 
 ## Kurallar
-- Kulüp logosu, gerçek kişi yüzü/fotoğrafı, maç görüntüsü yok. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
+- Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla ve kredisiyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
 - İlk cümle en çarpıcı an. Toplam anlatım 55–80 kelime (≈25–35 sn). Kapanış soru + takip otomatik.

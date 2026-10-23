@@ -428,7 +428,57 @@ def t_takip(p, at, sfx, i, soru, rtak):
     return s
 
 
-TEMPLATES = {"kanca": t_kanca, "tahta": t_tahta, "skor": t_skor, "sayi": t_sayi, "an": t_an, "hoca": t_hoca, "zafer": t_zafer}
+FOTO_DIR = None  # senaryo.json'un klasörü (main içinde atanır)
+
+
+def _foto_uri(path):
+    import base64, mimetypes
+    p = path if os.path.isabs(path) else os.path.join(FOTO_DIR or ".", path)
+    mt = mimetypes.guess_type(p)[0] or "image/jpeg"
+    return f"data:{mt};base64," + base64.b64encode(open(p, "rb").read()).decode()
+
+
+def t_foto(p, at, sfx, i):
+    """Gerçek fotoğraf sahnesi — YALNIZ kullanım hakkı olan (ör. Wikimedia Commons CC lisanslı) fotoğraflar.
+    p: foto (dosya, senaryo.json'a göre), kredi ("Foto: Ad · Wikimedia · CC BY-SA 4.0" — zorunlu), baslik (ops., '|' ve *vurgu*),
+       ust (ops. çip), alt (ops. etiket), alt_at, odak ("ust"|"orta"; varsayılan ust), damga (ops.).
+    Güvenli alan: üst etiket ~300-335px, altyazı bandı 1170px'ten aşağı; kart 360-1160 arasında kalır."""
+    uri = _foto_uri(p["foto"])
+    s = arka(p.get("arka", "karanlik"), i)
+    if p.get("baslik"):
+        cw, ch, cy = 520, 560, 585
+    else:
+        cw, ch, cy = 640, 680, 465
+    cx = (1080 - cw) // 2
+    s += (f"<defs><filter id='fb{i}'><feGaussianBlur stdDeviation='28'/></filter>"
+          f"<clipPath id='fc{i}'><rect x='0' y='0' width='{cw}' height='{ch}' rx='14'/></clipPath></defs>")
+    s += (f"<image href='{uri}' x='-140' y='-60' width='1360' height='2040' preserveAspectRatio='xMidYMid slice' "
+          f"filter='url(#fb{i})' opacity='.38'/><rect width='1080' height='1920' fill='#050806' opacity='.35'/>")
+    if p.get("baslik"):
+        s += f"<g class='fadein' style='--d:.2s'>{baslik_svg(p['baslik'], 450, size=88)}</g>"
+    elif p.get("ust"):
+        w = len(p["ust"]) * 24 + 60
+        s += (f"<g class='fadein' style='--d:.1s'><rect x='{540 - w / 2:.0f}' y='375' width='{w}' height='58' rx='29' fill='{LIME}'/>"
+              f"<text x='540' y='417' text-anchor='middle' font-family='Anton' font-size='36' letter-spacing='3' fill='#0A0F0A'>{esc(p['ust'])}</text></g>")
+    ar = "xMidYMin slice" if p.get("odak", "ust") == "ust" else "xMidYMid slice"
+    card = (f"<rect x='-14' y='-14' width='{cw + 28}' height='{ch + 28}' rx='20' fill='#F4F1E8'/>"
+            f"<g clip-path='url(#fc{i})'><image href='{uri}' width='{cw}' height='{ch}' preserveAspectRatio='{ar}'/>"
+            f"<rect x='0' y='{ch - 52}' width='{cw}' height='52' fill='#000000' opacity='.6'/></g>"
+            f"<text x='{cw - 16}' y='{ch - 18}' text-anchor='end' font-family='Inter' font-weight='700' font-size='21' fill='#E8EDE9'>{esc(p.get('kredi', ''))}</text>")
+    s += (f"<g transform='translate({cx} {cy}) rotate(-2 {cw / 2} {ch / 2})'><g class='pop' style='--d:.25s'>"
+          f"<g filter='drop-shadow(0 18px 30px rgba(0,0,0,.55))'>{card}</g></g></g>")
+    sfx(.25, "pop")
+    if p.get("alt"):
+        s += pill(540, cy + ch - 110, p["alt"], 40, d=at(p.get("alt_at", 1.0)))
+    if p.get("damga"):
+        d = at(p["damga"].get("at", 1.2))
+        s += stamp_text(560, cy + ch - 120, p["damga"]["metin"], d, 66, p["damga"].get("renk", LIME), -6)
+        sfx(d, "stamp")
+    return s + motes()
+
+
+TEMPLATES = {"kanca": t_kanca, "tahta": t_tahta, "skor": t_skor, "sayi": t_sayi, "an": t_an, "hoca": t_hoca, "zafer": t_zafer,
+             "foto": t_foto}
 
 DEFS = ("<defs>"
         "<radialGradient id='bgDark' cx='.5' cy='.4' r='.8'><stop offset='0' stop-color='#1A2A20'/><stop offset='1' stop-color='#060908'/></radialGradient>"
@@ -622,6 +672,8 @@ def main():
     os.makedirs(out, exist_ok=True)
     base = os.path.dirname(os.path.abspath(spec_path))
     spec = json.load(open(spec_path, encoding="utf-8"))
+    global FOTO_DIR
+    FOTO_DIR = os.path.dirname(os.path.abspath(spec_path))
     voice = load_audio(os.path.join(base, spec.get("ses", "ses.mp3")))
     cta = load_audio(spec.get("cta") and os.path.join(base, spec["cta"]) or os.path.join(HERE, "ses", "cta_hoca.mp3"))
     cum = [c if isinstance(c, dict) else {"soz": c} for c in spec["cumleler"]]
