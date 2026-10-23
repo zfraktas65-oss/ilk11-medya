@@ -6,3 +6,4 @@
 2026-10-23 01:13 demec 2026-10-22-besiktas-crystal-palace-sonra-besiktas-2 | Italiano + Ndidi maç sonu (Beşiktaş 2-2 Crystal Palace)
 2026-10-23 01:24 puan 2026-10-23-avrupa-puan-durumu | ŞL/AL/KL puan durumu (GS 23., FB 31., BJK 8., TS 4.)
 2026-10-23 10:16 fikstur 2026-10-23-avrupa-kalan-maclar | GS/FB ŞL, BJK AL, TS KL kalan maçlar (logolu)
+2026-10-23 15:50 puan 2026-10-23-kim-sampiyon-olur | Kim şampiyon olur? hikâyesi, dört büyükler puan durumu (8. hafta sonu, TFF) (manuel)
