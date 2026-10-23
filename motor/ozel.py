@@ -39,6 +39,15 @@ Gönderi = kart(lar) + takip kartı · Hikâye = hikaye.jpg
  - Sıra ve puanlar yalnız doğrulanmış tablodan (resmî ya da iki bağımsız kaynakta aynı) yazılır.
  - Hikâye: bütün turnuvalarda bizim takımların sırası ve puanı tek ekranda.
 
+6) FİKSTÜR / KALAN MAÇLAR  (bizim her takım için ayrı kart, rakip logolarıyla)
+{"tip":"fikstur","baslik":"KALAN MAÇLAR","alt":"LİG AŞAMASI",
+ "takimlar":[{"ad":"GALATASARAY","turnuva":"ŞAMPİYONLAR LİGİ",
+   "maclar":[{"hafta":4,"tarih":"2026-11-03","ev":"GALATASARAY","dep":"STUTTGART","saat":"20:45"}, ...]}],   # saat isteğe bağlı
+ "renkler":{"STUTTGART":["#E32219","#FFFFFF"]}, "kaynaklar":["beIN Sports","Habertürk"]}
+ - Tarih, gün ve iç saha/deplasman yalnız doğrulanmış fikstürden (resmî ya da iki bağımsız kaynakta aynı) yazılır.
+ - Gün adı tarihten otomatik hesaplanır. Rakip logosu motor/logolar/<sade-ad>.png (ör. astonvilla.png) varsa kullanılır.
+ - Hikâye: bütün takımların kalan maçları tek ekranda (yazı boyu otomatik sığar).
+
 Renkler: ana takımlar için hazır; diğerleri için "renkler":{"KASIMPAŞA":["#1B3A8C","#FFFFFF"]} eklenebilir.
 Kulüp logosu kodla ÇİZİLMEZ. motor/logolar/ klasöründe resmî logo dosyası varsa (ör. besiktas.png, galatasaray.png,
 fenerbahce.png, trabzonspor.png, turkiye.png; rakipler için ör. crystalpalace.png) renk şeridi yerine o dosya
@@ -387,6 +396,124 @@ def puan_hikaye(d, out):
     os.remove(p)
 
 
+AY_KISA = ["OCA", "ŞUB", "MAR", "NİS", "MAY", "HAZ", "TEM", "AĞU", "EYL", "EKİ", "KAS", "ARA"]
+GUN_ADI = ["PAZARTESİ", "SALI", "ÇARŞAMBA", "PERŞEMBE", "CUMA", "CUMARTESİ", "PAZAR"]
+
+
+def _tarih(t):
+    import datetime
+    g = datetime.date.fromisoformat(t)
+    return g.day, AY_KISA[g.month - 1], GUN_ADI[g.weekday()]
+
+
+def _rakip(t, m):
+    biz = t["ad"]
+    if m["ev"] == biz:
+        return m["dep"], True
+    if m["dep"] == biz:
+        return m["ev"], False
+    sys.exit(f"HATA: {biz} maçında takım adı ev/dep ile eşleşmiyor: {m['ev']} – {m['dep']}")
+
+
+def fikstur_kart(d, t, n, total):
+    ad = t["ad"]
+    ms = t["maclar"]
+    k = len(ms)
+    alan = 760
+    gap = 14 if k <= 6 else 8
+    rh = min(140, (alan - gap * (k - 1)) / max(k, 1))
+    sc = rh / 140
+    rows = ""
+    for m in ms:
+        rak, ic = _rakip(t, m)
+        gun, ay, gad = _tarih(m["tarih"])
+        alt = gad + (f" · {m['saat']}" if m.get("saat") else "") + (f" · {m['hafta']}. HAFTA" if m.get("hafta") else "")
+        etiket = ("<span style='flex:none;padding:10px 18px;border-radius:30px;background:#C6FF00;color:#0A0F0A;font:400 {f}px Anton;letter-spacing:2px'>İÇ SAHA</span>"
+                  if ic else
+                  "<span style='flex:none;padding:8px 16px;border-radius:30px;border:3px solid rgba(255,255,255,.75);color:#fff;font:400 {f}px Anton;letter-spacing:2px'>DEPLASMAN</span>"
+                  ).format(f=int(28 * sc + 2))
+        rows += (f"<div style='height:{rh:.0f}px;display:flex;align-items:center;gap:{int(24 * sc)}px;padding:0 28px;border-radius:24px;"
+                 f"background:rgba(0,0,0,.34);border:2px solid rgba(255,255,255,.07)'>"
+                 f"<div style='flex:none;width:{int(112 * sc + 8)}px;text-align:center'>"
+                 f"<div style='font:400 {int(66 * sc)}px/1 Anton;color:#C6FF00'>{gun}</div>"
+                 f"<div style='margin-top:4px;font:800 {int(24 * sc + 2)}px Inter;letter-spacing:3px;color:#DCE6DF'>{ay}</div></div>"
+                 f"<div style='flex:none;width:2px;align-self:stretch;margin:{int(24 * sc)}px 0;background:rgba(255,255,255,.14)'></div>"
+                 f"{serit(rak, d, int(16 * sc + 2), int(84 * sc))}"
+                 f"<div style='flex:1;min-width:0'>"
+                 f"<div style='font:400 {int(50 * sc)}px/1.05 Anton;letter-spacing:.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(rak)}</div>"
+                 f"<div style='margin-top:6px;font:700 {int(24 * sc + 2)}px Inter;color:#9FB3A6;letter-spacing:1px'>{esc(alt)}</div></div>"
+                 f"{etiket}</div>")
+    kay = t.get("kaynaklar") or d.get("kaynaklar")
+    alt_satir = " · ".join(x for x in [t.get("turnuva", ""), d.get("alt", ""), f"{k} MAÇ KALDI"] if x)
+    return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}"
+            f"<div style='position:absolute;left:70px;top:150px'><span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc(d.get('baslik', 'KALAN MAÇLAR'))}</span></div>"
+            f"<div style='position:absolute;left:70px;right:70px;top:236px;display:flex;align-items:center;gap:24px'>{serit(ad, d, 18, 92)}"
+            f"<h1 style='font-size:88px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(ad)}</h1></div>"
+            f"<div style='position:absolute;left:70px;right:70px;top:344px;font:800 28px Inter;color:#B9C7BE;letter-spacing:2px;white-space:nowrap'>{esc(alt_satir)}</div>"
+            f"<div style='position:absolute;left:60px;right:60px;top:404px;display:flex;flex-direction:column;gap:{gap}px'>{rows}</div>"
+            + (f"<div style='position:absolute;left:70px;right:70px;top:1180px;font:700 24px Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(' · '.join(kay))}</div>" if kay else "")
+            + f"{foot('KAYDIR →')}</div>")
+
+
+def fikstur_hikaye(d, out):
+    """Bütün takımların kalan maçları tek 1080x1920 ekranda; sığan en büyük yazı boyu seçilir."""
+    from haber import CSS as _CSS
+
+    def sayfa(fs):
+        lg, hl = round(fs * 1.15), round(fs * 1.75)       # satır logosu / takım logosu (px)
+        bl = ""
+        for t in d["takimlar"]:
+            satir = ""
+            for m in t["maclar"]:
+                rak, ic = _rakip(t, m)
+                gun, ay, gad = _tarih(m["tarih"])
+                satir += ("<div style='display:flex;align-items:center;gap:.5em;padding:.2em 0;border-top:1px solid rgba(255,255,255,.09)'>"
+                          f"<span style='flex:none;width:4.2em;font:400 1em/1.1 Anton;color:#C6FF00;letter-spacing:.5px'>{gun} {ay}</span>"
+                          f"<span style='flex:none;width:7.4em;font:700 .6em Inter;color:#9FB3A6;letter-spacing:1px'>{gad}</span>"
+                          f"{serit(rak, d, max(6, round(fs * .26)), lg)}"
+                          f"<span style='flex:1;min-width:0;font:400 1em/1.1 Anton;letter-spacing:.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(rak)}</span>"
+                          f"<span style='flex:none;font:400 .68em Anton;letter-spacing:1px;color:{'#C6FF00' if ic else '#DCE6DF'}'>{'İÇ SAHA' if ic else 'DEPLASMAN'}</span></div>")
+            bl += ("<div class='blk'><div style='display:flex;align-items:center;gap:.5em;margin-bottom:.25em'>"
+                   f"{serit(t['ad'], d, max(8, round(fs * .34)), hl)}<div style='flex:1'><div style='font:400 1.35em/1 Anton;letter-spacing:.5px'>{esc(t['ad'])}</div>"
+                   f"<div style='margin-top:.15em;font:800 .58em Inter;color:#B9C7BE;letter-spacing:2px'>{esc(t.get('turnuva', ''))}</div></div></div>{satir}</div>")
+        return (f"<!doctype html><html><head><meta charset='utf-8'><style>{_CSS}"
+                ".s{width:1080px;height:1920px;position:relative;overflow:hidden;color:#fff;font-family:Inter,sans-serif;"
+                "background:radial-gradient(110% 70% at 50% 40%,#1E5636 0%,#0B2416 55%,#030805 100%)}"
+                ".blk{padding:.45em .8em;border-radius:24px;background:rgba(0,0,0,.34);border:2px solid rgba(255,255,255,.08)}.blk+.blk{margin-top:.45em}"
+                "</style></head><body><div class='s'><div class='stripes'></div>"
+                "<div style='position:absolute;left:0;right:0;top:80px;display:flex;flex-direction:column;align-items:center;gap:20px'>"
+                "<div class='brand' style='font:400 50px Anton;display:flex;align-items:center;gap:16px'><div class='logo'>11</div>İLK 11</div>"
+                f"<span class='chip' style='background:#C6FF00;color:#0A0F0A;font-size:44px'>{esc(d.get('hikaye_baslik', 'KALAN MAÇLAR'))}</span></div>"
+                "<div id='box' style='position:absolute;left:60px;right:60px;top:285px;bottom:245px;overflow:hidden;display:flex;flex-direction:column;justify-content:center'>"
+                f"<div id='txt' style='font-size:{fs}px'>{bl}</div></div>"
+                "<div style='position:absolute;left:150px;right:150px;bottom:60px;display:flex;align-items:center;gap:22px;padding:20px 26px;"
+                "border-radius:90px;background:#0B0F0C;border:5px solid #C6FF00'><div class='logo'>11</div>"
+                "<div style='flex:1'><div style='font:400 40px Anton'>İLK 11</div><div style='font:700 26px Inter;color:#B9C2BB'>@ilk.onbir11</div></div>"
+                "<div style='padding:16px 28px;border-radius:50px;background:#C6FF00;color:#0A0A0A;font:400 38px Anton;letter-spacing:2px'>TAKİP ET</div></div>"
+                "</div></body></html>")
+
+    from playwright.sync_api import sync_playwright
+    p = os.path.abspath(out + ".html")
+    with sync_playwright() as pw:
+        br = pw.chromium.launch()
+        pg = br.new_page(viewport={"width": 1080, "height": 1920})
+        for fs in range(40, 15, -1):
+            open(p, "w", encoding="utf-8").write(sayfa(fs))
+            pg.goto("file://" + p)
+            pg.evaluate("document.fonts.ready")
+            if pg.evaluate("() => document.getElementById('txt').scrollHeight <= document.getElementById('box').clientHeight"):
+                break
+        else:
+            br.close(); os.remove(p)
+            sys.exit("HATA: fikstür hikâyeye sığmadı; takımları ayrı hikâyelere böl.")
+        pg.wait_for_timeout(200)
+        pg.query_selector(".s").screenshot(path=out, type="jpeg", quality=92)
+        br.close()
+    os.remove(p)
+    if fs < 24:
+        print(f"UYARI: hikâye yazı boyu {fs}px; okunurluğu Read ile kontrol et.", file=sys.stderr)
+
+
 def main():
     d = json.load(open(sys.argv[1], encoding="utf-8"))
     out = sys.argv[2] if len(sys.argv) > 2 else "ozel_cikti"
@@ -419,6 +546,10 @@ def main():
         total = len(d["tablolar"]) + 1
         slides = [puan_kart(d, t, i + 1, total) for i, t in enumerate(d["tablolar"])]
         ust = "PUAN DURUMU"
+    elif tip == "fikstur":
+        total = len(d["takimlar"]) + 1
+        slides = [fikstur_kart(d, t, i + 1, total) for i, t in enumerate(d["takimlar"])]
+        ust = d.get("baslik", "KALAN MAÇLAR")
     else:
         sys.exit("bilinmeyen tip: " + tip)
     slides.append(takip(total))
@@ -441,6 +572,8 @@ def main():
         demec_hikaye(d, os.path.join(out, "hikaye.jpg"))
     elif tip == "puan":
         puan_hikaye(d, os.path.join(out, "hikaye.jpg"))
+    elif tip == "fikstur":
+        fikstur_hikaye(d, os.path.join(out, "hikaye.jpg"))
     else:
         subprocess.run([sys.executable, os.path.join(HERE, "story.py"), os.path.join(out, "01_kart.jpg"),
                         os.path.join(out, "hikaye.jpg"), ust, "Detaylar profilde"], check=True, stdout=subprocess.DEVNULL)
