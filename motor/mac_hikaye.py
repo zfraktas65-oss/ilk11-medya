@@ -5,7 +5,7 @@ Kullanım:  python3 motor/mac_hikaye.py mac.json cikti_klasoru
 Görev talimatı: motor/gorevler/mac_hikaye.md
 
 mac.json:
-{"bicim": "ayri",                      # "ayri" (varsayılan): skor, puan ve her olay ayrı hikâye · "tek": hepsi tek hikâyede
+{"bicim": "tek",                       # "tek" (varsayılan): hepsi tek hikâyede (sığmazsa "SIĞMADI" ile durur) · "ayri": her şey ayrı hikâye
  "turnuva": "TRENDYOL SÜPER LİG · 9. HAFTA", "ev": "ALANYASPOR", "dep": "KOCAELİSPOR", "skor": "1-2",
  "ilk_yari": "0-2",                    # isteğe bağlı
  "renkler": {"ALANYASPOR": ["#F47C20", "#00843D"]},   # logo yoksa renk şeridi/rozeti için
@@ -17,7 +17,7 @@ mac.json:
  "olaylar": [{"etiket": "TARAFTAR", "baslik": "Deplasman tribünü bir süre boş kaldı",
               "metin": "… (2–3 cümle, <b>vurgu</b> serbest)", "takim": "KOCAELİSPOR", "dk": "10'"}],
  "kaynaklar": ["Ajansspor", "Fanatik"]}
-Çıktı (ayri): 01_skor.jpg, 02_puan.jpg, 03_olay.jpg, 04_olay.jpg … · (tek): hikaye.jpg
+Çıktı (tek): hikaye.jpg · (ayri): 01_skor.jpg, 02_puan.jpg, 03_olay.jpg …
 Logolar motor/logolar/<sade-ad>.png'den (ör. "GAZİANTEP FK" → gaziantepfk.png); yoksa renk rozeti.
 """
 import json, os, sys, html
@@ -161,23 +161,42 @@ def sayfa_olay(d, o, n, tot):
 
 
 def sayfa_tek(d):
+    """Hepsi tek kartta: skor + goller, puan durumu, maçtan notlar. Yazı boyu --k ile küçülür (main sığdırır)."""
     notlar = "".join(
-        f"<div style='display:flex;gap:18px;align-items:flex-start'><span style='flex:none;margin-top:6px;width:44px;height:44px;border-radius:50%;"
-        f"background:{LIME};color:#0A0F0A;font:400 28px/44px Anton;text-align:center'>!</span>"
-        f"<span style='font:600 32px/1.38 Inter;color:#E6EEE8'>{o['metin']}</span></div>" for o in d.get("olaylar", []))
-    return (f"<div class='s'><div class='st'></div>{ust('MAÇ SONUCU', d['turnuva'])}{skor_blok(d, 400)}"
-            f"<div style='position:absolute;left:70px;right:70px;top:820px'><div class='bas'>PUAN DURUMU · {e(d.get('puan_alt', ''))}</div>"
-            f"<div style='display:flex;flex-direction:column;gap:14px'>{puan_satirlar(d)}</div>"
-            f"<div style='margin-top:12px;font:600 24px Inter;color:#8FA597'>{e(d.get('puan_not', ''))}</div></div>"
-            f"<div style='position:absolute;left:70px;right:70px;top:1222px'><div class='bas'>MAÇTAN NOTLAR</div>"
-            f"<div style='display:flex;flex-direction:column;gap:22px'>{notlar}</div></div>{alt_bar(d)}</div>")
+        f"<div style='display:flex;gap:18px;align-items:flex-start'><span style='flex:none;margin-top:calc(var(--k)*6px);width:44px;height:44px;border-radius:50%;"
+        f"background:{'#E30A17' if o.get('kirmizi') else LIME};color:{'#fff' if o.get('kirmizi') else '#0A0F0A'};font:400 28px/44px Anton;text-align:center'>!</span>"
+        f"<span style='font:600 calc(var(--k)*32px)/1.36 Inter;color:#E6EEE8'>"
+        + (f"<b style='color:{LIME}'>{e(o['etiket'])} · </b>" if o.get('etiket') else "") + f"{o['metin']}</span></div>"
+        for o in d.get("olaylar", []))
+    sk = d["skor"].replace("-", "–")
+
+    def kol(ad, side):
+        return (f"<div style='flex:1;text-align:center'>{rozet(ad, d, 170)}"
+                f"<div style='margin-top:20px;font:400 50px/1.05 Anton;letter-spacing:1px'>{e(ad)}</div>"
+                f"<div style='margin-top:12px;font:700 calc(var(--k)*30px)/1.45 Inter;color:#D5E2D9'>{_gol_html(d, side)}</div></div>")
+    iy = (f"<div style='margin-top:6px;font:800 26px Inter;letter-spacing:3px;color:#A9BCB0'>İLK YARI {e(d['ilk_yari'])}</div>"
+          if d.get("ilk_yari") else "")
+    skor = (f"<div style='display:flex;align-items:flex-start;margin:0 -30px'>{kol(d['ev'], 'ev')}"
+            f"<div style='flex:none;width:330px;text-align:center'><div style='font:400 196px/1 Anton;text-shadow:0 10px 40px rgba(0,0,0,.5)'>{e(sk)}</div>{iy}</div>"
+            f"{kol(d['dep'], 'dep')}</div>")
+    puan = ""
+    if d.get("puanlar"):
+        puan = (f"<div><div class='bas'>PUAN DURUMU · {e(d.get('puan_alt', ''))}</div>"
+                f"<div style='display:flex;flex-direction:column;gap:14px'>{puan_satirlar(d)}</div>"
+                + (f"<div style='margin-top:12px;font:600 24px Inter;color:#8FA597'>{e(d['puan_not'])}</div>" if d.get("puan_not") else "")
+                + "</div>")
+    nt = (f"<div><div class='bas'>MAÇTAN NOTLAR</div><div style='display:flex;flex-direction:column;gap:calc(var(--k)*22px)'>{notlar}</div></div>"
+          if notlar else "")
+    return (f"<div class='s' style='--k:1'><div class='st'></div>{ust('MAÇ SONUCU', d['turnuva'])}"
+            f"<div id='kutu' style='position:absolute;left:70px;right:70px;top:400px;bottom:362px;overflow:hidden;display:flex;flex-direction:column;"
+            f"justify-content:space-evenly;gap:calc(var(--k)*34px)'>{skor}{puan}{nt}</div>{alt_bar(d)}</div>")
 
 
 def main():
     d = json.load(open(sys.argv[1], encoding="utf-8"))
     out = os.path.abspath(sys.argv[2] if len(sys.argv) > 2 else "mac_hikaye")
     os.makedirs(out, exist_ok=True)
-    if d.get("bicim", "ayri") == "tek":
+    if d.get("bicim", "tek") == "tek":
         isler = [("hikaye", sayfa_tek(d))]
     else:
         isler = [("01_skor", sayfa_skor(d))]
@@ -196,6 +215,17 @@ def main():
             pg.goto("file://" + tmp)
             pg.evaluate("document.fonts.ready")
             pg.wait_for_timeout(250)
+            if ad == "hikaye":  # tek kart: sığana kadar yazıyı küçült; en küçük boyda da sığmazsa dur
+                sigdi = False
+                for k in (1.0, .95, .9, .85, .8):
+                    pg.evaluate(f"document.querySelector('.s').style.setProperty('--k','{k}')")
+                    if pg.evaluate("(()=>{const b=document.getElementById('kutu');return b.scrollHeight<=b.clientHeight+1})()"):
+                        sigdi = True
+                        break
+                if not sigdi:
+                    os.remove(tmp)
+                    br.close()
+                    sys.exit("SIĞMADI: içerik tek karta sığmıyor (olay sayısını/uzunluğunu azalt ya da sayfa sahibine sor).")
             pg.query_selector(".s").screenshot(path=os.path.join(out, ad + ".jpg"), type="jpeg", quality=93)
             os.remove(tmp)
         br.close()
