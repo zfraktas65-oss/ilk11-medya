@@ -4,6 +4,7 @@
 
 - `motor/haber.py` — Günün Haberleri kaydırmalı gönderi kartları
 - `motor/hikaye.py` — Hoca anlatımlı hikâye Reels motoru (şablonlar: `motor/SABLONLAR.md`)
+- `motor/foto_hikaye.py` — kişi fotoğraflı ve logolu Instagram hikâyesi (demeç / son dakika); fotoğraflar `motor/fotolar/KAYNAK.txt`
 - `motor/konular.md`, `motor/kullanilan.txt` — hikâye konu havuzu ve kullanılanlar
 
 Günlük medya dosyaları `medya-haber` ve `medya-hikaye` dallarında geçici olarak tutulur.
