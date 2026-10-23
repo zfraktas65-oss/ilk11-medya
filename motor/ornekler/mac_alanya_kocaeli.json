@@ -1,0 +1,72 @@
+{
+ "turnuva": "TRENDYOL SÜPER LİG · 9. HAFTA",
+ "ev": "ALANYASPOR",
+ "dep": "KOCAELİSPOR",
+ "skor": "1-2",
+ "renkler": {
+  "ALANYASPOR": [
+   "#F47C20",
+   "#00843D"
+  ],
+  "KOCAELİSPOR": [
+   "#00A651",
+   "#111111"
+  ]
+ },
+ "goller": [
+  {
+   "dk": "27",
+   "ad": "Berkan Kutlu",
+   "taraf": "dep"
+  },
+  {
+   "dk": "42",
+   "ad": "Makana Baku",
+   "taraf": "dep"
+  },
+  {
+   "dk": "52",
+   "ad": "Ruan",
+   "taraf": "ev"
+  }
+ ],
+ "puan_alt": "9. HAFTA AÇILIŞI SONRASI",
+ "puanlar": [
+  {
+   "sira": 6,
+   "takim": "KOCAELİSPOR",
+   "puan": 15,
+   "ok": "▲",
+   "vurgu": true
+  },
+  {
+   "sira": 9,
+   "takim": "ALANYASPOR",
+   "puan": 12
+  }
+ ],
+ "puan_not": "Hafta sürüyor; sıralama diğer maçlarla değişebilir.",
+ "kaynaklar": [
+  "Ajansspor",
+  "Fanatik",
+  "Habertürk",
+  "Kocaeli TV",
+  "Mavi Kocaeli",
+  "Akdeniz Manşet"
+ ],
+ "bicim": "ayri",
+ "ilk_yari": "0-2",
+ "olaylar": [
+  {
+   "etiket": "TARAFTAR",
+   "baslik": "Kocaelispor taraftarı kapıda kaldı",
+   "takim": "KOCAELİSPOR",
+   "metin": "İzmit'ten 7 otobüsle gelen taraftarlar güvenlik gerekçesiyle bir süre <b>stada alınmadı</b>. Görüşmelerin ardından deplasman tribünündeki yerini aldı."
+  },
+  {
+   "etiket": "MAÇ ÖNCESİ",
+   "baslik": "Antalyaspor taraftarına bilet yok",
+   "metin": "Alanya İlçe Güvenlik Kurulu kararıyla <b>Antalyaspor logolu Passolig</b> sahiplerine bu maç için bilet satılmadı."
+  }
+ ]
+}
