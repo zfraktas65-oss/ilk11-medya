@@ -30,6 +30,11 @@ MIC = ("<svg width='46' height='46' viewBox='0 0 24 24' fill='none' stroke='#C6F
        "stroke-linejoin='round'><rect x='9' y='2' width='6' height='12' rx='3'/><path d='M5 11a7 7 0 0 0 14 0M12 18v4M8 22h8'/></svg>")
 
 
+def tr_ust(s):
+    """Türkçe büyük harf: i→İ, ı→I."""
+    return s.replace("i", "İ").replace("ı", "I").upper()
+
+
 def _yol(d, f):
     return "file://" + os.path.abspath(os.path.join(d["_dir"], f))
 
@@ -111,7 +116,7 @@ def demec_html(d, buyuk, paras=None, sira=None):
            f"{esc((d.get('baslik') or 'MAÇ SONU') + ' KONUŞTU' + ek)}</span></div>")
     foto = (f"<div class='foto' style='left:{fx}px;top:{fy}px;width:{fw}px;height:{fh}px'>"
             f"<img src='{_yol(d, d['foto'])}' style='object-position:{d.get('odak', '50% 25%')}'></div>")
-    kim = esc(d["kim"].upper())
+    kim = esc(tr_ust(d["kim"]))
     sag = (f"<div style='position:absolute;left:{sx}px;right:70px;top:{sag_y}px;height:{fh - (sag_y - fy) - 10}px;display:flex;flex-direction:column;justify-content:center;gap:{22 if buyuk else 14}px'>"
            f"<div style='font:400 {ad_fs}px/1.02 Anton;letter-spacing:1px'>{kim}</div>"
            f"<div style='display:flex;align-items:center;gap:16px'>{_logo(ad, d, 74 if buyuk else 56) if ad else ''}"
@@ -164,6 +169,52 @@ def sondakika_html(d):
     return _sayfa(ust + kartlar + metin + _alt_bilgi(d))
 
 
+DUDUK = ("<svg width='44' height='44' viewBox='0 0 24 24' fill='none' stroke='#C6FF00' stroke-width='2.2' stroke-linecap='round' "
+         "stroke-linejoin='round'><circle cx='9' cy='14' r='6'/><path d='M13 9.5 22 6v4l-7 2.5'/><circle cx='9' cy='14' r='1.6' fill='#C6FF00'/></svg>")
+
+
+def _rozet(ad, d, s):
+    src = logo(ad)
+    if src:
+        return _logo_img(src, s)
+    a, b = renk(ad, d)
+    return (f"<span style='display:inline-block;flex:none;width:{s}px;height:{s}px;border-radius:50%;border:5px solid rgba(255,255,255,.85);"
+            f"background:linear-gradient(90deg,{a} 0 50%,{b} 50% 100%);box-shadow:0 10px 24px rgba(0,0,0,.45)'></span>")
+
+
+def program_html(d):
+    """3) PROGRAM / HAKEMLER — {"tip":"program","chip":"HAKEMLER BELLİ OLDU","baslik":"PAZARTESİ · 26 EKİM","alt":"SÜPER LİG · 9. HAFTA",
+    "maclar":[{"saat":"19:00","ev":"ÇAYKUR RİZESPOR","dep":"TRABZONSPOR","hakem":"Halil Umut Meler","vurgu":false}],
+    "renkler":{"ÇAYKUR RİZESPOR":["#00A859","#0055A4"]},"kaynaklar":["TFF (MHK)","AA"]}  — logosu olmayan takım renkli rozetle gösterilir."""
+    kartlar = ""
+    for m in d["maclar"]:
+        vurgu = m.get("vurgu")
+        def kol(ad):
+            fs = 44 if len(ad) <= 12 else 38
+            return (f"<div style='flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0'>{_rozet(ad, d, 116)}"
+                    f"<div style='font:400 {fs}px/1.05 Anton;letter-spacing:.5px;text-align:center'>{esc(ad)}</div></div>")
+        kartlar += (f"<div style='position:relative;padding:30px 30px 26px;border-radius:30px;background:rgba(0,0,0,.40);"
+                    f"border:{'5px solid #C6FF00' if vurgu else '2px solid rgba(255,255,255,.10)'}'>"
+                    + ("<span style='position:absolute;left:30px;top:-24px;padding:4px 18px;border-radius:14px;background:#C6FF00;color:#0A0F0A;"
+                       "font:400 34px Anton;letter-spacing:2px'>DERBİ</span>" if vurgu else "")
+                    + "<div style='display:flex;align-items:center;gap:10px'>"
+                    f"{kol(m['ev'])}<div style='flex:none;width:170px;text-align:center'>"
+                    f"<div style='font:400 64px/1 Anton;color:#C6FF00'>{esc(m['saat'])}</div>"
+                    "<div style='margin-top:8px;font:800 24px Inter;color:#9FB3A6;letter-spacing:3px'>TSİ</div></div>"
+                    f"{kol(m['dep'])}</div>"
+                    "<div style='margin-top:22px;padding-top:18px;border-top:2px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;gap:16px'>"
+                    f"{DUDUK}<span style='font:700 30px Inter;color:#B9C7BE'>Hakem:</span>"
+                    f"<span style='font:400 46px Anton;letter-spacing:1px'>{esc(tr_ust(m['hakem']))}</span></div></div>")
+    ust = ("<div style='position:absolute;left:70px;right:70px;top:66px;display:flex;align-items:center;gap:18px'>"
+           "<div class='brand' style='font:400 44px Anton;display:flex;align-items:center;gap:14px'><div class='logo'>11</div>İLK 11</div>"
+           f"<span style='flex:1'></span><span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc(d.get('chip', 'HAKEMLER BELLİ OLDU'))}</span></div>"
+           f"<div style='position:absolute;left:70px;right:70px;top:190px'><h1 style='font-size:96px'>{esc(d['baslik'])}</h1>"
+           f"<div style='margin-top:10px;font:800 32px Inter;color:#B9C7BE;letter-spacing:3px'>{esc(d.get('alt', ''))}</div></div>")
+    govde = (f"<div style='position:absolute;left:70px;right:70px;top:420px;bottom:290px;display:flex;flex-direction:column;justify-content:center;gap:46px'>"
+             f"{kartlar}</div>")
+    return _sayfa(ust + govde + _alt_bilgi(d))
+
+
 def _cek(pg, html_path, html, sigdir):
     open(html_path, "w", encoding="utf-8").write(html)
     pg.goto("file://" + html_path)
@@ -209,6 +260,8 @@ def main():
             return
         elif d["tip"] == "sondakika":
             _cek(pg, tmp, sondakika_html(d), False)
+        elif d["tip"] == "program":
+            _cek(pg, tmp, program_html(d), False)
         else:
             sys.exit("bilinmeyen tip: " + d["tip"])
         pg.query_selector(".s").screenshot(path=out, type="jpeg", quality=92)
