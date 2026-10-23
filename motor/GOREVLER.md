@@ -22,7 +22,7 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 6. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
 
 ### KAYIT · motor/paylasilan.txt
-Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika, demec, puan veya fikstur olur.
+Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika, demec, demecvideo (maç sonu demeci için sayfa sahibine video haberi verildi), puan veya fikstur olur.
 - Anahtar örnekleri: kadro/sonuç için `2026-10-24-galatasaray-kasimpasa`, son dakika için `2026-10-24-fenerbahce-teknik-direktor`.
 - **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma.
 - Son dakikada aynı olay farklı kelimelerle de olsa son 3 günde paylaşıldıysa paylaşma.
@@ -159,7 +159,7 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 6. KAYIT ve B adımlarını uygula.
 
 ## SON DAKİKA GÖREVİ
-Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) maç öncesi / sonrası demeçler.**
+Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) maç öncesi / sonrası demeçler** (maç sonu demeçleri artık Reels için yalnız haber verilir; bkz. B).
 
 1. K0'ı uygula. motor/paylasilan.txt dosyasını ve getScheduledPosts ile bugünkü gönderileri oku.
 2. Takip edilen 5 takımla ilgili **son 2 saatin** haberlerini ve röportajlarını tara. Her takım için ayrı arama yap; kulüplerin resmî açıklamalarına ve KAP'a da bak.
@@ -215,6 +215,20 @@ Her haber için:
 **Hangi sözler:** yalnız maçlarla ilgili olanlar:
 - maç öncesi basın toplantısı ya da maç önü röportajı,
 - maç sonu flaş röportaj ya da basın toplantısı.
+
+> **MAÇ SONU DEMEÇLERİ ARTIK KART OLARAK PAYLAŞILMAZ** (sayfa sahibinin isteği, 2026-10-23). Maç sonu demeçleri videolu Reels olarak yapılır: motor/gorevler/demec_reels.md. Bu ortam videoyu kendisi indiremediği için bu görev maç sonu demeci bulduğunda **yalnız haber verir**:
+> 1. KAYIT'ta aynı anahtarla (`TARIH-<ev>-<dep>-sonra-<takım>-N`) `demecvideo` ya da `demec` satırı varsa atla.
+> 2. SendUserMessage ile şu mesajı gönder (kart üretme, Metricool'a bir şey gönderme):
+>    ```
+>    🎥 MAÇ SONU DEMEÇ VAR · <EV> <SKOR> <DEP>
+>    <Kim, rol> — <ne dediğinin 1 cümlelik özeti, kendi cümlenle> (<flaş röportaj / basın toplantısı>)
+>    Video: <resmî kulüp/yayıncı/UEFA sayfasında video varsa bağlantısı; yoksa "videoyu sosyal medyada bulabilirsin">
+>    Klibi bu sohbete gönder, İLK 11 Reels'ine çevireyim.
+>    ```
+>    Kaynak bağlantılarını ([Başlık](URL)) mesajın altına ekle. Aynı maçın aynı anı için birden çok kişi konuştuysa tek mesajda alt alta yaz.
+> 3. KAYIT'a `YYYY-AA-GG SS:DD demecvideo <anahtar> | <Kişi> maç sonu (video bekleniyor)` satırını ekle (aynı haber tekrar gönderilmez).
+> 4. Sayfa sahibi bu oturumda klip gönderirse motor/gorevler/demec_reels.md'yi baştan sona uygula.
+> Bu haber mesajları "demeç gönderisi" sınırına sayılmaz; bir takımın bir maçı için en fazla 2 haber (ör. flaş röportaj, basın toplantısı) gönderilir. Aşağıdaki kart kuralları (Kaynak şartı, Kartlara dağıtım, Gruplama, Her gönderi için) artık yalnız **MAÇ ÖNCESİ** demeçler için geçerlidir.
 
 **Kaynak şartı:**
 - Demeç **TAM METİN** verilir: kişinin kaynakta yer alan sözlerinin hepsi, kaynaktaki sırayla. Seçme ya da kısa alıntı yapılmaz (sayfa sahibinin isteği).
