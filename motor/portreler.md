@@ -8,7 +8,7 @@ doğrulanamayan ayrıntı metne girmez, kişi doğrulanamıyorsa sıradakine ge�
 Denge: Türk futbolu ağırlıklı, dünya yıldızlarıyla karışık. Aynı kulübe art arda iki gün yer verme; akşamki hikâyeyle aynı gün aynı kulübü öne çıkarma.
 Siyasi/hukuki tartışmalı kişilerden (yargılanan, firari, siyasete atılan) kaçın. Yaşayan kişiler hakkında yalnız kamuya açık kariyer bilgisi; özel hayat, sağlık ayrıntısı ve söylenti yok.
 
-1. hamit-altintop — Hamit Altıntop: Gelsenkirchen'de doğdu, ilk Puskás Ödülü'nü kazandı (2010)
+1. hamit-altintop — Hamit Altıntop: Gelsenkirchen'de doğdu, Türkiye formasıyla FIFA Puskás Ödülü'nü kazandı (2010)
 2. modric — Luka Modrić: savaş yıllarında otel otoparkında top oynayan çocuktan Ballon d'Or'a
 3. hagi — Gheorghe Hagi: "Karpatların Maradonası"nın Galatasaray yılları
 4. alex-de-souza — Alex de Souza: Kadıköy'de heykeli dikilen Brezilyalı
