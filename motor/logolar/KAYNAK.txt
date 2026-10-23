@@ -1,0 +1,8 @@
+Logolar UEFA'nın resmî takım logosu dosyalarıdır (img.uefa.com/imgml/TP/teams/logos/240x240/<uefa-id>.png), değiştirilmeden kullanılır.
+galatasaray 50067 · fenerbahce 52692 · besiktas 50157 · trabzonspor 52731
+stuttgart 50107 · astonvilla 52683 · aek 50129 · feyenoord 52749 · psg 52747
+liverpool 7889 · sahtardonetsk 52707 · lask 63405 · villarreal 70691 · atleticomadrid 50124
+celtic 50050 · hapoelbeersheva 59340 · bayerleverkusen 50109 · unionsaintgilloise 64125 · omonia 50077
+freiburg 59880 · cskasofya 2608297 · jablonec 62169 · kizilyildiz 50069
+Yeni rakip: UEFA standings API'sindeki team.id ile aynı adresten 240x240 PNG alınır (img.uefa.com sunucudan erişilemiyor; masaüstündeki tarayıcıdan indirilir).
+Koyu (açık rengi olmayan) logolara ozel.py arkasına açık daire koyar; dosyanın kendisi değişmez.

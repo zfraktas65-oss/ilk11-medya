@@ -86,17 +86,40 @@ def _sade(ad):
     return "".join(ch for ch in ad.translate(tr).lower() if ch.isalnum())
 
 
+_ZEMIN = set()   # açık rengi olmayan (koyu zeminde kaybolan) logolar: arkasına açık daire konur, dosya değişmez
+
+
+def _koyu_logo(f):
+    """Logoda açık renk yoksa (ör. koyu yeşil/kırmızı tek renk arma) True."""
+    try:
+        from PIL import Image
+        im = Image.open(f).convert("RGBA")
+        im.thumbnail((120, 120))
+        px = [p for p in getattr(im, "get_flattened_data", im.getdata)() if p[3] > 128]
+        acik = sum(1 for r, g, b, a in px if .2126 * r + .7152 * g + .0722 * b > 110)
+        return bool(px) and acik / len(px) < .05
+    except Exception:
+        return False
+
+
 def logo(ad):
     """motor/logolar/<sade-ad>.png|.svg|.webp varsa data URI döndürür (ör. besiktas.png, turkiye.png)."""
     import base64
     for uz, mt in ((".png", "image/png"), (".svg", "image/svg+xml"), (".webp", "image/webp")):
         f = os.path.join(LOGO_DIR, _sade(ad) + uz)
         if os.path.exists(f):
-            return f"data:{mt};base64," + base64.b64encode(open(f, "rb").read()).decode()
+            src = f"data:{mt};base64," + base64.b64encode(open(f, "rb").read()).decode()
+            if uz != ".svg" and _koyu_logo(f):
+                _ZEMIN.add(src)
+            return src
     return None
 
 
 def _logo_img(src, s):
+    if src in _ZEMIN:
+        return (f"<span style='display:inline-flex;flex:none;width:{s}px;height:{s}px;align-items:center;justify-content:center;"
+                f"border-radius:50%;background:rgba(255,255,255,.93);box-shadow:0 4px 12px rgba(0,0,0,.4)'>"
+                f"<img src='{src}' style='width:72%;height:72%;object-fit:contain'></span>")
     return (f"<span style='display:inline-flex;flex:none;width:{s}px;height:{s}px;align-items:center;justify-content:center'>"
             f"<img src='{src}' style='max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.45))'></span>")
 
