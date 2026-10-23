@@ -97,6 +97,15 @@ def bayrak(code, w):
             f"<path d='M{w * .185:.1f} 0 V{h * 5 / 9:.1f} M0 {h * 5 / 18:.1f} H{w * .37:.1f}' stroke='#FFFFFF' stroke-width='{h / 9:.1f}'/>"
     if code == "us":
         return H(["#B22234", "#FFFFFF"] * 6 + ["#B22234"]) + f"<rect width='{w * .4:.1f}' height='{h * 7 / 13:.1f}' fill='#3C3B6E'/>"
+    if code == "ge":  # Gürcistan: beyaz zemin, kırmızı büyük haç + dört küçük haç
+        s = h * .2
+        out = f"<rect width='{w}' height='{h:.1f}' fill='#FFFFFF'/>"
+        out += f"<rect x='{(w - s) / 2:.1f}' width='{s:.1f}' height='{h:.1f}' fill='#FF0000'/><rect y='{(h - s) / 2:.1f}' width='{w}' height='{s:.1f}' fill='#FF0000'/>"
+        for cx, cy in ((w * .25, h * .25), (w * .75, h * .25), (w * .25, h * .75), (w * .75, h * .75)):
+            a, b = h * .13, h * .045
+            out += (f"<rect x='{cx - b:.1f}' y='{cy - a:.1f}' width='{2 * b:.1f}' height='{2 * a:.1f}' fill='#FF0000'/>"
+                    f"<rect x='{cx - a:.1f}' y='{cy - b:.1f}' width='{2 * a:.1f}' height='{2 * b:.1f}' fill='#FF0000'/>")
+        return out
     if code.startswith("#"):  # "#renk1,#renk2" kulüp renk şeridi (logo yok)
         cs = code.split(",")
         return H(cs)
