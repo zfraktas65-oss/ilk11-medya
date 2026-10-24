@@ -14,7 +14,7 @@ senaryo.json:
  "soru": "Sence ... ?",                  # kapanış sahnesindeki soru
  "kapak_sn": 2.5                         # isteğe bağlı: kapak karesi
 }
-Kapanış (takip çağrısı) sahnesi ve Hoca'nın "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" sesi otomatik eklenir.
+Kapanış OTOMATİK: Hoca'nın "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" sesi son cümlenin hemen ardından, ayrı son ekran olmadan (son sahnenin üstünde) eklenir; soru son cümlede rozetin altında belirir. "kapanis": "kart" eski ayrı kapanış kartını kullanır.
 Sahne tipleri ve parametreleri: motor/SABLONLAR.md
 "at" alanları: o anın söylendiği kelimenin başı (küçük harf, ör. "madrid"); yoksa sahne başından saniye (sayı).
 """
@@ -722,11 +722,15 @@ def main():
     WT = [word_times(c["soz"], c.get("altyazi", c["soz"]), a, b) for c, (a, b) in zip(cum, spans)]
     main_end = len(voice) / SR
     cta_spans = sentence_spans(cta, 2)
-    cta_at = spans[-1][1] + .5
+    # Kapanış: "kisa" (varsayılan) = ayrı son ekran yok; Hoca'nın takip çağrısı son sahnenin üstünde, rozet sona kadar kalır,
+    # soru son cümlede belirir. "kart" = eski ayrı kapanış kartı. (1954 kura Reels'i: son ekran gelince izleyici %35'ten %5'e düştü.)
+    kapanis = spec.get("kapanis", "kisa")
+    kart = kapanis == "kart"
+    cta_at = spans[-1][1] + (.5 if kart else .25)
     cta_scene_start = cta_at - .15
     cta_words = [word_times("Daha fazlası için", "Daha fazlası için", cta_at + cta_spans[0][0], cta_at + cta_spans[0][1]),
                  word_times("İlk On Bir'i takip etmeyi unutma!", "İLK 11'i takip etmeyi unutma!", cta_at + cta_spans[1][0], cta_at + cta_spans[1][1])]
-    T = round(cta_at + len(cta) / SR + 1.2, 2)
+    T = round(cta_at + len(cta) / SR + (1.2 if kart else .45), 2)
     allWT = WT + cta_words
 
     def find(name, s0, scene_words):
@@ -750,8 +754,9 @@ def main():
         start = 0.0 if k == 0 else max(0.0, spans[first][0] - .3)
         scenes.append({"tip": sc["tip"], "start": round(start, 2), "spec": sc})
     for k in range(len(scenes)):
-        scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else cta_scene_start
-    scenes.append({"tip": "takip", "start": round(cta_scene_start, 2), "end": T, "spec": {}})
+        scenes[k]["end"] = scenes[k + 1]["start"] if k + 1 < len(scenes) else (cta_scene_start if kart else T)
+    if kart:
+        scenes.append({"tip": "takip", "start": round(cta_scene_start, 2), "end": T, "spec": {}})
 
     events = []
     secs = ""
@@ -783,13 +788,27 @@ def main():
         if rozetA > cta_scene_start - 3:
             rozetA = None
     rozet_html = ""
+    hand = ("<svg width='120' height='140' viewBox='-30 -140 160 230'><g transform='rotate(-25)'><path d='M0 0 C-8 -60 -6 -120 6 -128 "
+            "C18 -136 28 -126 28 -112 L30 -70 C40 -82 60 -78 62 -62 C74 -72 92 -66 92 -50 C104 -58 120 -50 118 -32 L114 20 C110 60 80 80 40 80 "
+            "L20 80 C0 74 -10 50 -14 30Z' fill='#FFFFFF' stroke='#0A0A0A' stroke-width='8' stroke-linejoin='round'/></g></svg>")
+    t_takip_kelime = cta_words[1][2][1]  # Hoca'nın "takip" dediği an
     if rozetA is not None:
-        hand = ("<svg width='120' height='140' viewBox='-30 -140 160 230'><g transform='rotate(-25)'><path d='M0 0 C-8 -60 -6 -120 6 -128 "
-                "C18 -136 28 -126 28 -112 L30 -70 C40 -82 60 -78 62 -62 C74 -72 92 -66 92 -50 C104 -58 120 -50 118 -32 L114 20 C110 60 80 80 40 80 "
-                "L20 80 C0 74 -10 50 -14 30Z' fill='#FFFFFF' stroke='#0A0A0A' stroke-width='8' stroke-linejoin='round'/></g></svg>")
+        el2 = "" if kart else f"<div class='rzel tapin' style='--d:{t_takip_kelime - .4:.2f}s'>{hand}</div>"
         rozet_html = (f"<div id='rozet'><span class='rz11'>11</span><span class='rzt'>{esc(tr_upper(rozet_txt))}</span>"
-                      f"<span class='rzb'>TAKİP ET</span><div class='rzel tapin' style='--d:{rozetA + .5:.2f}s'>{hand}</div></div>")
+                      f"<span class='rzb'>TAKİP ET</span><div class='rzel tapin' style='--d:{rozetA + .5:.2f}s'>{hand}</div>{el2}</div>")
         events.append((rozetA, "pop")); events.append((rozetA + 1.1, "tap"))
+        if not kart:
+            events.append((t_takip_kelime + .2, "tap"))
+    # Kısa kapanışta soru son cümlenin başında rozetin altında belirir ve sona kadar kalır (yorum çağrısı izleyici çıkmadan görünsün).
+    soru_html = ""
+    soru = spec.get("soru", "")
+    if soru and not kart:
+        soruA = round(spans[-1][0] + .2, 2)
+        soru_html = f"<div id='soru'><span class='pop' style='--d:{soruA:.2f}s'>{esc(tr_upper(soru))}</span></div>"
+        events.append((soruA, "pop"))
+    soru_css = ("#soru{position:absolute;top:322px;left:40px;right:40px;z-index:9;text-align:center}"
+                "#soru span{display:inline-block;font:800 40px/1.2 'Inter';color:#FFFFFF;background:rgba(11,15,12,.9);"
+                "border:4px solid #C6FF00;border-radius:28px;padding:14px 30px;box-shadow:0 10px 30px rgba(0,0,0,.45)}")
     rozet_css = ("#rozet{position:absolute;top:204px;left:50%;transform:translateX(-50%);z-index:9;opacity:0;display:flex;align-items:center;gap:16px;"
                  "white-space:nowrap;padding:8px 10px;border-radius:40px;background:rgba(11,15,12,.88);border:4px solid #C6FF00;"
                  "box-shadow:0 10px 30px rgba(0,0,0,.45)}"
@@ -801,9 +820,9 @@ def main():
                  "@keyframes rzpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}"
                  "#rozet .rzel{position:absolute;right:-6px;top:22px;width:120px;height:140px}")
     data = {"scenes": [{"start": s["start"], "end": s["end"]} for s in scenes], "chunks": chunks(allWT, T), "T": T,
-            "labelEnd": cta_scene_start, "rozetA": rozetA}
-    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{css}{rozet_css}</style></head><body>{secs}"
-            f"<div id='label'>İLK 11 · FUTBOL HİKÂYELERİ</div>{rozet_html}<div id='band'></div><div id='subs'></div>"
+            "labelEnd": cta_scene_start if kart else T + 1, "rozetA": rozetA}
+    page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{css}{rozet_css}{soru_css}</style></head><body>{secs}"
+            f"<div id='label'>İLK 11 · FUTBOL HİKÂYELERİ</div>{rozet_html}{soru_html}<div id='band'></div><div id='subs'></div>"
             f"<script>window.__DATA={json.dumps(data, ensure_ascii=False)};{js}</script></body></html>")
     hp = os.path.join(out, "_sayfa.html")
     open(hp, "w", encoding="utf-8").write(page)

@@ -17,8 +17,8 @@
 - `cumleler`: ElevenLabs'e gönderilen metindeki cümleler, AYNI sırada ve AYNI sayıda. Motor ses dosyasındaki duraklamalardan cümleleri bulur; bu yüzden ElevenLabs metninde her cümle ayrı paragraf olmalı (aralarında boş satır).
 - Sayılar seslendirmede yazıyla (`"soz"`), altyazıda rakamla (`"altyazi"`) yazılır.
 - `sahneler`: her sahne hangi cümleleri kapsadığını `cumleler` ile söyler; cümleler sırayla ve eksiksiz paylaştırılmalı. 5–7 sahne ideal, her sahne 3–7 sn.
-- Kapanış (Hoca: "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" + takip butonu + `soru`) OTOMATİK eklenir; metne yazma.
-- **Takip rozeti** (OTOMATİK): 3. cümlenin başında (en erken 5. sn) üst etiketin yerine "<rozet> · TAKİP ET" rozeti çıkar, el ikonu butona dokunur ve kapanışa kadar kalır. `"rozet"`: rozet metni (varsayılan "HER AKŞAM 19:00 · YENİ HİKÂYE"; portre: "HER GÜN 13:00 · BİR EFSANE"; `""` kapatır), `"rozet_sn"`: başlama saniyesi (isteğe bağlı). Rozet y≈204–300 bandındadır; sahnelerde bu bandın içine yazı koyma.
+- Kapanış OTOMATİK eklenir; metne yazma. Ayrı son ekran YOK (2026-10-24, 1954 kura Reels'i: son ekran gelince kalan izleyici %35'ten %5'e düştü): `soru` son cümlenin başında rozetin altında (y≈322–400) belirir, Hoca'nın "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" sesi son cümleden hemen sonra son sahnenin üstünde çalar ve el rozetteki TAKİP ET'e yeniden dokunur. Son sahnede y≈322–400 bandına önemli yazı koyma. `"kapanis": "kart"` eski ayrı kapanış kartını kullanır (gerekmedikçe kullanma).
+- **Takip rozeti** (OTOMATİK): 3. cümlenin başında (en erken 5. sn) üst etiketin yerine "<rozet> · TAKİP ET" rozeti çıkar, el ikonu butona dokunur ve videonun sonuna kadar kalır. `"rozet"`: rozet metni (varsayılan "HER AKŞAM 19:00 · YENİ HİKÂYE"; portre: "HER GÜN 13:00 · BİR EFSANE"; `""` kapatır), `"rozet_sn"`: başlama saniyesi (isteğe bağlı). Rozet y≈204–300 bandındadır; sahnelerde bu bandın içine yazı koyma.
 - `at`: o anın söylendiği kelimenin başı (küçük harf, ör. `"madrid"`, rakamlı altyazıda `"2-2"`) ya da sahne başından saniye (sayı).
 - Metinlerde Türkçe büyük harf kullan (İ, Ş, Ğ…). Yabancı adlar özgün yazımıyla: LILLE, LIVERPOOL.
 - `*kelime*` vurgulu (neon yeşil) yazar. Başlıkta `|` ikinci satıra geçer.
@@ -65,4 +65,4 @@
 
 ## Kurallar
 - Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla, kredisiyle ve arka planı kaldırılmış (.png) hâliyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
-- İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış soru + takip + orta rozet otomatik.
+- İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış (soru + Hoca'nın takip çağrısı, ayrı son ekran olmadan) ve orta rozet otomatik. Toplam video ≈24–34 sn.
