@@ -4,6 +4,8 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 
 **Takip edilen takımlar:** TÜRKİYE (A Milli Takım), BEŞİKTAŞ, FENERBAHÇE, GALATASARAY, TRABZONSPOR. Hazırlık maçları dahil bütün turnuvalar kapsanır.
 
+**KİŞİ FOTOĞRAFI VE VİDEO:** motor/FOTO_VIDEO.md'yi oku ve uygula — içerikteki kişiler arka planı kaldırılmış (kesik PNG) fotoğrafla gösterilir; ilgili video varsa o da paylaşılır.
+
 ---
 
 ## ORTAK ADIMLAR

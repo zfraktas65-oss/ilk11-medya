@@ -1,5 +1,7 @@
 # İLK 11 – Maç Hikâyeleri görev talimatı (skor · puan durumu · maçtaki olaylar)
 
+**KİŞİ FOTOĞRAFI VE VİDEO:** motor/FOTO_VIDEO.md'yi oku ve uygula — içerikteki kişiler arka planı kaldırılmış (kesik PNG) fotoğrafla gösterilir; ilgili video varsa o da paylaşılır.
+
 Sayfa sahibinin isteği (2026-10-23): seçtiği maçlar bittikten **30–45 dk sonra** maçın sonucu, puan durumu ve maçta yaşanan haber değeri taşıyan **bütün olaylar**, **her maç TEK bir Instagram hikâye kartında** hazırlanır. Kart sığmazsa kendi başına olay eleme ya da bölme yapma: **sayfa sahibine sor** (ADIM 3). Hikâyeleri sayfa sahibi kendisi paylaşır: bu görev Metricool'a hiçbir şey göndermez, görselleri ve kısa notu sohbete gönderir. Örnek: motor/ornekler/mac_alanya_kocaeli.json (Alanyaspor 1-2 Kocaelispor).
 
 Bu otomatik bir çalışmadır; kullanıcıya soru sorma — tek istisna: kart sığmazsa (ADIM 3). Görev metni şunları verir: EV, DEP, TURNUVA, TARİH, başlama saati.

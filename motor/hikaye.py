@@ -443,6 +443,8 @@ def t_foto(p, at, sfx, i):
     p: foto (dosya, senaryo.json'a göre), kredi ("Foto: Ad · Wikimedia · CC BY-SA 4.0" — zorunlu), baslik (ops., '|' ve *vurgu*),
        ust (ops. çip), alt (ops. etiket), alt_at, odak ("ust"|"orta"; varsayılan ust), damga (ops.).
     Güvenli alan: üst etiket ~300-335px, altyazı bandı 1170px'ten aşağı; kart 360-1160 arasında kalır."""
+    if p["foto"].lower().endswith(".png"):
+        return t_kesik(p, at, sfx, i)
     uri = _foto_uri(p["foto"])
     s = arka(p.get("arka", "karanlik"), i)
     if p.get("baslik"):
@@ -473,6 +475,45 @@ def t_foto(p, at, sfx, i):
     if p.get("damga"):
         d = at(p["damga"].get("at", 1.2))
         s += stamp_text(560, cy + ch - 120, p["damga"]["metin"], d, 66, p["damga"].get("renk", LIME), -6)
+        sfx(d, "stamp")
+    return s + motes()
+
+
+def t_kesik(p, at, sfx, i):
+    """Arka planı kaldırılmış kişi (motor/kesik.py çıktısı, şeffaf PNG) — çerçevesiz, sahnenin önünde.
+    t_foto ile aynı alanlar; foto .png ise otomatik seçilir. Kişi altyazı bandının (1170px) üstünde biter."""
+    from PIL import Image
+    yol = p["foto"] if os.path.isabs(p["foto"]) else os.path.join(FOTO_DIR or ".", p["foto"])
+    w0, h0 = Image.open(yol).size
+    uri = _foto_uri(p["foto"])
+    ust_y = 560 if p.get("baslik") else 420
+    alt_y = 1165
+    h = alt_y - ust_y
+    w = h * w0 / h0
+    if w > 980:
+        w = 980; h = w * h0 / w0
+    x, y = (1080 - w) / 2, alt_y - h
+    s = arka(p.get("arka", "marka"), i)
+    s += (f"<defs><radialGradient id='kg{i}' cx='.5' cy='.5' r='.5'><stop offset='0' stop-color='{LIME}' stop-opacity='.55'/>"
+          f"<stop offset='.6' stop-color='{LIME}' stop-opacity='.12'/><stop offset='1' stop-color='{LIME}' stop-opacity='0'/></radialGradient></defs>"
+          f"<g class='fadein' style='--d:.05s'><ellipse cx='540' cy='{y + h * .42:.0f}' rx='470' ry='{h * .55:.0f}' fill='url(#kg{i})'/>"
+          f"<rect x='0' y='{alt_y - 8}' width='1080' height='6' fill='{LIME}' opacity='.8'/></g>")
+    if p.get("baslik"):
+        s += f"<g class='fadein' style='--d:.2s'>{baslik_svg(p['baslik'], 450, size=88)}</g>"
+    elif p.get("ust"):
+        bw = len(p["ust"]) * 24 + 60
+        s += (f"<g class='fadein' style='--d:.1s'><rect x='{540 - bw / 2:.0f}' y='375' width='{bw}' height='58' rx='29' fill='{LIME}'/>"
+              f"<text x='540' y='417' text-anchor='middle' font-family='Anton' font-size='36' letter-spacing='3' fill='#0A0F0A'>{esc(p['ust'])}</text></g>")
+    s += (f"<g class='pop' style='--d:.25s'><image href='{uri}' x='{x:.0f}' y='{y:.0f}' width='{w:.0f}' height='{h:.0f}' "
+          f"preserveAspectRatio='xMidYMax meet' style='filter:drop-shadow(0 20px 34px rgba(0,0,0,.6))'/></g>")
+    s += (f"<text x='1050' y='{alt_y - 20}' text-anchor='end' font-family='Inter' font-weight='700' font-size='21' fill='#E8EDE9' "
+          f"opacity='.85'>{esc(p.get('kredi', ''))}</text>")
+    sfx(.25, "pop")
+    if p.get("alt"):
+        s += pill(540, alt_y - 90, p["alt"], 40, d=at(p.get("alt_at", 1.0)))
+    if p.get("damga"):
+        d = at(p["damga"].get("at", 1.2))
+        s += stamp_text(760, alt_y - 230, p["damga"]["metin"], d, 66, p["damga"].get("renk", LIME), -6)
         sfx(d, "stamp")
     return s + motes()
 

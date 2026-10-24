@@ -1,5 +1,7 @@
 # İLK 11 – Maç Sonu Demeç Reels (videodan) görev talimatı
 
+**KİŞİ FOTOĞRAFI VE VİDEO:** motor/FOTO_VIDEO.md'yi oku ve uygula — içerikteki kişiler arka planı kaldırılmış (kesik PNG) fotoğrafla gösterilir; ilgili video varsa o da paylaşılır.
+
 Sayfa sahibinin isteği (2026-10-23): **maç sonu açıklamaları artık kart olarak değil, bu Reels formatında paylaşılır.** Örnek: Italiano, Beşiktaş 2-2 Crystal Palace basın toplantısı (motor/ornekler/demec_italiano.json).
 
 Ne zaman: sayfa sahibi bir maç sonu basın toplantısı / flaş röportaj klibini sohbete gönderdiğinde (çoğu zaman SON DAKİKA görevinin "🎥 MAÇ SONU DEMEÇ VAR" mesajına cevap olarak). Bu ortam TikTok/Instagram/YouTube'dan video İNDİREMEZ; klip her zaman sayfa sahibinden gelir. Klip yoksa video uydurma, fotoğraf/ses üretme; yalnız klibi iste.

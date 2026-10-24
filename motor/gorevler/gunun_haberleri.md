@@ -1,5 +1,7 @@
 # İLK 11 – Günün Haberleri (09:30) görev talimatı
 
+**KİŞİ FOTOĞRAFI VE VİDEO:** motor/FOTO_VIDEO.md'yi oku ve uygula — içerikteki kişiler arka planı kaldırılmış (kesik PNG) fotoğrafla gösterilir; ilgili video varsa o da paylaşılır.
+
 Görev: İLK 11 (@ilk.onbir11) Instagram futbol sayfası için bugünün "Günün Haberleri" kaydırmalı gönderisini hazırla ve Metricool ile bugün 09:30'a (Europe/Istanbul) planla. Bu otomatik bir çalışmadır: kullanıcıya soru sorma, en makul seçimi yapıp devam et. Kullanıcı Türkçe konuşuyor; tüm metinler Türkçe. Sayfa sahibi bu görevin her gün içeriği kendisi onaylamadan otomatik yayınlamasını istedi.
 
 MANUEL MOD (önce oku): ADIM 1'de depoyu klonladıktan sonra ~/ilk11-medya/motor/MANUEL_MOD dosyasına bak. Dosya VARSA Metricool hesap sınırı doludur ve sayfa sahibi paylaşımları bir süre elle yapıyor: ADIM 5'i (GitHub'a yükleme) ve ADIM 6'yı (Metricool) UYGULAMA, createScheduledPost ÇAĞIRMA. Bunun yerine ADIM 7'de: SendUserFile ile (status "proactive") ~/cikti içindeki bütün kartları gönderi sırasıyla (kapak → haberler → takip kartı) gönder; ardından SendUserMessage ile ilk satırı "📲 ELLE PAYLAŞ · Günün Haberleri (kaydırmalı gönderi) · önerilen saat 09:30" olan bir mesaj gönder: ADIM 6'daki biçimde hazırlanmış açıklama metni tek bir kod bloğu (```) içinde ve doğrulama kaynakları ([Başlık](URL)). Dosya YOKSA bu paragrafı yok say ve normal akışı uygula.

@@ -65,11 +65,19 @@ def _alt_bilgi(d):
             + "<br>".join(esc(s) for s in satir) + "</div>")
 
 
+def _sinif(f):
+    """Arka planı kaldırılmış kişi (motor/kesik.py, şeffaf .png) çerçevesiz gösterilir."""
+    return "foto kesik" if f.lower().endswith(".png") else "foto"
+
+
 def _sayfa(govde):
     return (f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}"
             f".s{{width:1080px;height:1920px;position:relative;overflow:hidden;color:#fff;font-family:Inter,sans-serif;{ZEMIN}}}"
             ".foto{position:absolute;overflow:hidden;border-radius:30px;border:5px solid #C6FF00;box-shadow:0 26px 60px rgba(0,0,0,.55)}"
             ".foto img{width:100%;height:100%;object-fit:cover;display:block}"
+            ".foto.kesik{border:none;box-shadow:none;border-radius:0;overflow:visible;"
+            "background:radial-gradient(closest-side,rgba(198,255,0,.32),rgba(198,255,0,.08) 70%,transparent)}"
+            ".foto.kesik img{object-fit:contain;object-position:50% 100%;filter:drop-shadow(0 22px 34px rgba(0,0,0,.6))}"
             ".soz p{font-weight:600;line-height:1.34;color:#F2F6F3}.soz p+p{margin-top:.5em}"
             f"</style></head><body><div class='s'><div class='stripes'></div>{govde}{_takip()}</div></body></html>")
 
@@ -114,7 +122,7 @@ def demec_html(d, buyuk, paras=None, sira=None):
            "<div class='brand' style='font:400 44px Anton;display:flex;align-items:center;gap:14px'><div class='logo'>11</div>İLK 11</div>"
            f"<span style='flex:1'></span>{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>"
            f"{esc((d.get('baslik') or 'MAÇ SONU') + ' KONUŞTU' + ek)}</span></div>")
-    foto = (f"<div class='foto' style='left:{fx}px;top:{fy}px;width:{fw}px;height:{fh}px'>"
+    foto = (f"<div class='{_sinif(d['foto'])}' style='left:{fx}px;top:{fy}px;width:{fw}px;height:{fh}px'>"
             f"<img src='{_yol(d, d['foto'])}' style='object-position:{d.get('odak', '50% 25%')}'></div>")
     kim = esc(tr_ust(d["kim"]))
     sag = (f"<div style='position:absolute;left:{sx}px;right:70px;top:{sag_y}px;height:{fh - (sag_y - fy) - 10}px;display:flex;flex-direction:column;justify-content:center;gap:{22 if buyuk else 14}px'>"
@@ -149,7 +157,7 @@ def sondakika_html(d):
     kartlar = ""
     for i, k in enumerate(ks):
         x = 70 + i * (w + 30)
-        kartlar += (f"<div class='foto' style='left:{x}px;top:200px;width:{w}px;height:{h}px'>"
+        kartlar += (f"<div class='{_sinif(k['foto'])}' style='left:{x}px;top:200px;width:{w}px;height:{h}px'>"
                     f"<img src='{_yol(d, k['foto'])}' style='object-position:{k.get('odak', '50% 20%')}'>"
                     "<div style='position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(0deg,rgba(3,8,5,.96) 8%,rgba(3,8,5,.6) 55%,transparent)'></div>"
                     "<div style='position:absolute;left:28px;right:24px;bottom:26px'>"

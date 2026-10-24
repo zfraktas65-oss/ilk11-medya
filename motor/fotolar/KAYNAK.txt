@@ -7,3 +7,6 @@ ismail-kartal-fenerbahce-2026.jpg — "İsmail Kartal Fenerbahçe 20260805 (3) (
 marco-asensio-fenerbahce-2026.jpg — "Marco Asensio 10 Fenerbahçe 20260805 (4) (cropped).JPG", Zafer, CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:Marco_Asensio_10_Fenerbah%C3%A7e_20260805_(4)_(cropped).JPG
 nathan-ake-fenerbahce-2026.jpg — "Nathan Aké Fenerbahçe 20260717 (2).jpg", Zafer, CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Nathan_Ak%C3%A9_Fenerbah%C3%A7e_20260717_(2).jpg
 Commons dosyaları sunucudan erişilemiyor; masaüstündeki yerleşik tarayıcıda commons API'den alınır (thumb.wikimedia.org, 960px).
+
+kesik/<ad>.png — aynı dosyaların arka planı kaldırılmış hâli (motor/kesik.py). Lisans ve kredi kaynak dosyanınkiyle aynıdır.
+Sayfa sahibinin sohbete gönderdiği fotoğraflar da kullanılabilir; buraya "<dosya> — sayfa sahibinden, kredi: <verdiği kredi>" diye eklenir.

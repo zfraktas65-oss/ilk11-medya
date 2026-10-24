@@ -55,6 +55,7 @@
 `{"tip":"foto","cumleler":[2],"foto":"fb.jpg","kredi":"Foto: beIN SPORTS Türkiye · CC BY 3.0","ust":"2019 · FENERBAHÇE","alt":"16 YAŞINDA A TAKIM","alt_at":"forma"}`
 - `foto` yolu senaryo.json'a göre; `kredi` ZORUNLU (yazar + lisans). Kaynak yalnız Wikimedia Commons'taki CC/kamu malı dosyalar (bkz. motor/fotolar/KAYNAK.txt).
 - `baslik` ya da `ust`'ten biri; `odak`: "ust" (varsayılan, yüz üstte) | "orta". Gönderi açıklamasına da "📷 Fotoğraflar: …" kredi satırı eklenir.
+- **Varsayılan: arka planı kaldırılmış kişi.** `foto` bir `.png` ise (motor/kesik.py çıktısı, `motor/fotolar/kesik/`) kişi çerçevesiz, yeşil ışıltının önünde, altyazı bandının üstüne oturacak şekilde büyük çizilir. Kişi fotoğraflarını her zaman bu hâliyle kullan (bkz. motor/FOTO_VIDEO.md). `arka` varsayılanı "marka".
 
 ## Seçenekler
 - **ikon**: top, kupa, duduk, saat, kart_kirmizi, kart_sari, para, sozlesme, kale, soru, unlem, fanus, mikrofon, `bayrak:<kod>`, `forma:<renk1>,<renk2>,<numara>` (ör. `forma:#E30A17,#FFFFFF,10`)
@@ -63,5 +64,5 @@
 - `ozel_svg` (isteğe bağlı): sahneye eklenecek ham SVG (1080x1920 koordinat).
 
 ## Kurallar
-- Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla ve kredisiyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
+- Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla, kredisiyle ve arka planı kaldırılmış (.png) hâliyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
 - İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış soru + takip + orta rozet otomatik.
