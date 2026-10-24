@@ -65,4 +65,4 @@
 
 ## Kurallar
 - Kulüp logosu ve maç görüntüsü yok. Gerçek kişi fotoğrafı yalnız `foto` sahnesiyle, lisansı uygun dosyayla, kredisiyle ve arka planı kaldırılmış (.png) hâliyle. Gerçek kişiler adlarıyla anılır; Hoca anlatıcıdır.
-- İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış (soru + Hoca'nın takip çağrısı, ayrı son ekran olmadan) ve orta rozet otomatik. Toplam video ≈24–34 sn.
+- İlk cümle en çarpıcı an ama sonucu söylemez (merak açar); sonuç son 1–2 cümlede. Kanca formülleri ve seçim kuralı: motor/kancalar.md (kanca sahnesinin `baslik`'ı aynı formülün ≤ 5 kelimelik ekran hâli). İlk iki cümlede arka plan yok. Toplam anlatım 45–65 kelime (≈20–30 sn); görüntü en geç 3–4 sn'de bir değişir. Kapanış (soru + Hoca'nın takip çağrısı, ayrı son ekran olmadan) ve orta rozet otomatik. Toplam video ≈24–34 sn.
