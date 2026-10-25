@@ -1,3 +1,4 @@
 # TARIH | seri | konu-kodu | formül | kanca cümlesi | sonuç (sayfa sahibi istatistik gönderince doldurulur)
 2026-10-23 | hikaye | 1954-kura | K00 (formülsüz; ilk cümle sonucu söylüyordu) | - | sonuç: 2.266 görüntüleme, geçme %31,4 (ortalamadan düşük), ort. izlenme 15 sn / 35 sn, 8. sn'de ~%45 kaldı, son ekranda %35→%5
 2026-10-25 | portre | hamit-altintop | K15 | Bir korner topu, yere hiç değmeden ağlara gönderilebilir mi? | sonuç: -
+2026-10-25 | hikaye | istanbul-2005 | K10 | Devre arası, skor sıfır üç, soyunma odasında çıt yok. | sonuç: -
