@@ -34,7 +34,7 @@
 
 ### skor — skor tabelası (1–3 satır) + isteğe bağlı damga
 `{"tip":"skor","cumleler":[3,4],"baslik":"ELEME · 1954","satirlar":[{"etiket":"MADRİD","sol":"İSPANYA","sol_bayrak":"es","skor":"4-1","sag":"TÜRKİYE","sag_bayrak":"tr","at":"madrid"}],"damga":{"metin":"PUANLAR EŞİT","at":"puanlar"}}`
-- Kulüpler için bayrak yerine renk şeridi: `"sol_bayrak":"#FDB913,#0053A0"` (logo ASLA çizilmez)
+- Kulüpler için bayrak yerine renk şeridi: `"sol_bayrak":"#FDB913,#0053A0"`. Sayfa sahibinin gönderdiği logo `motor/logolar/`'da varsa `"logo:<ad>"` (ör. `"logo:liverpool"`) kullanılabilir (2026-10-25, sayfa sahibinin isteği).
 
 ### sayi — dev sayı/istatistik damgası
 `{"tip":"sayi","cumleler":[5],"ust":"BAHİS ORANI","ikon":"para","sayi":"5000'DE 1","etiket":"ŞAMPİYONLUK İHTİMALİ","at":"bahis","arka":"karanlik"}`
@@ -56,6 +56,7 @@
 - `foto` yolu senaryo.json'a göre; `kredi` ZORUNLU (yazar + lisans). Kaynak yalnız Wikimedia Commons'taki CC/kamu malı dosyalar (bkz. motor/fotolar/KAYNAK.txt).
 - `baslik` ya da `ust`'ten biri; `odak`: "ust" (varsayılan, yüz üstte) | "orta". Gönderi açıklamasına da "📷 Fotoğraflar: …" kredi satırı eklenir.
 - **Varsayılan: arka planı kaldırılmış kişi.** `foto` bir `.png` ise (motor/kesik.py çıktısı, `motor/fotolar/kesik/`) kişi çerçevesiz, yeşil ışıltının önünde, altyazı bandının üstüne oturacak şekilde büyük çizilir. Kişi fotoğraflarını her zaman bu hâliyle kullan (bkz. motor/FOTO_VIDEO.md). `arka` varsayılanı "marka".
+- **Birden çok kişi:** `"fotolar": [{"foto":"a.png","at":"gerrard","ad":"GERRARD"}, ...]` (2–3 kesik PNG) yan yana, her biri kendi `at` anında belirir; `ad` altta isim etiketi. `damga` üstte (`boyut` ops.).
 
 ## Seçenekler
 - **ikon**: top, kupa, duduk, saat, kart_kirmizi, kart_sari, para, sozlesme, kale, soru, unlem, fanus, mikrofon, `bayrak:<kod>`, `forma:<renk1>,<renk2>,<numara>` (ör. `forma:#E30A17,#FFFFFF,10`)

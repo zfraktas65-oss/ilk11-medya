@@ -114,6 +114,12 @@ def bayrak(code, w):
 
 def bayrak_kutu(code, x, y, w, cls="", style=""):
     h = w * 2 / 3
+    if str(code).startswith("logo:"):  # "logo:<ad>" → motor/logolar/<ad>.png (sayfa sahibinin gönderdiği/izin verdiği logolar)
+        yol = os.path.join(HERE, "logolar", code[5:] + ".png")
+        lh = w * 1.4
+        return (f"<g transform='translate({x:.0f} {y + h / 2 - lh / 2:.0f})'><g class='{cls}' style='{style}'>"
+                f"<image href='{_foto_uri(yol)}' width='{w}' height='{lh:.0f}' preserveAspectRatio='xMidYMid meet' "
+                f"style='filter:drop-shadow(0 6px 10px rgba(0,0,0,.5))'/></g></g>")
     return (f"<g transform='translate({x:.0f} {y:.0f})'><g class='{cls}' style='{style}'>"
             f"<rect x='-5' y='-5' width='{w + 10}' height='{h + 10:.0f}' rx='6' fill='{OL}'/>"
             f"<svg width='{w}' height='{h:.1f}' viewBox='0 0 {w} {h:.1f}' overflow='hidden'>{bayrak(code, w)}</svg></g></g>")
@@ -443,7 +449,7 @@ def t_foto(p, at, sfx, i):
     p: foto (dosya, senaryo.json'a göre), kredi ("Foto: Ad · Wikimedia · CC BY-SA 4.0" — zorunlu), baslik (ops., '|' ve *vurgu*),
        ust (ops. çip), alt (ops. etiket), alt_at, odak ("ust"|"orta"; varsayılan ust), damga (ops.).
     Güvenli alan: üst etiket ~300-335px, altyazı bandı 1170px'ten aşağı; kart 360-1160 arasında kalır."""
-    if p["foto"].lower().endswith(".png"):
+    if p.get("fotolar") or p["foto"].lower().endswith(".png"):
         return t_kesik(p, at, sfx, i)
     uri = _foto_uri(p["foto"])
     s = arka(p.get("arka", "karanlik"), i)
@@ -483,6 +489,8 @@ def t_kesik(p, at, sfx, i):
     """Arka planı kaldırılmış kişi (motor/kesik.py çıktısı, şeffaf PNG) — çerçevesiz, sahnenin önünde.
     t_foto ile aynı alanlar; foto .png ise otomatik seçilir. Kişi altyazı bandının (1170px) üstünde biter."""
     from PIL import Image
+    if p.get("fotolar"):
+        return t_kesik_coklu(p, at, sfx, i)
     yol = p["foto"] if os.path.isabs(p["foto"]) else os.path.join(FOTO_DIR or ".", p["foto"])
     w0, h0 = Image.open(yol).size
     uri = _foto_uri(p["foto"])
@@ -513,8 +521,64 @@ def t_kesik(p, at, sfx, i):
         s += pill(540, alt_y - 90, p["alt"], 40, d=at(p.get("alt_at", 1.0)))
     if p.get("damga"):
         d = at(p["damga"].get("at", 1.2))
-        s += stamp_text(760, alt_y - 230, p["damga"]["metin"], d, 66, p["damga"].get("renk", LIME), -6)
+        sw = len(p["damga"]["metin"]) * 66 * .52 + 70
+        s += stamp_text(round(min(760, 1080 - sw / 2 - 80)), alt_y - 230, p["damga"]["metin"], d, 66, p["damga"].get("renk", LIME), -6)
         sfx(d, "stamp")
+    return s + motes()
+
+
+def t_kesik_coklu(p, at, sfx, i):
+    """Birden çok kesik kişi yan yana: "fotolar": [{"foto": "a.png", "at": "gerrard"}, ...] (2–3 kişi).
+    Her kişi kendi "at" anında belirir; ortadaki biraz önde ve büyük. ust/baslik/alt/damga/kredi t_kesik ile aynı."""
+    from PIL import Image
+    L = p["fotolar"][:3]
+    n = len(L)
+    alt_y = 1165
+    ust_y = 600 if p.get("baslik") else 470
+    s = arka(p.get("arka", "marka"), i)
+    s += (f"<defs><radialGradient id='kg{i}' cx='.5' cy='.5' r='.5'><stop offset='0' stop-color='{LIME}' stop-opacity='.5'/>"
+          f"<stop offset='.6' stop-color='{LIME}' stop-opacity='.1'/><stop offset='1' stop-color='{LIME}' stop-opacity='0'/></radialGradient></defs>"
+          f"<g class='fadein' style='--d:.05s'><ellipse cx='540' cy='{(ust_y + alt_y) / 2:.0f}' rx='520' ry='{(alt_y - ust_y) * .6:.0f}' fill='url(#kg{i})'/>"
+          f"<rect x='0' y='{alt_y - 8}' width='1080' height='6' fill='{LIME}' opacity='.8'/></g>")
+    if p.get("baslik"):
+        s += f"<g class='fadein' style='--d:.2s'>{baslik_svg(p['baslik'], 450, size=88)}</g>"
+    elif p.get("ust"):
+        bw = len(p["ust"]) * 24 + 60
+        s += (f"<g class='fadein' style='--d:.1s'><rect x='{540 - bw / 2:.0f}' y='375' width='{bw}' height='58' rx='29' fill='{LIME}'/>"
+              f"<text x='540' y='417' text-anchor='middle' font-family='Anton' font-size='36' letter-spacing='3' fill='#0A0F0A'>{esc(p['ust'])}</text></g>")
+    cxs = {1: [540], 2: [330, 750], 3: [215, 540, 865]}[n]
+    order = list(range(n))
+    if n == 3:
+        order = [0, 2, 1]  # orta kişi en önde çizilir
+    parts = {}
+    for k, f in enumerate(L):
+        yol = f["foto"] if os.path.isabs(f["foto"]) else os.path.join(FOTO_DIR or ".", f["foto"])
+        w0, h0 = Image.open(yol).size
+        big = (n == 3 and k == 1) or n < 3
+        h = (alt_y - ust_y) * (1.0 if big else .86)
+        w = h * w0 / h0
+        maxw = 1080 / n * (1.35 if n == 3 else 1.0)
+        if w > maxw:
+            w = maxw; h = w * h0 / w0
+        x, y = cxs[k] - w / 2, alt_y - h
+        d = at(f.get("at", .25 + .35 * k))
+        sfx(d, "pop")
+        parts[k] = (f"<g class='pop' style='--d:{d:.2f}s'><image href='{_foto_uri(f['foto'])}' x='{x:.0f}' y='{y:.0f}' width='{w:.0f}' height='{h:.0f}' "
+                    f"preserveAspectRatio='xMidYMax meet' style='filter:drop-shadow(0 20px 34px rgba(0,0,0,.6))'/>"
+                    + (f"<g transform='translate({cxs[k]} {alt_y - 40})'><rect x='-{len(f['ad']) * 14 + 24}' y='-30' width='{len(f['ad']) * 28 + 48}' height='52' rx='10' fill='#0A0F0A' opacity='.85'/>"
+                       f"<text y='10' text-anchor='middle' font-family='Anton' font-size='34' letter-spacing='2' fill='{LIME}'>{esc(f['ad'])}</text></g>" if f.get("ad") else "")
+                    + "</g>")
+    for k in order:
+        s += parts[k]
+    s += (f"<text x='1050' y='{alt_y - 20 if not any(f.get('ad') for f in L) else alt_y + 30}' text-anchor='end' font-family='Inter' font-weight='700' font-size='21' fill='#E8EDE9' "
+          f"opacity='.85'>{esc(p.get('kredi', ''))}</text>")
+    if p.get("alt"):
+        s += pill(540, alt_y - 90, p["alt"], 40, d=at(p.get("alt_at", 1.0)))
+    if p.get("damga"):
+        d = at(p["damga"].get("at", 1.2))
+        s += stamp_text(540, ust_y + 40, p["damga"]["metin"], d, p["damga"].get("boyut", 90), p["damga"].get("renk", LIME), -6)
+        sfx(d, "stamp")
+        s = shake(s, [d])
     return s + motes()
 
 
