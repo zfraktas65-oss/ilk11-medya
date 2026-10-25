@@ -10,3 +10,8 @@ Commons dosyaları sunucudan erişilemiyor; masaüstündeki yerleşik tarayıcı
 
 kesik/<ad>.png — aynı dosyaların arka planı kaldırılmış hâli (motor/kesik.py). Lisans ve kredi kaynak dosyanınkiyle aynıdır.
 Sayfa sahibinin sohbete gönderdiği fotoğraflar da kullanılabilir; buraya "<dosya> — sayfa sahibinden, kredi: <verdiği kredi>" diye eklenir.
+hamit-altintop-bayern.jpg — sayfa sahibinden (2026-10-25), kredi: sayfa sahibinden
+hamit-altintop-milli.jpg — sayfa sahibinden (2026-10-25), kredi: sayfa sahibinden
+hamit-altintop-realmadrid.jpg — sayfa sahibinden (2026-10-25), kredi: sayfa sahibinden
+hamit-altintop-portre.jpg — sayfa sahibinden (2026-10-25), kredi: sayfa sahibinden
+hamit-altintop-galatasaray.jpg — sayfa sahibinden (2026-10-25), kredi: sayfa sahibinden
