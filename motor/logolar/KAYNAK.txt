@@ -9,3 +9,4 @@ Yeni rakip: UEFA standings API'sindeki team.id ile aynı adresten 240x240 PNG al
 Koyu (açık rengi olmayan) logolara ozel.py arkasına açık daire koyar; dosyanın kendisi değişmez.
 alanyaspor.png, kocaelispor.png — sayfa sahibi gönderdi (2026-10-23)
 eyupspor.png, kasimpasa.png, gaziantepfk.png, erzurumsporfk.png, samsunspor.png, amedspor.png — sayfa sahibi gönderdi (2026-10-23; gaziantepfk'nin dış beyaz zemini şeffaflaştırıldı)
+barcelona.png, realmadrid.png — sayfa sahibi gönderdi (2026-10-25; realmadrid boyutu küçültüldü, şeffaf)
