@@ -72,6 +72,16 @@ def bayrak(code, w):
               "hu": H(["#CE2939", "#FFFFFF", "#477050"]), "co": H(["#FCD116", "#FCD116", "#003893", "#CE1126"]),
               "hr": H(["#FF0000", "#FFFFFF", "#171796"]), "rs": H(["#C6363C", "#0C4076", "#FFFFFF"]),
               "ua": H(["#0057B7", "#FFD700"]), "pl": H(["#FFFFFF", "#DC143C"])}
+    if code == "hr":  # Hırvatistan: üç şerit + ortada kırmızı-beyaz damalı kalkan
+        out = simple["hr"]
+        n, s = 5, h * .09
+        x0, y0 = w / 2 - n * s / 2, h * .22
+        out += f"<rect x='{x0 - s * .12:.1f}' y='{y0 - s * .12:.1f}' width='{n * s + s * .24:.1f}' height='{n * s + s * .24:.1f}' fill='#FFFFFF'/>"
+        for i in range(n):
+            for j in range(n):
+                c = "#FF0000" if (i + j) % 2 == 0 else "#FFFFFF"
+                out += f"<rect x='{x0 + j * s:.1f}' y='{y0 + i * s:.1f}' width='{s + .3:.1f}' height='{s + .3:.1f}' fill='{c}'/>"
+        return out
     if code in simple:
         return simple[code]
     if code == "pt":
