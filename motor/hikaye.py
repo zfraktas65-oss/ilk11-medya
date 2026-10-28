@@ -218,6 +218,8 @@ def arka(kind, seed=1):
     if kind == "marka":
         stripes = "".join(f"<rect x='{-600 + i * 110}' y='-400' width='55' height='2800' fill='#FFFFFF'/>" for i in range(24))
         return f"<rect width='1080' height='1920' fill='url(#brandBg)'/><g transform='rotate(-24 540 900)' opacity='.05'>{stripes}</g>"
+    if kind == "stadyum":  # karakterli çizgi film stadyumu (motor/cizgi.js çizer, tribün canlı)
+        return "<g class='cizgi' data-p='{&quot;tip&quot;:&quot;stadyum&quot;}'></g>"
     # karanlik (spot ışığı)
     return ("<rect width='1080' height='1920' fill='url(#bgDark)'/>"
             "<polygon class='flick' points='450,-60 630,-60 1080,1150 0,1150' fill='#FFF6D8' opacity='.10'/>"
@@ -595,6 +597,91 @@ def t_kesik_coklu(p, at, sfx, i):
 TEMPLATES = {"kanca": t_kanca, "tahta": t_tahta, "skor": t_skor, "sayi": t_sayi, "an": t_an, "hoca": t_hoca, "zafer": t_zafer,
              "foto": t_foto}
 
+
+# ============================================================ KARAKTERLİ ÇİZGİ FİLM ŞABLONLARI (2026-10-28'den itibaren varsayılan)
+# Çizimi motor/cizgi.js yapar (her karede, sahne içi zamana göre). Burada yalnız "at" anları sahne içi saniyeye
+# çevrilir, varsayılanlar konur ve ses efektleri planlanır. Parametreler: motor/SABLONLAR.md "Karakterli çizgi film".
+def _cz_resolve(o, at):
+    if isinstance(o, dict):
+        out = {}
+        for k, v in o.items():
+            if (k == "at" or k.endswith("_at")) and isinstance(v, (str, int, float)) and not isinstance(v, bool):
+                out[k] = round(at(v), 2)
+            else:
+                out[k] = _cz_resolve(v, at)
+        return out
+    if isinstance(o, list):
+        return [_cz_resolve(v, at) for v in o]
+    return o
+
+
+def _cz_txt(v, at_default=None):
+    """'metin' kısayolu: "balon": "Söz" → {"metin": "Söz"}."""
+    if isinstance(v, str):
+        v = {"metin": v}
+    if isinstance(v, dict) and at_default is not None:
+        v.setdefault("at", at_default)
+    return v
+
+
+def _cz_norm(tip, q, d):
+    ev = []
+    for key in ("balon", "damga"):
+        if key in q:
+            q[key] = _cz_txt(q[key], .6 if key == "balon" else 1.2)
+    if tip in ("ckanca", "ckarakter"):
+        if q.get("baslik"): ev.append((.05, "whoosh"))
+        if q.get("ifade2_at") is not None: ev.append((q["ifade2_at"], "stamp"))
+        if q.get("balon"): ev.append((q["balon"]["at"], "pop"))
+        if q.get("damga"): ev.append((q["damga"]["at"], "stamp"))
+        if q.get("ad"): ev.append((q.get("ad_at", .3), "pop"))
+    elif tip == "cgol":
+        g = q.get("at", min(1.4, d * .45))
+        q["at"] = g = round(min(max(.95, g), max(.95, d - .25)), 2)
+        ev += [(.1, "pop"), (g - .62, "whoosh"), (g - .6, "kick"), (g, "gol")]
+    elif tip == "ckurtaris":
+        a = q["at"] = round(max(.7, q.get("at", 1.1)), 2)
+        ev += [(a - .55, "riser"), (a - .5, "kick"), (a, "save")]
+        if q.get("alt"): ev.append((q.get("alt_at", a + .45), "pop"))
+    elif tip == "ckupa":
+        a = q["at"] = q.get("at", .3)
+        ev += [(a, "sting"), (a, "zafer"), (a + .05, "thud")]
+        if q.get("alt"): ev.append((q.get("alt_at", a + .5), "pop"))
+    elif tip == "cikili":
+        for side in ("sol", "sag"):
+            if isinstance(q.get(side), dict) and q[side].get("balon"):
+                q[side]["balon"] = _cz_txt(q[side]["balon"], .8 if side == "sol" else 1.4)
+                ev.append((q[side]["balon"]["at"], "pop"))
+        q.setdefault("vs_at", .55)
+        ev += [(.05, "whoosh"), (q["vs_at"], "stamp")]
+    elif tip == "csayi":
+        a = q["at"] = q.get("at", .4)
+        ev += [(.1, "pop"), (a, "thud")]
+        if q.get("etiket"): ev.append((q.get("etiket_at", a + .45), "pop"))
+        if q.get("damga"): ev.append((q["damga"]["at"], "stamp"))
+    elif tip == "ctabela":
+        a = q["at"] = q.get("at", .6)
+        ev += [(.1, "pop"), (a, "clack"), (a + .06, "thud")]
+        if q.get("damga"): ev.append((q["damga"]["at"], "stamp"))
+    return ev
+
+
+def _cizgi(tip):
+    def f(p, at, sfx, i):
+        d = float(p.get("_d", 6.0))
+        q = _cz_resolve({k: v for k, v in p.items() if k not in ("cumleler", "ozel_svg", "tip", "_d")}, at)
+        for t0, kind in _cz_norm(tip, q, d):
+            if t0 is not None and -.05 <= t0 < d + .2:
+                sfx(max(0, t0), kind)
+        q["tip"] = tip
+        return f"<g class='cizgi' data-p='{HT.escape(json.dumps(q, ensure_ascii=False), quote=True)}'></g>"
+    return f
+
+
+for _t in ("ckanca", "ckarakter", "cgol", "ckurtaris", "ckupa", "cikili", "csayi", "ctabela"):
+    TEMPLATES[_t] = _cizgi(_t)
+CZ_MOOD = {"ckanca": "kanca", "ckarakter": "hoca", "cgol": "skor", "ckurtaris": "an", "ckupa": "zafer", "cikili": "an", "csayi": "sayi", "ctabela": "skor"}
+
 DEFS = ("<defs>"
         "<radialGradient id='bgDark' cx='.5' cy='.4' r='.8'><stop offset='0' stop-color='#1A2A20'/><stop offset='1' stop-color='#060908'/></radialGradient>"
         "<radialGradient id='brandBg' cx='.5' cy='.45' r='.8'><stop offset='0' stop-color='#1E5636'/><stop offset='.55' stop-color='#0B2416'/><stop offset='1' stop-color='#030805'/></radialGradient>"
@@ -727,6 +814,29 @@ def sfx_signal(kind):
         e = np.minimum(1, x / .25) * np.exp(-np.maximum(0, x - 1.0) / 1.3)
         crowd = (_sn(n, 700, 1.4) + .5 * _sn(n, 1600, 1.0)) * e * (1 + .25 * np.sin(2 * np.pi * 3.3 * x))
         return .5 * crowd
+    if kind == "kick":
+        n = int(.2 * SR); x = _t(n)
+        return .7 * np.sin(2 * np.pi * np.cumsum(180 * np.exp(-x / .03) + 60) / SR) * np.exp(-x / .05) + .25 * _sn(n, 2000, .6) * np.exp(-x / .01)
+    if kind == "net":
+        n = int(.45 * SR); x = _t(n)
+        return .35 * _sn(n, 3000, .9) * np.exp(-x / .12) * np.minimum(1, x / .01)
+    if kind in ("gol", "save"):
+        n = int((2.6 if kind == "gol" else 2.4) * SR)
+        out = np.zeros(n)
+        parts = [("net", .9), ("thud", .9)] if kind == "gol" else [("thud", 1.0), ("kick", .5)]
+        for k2, g in parts:
+            sg = np.asarray(sfx_signal(k2)); out[:len(sg)] += g * sg[:n]
+        x = _t(n); e = np.minimum(1, x / .12) * np.exp(-np.maximum(0, x - .5) / .8)
+        out += (1.1 if kind == "gol" else 1.2) * .45 * (_sn(n, 700, 1.4) + .5 * _sn(n, 1600, 1.0)) * e * (1 + .25 * np.sin(2 * np.pi * 3.3 * x))
+        return out
+    if kind == "riser":
+        n = int(.6 * SR); x = _t(n)
+        return .22 * _sn(n, 1500, 1.3) * (x / .6) ** 2 + .1 * np.sin(2 * np.pi * np.cumsum(300 + 900 * x / .6) / SR) * (x / .6) ** 2
+    if kind == "sting":
+        n = int(1.4 * SR); x = _t(n); s = np.zeros(n)
+        for f in (293.7, 370, 440, 587.3):
+            s += np.sin(2 * np.pi * f * x) * np.exp(-x / .5) + .3 * np.sin(4 * np.pi * f * x) * np.exp(-x / .3)
+        return .12 * s
     return np.zeros(10)
 
 
@@ -742,14 +852,14 @@ def build_audio(voice, cta, cta_at, T, scenes, events, out_wav):
         x = _t(i1 - i0); dur = b - a
         e = np.minimum(1, x / .35) * np.clip((dur + .6 - x) / .6, 0, 1)
         seg = np.zeros(i1 - i0)
-        notes = moods.get(sc["tip"], moods["kanca"])
+        notes = moods.get(CZ_MOOD.get(sc["tip"], sc["tip"]), moods["kanca"])
         for m in notes:
             for det in (-6, 6):
                 f = mtof(m) * 2 ** (det / 1200)
                 for h in range(1, 6):
                     seg += (1 / h) * np.sin(2 * np.pi * f * h * x + h) * (.85 ** h)
         music[i0:i1] += (seg * e / len(notes)).astype(np.float32)
-        if sc["tip"] in ("skor", "an", "sayi"):
+        if CZ_MOOD.get(sc["tip"], sc["tip"]) in ("skor", "an", "sayi"):
             t = a
             while t < b:
                 n = int(.6 * SR); xx = _t(n)
@@ -844,7 +954,7 @@ def main():
             rtak = cta_words[1][2][1] - s0
             body = t_takip({}, at, sfx, k, spec.get("soru", ""), rtak)
         else:
-            body = TEMPLATES[sc["tip"]](sc["spec"], at, sfx, k)
+            body = TEMPLATES[sc["tip"]](dict(sc["spec"], _d=round(sc["end"] - s0, 2)), at, sfx, k)
             if sc["spec"].get("ozel_svg"):
                 body += sc["spec"]["ozel_svg"]
         dur = sc["end"] - s0
@@ -852,7 +962,8 @@ def main():
                  f"<g class='kb' style='--t:{dur + .4:.2f}s'>{body}</g><rect width='1080' height='1920' fill='url(#vig)' opacity='.7'/></svg></section>")
 
     css = open(os.path.join(HERE, "stil.css"), encoding="utf-8").read().replace("FONTDIR", "file://" + os.path.join(HERE, "fonts"))
-    js = open(os.path.join(HERE, "oynat.js"), encoding="utf-8").read()
+    js = (open(os.path.join(HERE, "cizgi.js"), encoding="utf-8").read() + "\n"
+          + open(os.path.join(HERE, "oynat.js"), encoding="utf-8").read())
     # Video ortasındaki takip rozeti: üst etiketin yerine geçer, kapanış sahnesine kadar kalır.
     # Varsayılan: 3. cümlenin başında (en erken 5 sn). spec: "rozet" (metin) / "rozet_sn" (saniye) / "rozet": "" kapatır.
     rozet_txt = spec.get("rozet", "HER AKŞAM 19:00 · YENİ HİKÂYE")

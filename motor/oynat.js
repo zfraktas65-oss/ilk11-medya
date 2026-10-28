@@ -1,6 +1,8 @@
 
 const D = window.__DATA; let anims=null, cur=-2;
 const scenes=[...document.querySelectorAll('.scene')];
+// karakterli çizgi film sahneleri (motor/cizgi.js): her karede sahne içi zamana göre yeniden çizilir
+const CZ=[...document.querySelectorAll('.cizgi')].map(el=>({el,p:JSON.parse(el.getAttribute('data-p')),i:scenes.indexOf(el.closest('.scene'))}));
 const subs=document.getElementById('subs'); const lb=document.getElementById('label'); const rz=document.getElementById('rozet');
 function ease(x){x=Math.max(0,Math.min(1,x));return 1-Math.pow(1-x,3)}
 function init(){scenes.forEach(s=>s.style.visibility='visible');
@@ -8,6 +10,7 @@ function init(){scenes.forEach(s=>s.style.visibility='visible');
  const sc=el&&el.closest?el.closest('.scene'):null; a._st=sc?parseFloat(sc.dataset.start):0;});}
 function seek(t){ if(!anims) init();
  anims.forEach(a=>{a.currentTime=Math.max(0,t-a._st)*1000;});
+ CZ.forEach(c=>{const s=D.scenes[c.i]; if(s&&t>=s.start-0.05&&t<s.end+0.35) c.el.innerHTML=CIZGI.draw(c.p,t-s.start,s.end-s.start,c.i);});
  D.scenes.forEach((s,i)=>{const el=scenes[i]; let o=0;
   if(t>=s.start && t<s.end+0.3){o = i==0?1:ease((t-s.start)/0.28);}
   el.style.visibility=o>0.001?'visible':'hidden'; el.style.opacity=o;});

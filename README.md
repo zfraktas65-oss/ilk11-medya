@@ -4,6 +4,7 @@
 
 - `motor/haber.py` — Günün Haberleri kaydırmalı gönderi kartları
 - `motor/hikaye.py` — Hoca anlatımlı hikâye Reels motoru (şablonlar: `motor/SABLONLAR.md`)
+- `motor/cizgi.js` — karakterli çizgi film sahneleri (c* şablonları; 2026-10-28'den itibaren hikâye ve portre Reels'lerinin varsayılan stili)
 - `motor/foto_hikaye.py` — kişi fotoğraflı ve logolu Instagram hikâyesi (demeç / son dakika); fotoğraflar `motor/fotolar/KAYNAK.txt`
 - `motor/konular.md`, `motor/kullanilan.txt` — hikâye konu havuzu ve kullanılanlar
 
