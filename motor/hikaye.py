@@ -12,6 +12,7 @@ senaryo.json:
  "cumleler": [ "Cümle 1.", {"soz": "Bin dokuz yüz elli dört.", "altyazi": "1954."}, ... ],
  "sahneler": [ {"tip": "kanca", "cumleler": [0], ...parametreler}, ... ],
  "soru": "Sence ... ?",                  # kapanış sahnesindeki soru
+ "yarin": "YARIN 13:00 · HAGİ",           # isteğe bağlı: sorunun altında yarının konusu
  "kapak_sn": 2.5                         # isteğe bağlı: kapak karesi
 }
 Kapanış OTOMATİK: Hoca'nın "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" sesi son cümlenin hemen ardından, ayrı son ekran olmadan (son sahnenin üstünde) eklenir; soru son cümlede rozetin altında belirir. "kapanis": "kart" eski ayrı kapanış kartını kullanır.
@@ -989,11 +990,15 @@ def main():
     soru = spec.get("soru", "")
     if soru and not kart:
         soruA = round(spans[-1][0] + .2, 2)
-        soru_html = f"<div id='soru'><span class='pop' style='--d:{soruA:.2f}s'>{esc(tr_upper(soru))}</span></div>"
+        yarin = spec.get("yarin", "")
+        yarin_html = (f"<br><b class='pop yarin' style='--d:{soruA + .6:.2f}s'>{esc(tr_upper(yarin))}</b>" if yarin else "")
+        soru_html = f"<div id='soru'><span class='pop' style='--d:{soruA:.2f}s'>{esc(tr_upper(soru))}</span>{yarin_html}</div>"
         events.append((soruA, "pop"))
     soru_css = ("#soru{position:absolute;top:322px;left:40px;right:40px;z-index:9;text-align:center}"
                 "#soru span{display:inline-block;font:800 40px/1.2 'Inter';color:#FFFFFF;background:rgba(11,15,12,.9);"
-                "border:4px solid #C6FF00;border-radius:28px;padding:14px 30px;box-shadow:0 10px 30px rgba(0,0,0,.45)}")
+                "border:4px solid #C6FF00;border-radius:28px;padding:14px 30px;box-shadow:0 10px 30px rgba(0,0,0,.45)}"
+                "#soru b.yarin{display:inline-block;margin-top:16px;font:400 34px/1.2 Anton;letter-spacing:2px;color:#0A0F0A;"
+                "background:#C6FF00;border-radius:24px;padding:8px 24px;box-shadow:0 10px 30px rgba(0,0,0,.45)}")
     rozet_css = ("#rozet{position:absolute;top:204px;left:50%;transform:translateX(-50%);z-index:9;opacity:0;display:flex;align-items:center;gap:16px;"
                  "white-space:nowrap;padding:8px 10px;border-radius:40px;background:rgba(11,15,12,.88);border:4px solid #C6FF00;"
                  "box-shadow:0 10px 30px rgba(0,0,0,.45)}"
