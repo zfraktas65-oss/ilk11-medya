@@ -76,4 +76,5 @@ Uygun seri: **H** = hikâye, **P** = portre.
 
 ## Öne çıkanlar
 Sayfa sahibi istatistik gönderdikçe güncellenir: geçme oranı düşük ve 3. saniye tutması yüksek formüller buraya yazılır, seçimde öncelik alır.
-- (henüz veri yok)
+- 2026-10-29 verisi (4 Reels): en düşük geçme 1954 kura %31,4 ve Hagi %32,6; en yüksek Modrić K21 %44,8 (yabancı yıldız + 'fazla çelimsiz' kancası tutmadı). Etkileşimde en iyisi Alex K07 (beğeni %2,6, 6 paylaşım, 7 kayıt). Hepsinde izleyicinin ~yarısı ilk 8–10 sn'de gidiyor, kalanların çoğu sona kadar kalıyor. Hiçbir Reels takip getirmedi.
+- Şimdilik öncelik: Türk futbolu bağlantılı konu + somut rakam/an ile açılan kanca (K07, K06, K10). K21 tek örnekte zayıf.
