@@ -19,7 +19,7 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 4. `~/ilk11-medya` yoksa klonla: `git clone --depth 1 https://github.com/zfraktas65-oss/ilk11-medya ~/ilk11-medya`. Sonra şunu çalıştır: `git config user.name "Claude" && git config user.email "noreply@anthropic.com"` (depo içinde).
 5. **Logolar (bir kez):** `motor/logolar/` içinde turkiye/besiktas/galatasaray/fenerbahce/trabzonspor dosyalarından eksik olan varsa indirmeyi dene; erişim yoksa (403/bağlantı reddi) sessizce geç, paylaşımı aksatma.
    - Türkiye: `curl -sfo motor/logolar/turkiye.png https://www.tff.org/Resources/TFF/Images/0000000015/TFF/TFF-Logolar/Orjinal/tff01.png`
-   - Kulüpler: yalnız resmî siteden (bjk.com.tr, galatasaray.org, fenerbahce.org, trabzonspor.org.tr) ya da UEFA'nın takım logosu dosyasından (bkz. motor/logolar/KAYNAK.txt); logo sitelerinden indirme.
+   - Kulüpler: yalnız resmî siteden (bjk.com.tr, galatasaray.org, fenerbahce.org, trabzonspor.org.tr) UEFA'nın takım logosu dosyasından ya da footylogos.com'dan (sayfa sahibinin izni, 2026-10-29; en yüksek çözünürlüklü şeffaf PNG/SVG, bkz. motor/logolar/KAYNAK.txt); başka logo sitelerinden indirme.
    - İndirileni Read ile aç, doğru ve bozulmamış armaysa commit edip gönder (`git add motor/logolar && git commit -qm "logo" && git push -q`).
 6. Python playwright ve Chromium hazır olmalı. Eksikse kur: `pip install --break-system-packages -q playwright && python3 -m playwright install chromium`.
 
@@ -81,7 +81,7 @@ Kartı SendUserFile ile gönder (status "proactive").
 Bir şey doğrulanamazsa ya da bir adım başarısız olursa **paylaşma**. Bunun yerine neyin olmadığını kısaca bildir.
 
 ### KURALLAR
-- Kulüp logoları kullanılabilir (sayfa sahibinin izni): yalnız `motor/logolar/` klasöründeki resmî logo dosyaları, değiştirilmeden; `motor/ozel.py` bunları otomatik koyar. Logo kodla çizilmez, internetten rastgele logo sitelerinden indirilmez; dosyası olmayan takım renk şeridiyle gösterilir.
+- Kulüp logoları kullanılabilir (sayfa sahibinin izni): yalnız `motor/logolar/` klasöründeki resmî logo dosyaları, değiştirilmeden; `motor/ozel.py` bunları otomatik koyar. Logo kodla çizilmez; yalnız resmî site, UEFA ya da footylogos.com'dan (sayfa sahibinin izni, 2026-10-29) indirilir, başka logo sitelerinden indirilmez; dosyası olmayan takım renk şeridiyle gösterilir.
 - Gerçek kişi fotoğrafı ya da maç görüntüsü kullanılmaz; kartlar `motor/ozel.py` ile üretilir.
 - Doğrulama şartı: resmî kaynak (kulübün resmî sitesi/hesabı, KAP, TFF, UEFA, FIFA) tek başına yeterlidir. Diğer bilgiler en az **iki bağımsız** güvenilir kaynakta aynı olmalıdır.
 - Güvenilir kaynaklar: AA, TRT Spor, NTV Spor, beIN Sports, A Spor, Fanatik, Ajansspor, Sporx, Hürriyet, Milliyet, Habertürk, BBC Sport, Reuters, ESPN ve benzerleri.
