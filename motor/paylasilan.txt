@@ -25,3 +25,4 @@
 2026-10-30 17:50 macgunu 2026-10-30-konyaspor-galatasaray | KONYASPOR – GALATASARAY maç günü hikâyesi (manuel)
 2026-10-30 17:58 sondakika 2026-10-30-besiktas-hapoel-batum-seyircili | BJK–Hapoel Beer-Sheva Batum'da seyircili, 26 Kasım (Habertürk, BirGün, Sporx) (manuel)
 2026-10-30 20:21 demec 2026-10-30-konyaspor-galatasaray-once-galatasaray | Okan Buruk maç öncesi (beIN; NTV Spor, Ajansspor, Akşam) (manuel)
+2026-10-30 22:37 sonuc 2026-10-30-konyaspor-galatasaray | KONYASPOR 0-4 GALATASARAY (Ajansspor, Fanatik, Habertürk) (manuel)
