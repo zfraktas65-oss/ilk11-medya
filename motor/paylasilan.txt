@@ -24,3 +24,4 @@
 2026-10-30 17:23 sondakika 2026-10-30-fenerbahce-kuyt-milli-araya-kadar | Kuyt milli araya kadar takımın başında, YK kararı (Hürriyet, Ajansspor) (manuel)
 2026-10-30 17:50 macgunu 2026-10-30-konyaspor-galatasaray | KONYASPOR – GALATASARAY maç günü hikâyesi (manuel)
 2026-10-30 17:58 sondakika 2026-10-30-besiktas-hapoel-batum-seyircili | BJK–Hapoel Beer-Sheva Batum'da seyircili, 26 Kasım (Habertürk, BirGün, Sporx) (manuel)
+2026-10-30 20:21 demec 2026-10-30-konyaspor-galatasaray-once-galatasaray | Okan Buruk maç öncesi (beIN; NTV Spor, Ajansspor, Akşam) (manuel)
