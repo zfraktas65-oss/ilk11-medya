@@ -23,3 +23,4 @@
 2026-10-30 16:20 sondakika 2026-10-30-trabzonspor-pfdk-tezahurat-cezasi | PFDK: Trabzonspor 2.070.000 TL + kısmi tribün kapatma (AA/Akşam, 12punto) (manuel)
 2026-10-30 17:23 sondakika 2026-10-30-fenerbahce-kuyt-milli-araya-kadar | Kuyt milli araya kadar takımın başında, YK kararı (Hürriyet, Ajansspor) (manuel)
 2026-10-30 17:50 macgunu 2026-10-30-konyaspor-galatasaray | KONYASPOR – GALATASARAY maç günü hikâyesi (manuel)
+2026-10-30 17:58 sondakika 2026-10-30-besiktas-hapoel-batum-seyircili | BJK–Hapoel Beer-Sheva Batum'da seyircili, 26 Kasım (Habertürk, BirGün, Sporx) (manuel)
