@@ -10,3 +10,4 @@
 2026-10-29 | hikaye | messi-pecete | K02 | Bir kâğıt peçete, futbol tarihini değiştirecekti. | sonuç: -
 2026-10-30 | portre | quaresma | K22 | Milano'da onun için kimse tek kuruş vermiyordu. | sonuç: -
 2026-10-30 | hikaye | trabzonspor-1976 | K25 | Bunu İstanbul dışından hiçbir takım başaramamıştı. | sonuç: -
+2026-10-31 | portre | klose | K34 | Bundesliga forması ona ancak yirmi bir yaşında geldi. | sonuç: -
