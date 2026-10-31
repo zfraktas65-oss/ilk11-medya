@@ -31,3 +31,4 @@
 2026-10-31 00:19 demecvideo 2026-10-30-konyaspor-galatasaray-sonra-galatasaray-2 | Yunus Akgün + Bitshiabu maç sonu (video bekleniyor)
 2026-10-31 13:36 fikstur 2026-10-31-gunun-maclari | Günün maçları hikâye kartı: Süper Lig 10. hafta (3 maç) + Avrupa'nın dev maçları (4), sayfa sahibinin isteğiyle (Milli Gazete, Fotomaç, BirGün, Mynet, Haber Gazetesi) (manuel)
 2026-10-31 19:20 demec 2026-10-31-fenerbahce-goztepe-once-fenerbahce | Dirk Kuyt maç öncesi (Sporx; NTV Spor, CNN Türk, Akşam) (manuel)
+2026-10-31 22:18 demecvideo 2026-10-31-fenerbahce-goztepe-sonra-fenerbahce-1 | Dirk Kuyt maç sonu (video bekleniyor)
