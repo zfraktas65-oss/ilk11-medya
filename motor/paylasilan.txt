@@ -39,3 +39,4 @@
 2026-11-01 16:21 demec 2026-11-01-trabzonspor-gaziantepfk-once-trabzonspor | Thomas Reis maç öncesi (Fotomaç; A Spor, Haber61) (manuel)
 2026-11-01 16:23 demec 2026-11-01-trabzonspor-gaziantepfk-once-trabzonspor-hikaye | Thomas Reis maç öncesi logolu hikâye, sayfa sahibinin isteğiyle (Fotomaç; A Spor, Haber61) (manuel)
 2026-11-01 16:48 machikaye 2026-11-01-amedspor-eyupspor | AMEDSPOR 5-1 EYÜPSPOR, sayfa sahibinin isteğiyle (Ajansspor, Habertürk, Timeturk, Sporx) (manuel)
+2026-11-01 18:00 machikaye 2026-11-01-trabzonspor-gaziantepfk | TRABZONSPOR 2-0 GAZİANTEP FK, sayfa sahibinin isteğiyle (Star, Sporx, NTV Spor, 61saat) (manuel)
