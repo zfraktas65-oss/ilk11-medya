@@ -37,3 +37,4 @@
 2026-11-01 13:20 sondakika 2026-11-01-galatasaray-metin-ozturk-istifa | İkinci Başkan Metin Öztürk YK üyeliklerinden istifa (İHA, Sabah, Takvim) (manuel)
 2026-11-01 13:56 sondakika 2026-11-01-trabzonspor-net-borc-31-agustos | Trabzonspor net borç 2.951.474.836 TL (31.08.2026) hikâye kartı, sayfa sahibinin isteğiyle (kaynak: sayfa sahibi/A Spor; KAP — DHA, Karar) (manuel)
 2026-11-01 16:21 demec 2026-11-01-trabzonspor-gaziantepfk-once-trabzonspor | Thomas Reis maç öncesi (Fotomaç; A Spor, Haber61) (manuel)
+2026-11-01 16:23 demec 2026-11-01-trabzonspor-gaziantepfk-once-trabzonspor-hikaye | Thomas Reis maç öncesi logolu hikâye, sayfa sahibinin isteğiyle (Fotomaç; A Spor, Haber61) (manuel)
