@@ -65,6 +65,7 @@ const CIZGI = (() => {
     if (!k.shirt2 || !k.desen) return P.path(d, k.shirt);
     const id = uid(); let pat = '';
     if (k.desen === 'parcali') pat = `<rect x="0" y="-600" width="300" height="1200" fill="${k.shirt2}"/>`;
+    else if (k.desen === 'serit') pat = `<rect x="-14" y="-600" width="28" height="1200" fill="${k.shirt2}"/>`;
     else for (let x = -120; x < 140; x += 36) pat += `<rect x="${x}" y="-600" width="16" height="1200" fill="${k.shirt2}"/>`;
     return `<defs><clipPath id="${id}"><path d="${d}"/></clipPath></defs><path d="${d}" fill="${k.shirt}"/><g clip-path="url(#${id})">${pat}</g>` +
       `<path d="${d}" fill="none" stroke="${INK}" stroke-width="${OLW}" stroke-linejoin="round"/>`;

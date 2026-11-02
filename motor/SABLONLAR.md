@@ -31,6 +31,7 @@
 
 **Karakter tanımı** (`oyuncu`, `atan`, `kaleci`, `sol`, `sag`, `oyuncular[]`, `sol_forma`, `sag_forma`):
 `{"takim":"gs","no":"10","ad":"HAGI","sac":"kahve","ten":"acik","sakal":false}`
+- `desen`: `cubuk` | `parcali` | `serit` (ortada tek dikey şerit, ör. Ajax: `"forma":"#FFFFFF,#D2122E","desen":"serit"`).
 - `takim` hazır renkler: `tr` (milli), `gs`, `fb`, `bjk`, `ts`, `kaleci` (lime), `kirmizi`, `beyaz`, `siyah`, `mavi`, `sari`, `lacivert`. Diğer kulüpler için renkleri ver: `"forma":"#E30A17"` (ya da `"#renk1,#renk2"` → çubuklu), `"forma2"`, `"desen":"cubuk"|"parcali"`, `"sort"`, `"corap"`, `"eldiven"`. Renkleri kulübün bilinen renklerinden al; logo çizilmez.
 - `no` forma numarası (bilinmiyorsa yazma), `ad` isim etiketi (BÜYÜK HARF). `sac`: siyah|kahve|sari|kizil|gri|beyaz|yok ya da #renk. `ten`: acik|bugday|esmer|koyu ya da #renk. Gerçek kişiyi saygılı ve genel çiz (forma, numara, saç rengi yeter); karikatürleştirme yok.
 - `ifade`: `uzgun` | `kararli` | `bagir` | `mutlu` | `saskin`. `poz`: `dur` | `yumruk` | `kos`.
