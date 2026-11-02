@@ -26,6 +26,7 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 ### KAYIT · motor/paylasilan.txt
 Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika, demec, demecvideo (maç sonu demeci için sayfa sahibine video haberi verildi), puan veya fikstur olur.
 - Anahtar örnekleri: kadro/sonuç için `2026-10-24-galatasaray-kasimpasa`, son dakika için `2026-10-24-fenerbahce-teknik-direktor`.
+- Haber Reels'i olarak paylaşılan son dakikanın satırı ` (reels)` ile biter (motor/gorevler/haber_reels.md).
 - **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma.
 - Son dakikada aynı olay farklı kelimelerle de olsa son 3 günde paylaşıldıysa paylaşma.
 - Paylaşımdan sonra satırı ekle ve gönder: `cd ~/ilk11-medya && git pull --rebase -q && echo "<satır>" >> motor/paylasilan.txt && git add motor/paylasilan.txt && git commit -qm "kayıt" && git push -q`. Çakışma olursa en fazla 3 kez tekrar dene.
@@ -194,6 +195,7 @@ Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) ma�
 Her haber için:
 1. KURALLAR'a göre doğrula.
 2. `~/sondakika.json` yaz: takim, baslik (≤ 70 karakter), ozet (2–3 cümle, ≤ 240 karakter, kendi cümlelerinle), kaynaklar.
+   > **BÜYÜK HABER → REELS** (sayfa sahibinin onayı, 2026-11-02): haber motor/gorevler/haber_reels.md'deki BÜYÜK listedeyse ve bugün henüz haber Reels'i yoksa 3–5. adımlar yerine **haber_reels.md'yi** uygula (kart gönderisi yerine kısa Reels + hikâye kartı; günde en fazla 1). Diğer haberler aşağıdaki gibi kartla paylaşılır.
 3. Kartı üret ve kontrol et: `rm -rf ~/cikti && python3 motor/ozel.py ~/sondakika.json ~/cikti`, ardından Read ile aç.
 4. Y'yi uygula (tur sondakika), sonra P'yi. Açıklama:
    ```

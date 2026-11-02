@@ -13,6 +13,8 @@ senaryo.json:
  "sahneler": [ {"tip": "kanca", "cumleler": [0], ...parametreler}, ... ],
  "soru": "Sence ... ?",                  # kapanış sahnesindeki soru
  "yarin": "YARIN 13:00 · HAGİ",           # isteğe bağlı: sorunun altında yarının konusu
+ "etiket": "İLK 11 · HER GÜN 13:00 · BİR EFSANE",  # isteğe bağlı: ilk kareden görünen üst etiket (dizinin takip sebebi)
+ "rozet": "HER GÜN 13:00 · BİR EFSANE",  # isteğe bağlı: 2. cümlede çıkan "· TAKİP ET" rozeti
  "kapak_sn": 2.5                         # isteğe bağlı: kapak karesi
 }
 Kapanış OTOMATİK: Hoca'nın "Daha fazlası için İlk On Bir'i takip etmeyi unutma!" sesi son cümlenin hemen ardından, ayrı son ekran olmadan (son sahnenin üstünde) eklenir; soru son cümlede rozetin altında belirir. "kapanis": "kart" eski ayrı kapanış kartını kullanır.
@@ -965,12 +967,17 @@ def main():
     css = open(os.path.join(HERE, "stil.css"), encoding="utf-8").read().replace("FONTDIR", "file://" + os.path.join(HERE, "fonts"))
     js = (open(os.path.join(HERE, "cizgi.js"), encoding="utf-8").read() + "\n"
           + open(os.path.join(HERE, "oynat.js"), encoding="utf-8").read())
-    # Video ortasındaki takip rozeti: üst etiketin yerine geçer, kapanış sahnesine kadar kalır.
-    # Varsayılan: 3. cümlenin başında (en erken 5 sn). spec: "rozet" (metin) / "rozet_sn" (saniye) / "rozet": "" kapatır.
+    # Üst etiket ilk kareden görünür: dizinin takip sebebi (ör. "İLK 11 · HER GÜN 13:00 · BİR EFSANE"). spec: "etiket".
+    etiket = tr_upper(spec.get("etiket", "İLK 11 · FUTBOL HİKÂYELERİ"))
+    et_k = min(1.0, 33 / max(1, len(etiket)))  # uzun etiket tek satıra sığsın
+    etiket_style = f" style='font-size:{30 * et_k:.1f}px;letter-spacing:{8 * et_k:.1f}px'" if et_k < 1 else ""
+    # Takip rozeti: üst etiketin yerine geçer, kapanış sahnesine kadar kalır.
+    # Varsayılan (2026-11-02): 2. cümlenin başında, en erken 3 sn — izleyici ortalama 11–16 sn izliyor, ~%30'u ilk 3 sn'de çıkıyor.
+    # spec: "rozet" (metin) / "rozet_sn" (saniye) / "rozet": "" kapatır.
     rozet_txt = spec.get("rozet", "HER AKŞAM 19:00 · YENİ HİKÂYE")
     rozetA = None
     if rozet_txt:
-        rozetA = float(spec.get("rozet_sn", max(5.0, spans[min(2, len(spans) - 1)][0])))
+        rozetA = float(spec.get("rozet_sn", max(3.0, spans[min(1, len(spans) - 1)][0])))
         if rozetA > cta_scene_start - 3:
             rozetA = None
     rozet_html = ""
@@ -1012,7 +1019,7 @@ def main():
     data = {"scenes": [{"start": s["start"], "end": s["end"]} for s in scenes], "chunks": chunks(allWT, T), "T": T,
             "labelEnd": cta_scene_start if kart else T + 1, "rozetA": rozetA}
     page = (f"<!doctype html><html><head><meta charset='utf-8'><style>{css}{rozet_css}{soru_css}</style></head><body>{secs}"
-            f"<div id='label'>İLK 11 · FUTBOL HİKÂYELERİ</div>{rozet_html}{soru_html}<div id='band'></div><div id='subs'></div>"
+            f"<div id='label'{etiket_style}>{esc(etiket)}</div>{rozet_html}{soru_html}<div id='band'></div><div id='subs'></div>"
             f"<script>window.__DATA={json.dumps(data, ensure_ascii=False)};{js}</script></body></html>")
     hp = os.path.join(out, "_sayfa.html")
     open(hp, "w", encoding="utf-8").write(page)
