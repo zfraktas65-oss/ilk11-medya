@@ -323,8 +323,14 @@ def demec_hikaye(d, out):
             "<div style='position:absolute;left:70px;right:70px;top:90px;display:flex;align-items:center;gap:18px;flex-wrap:wrap'>"
             f"<div class='brand' style='font:400 46px Anton;display:flex;align-items:center;gap:14px'><div class='logo'>11</div>İLK 11</div>"
             f"{MIC}<span class='chip' style='background:#C6FF00;color:#0A0F0A'>{esc((d.get('baslik') or 'MAÇ SONU') + ' KONUŞTU')}</span></div>"
-            f"<div style='position:absolute;left:70px;right:70px;top:250px;font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</div>"
-            f"<div id='box' style='position:absolute;left:70px;right:70px;top:320px;bottom:250px;overflow:hidden'><div id='txt' style='font-size:46px'>{bloklar}{kay}</div></div>"
+            + (f"<div style='position:absolute;left:70px;right:70px;top:250px;font:800 30px Inter;color:#B9C7BE;letter-spacing:1px'>{esc(d.get('mac', ''))}</div>"
+               if not (d.get('ev') and d.get('dep')) else
+               "<div style='position:absolute;left:70px;right:70px;top:240px;display:flex;align-items:center;justify-content:center;gap:26px'>"
+               f"{serit(d['ev'], d, 16, 104)}<div style='font:400 50px/1 Anton;letter-spacing:.5px'>{esc(d['ev'])}</div>"
+               f"<div style='font:400 58px/1 Anton;color:#C6FF00'>{esc(d.get('skor', '–'))}</div>"
+               f"<div style='font:400 50px/1 Anton;letter-spacing:.5px'>{esc(d['dep'])}</div>{serit(d['dep'], d, 16, 104)}</div>"
+               f"<div style='position:absolute;left:70px;right:70px;top:368px;text-align:center;font:800 28px Inter;color:#B9C7BE;letter-spacing:2px'>{esc(d.get('turnuva', ''))}</div>") +
+            f"<div id='box' style='position:absolute;left:70px;right:70px;top:{450 if (d.get('ev') and d.get('dep')) else 320}px;bottom:250px;overflow:hidden'><div id='txt' style='font-size:46px'>{bloklar}{kay}</div></div>"
             "<div style='position:absolute;left:150px;right:150px;bottom:70px;display:flex;align-items:center;gap:22px;padding:20px 26px;"
             "border-radius:90px;background:#0B0F0C;border:5px solid #C6FF00'><div class='logo'>11</div>"
             "<div style='flex:1'><div style='font:400 40px Anton'>İLK 11</div><div style='font:700 26px Inter;color:#B9C2BB'>@ilk.onbir11</div></div>"
