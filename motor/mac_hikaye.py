@@ -10,7 +10,8 @@ mac.json:
  "ilk_yari": "0-2",                    # isteğe bağlı
  "renkler": {"ALANYASPOR": ["#F47C20", "#00843D"]},   # logo yoksa renk şeridi/rozeti için
  "goller": [{"dk": "27", "ad": "Berkan Kutlu", "taraf": "dep", "not": "P"}],   # not: P (penaltı) / KK (kendi kalesine)
- "kartlar": [{"dk": "61", "ad": "Ad Soyad", "taraf": "ev"}],                   # isteğe bağlı: kırmızı kartlar
+ "kartlar": [{"dk": "61", "ad": "Ad Soyad", "taraf": "ev"}],                   # isteğe bağlı: kırmızı kartlar ("renk": "sari" → sarı kart; dk boş bırakılabilir)
+ "durum": "İLK YARI SONUCU",            # isteğe bağlı üst başlık (varsayılan "MAÇ SONUCU")
  "puan_alt": "9. HAFTA AÇILIŞI SONRASI",
  "puanlar": [{"sira": 6, "takim": "KOCAELİSPOR", "puan": 15, "ok": "▲", "vurgu": true}, {"sira": 9, "takim": "ALANYASPOR", "puan": 12}],
  "puan_not": "Hafta sürüyor; sıralama diğer maçlarla değişebilir.",
@@ -101,8 +102,10 @@ def _gol_html(d, side, fs=30):
             out += f"<div>{e(g['dk'])}' {e(g['ad'])}{(' (' + e(g['not']) + ')') if g.get('not') else ''}</div>"
     for k in d.get("kartlar", []):
         if k.get("taraf") == side:
-            out += (f"<div style='color:#FF8A8A'><span style='display:inline-block;width:18px;height:26px;border-radius:3px;background:#E30A17;"
-                    f"vertical-align:-4px;margin-right:8px'></span>{e(k['dk'])}' {e(k['ad'])}</div>")
+            sari = k.get("renk") == "sari"
+            dk = f"{e(k['dk'])}' " if k.get("dk") else ""
+            out += (f"<div style='color:{'#FFE27A' if sari else '#FF8A8A'}'><span style='display:inline-block;width:18px;height:26px;border-radius:3px;"
+                    f"background:{'#FFD400' if sari else '#E30A17'};vertical-align:-4px;margin-right:8px'></span>{dk}{e(k['ad'])}</div>")
     return out or "&nbsp;"
 
 
@@ -134,7 +137,7 @@ def puan_satirlar(d, fs=46):
 
 
 def sayfa_skor(d):
-    return (f"<div class='s'><div class='st'></div>{ust('MAÇ SONUCU', d['turnuva'])}{skor_blok(d, 600, 230, 230)}{alt_bar(d)}</div>")
+    return (f"<div class='s'><div class='st'></div>{ust(d.get('durum', 'MAÇ SONUCU'), d['turnuva'])}{skor_blok(d, 600, 230, 230)}{alt_bar(d)}</div>")
 
 
 def sayfa_puan(d):
@@ -187,7 +190,7 @@ def sayfa_tek(d):
                 + "</div>")
     nt = (f"<div><div class='bas'>MAÇTAN NOTLAR</div><div style='display:flex;flex-direction:column;gap:calc(var(--k)*22px)'>{notlar}</div></div>"
           if notlar else "")
-    return (f"<div class='s' style='--k:1'><div class='st'></div>{ust('MAÇ SONUCU', d['turnuva'])}"
+    return (f"<div class='s' style='--k:1'><div class='st'></div>{ust(d.get('durum', 'MAÇ SONUCU'), d['turnuva'])}"
             f"<div id='kutu' style='position:absolute;left:70px;right:70px;top:400px;bottom:362px;overflow:hidden;display:flex;flex-direction:column;"
             f"justify-content:space-evenly;gap:calc(var(--k)*34px)'>{skor}{puan}{nt}</div>{alt_bar(d)}</div>")
 
