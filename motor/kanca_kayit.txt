@@ -15,3 +15,4 @@
 2026-11-01 | portre | baba-hakki | K07 | Üç yüz seksen iki gol, hepsi tek bir formayla. | sonuç: -
 2026-11-01 | hikaye | danimarka-1992 | K16 | Bir takımı turnuvaya son anda çağırsalar ne yapar? | sonuç: -
 2026-11-02 | portre | cruyff | K15 | Bir çalım, bir futbolcunun adını taşıyabilir mi? | sonuç: -
+2026-11-03 | portre | kenan-yildiz | K17 | Doğduğun ülkeye karşı ilk milli golünü atsan ne yaparsın? | sonuç: -
