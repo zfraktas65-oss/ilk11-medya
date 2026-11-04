@@ -8,7 +8,8 @@ haber.json:
   "haberler": [
     {"etiket": "SÜPER LİG", "baslik": "…", "kisa": "kapakta görünecek kısa başlık (≤38 karakter)",
      "ozet": "2-3 cümle, en fazla ~240 karakter", "kaynaklar": ["TFF", "AA"],
-     "skor": {"sol": "LİLLE", "sonuc": "2-4", "sag": "GALATASARAY"}   # isteğe bağlı, sadece maç sonucu haberlerinde}
+     "skor": {"sol": "LİLLE", "sonuc": "2-4", "sag": "GALATASARAY"},  # isteğe bağlı, sadece maç sonucu haberlerinde
+     "foto": "/root/ilk11-medya/motor/fotolar/kesik/<ad>.png", "kredi": "Foto: … · CC BY 4.0"}  # isteğe bağlı (kesik PNG, bkz. FOTO_VIDEO.md)
   ]
 }
 Etiketler: SÜPER LİG, MİLLİ TAKIM, AVRUPA, TRANSFER, DÜNYA, 1. LİG, KADIN FUTBOLU (diğerleri varsayılan renkle çizilir).
@@ -100,14 +101,24 @@ def haber(h, n, total):
     L = len(h["baslik"])
     fs = 104 if L <= 38 else 92 if L <= 55 else 80 if L <= 75 else 70
     kay = " · ".join(h.get("kaynaklar", []))
-    return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}"
-            f"<div style='position:absolute;right:40px;top:150px;opacity:.16;transform:rotate(-8deg)'>{ikon(h['etiket'])}</div>"
-            "<div style='position:absolute;left:70px;right:70px;top:250px;bottom:190px;display:flex;flex-direction:column;justify-content:center;gap:38px'>"
+    foto = h.get("foto")
+    if foto:   # kesik (arka planı kaldırılmış) kişi fotoğrafı: sağ üstte, yazı alanı aşağı kayar
+        fs = int(fs * 0.85)
+        src = "file://" + os.path.abspath(os.path.expanduser(foto))
+        gorsel = (f"<img src='{esc(src)}' style='position:absolute;right:40px;top:120px;height:430px;max-width:560px;object-fit:contain;"
+                  "object-position:100% 100%;filter:drop-shadow(0 22px 34px rgba(0,0,0,.6))'>"
+                  + (f"<div style='position:absolute;right:44px;top:556px;font:600 20px Inter;color:#8FA597'>📷 {esc(h['kredi'])}</div>" if h.get("kredi") else ""))
+        alan, gap, pfs = "top:500px;bottom:150px;justify-content:flex-end", 26, 36
+    else:
+        gorsel = f"<div style='position:absolute;right:40px;top:150px;opacity:.16;transform:rotate(-8deg)'>{ikon(h['etiket'])}</div>"
+        alan, gap, pfs = "top:250px;bottom:190px;justify-content:center", 38, 40
+    return (f"<div class='slide'><div class='stripes'></div>{top(n, total)}{gorsel}"
+            f"<div style='position:absolute;left:70px;right:70px;{alan};display:flex;flex-direction:column;gap:{gap}px'>"
             f"<div><span class='chip' style='background:{bg};color:{fg}'>{esc(h['etiket'])}</span></div>"
             + skor_blok(h.get("skor"), bg, fg) +
             f"<h1 style='font-size:{fs}px'>{esc(h['baslik'])}</h1>"
             f"<div style='width:120px;height:10px;border-radius:5px;background:{bg}'></div>"
-            f"<p style='font:600 40px/1.38 Inter;color:#DCE6DF'>{esc(h['ozet'])}</p>"
+            f"<p style='font:600 {pfs}px/1.36 Inter;color:#DCE6DF'>{esc(h['ozet'])}</p>"
             + (f"<p style='font:700 28px Inter;color:#8FA597;letter-spacing:1px'>Kaynak: {esc(kay)}</p>" if kay else "")
             + f"</div>{foot('KAYDIR →' if n < total else '')}</div>")
 
