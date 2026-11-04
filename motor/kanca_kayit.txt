@@ -18,3 +18,4 @@
 2026-11-03 | portre | kenan-yildiz | K17 | Doğduğun ülkeye karşı ilk milli golünü atsan ne yaparsın? | sonuç: -
 2026-11-03 | hikaye | yunanistan-2004 | K22 | Bu takım için kimse tek kuruş vermiyordu. | sonuç: -
 2026-11-04 | portre | gunduz-kilic | K24 | Bir derbide beş gol atan tek Galatasaraylı o. | sonuç: -
+2026-11-04 | hikaye | besiktas-benfica-2016 | K08 | Sıfır üç geride, kırk beş dakika kaldı. | sonuç: -
