@@ -21,11 +21,11 @@ PFDK/UEFA cezaları, aday kadrolar, maç saati/stat değişiklikleri ve diğer a
 `cd ~/ilk11-medya && rm -rf ~/cikti && python3 motor/ozel.py ~/sondakika.json ~/cikti`. Bu akışta yalnız `~/cikti/hikaye.jpg` kullanılır; Read ile aç ve kontrol et (gönderi kartları paylaşılmaz).
 
 ## H2 · Metin
-4–5 kısa cümle, toplam 26–38 kelime (takip çağrısıyla video ≈ 18–24 sn). Her cümle doğrulanmış bilgiye dayanır.
+5–6 kısa cümle (2. cümle kanca sonrası sesli takip çağrısı), toplam 32–44 kelime (takip cümlesi dahil; video ≈ 20–27 sn). Her cümle doğrulanmış bilgiye dayanır.
 - **İlk cümle haberin kendisi:** kim, ne oldu; en çarpıcı kısım önde (✓ "Fenerbahçe'de geçici görev resmen Dirk Kuyt'a verildi."). Haberde sonuç saklanmaz.
 - Sonra 1–2 doğrulanmış ayrıntı (sözleşme süresi, bonservis yalnız resmî açıklamada geçiyorsa; sakatlıkta yalnız kulübün açıkladığı tanı/süre), neden önemli olduğu (kendi cümlenle, taraf tutmadan, yorum katmadan) ve doğrulanmışsa sıradaki adım (ilk maç, dönüş tarihi).
 - Söylenti, tahmin, uydurma söz yok. Bir kişinin sözü aktarılacaksa yalnız kaynakta birebir geçen kısa söz.
-- Sayıları ve tarihleri yazıyla yaz (seslendirme); altyazı için rakamlı hâlini senaryoda ayrıca ver. Takip çağrısını metne YAZMA (motor ekler).
+- Sayıları ve tarihleri yazıyla yaz (seslendirme); altyazı için rakamlı hâlini senaryoda ayrıca ver. Kapanıştaki takip çağrısını metne YAZMA (motor ekler); ama 2. cümle her zaman SABLONLAR.md'deki kanca sonrası sesli takip çağrısıdır (birebir `{"soz": "İlk On Bir'i takip et, devamı geliyor!", "altyazi": "İLK 11'i takip et, devamı geliyor!"}`; ElevenLabs metnine de 2. paragraf olarak girer).
 - Ekranda sorulacak **iki seçenekli** soru (≤ 44 karakter, "X mi Y mi?"; ör. "Doğru karar mı, erken mi?").
 
 ## H3 · Seslendirme
@@ -33,7 +33,7 @@ ToolSearch: "select:mcp__Seslendirme__creative_generate_speech,mcp__Seslendirme_
 
 ## H4 · ~/haber/senaryo.json
 motor/SABLONLAR.md'ye birebir uy. slug "TARIH-haber-<anahtarın kısa hâli>", ses "ses.mp3", cumleler (ElevenLabs metniyle aynı sayı ve sırada), **3–5 sahne**, KARAKTERLİ ÇİZGİ FİLM stili (c* sahneleri):
-- `ckanca`: haberin kişisi (kulübünün/milli takımın forma renkleri, bilinen forma numarası, `ad` etiketi); `baslik` haberin ≤ 5 kelimelik özeti, vurgulu kelimeyle (ör. "KUYT *RESMEN* BAŞLADI"); en fazla 1 cümle.
+- `ckanca`: haberin kişisi (kulübünün/milli takımın forma renkleri, bilinen forma numarası, `ad` etiketi); `baslik` haberin ≤ 5 kelimelik özeti, vurgulu kelimeyle (ör. "KUYT *RESMEN* BAŞLADI"); haber cümlesi + 2. cümledeki takip çağrısı, `"cumleler": [0, 1]`.
 - Kişinin depoda lisanslı kesik fotoğrafı varsa `foto` sahnesi (`"arka": "stadyum"`, FOTO_VIDEO.md).
 - `ctabela` / `csayi`: doğrulanmış bir rakam (sözleşme yılı, rekor sayısı, dönüş süresi).
 - `ckarakter`: sonuç ya da sıradaki adım.
