@@ -137,7 +137,7 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 
 1. K0'ı uygula. Anahtar KADRO'daki gibidir. Kayıtta `sonuc <anahtar>` varsa dur.
 2. **Maç bitti mi?** "<ev> <dep> maç sonucu" diye ara.
-   - **Bitmediyse** (uzatma, penaltılar ya da gecikme varsa): `mcp__claude-code-remote__create_trigger` ile bu görev metninin aynısıyla tek seferlik yeni bir görev kur. run_once_at şu an + 25 dk olur. Ad aynı kalır; initiation "human_schedule", notifications {"push": true}. Ardından dur. Başlamadan 4 saat sonrasını geçtiyse yeniden kurma; durumu bildir.
+   - **Bitmediyse** (uzatma, penaltılar ya da gecikme varsa): `mcp__claude-code-remote__create_trigger` ile bu görev metninin aynısıyla tek seferlik yeni bir görev kur. run_once_at şu an + 8 dk olur (sayfa sahibinin isteği, 2026-11-05: skor maç biter bitmez hikâye olarak paylaşılsın). Ad aynı kalır; initiation "human_schedule", notifications {"push": true}. Ardından dur. Başlamadan 4 saat sonrasını geçtiyse yeniden kurma; durumu bildir.
    - **Ertelendi ya da tatil edildiyse:** resmî açıklama varsa SON DAKİKA biçiminde paylaş, yoksa yalnız bildir.
 3. **Doğrula:**
    - Kesin skor: resmî kaynak (UEFA/TFF/kulüp) ya da iki bağımsız kaynak.
