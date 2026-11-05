@@ -20,3 +20,4 @@
 2026-11-04 | portre | gunduz-kilic | K24 | Bir derbide beş gol atan tek Galatasaraylı o. | sonuç: -
 2026-11-04 | hikaye | besiktas-benfica-2016 | K08 | Sıfır üç geride, kırk beş dakika kaldı. | sonuç: -
 2026-11-05 | portre | ronaldo-madeira | K34 | Yedi numaralı forma ona on sekiz yaşında geldi. | sonuç: -
+2026-11-05 | hikaye | galatasaray-2000 | K10 | Uzatmalar. Skor sıfır sıfır. Kaptan Hagi kırmızı kart gördü. | sonuç: -
