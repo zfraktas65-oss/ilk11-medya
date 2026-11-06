@@ -21,3 +21,4 @@
 2026-11-04 | hikaye | besiktas-benfica-2016 | K08 | Sıfır üç geride, kırk beş dakika kaldı. | sonuç: -
 2026-11-05 | portre | ronaldo-madeira | K34 | Yedi numaralı forma ona on sekiz yaşında geldi. | sonuç: -
 2026-11-05 | hikaye | galatasaray-2000 | K10 | Uzatmalar. Skor sıfır sıfır. Kaptan Hagi kırmızı kart gördü. | sonuç: -
+2026-11-06 | portre | senol-gunes | K07 | Bin yüz dakikadan fazla, ağlarına tek top girmedi. | sonuç: -
