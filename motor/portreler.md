@@ -4,7 +4,7 @@ Bir futbolcunun ya da teknik direktörün hayat hikâyesi: nereden başladı, d�
 Akşamki "Tarihten Bir Hikâye" (motor/konular.md) tek bir ANI anlatır; portre bir İNSANI anlatır. Aynı kişiyi iki havuzda tekrar etme.
 
 Her bilgi yayından önce en az iki güvenilir kaynakla doğrulanır; doğrulanamayan ayrıntı metne girmez, kişi doğrulanamıyorsa sıradakine geçilir.
-Siyasi/hukuki tartışmalı kişilerden (yargılanan, firari, siyasete atılan) kaçın. Yaşayan kişiler hakkında yalnız kamuya açık kariyer bilgisi; özel hayat, sağlık ayrıntısı ve söylenti yok.
+Siyasi/hukuki tartışmalı kişilerden (yargılanan, firari, siyasete atılan) kaçın. **YASAK (sayfa sahibi, 2026-11-07): Hakan Şükür hiçbir içerikte — konu, soru, karşılaştırma, açıklama ya da hashtag olarak — anılmaz.** Ekrandaki soruda ve açıklamada da bu kurala uy. Yaşayan kişiler hakkında yalnız kamuya açık kariyer bilgisi; özel hayat, sağlık ayrıntısı ve söylenti yok.
 
 ## Seçim kuralı (sayfa sahibinin onayı, 2026-11-02)
 Metricool istatistikleri (22 Ekim–1 Kasım): Türk futbolu bağlantılı Reels'ler ortalama ~2.800, diğerleri ~1.500 izlendi (en iyiler: Alex 3.624, Baba Hakkı 3.355, Hagi 3.318). Bu yüzden **3 günün 2'si TÜRK FUTBOLU bölümünden** seçilir:
