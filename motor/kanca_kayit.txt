@@ -24,3 +24,4 @@
 2026-11-06 | portre | senol-gunes | K07 | Bin yüz dakikadan fazla, ağlarına tek top girmedi. | sonuç: -
 2026-11-06 | hikaye | maradona-1986 | K09 | Dört dakika arayla, aynı adamdan iki efsane gol. | sonuç: -
 2026-11-07 | portre | drogba | K15 | Bir golcü, bir iç savaşı durdurabilir mi? | sonuç: -
+2026-11-07 | hikaye | fenerbahce-old-trafford | K26 | Old Trafford, kırk yıldır Avrupa'da böyle bir gece görmemişti. | sonuç: -
