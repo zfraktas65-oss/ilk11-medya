@@ -110,6 +110,7 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH, SAAT (başlama, Europe/Is
    - `dizilis` alanını yalnız şu durumda yaz: kaynak dizilişi açıkça veriyor (ör. 4-2-3-1) ve oyuncuların mevkileri kaynaktan anlaşılıyor. Değilse yazma; kart liste düzeninde çıkar.
 4. `~/kadro.json` yaz. Rakibin forma renkleri biliniyorsa `renkler` alanına ekle.
    - Çalıştır: `cd ~/ilk11-medya && rm -rf ~/cikti && python3 motor/ozel.py ~/kadro.json ~/cikti`.
+   - **İKİ TAKIMIN 11'İ BİRLİKTE PAYLAŞILIYORSA** (derbi ya da rakibin 11'i de veriliyorsa) ayrı kart yapılmaz: iki 11 **TEK kartta yan yana** olur (sayfa sahibinin isteği, 2026-11-08, "hep böyle"). `takimlar` sırası: önce ev sahibi (sol), sonra deplasman (sağ). Çalıştır: `rm -rf ~/cikti && python3 motor/yanyana.py ~/kadro.json ~/cikti` → `01_kart.jpg` + `02_takip.jpg` (gönderi) ve `hikaye.jpg` (iki 11 tek hikâye ekranında).
    - Kartları Read ile aç. Taşma, yanlış harf veya eksik oyuncu varsa düzeltip yeniden üret.
 5. Y'yi uygula (tur kadro), sonra P'yi. Açıklama:
    ```

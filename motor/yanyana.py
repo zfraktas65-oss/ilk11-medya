@@ -3,11 +3,11 @@
 
 Kullanım:  python3 motor/yanyana.py kadro.json cikti_klasoru
 Girdi: ozel.py'deki KADRO biçimi; takimlar'da iki takım olur (sol = ev sahibi, sağ = deplasman sırasıyla verilir).
-Çıktı: 01_kart.jpg (1080x1350, gönderi) ve hikaye.jpg (1080x1920, hikâye).
+Çıktı: 01_kart.jpg + 02_takip.jpg (1080x1350, gönderi) ve hikaye.jpg (1080x1920, hikâye).
 """
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from haber import CSS, esc, top, foot
+from haber import CSS, esc, top, foot, takip
 from ozel import renk, logo, _logo_img, EK_CSS
 
 
@@ -81,8 +81,9 @@ def main():
     from playwright.sync_api import sync_playwright
     with sync_playwright() as pw:
         br = pw.chromium.launch()
-        for nm, (W, H, hk) in {"01_kart.jpg": (1080, 1350, False), "hikaye.jpg": (1080, 1920, True)}.items():
-            page = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}{EK_CSS}</style></head><body>{kart(d, W, H, hk)}</body></html>"
+        for nm, (W, H, hk) in {"01_kart.jpg": (1080, 1350, False), "02_takip.jpg": (1080, 1350, None), "hikaye.jpg": (1080, 1920, True)}.items():
+            govde = takip(2).replace("class='slide'", "class='s slide'", 1) if hk is None else kart(d, W, H, hk)
+            page = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}{EK_CSS}</style></head><body>{govde}</body></html>"
             p = os.path.abspath(os.path.join(out, "_yy.html"))
             open(p, "w", encoding="utf-8").write(page)
             pg = br.new_page(viewport={"width": W, "height": H})
