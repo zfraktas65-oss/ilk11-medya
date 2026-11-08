@@ -86,3 +86,4 @@
 2026-11-08 18:08 kadro 2026-11-08-alanyaspor-trabzonspor | ALANYASPOR – TRABZONSPOR Trabzonspor ilk 11, gönderi 18:12 + hikâye 18:14; Alanyaspor 11'i kaynaklarda çelişkili olduğu için verilmedi (A Spor, Sabah, Fanatik, Türkiye Gazetesi)
 2026-11-08 18:11 sonuc 2026-11-08-corum-fk-fenerbahce | ÇORUM FK 0-5 FENERBAHÇE, gönderi 18:14 + hikâye 18:16 (Ajansspor, Fanatik, CNN Türk)
 2026-11-08 19:05 kadro 2026-11-08-alanyaspor-trabzonspor-2 | ALANYASPOR – TRABZONSPOR iki takımın 11'i yan yana tek kart (sayfa sahibinin isteği), gönderi 19:08 + hikâye 19:07; tek takımlı 18:12 gönderisini sayfa sahibi silebilir (A Spor, Sabah, Fanatik, Türkiye Gazetesi, Sözcü, TRTV) — İPTAL: sayfa sahibinin isteğiyle yayınlanmadan taslağa alındı (19:06); bu maç için yeniden paylaşma
+2026-11-08 19:19 demecvideo 2026-11-08-corum-fk-fenerbahce-sonra-fenerbahce-1 | Emre Belözoğlu maç sonu (video bekleniyor) (A Haber, Yeni Şafak)
