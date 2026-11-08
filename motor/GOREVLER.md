@@ -103,7 +103,8 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH, SAAT (başlama, Europe/Is
    - Kabul şartı: resmî kaynak tek başına yeter ya da iki bağımsız kaynakta aynı 11 isim geçer.
    - Henüz yoksa 3–4 dakika arayla yeniden ara: `Monitor` ile bekle ya da aramaları aralıklı yap. Bunu başlama saatine 10 dakika kalana kadar sürdür.
    - Yine doğrulanamazsa paylaşma ve B'yi uygula.
-3. **Bizim her takımımız için** (derbide iki takım da) şunları belirle:
+   > **RAKİBİN 11'İ DE HER ZAMAN VERİLİR** (sayfa sahibinin isteği, 2026-11-08, "rakip takımlarınki de olsun"). Kadro gönderisi yalnız bizim takımla ASLA paylaşılmaz: rakibin ilk 11'i de aynı şartla (resmî kaynak ya da iki bağımsız kaynakta aynı 11) doğrulanır ve iki 11 `motor/yanyana.py` ile TEK kartta yan yana verilir. Kaynaklar rakip 11'inde çelişiyorsa (bazı siteler farklı isim yazıyor) daha fazla kaynağa bak (Sözcü, TRT Spor, haber siteleri, canlı anlatımlar); çoğunluğun aynı verdiği 11 ve en az iki bağımsız kaynak yeterlidir. Rakip 11'i başlama saatine 10 dk kalana kadar doğrulanamazsa paylaşma ve B ile bildir. Rakibin teknik direktörü doğrulanamazsa boş bırakılır.
+3. **Her iki takım için** (bizim takım + rakip) şunları belirle:
    - 11 oyuncu: kaleci önce, sonra hatlar geriden ileriye, her hat sağdan sola. Kısa ve yaygın kullanılan adlar.
    - Teknik direktör.
    - Yedekler (yalnız açıklamada kullanılır, isteğe bağlı).

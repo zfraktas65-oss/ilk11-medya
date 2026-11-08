@@ -40,7 +40,7 @@ def _kolon(d, t, x, y, w, h, s):
     return (f"<div class='panel' style='left:{x}px;top:{y}px;width:{w}px;height:{h}px;padding:{int(22 * s)}px;"
             f"border-top:{int(8 * s)}px solid {a}'>"
             f"<div style='display:flex;align-items:center;gap:{int(14 * s)}px;height:{int(100 * s)}px'>{lg}"
-            f"<h1 style='font-size:{int(52 * s)}px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(ad)}</h1></div>"
+            f"<h1 style='font-size:{int(52 * (s if len(ad) <= 10 else min(s, 1.0)))}px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>{esc(ad)}</h1></div>"
             f"<div style='display:flex;flex-direction:column;gap:{gap}px;margin-top:{int(12 * s)}px'>{rows}</div>{td}</div>")
 
 
