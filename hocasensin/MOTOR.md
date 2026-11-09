@@ -35,7 +35,7 @@ Otomatik: altyazı (2–3 kelimelik parçalar, okunan kelime sarı), sahne baş�
 - `arka`: varliklar/arka içindeki ad (uzantısız) ya da yol. `bulanik` (px, karakter tanıtımında 10–12), `karanlik` (0–1), `renk` (hafif renk tonu).
 - `zoom`: başlangıç→bitiş yakınlaştırma (1.0 = tam kare); `merkez`: başlangıç→bitiş odak noktası (0–1, kaydırma için).
 - `isik_kapali`: o aralıkta görüntü kararır (Necmi abi ışıkları kapattı!).
-- `tribun`: `{"sayi": N, "tohum": 7}` — yalnız `"arka": "tribun"` ile (sıra düzeni varliklar/arka/tribun.json). N çizgi taraftar (varliklar/taraftar/*.png) önden arkaya sıralara dağılır ve zıplar; kapasite ≈ 75. Tribün sahnesinde zoom [1.0, 1.05], merkez [0.5, 0.5] iyi durur; yazıları y 260–560'a (çatı hizası), öndeki karakteri ayak 1660, h 700–780 ile koy.
+- `tribun`: `{"sayi": N, "tohum": 7}` — yalnız sıra düzeni olan arka planlarla: `tribun` (varliklar/arka/tribun.json, ≈75 kişi) ve `loca` (loca.json, ≈16 kişi; loca sahnesinde zoom [1.0, 1.04], merkez [0.5, 0.45]). N çizgi taraftar (varliklar/taraftar/*.png) önden arkaya sıralara dağılır ve zıplar; kapasite ≈ 75. Tribün sahnesinde zoom [1.0, 1.05], merkez [0.5, 0.5] iyi durur; yazıları y 260–560'a (çatı hizası), öndeki karakteri ayak 1660, h 700–780 ile koy.
 
 ## Karakter
 `{"ad": "cem", "h": 980, "x": 540, "ayak": 1640, "bas": <zaman>, "bitis": <zaman>, "giris": "up|left|right|pop|none", "sure": 0.35, "ayna": false, "golge": false, "kos": false, "faz": 0}`
@@ -59,6 +59,7 @@ Ortak: `tip`, `bas`, `bitis`, `x` (540), `y` (320), `anim` (`pop` | `stamp` | `d
 | ilerleme | sol, sag, oran (0–1), isaret | lig ilerleme çubuğu |
 | balon | metin | konuşma balonu (yalnız kurgu karakterler için) |
 | pankart | metin, zemin, renk, egim | tribün pankartı (kumaş bez; ör. "ANADOLUSPOR TRİBÜNÜ", "@ad TRİBÜNDE!") |
+| liste | baslik, isimler (liste), sutun (2), satir (görünen satır, 9) | isim panosu; @ kendiliğinden eklenir; sığmazsa sahne boyunca yavaşça kayar. Tribün sahnesinde y≈420 (5–10 isim), loca sahnesinde y≈1085 ve satir 6 |
 | skor | ev, dep, ev_skor, dep_skor, dakika | maç skor tabelası (ör. y 330) |
 | resim | dosya, genislik, golge | herhangi bir PNG (yeni nesne/karakter) |
 

@@ -235,6 +235,36 @@ def banner(text, bg=(255, 250, 235), fg=PURPLE, tilt=-3):
         d.ellipse((x - 9, 1, x + 9, 19), fill=YELLOW, outline=INK, width=3)
     return shadowed(img).rotate(tilt, resample=Image.BICUBIC, expand=True)
 
+LIST_W, LIST_ROW, LIST_VIS = 920, 60, 9
+
+def list_body(names, cols=2):
+    names = [n if n.startswith("@") else "@" + n for n in names]
+    rows = (len(names) + cols - 1) // cols
+    colw = (LIST_W - 60) // cols
+    img = Image.new("RGBA", (LIST_W - 28, max(rows, 1) * LIST_ROW + 20), (255, 255, 255, 255)); d = ImageDraw.Draw(img)
+    for i, n in enumerate(names):
+        r, c = i // cols, i % cols
+        size = fit_text(n, "xbold", 38, colw - 30)
+        if r % 2 == 0 and c == 0: d.rectangle((0, 10 + r * LIST_ROW, img.width, 10 + (r + 1) * LIST_ROW), fill=(246, 240, 252))
+        d.text((24 + c * colw, 10 + r * LIST_ROW + LIST_ROW // 2), n, font=font("xbold", size), fill=PURPLE, anchor="lm")
+    return img
+
+def list_frame(title, body, offset, vis_rows=LIST_VIS):
+    vis_h = min(body.height, vis_rows * LIST_ROW + 20)
+    head_h = 96
+    w, h = LIST_W, head_h + vis_h + 14
+    card = rrect((w, h), 28, WHITE, 7); d = ImageDraw.Draw(card)
+    d.rounded_rectangle((7, 7, w - 8, head_h), 24, fill=PURPLE); d.rectangle((7, head_h - 30, w - 8, head_h), fill=PURPLE)
+    t = text_img(title, "black", fit_text(title, "black", 46, w - 60), YELLOW, shadow=False)
+    card.alpha_composite(t, ((w - t.width) // 2, (head_h + 7 - t.height) // 2))
+    y0 = int(max(0, min(offset, body.height - vis_h)))
+    card.alpha_composite(body.crop((0, y0, body.width, y0 + vis_h)), (14, head_h + 2))
+    if body.height > vis_h:  # alt kenarda solma
+        fade = Image.new("RGBA", (w - 28, 50), (255, 255, 255, 0)); fd = ImageDraw.Draw(fade)
+        for i in range(50): fd.line((0, i, w, i), fill=(255, 255, 255, int(255 * i / 50)))
+        card.alpha_composite(fade, (14, head_h + vis_h - 48))
+    return shadowed(card)
+
 def scoreboard(home, away, hs, as_, minute):
     w, h = 980, 150
     img = rrect((w, h), 26, INK, 0); d = ImageDraw.Draw(img)
@@ -395,6 +425,12 @@ class Bolum:
                                   golge=c.get("golge", False), kos=c.get("kos", False), faz=c.get("faz", 0)))
             ovs = []
             for o in s.get("ogeler", []):
+                if o["tip"] == "liste":
+                    body = list_body(o["isimler"], o.get("sutun", 2))
+                    ovs.append(dict(img=list_frame(o.get("baslik", "TRİBÜN"), body, 0, o.get("satir", LIST_VIS)), liste=(o.get("baslik", "TRİBÜN"), body, o.get("satir", LIST_VIS)),
+                                    t0=self.T(o.get("bas", t0)), t1=self.T(o["bitis"]) if "bitis" in o else None, t_end=t1,
+                                    x=o.get("x", 540), y=o.get("y", 640), anim=o.get("anim", "pop"), sure=0.3, rot=0, nabiz=False, titre=False))
+                    continue
                 ovs.append(dict(img=self._ov_img(o), t0=self.T(o.get("bas", t0)), t1=self.T(o["bitis"]) if "bitis" in o else None,
                                 x=o.get("x", 540), y=o.get("y", 320), anim=o.get("anim", "pop"), sure=o.get("sure", 0.3 if o.get("anim", "pop") != "stamp" else 0.2),
                                 rot=o.get("dondur", 0), nabiz=o.get("nabiz", False), titre=o.get("titre", False)))
@@ -606,6 +642,12 @@ def draw_char(frame, c, t):
 
 def draw_ov(frame, o, t):
     if t < o["t0"] or (o["t1"] is not None and t > o["t1"]): return
+    if o.get("liste"):
+        title, body, vr = o["liste"]
+        end = o["t1"] if o["t1"] is not None else o["t_end"]
+        vis_h = min(body.height, vr * LIST_ROW + 20)
+        p = min(max((t - o["t0"] - 0.8) / max(end - o["t0"] - 1.6, 0.1), 0), 1)
+        o = dict(o, img=list_frame(title, body, p * (body.height - vis_h), vr))
     k = (t - o["t0"]) / o["sure"]; sc, al, dy = 1.0, 1.0, 0
     a = o["anim"]
     if a == "pop": sc = max(ease_out_back(k, 2.0), 0.01)
