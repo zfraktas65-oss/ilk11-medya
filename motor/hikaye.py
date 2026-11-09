@@ -42,7 +42,7 @@ def esc(s):
 
 
 def norm(w):
-    return w.replace("İ", "i").replace("I", "ı").lower().strip(".,:;!?…\"'’")
+    return w.replace("İ", "i").replace("I", "ı").lower().strip(".,:;!?…\"'’‘“”«»")
 
 
 def accent(text, color=LIME):

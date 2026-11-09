@@ -6,6 +6,11 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 
 **KİŞİ FOTOĞRAFI VE VİDEO:** motor/FOTO_VIDEO.md'yi oku ve uygula — içerikteki kişiler arka planı kaldırılmış (kesik PNG) fotoğrafla gösterilir; ilgili video varsa o da paylaşılır.
 
+> **KAYDIRMALI GÖNDERİ YOK (sayfa sahibinin kararı, 2026-11-09).** Haftalık rapora göre kaydırmalı gönderiler neredeyse hiç görülmüyor (2–8 Kasım: 25 gönderi, toplam 195 görüntülenme; 12 Reels: 22.640 izlenme). Bu yüzden:
+> - **İlk 11 (KADRO):** yalnız Instagram HİKÂYESİ; gönderi paylaşılmaz.
+> - **Maç sonucu, son dakika, maç öncesi demeç:** kısa **Reels + hikâye**; nasıl yapılacağı motor/gorevler/haber_reels.md'de (TÜR `sonuc`, `sondakika`, `demec`).
+> - Kart gönderisi (P.1) yalnız haber_reels.md'deki H-YEDEK durumunda (Reels üretilemezse) ve FİKSTÜR'de kullanılır.
+
 ---
 
 ## ORTAK ADIMLAR
@@ -26,8 +31,8 @@ Bu dosya otomatik görevlerin talimatıdır. Görev metni hangi bölümü uygula
 ### KAYIT · motor/paylasilan.txt
 Her paylaşım tek satırla kaydedilir: `YYYY-AA-GG SS:DD <tur> <anahtar> | <kısa başlık>`. `tur` değeri kadro, sonuc, sondakika, demec, demecvideo (maç sonu demeci için sayfa sahibine video haberi verildi), puan veya fikstur olur.
 - Anahtar örnekleri: kadro/sonuç için `2026-10-24-galatasaray-kasimpasa`, son dakika için `2026-10-24-fenerbahce-teknik-direktor`.
-- Haber Reels'i olarak paylaşılan son dakikanın satırı ` (reels)` ile biter (motor/gorevler/haber_reels.md).
-- **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma.
+- Reels olarak paylaşılan son dakika, demeç ve sonucun satırı ` (reels)`, yalnız hikâye olarak paylaşılanınki ` (hikâye)` ile biter (motor/gorevler/haber_reels.md).
+- **Paylaşmadan önce** aynı tur ve anahtarla bir satır varsa paylaşma. Tek istisna SONUÇ: önce hikâye satırı (`… hikâye`), sonra aynı anahtarla ` (reels)` satırı yazılır; Reels adımı yalnız ` (reels)` satırına bakar.
 - Son dakikada aynı olay farklı kelimelerle de olsa son 3 günde paylaşıldıysa paylaşma.
 - Paylaşımdan sonra satırı ekle ve gönder: `cd ~/ilk11-medya && git pull --rebase -q && echo "<satır>" >> motor/paylasilan.txt && git add motor/paylasilan.txt && git commit -qm "kayıt" && git push -q`. Çakışma olursa en fazla 3 kez tekrar dene.
 
@@ -63,7 +68,7 @@ Her açıklamanın sonunda şu satır bulunur: `Daha fazlası için @ilk.onbir11
 ### M · Manuel paylaşım paketi (yalnız MANUEL MOD'da)
 Metricool'a hiçbir şey gönderme (createScheduledPost çağırma). Bunun yerine:
 1. **Son kontrol:** `git pull` ile motor/paylasilan.txt'ye yeniden bak; aynı içerik kayıtlıysa gönderme ve dur.
-2. SendUserFile ile (status "proactive") paylaşılacak görselleri sırayla gönder: önce gönderi kartları (01_…, 02_…, en sonda takip kartı), en sonda hikaye.jpg. caption: "Gönderi: 01–NN sırayla kaydırmalı · Hikâye: hikaye.jpg".
+2. SendUserFile ile (status "proactive") paylaşılacak görselleri sırayla gönder: önce gönderi kartları (yalnız gönderi paylaşılan akışlarda — FİKSTÜR ve H-YEDEK; 01_…, 02_…, en sonda takip kartı), en sonda hikaye.jpg. caption: "Gönderi: 01–NN sırayla kaydırmalı · Hikâye: hikaye.jpg" (gönderi yoksa yalnız "Hikâye: hikaye.jpg"). Reels akışlarının manuel paketi: haber_reels.md MANUEL MOD.
 3. SendUserMessage ile kısa bir paylaşım notu gönder:
    - İlk satır: `📲 ELLE PAYLAŞ · <ne> · <önerilen saat: şimdi>`
    - Gönderi açıklama metni, kolay kopyalansın diye tek bir kod bloğu (```) içinde.
@@ -112,32 +117,14 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH, SAAT (başlama, Europe/Is
 4. `~/kadro.json` yaz. Rakibin forma renkleri biliniyorsa `renkler` alanına ekle.
    - Çalıştır: `cd ~/ilk11-medya && rm -rf ~/cikti && python3 motor/ozel.py ~/kadro.json ~/cikti`.
    - **İKİ TAKIMIN 11'İ BİRLİKTE PAYLAŞILIYORSA** (derbi ya da rakibin 11'i de veriliyorsa) ayrı kart yapılmaz: iki 11 **TEK kartta yan yana** olur (sayfa sahibinin isteği, 2026-11-08, "hep böyle"). `takimlar` sırası: önce ev sahibi (sol), sonra deplasman (sağ). Çalıştır: `rm -rf ~/cikti && python3 motor/yanyana.py ~/kadro.json ~/cikti` → `01_kart.jpg` + `02_takip.jpg` (gönderi) ve `hikaye.jpg` (iki 11 tek hikâye ekranında).
-   - Kartları Read ile aç. Taşma, yanlış harf veya eksik oyuncu varsa düzeltip yeniden üret.
-5. Y'yi uygula (tur kadro), sonra P'yi. Açıklama:
-   ```
-   📋 İLK 11 BELLİ OLDU | <EV> – <DEP>
-
-   <Takım> 11'i: <11 isim, virgülle>
-   Yedekler: <varsa>
-   Teknik direktör: <ad>
-
-   ⏰ <SAAT> · <TURNUVA>
-
-   Sence bu 11 kazanır mı? Yorumlara yaz 👇
-
-   Kaynak: <kaynak adları>
-
-   Daha fazlası için @ilk.onbir11'i takip et ⚽
-
-   #<takım> #<rakip ya da turnuva> #ilk11 #futbol
-   ```
-   Derbide iki takımın 11'i ayrı paragraflarda yer alır.
-6. KAYIT ve B adımlarını uygula.
+   - `hikaye.jpg`'yi Read ile aç. Taşma, yanlış harf veya eksik oyuncu varsa düzeltip yeniden üret. (Gönderi kartları da üretilir ama paylaşılmaz.)
+5. **YALNIZ HİKÂYE (sayfa sahibinin kararı, 2026-11-09):** Y'yi uygula (tur kadro; yalnız `hikaye.jpg` yüklenir), sonra P.0 son kontrolü ve **yalnız P.2 (Hikâye)**, date = şu an + 3 dk. P.1 (gönderi) UYGULANMAZ, açıklama metni yazılmaz. Manuel modda M adımında yalnız hikaye.jpg gönderilir (açıklama kod bloğu yok; kaynaklar mesajda).
+6. KAYIT ve B adımlarını uygula (B mesajında 11'ler kısaca ve kaynaklar).
 
 ## SONUÇ GÖREVİ
 Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 
-1. K0'ı uygula. Anahtar KADRO'daki gibidir. Kayıtta `sonuc <anahtar>` varsa dur.
+1. K0'ı uygula. Anahtar KADRO'daki gibidir. Kayıtta ` (reels)` ile biten (ya da "Reels yapılamadı" notlu) bir `sonuc <anahtar>` satırı varsa dur; yalnız hikâye satırı (`… hikâye`) varsa 2–5. adımları atla ve doğrudan 6. adımla (Reels) devam et.
 2. **Maç bitti mi?** "<ev> <dep> maç sonucu" diye ara.
    - **Bitmediyse** (uzatma, penaltılar ya da gecikme varsa): `mcp__claude-code-remote__create_trigger` ile bu görev metninin aynısıyla tek seferlik yeni bir görev kur. run_once_at şu an + 8 dk olur (sayfa sahibinin isteği, 2026-11-05: skor maç biter bitmez hikâye olarak paylaşılsın). Ad aynı kalır; initiation "human_schedule", notifications {"push": true}. Ardından dur. Başlamadan 4 saat sonrasını geçtiyse yeniden kurma; durumu bildir.
    - **Ertelendi ya da tatil edildiyse:** resmî açıklama varsa SON DAKİKA biçiminde paylaş, yoksa yalnız bildir.
@@ -146,14 +133,15 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
    - Goller (dakika + oyuncu, penaltı için not "P", kendi kalesine için "KK"): yalnız iki kaynak aynı veriyorsa yaz; değilse `goller` alanını boş bırak.
    - `not` (isteğe bağlı): doğrulanmış tek kısa bilgi, ör. puan durumu, tur atlama ya da seri.
    - `sonraki`: resmî fikstürden doğrulanmış sıradaki maç.
-4. `~/sonuc.json` yaz, motor/ozel.py ile üret ve kontrol et (KADRO 4. adımdaki gibi).
-5. Y'yi uygula (tur sonuc), sonra P'yi. Açıklama:
+4. `~/sonuc.json` yaz, motor/ozel.py ile üret ve `hikaye.jpg`'yi kontrol et (KADRO 4. adımdaki gibi).
+5. **Önce hikâye (skor maç biter bitmez):** Y'yi uygula (tur sonuc; yalnız `hikaye.jpg`), P.0 son kontrolü, sonra **yalnız P.2 (Hikâye)**, date = şu an + 3 dk. Hemen KAYIT satırını yaz: `YYYY-AA-GG SS:DD sonuc <anahtar> | <EV> <skor> <DEP> hikâye (<kaynaklar>)`. Gönderi (P.1) paylaşılmaz.
+6. **Sonra Reels (sayfa sahibinin kararı, 2026-11-09):** motor/gorevler/haber_reels.md'yi TÜR `sonuc` ile H0'dan H8'e uygula (JSON `~/sonuc.json`; hikâye zaten paylaşıldı). Reels açıklaması:
    ```
    ⚽ MAÇ SONUCU | <EV> <skor> <DEP>
 
    <2–3 cümlelik özet; yalnız doğrulanmış bilgiler>
 
-   Sence maçın yıldızı kimdi? Yorumlara yaz 👇
+   <iki seçenekli soru> Yorumlara yaz 👇
 
    Kaynak: <…>
 
@@ -161,7 +149,7 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 
    #<takım> #<turnuva> #ilk11 #futbol
    ```
-6. KAYIT ve B adımlarını uygula.
+7. B adımını uygula (haber_reels.md H8'deki bildirimle birlikte tek mesaj: skor hikâyesinin ve Reels'in saati).
 
 ## SON DAKİKA GÖREVİ
 Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) maç öncesi / sonrası demeçler** (maç sonu demeçleri artık Reels için yalnız haber verilir; bkz. B).
@@ -170,8 +158,8 @@ Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) ma�
 2. Takip edilen 5 takımla ilgili **son 2 saatin** haberlerini ve röportajlarını tara. Her takım için ayrı arama yap; kulüplerin resmî açıklamalarına ve KAP'a da bak.
 3. Bulunanları KAYIT'la ve bugünkü Metricool gönderileriyle karşılaştır. Daha önce paylaşılanı atla.
 4. Sınırlar:
-   - Bir çalışmada en fazla 2 son dakika ve 2 demeç gönderisi paylaşılır.
-   - Bir günde en fazla 8 son dakika ve 8 demeç paylaşılır.
+   - Bir çalışmada en fazla 2 son dakika ve 2 demeç paylaşılır (Reels ya da yalnız hikâye).
+   - Bir günde en fazla 8 son dakika ve 8 demeç paylaşılır; bunların en fazla 3'er tanesi Reels olur, gerisi yalnız hikâye (haber_reels.md H0).
    - Paylaşılacak bir şey yoksa hiçbir şey paylaşma ve tek satırla bitir; bildirim gönderme.
 
 ### A) Son dakika
@@ -197,15 +185,13 @@ Her saat çalışır. İki işi vardır: **A) son dakika haberleri** ve **B) ma�
 Her haber için:
 1. KURALLAR'a göre doğrula.
 2. `~/sondakika.json` yaz: takim, baslik (≤ 70 karakter), ozet (2–3 cümle, ≤ 240 karakter, kendi cümlelerinle), kaynaklar.
-   > **BÜYÜK HABER → REELS** (sayfa sahibinin onayı, 2026-11-02): haber motor/gorevler/haber_reels.md'deki BÜYÜK listedeyse ve bugün henüz haber Reels'i yoksa 3–5. adımlar yerine **haber_reels.md'yi** uygula (kart gönderisi yerine kısa Reels + hikâye kartı; günde en fazla 1). Diğer haberler aşağıdaki gibi kartla paylaşılır.
-3. Kartı üret ve kontrol et: `rm -rf ~/cikti && python3 motor/ozel.py ~/sondakika.json ~/cikti`, ardından Read ile aç.
-4. Y'yi uygula (tur sondakika), sonra P'yi. Açıklama:
+3. **HER SON DAKİKA → REELS + HİKÂYE** (sayfa sahibinin kararı, 2026-11-09; önceden yalnız büyük haberler, günde 1): motor/gorevler/haber_reels.md'yi TÜR `sondakika` ile H0'dan H8'e uygula. Günde en fazla 3 son dakika Reels'i; sınır dolduysa haber yalnız hikâye kartıyla paylaşılır (H0). Reels açıklaması:
    ```
    🚨 SON DAKİKA | <TAKIM>
 
    <özet>
 
-   Sen ne düşünüyorsun? Yorumlara yaz 👇
+   <iki seçenekli soru> Yorumlara yaz 👇
 
    Kaynak: <…>
 
@@ -213,7 +199,8 @@ Her haber için:
 
    #<takım> #sondakika #ilk11 #futbol
    ```
-5. KAYIT ve B adımlarını uygula.
+4. Kart gönderisi (`python3 motor/ozel.py ~/sondakika.json ~/cikti` → Y → P.1 + P.2) yalnız haber_reels.md H-YEDEK'te (Reels üretilemezse) kullanılır; açıklaması yukarıdaki gibidir, soru satırı "Sen ne düşünüyorsun? Yorumlara yaz 👇".
+5. KAYIT ve B adımlarını uygula (Reels akışında haber_reels.md H8).
 
 ### B) Demeçler (maç öncesi / maç sonrası röportajlar)
 **Kimin sözleri:** takip edilen 5 takımın oyuncuları, teknik direktörleri, başkanları ve yöneticileri.
@@ -234,7 +221,9 @@ Her haber için:
 >    Kaynak bağlantılarını ([Başlık](URL)) mesajın altına ekle. Aynı maçın aynı anı için birden çok kişi konuştuysa tek mesajda alt alta yaz.
 > 3. KAYIT'a `YYYY-AA-GG SS:DD demecvideo <anahtar> | <Kişi> maç sonu (video bekleniyor)` satırını ekle (aynı haber tekrar gönderilmez).
 > 4. Sayfa sahibi bu oturumda klip gönderirse motor/gorevler/demec_reels.md'yi baştan sona uygula.
-> Bu haber mesajları "demeç gönderisi" sınırına sayılmaz; bir takımın bir maçı için en fazla 2 haber (ör. flaş röportaj, basın toplantısı) gönderilir. Aşağıdaki kart kuralları (Kaynak şartı, Kartlara dağıtım, Gruplama, Her gönderi için) artık yalnız **MAÇ ÖNCESİ** demeçler için geçerlidir.
+> Bu haber mesajları "demeç gönderisi" sınırına sayılmaz; bir takımın bir maçı için en fazla 2 haber (ör. flaş röportaj, basın toplantısı) gönderilir. Aşağıdaki kurallar (Kaynak şartı, Hikâye, Gruplama, Her demeç için) artık yalnız **MAÇ ÖNCESİ** demeçler için geçerlidir.
+
+> **MAÇ ÖNCESİ DEMEÇ → REELS + HİKÂYE** (sayfa sahibinin kararı, 2026-11-09): maç öncesi demeçler artık kaydırmalı gönderi olarak paylaşılmaz. Reels'te kişinin birebir 2–4 cümlesi Hoca'nın sesiyle ve ekranda tırnak içinde verilir; **TAM METİN** hikâyede ve Reels açıklamasında yer alır (aşağıdaki kaynak şartı aynen geçerli). Günde en fazla 3 demeç Reels'i; sınır dolduysa yalnız hikâye (haber_reels.md H0).
 
 **Kaynak şartı:**
 - Demeç **TAM METİN** verilir: kişinin kaynakta yer alan sözlerinin hepsi, kaynaktaki sırayla. Seçme ya da kısa alıntı yapılmaz (sayfa sahibinin isteği).
@@ -250,27 +239,25 @@ Her haber için:
 - Hakaret, küfür ya da bir kişiyi suçla itham eden ifadeler metinden çıkarılır ve yerine "…" konur. Bunlar metnin ana kısmıysa o demeç hiç paylaşılmaz.
 - Hakem ve federasyon eleştirileri, kaynakta nasıl söylendiyse öyle ve yorum katmadan verilir.
 
-**Kartlara dağıtım:**
-- Gönderide uzun demeç birkaç karta bölünür; `motor/ozel.py` bunu cümle sınırlarından otomatik yapar (kart başına ≈ 360 karakter). Devam eden kart "…" ile başlar.
-- Instagram en fazla 20 görsel alır (19 demeç kartı + takip kartı). Daha uzunsa demeçler iki gönderiye ayrılır (ör. teknik direktör ayrı, oyuncular ayrı; anahtarlar `-1`, `-2`).
-- **Hikâyede bütün demeçler TEK ekranda** verilir; `motor/ozel.py` hikaye.jpg'yi yazı boyunu otomatik küçülterek üretir. Read ile aç ve okunurluğu kontrol et; sığmazsa betik hata verir: o durumda hikâyeyi her kişi için ayrı tek ekran olarak üret (her kişiyle ayrı demec.json) ve hepsini sırayla hikâye olarak paylaş.
+**Hikâye (tam metin):**
+- **Hikâyede bütün demeçler TEK ekranda** verilir; `motor/ozel.py` hikaye.jpg'yi yazı boyunu otomatik küçülterek üretir. Read ile aç ve okunurluğu kontrol et; sığmazsa betik hata verir: o durumda hikâyeyi her kişi için ayrı tek ekran olarak üret (her kişiyle ayrı demec.json) ve hepsini sırayla hikâye olarak paylaş (REEL saatinden +2, +3… dk).
+- Kart gönderisi yalnız haber_reels.md H-YEDEK'te paylaşılır; o durumda `motor/ozel.py` uzun demeci cümle sınırlarından kartlara böler (kart başına ≈ 360 karakter, en fazla 19 kart + takip kartı; daha uzunsa iki gönderi, anahtarlar `-1`, `-2`).
 
 **Gruplama:**
-- Aynı maça ve aynı ana (maç öncesi ya da maç sonu) ait demeçler TEK gönderide toplanır (karakter sınırı içinde).
-- Bir takım için bir maçta en fazla 1 "maç öncesi" ve 2 "maç sonu" demeç gönderisi paylaşılır (ör. önce flaş röportaj, sonra basın toplantısı).
-- Anahtar biçimi: `TARIH-<ev>-<dep>-once-<takım>` veya `TARIH-<ev>-<dep>-sonra-<takım>-1/2`.
+- Aynı maça ve aynı ana (maç öncesi) ait demeçler TEK Reels'te ve TEK hikâyede toplanır (Reels'te en fazla 2 kişi; açıklama karakter sınırı içinde).
+- Bir takım için bir maçta en fazla 1 "maç öncesi" demeç paylaşılır.
+- Anahtar biçimi: `TARIH-<ev>-<dep>-once-<takım>` (maç sonu: `TARIH-<ev>-<dep>-sonra-<takım>-1/2`).
 
-Her gönderi için:
-1. `~/demec.json` yaz. Biçim motor/ozel.py başındaki "4) DEMEÇ" bölümünde. baslik "MAÇ ÖNCESİ" ya da "MAÇ SONU" olur; mac alanı "EV – DEP · TURNUVA" biçimindedir.
-2. Kartları üret ve kontrol et (yukarıdaki gibi).
-3. Y'yi uygula (tur demec), sonra P'yi. Hikâye adımında media'ya hikaye.jpg (gerekirse kişi başına ayrı hikâyeler, sırayla +5, +6… dk) konur. Açıklama:
+Her maç öncesi demeç için:
+1. `~/demec.json` yaz. Biçim motor/ozel.py başındaki "4) DEMEÇ" bölümünde. baslik "MAÇ ÖNCESİ"; mac alanı "EV – DEP · TURNUVA" biçimindedir; `soz` TAM METİN.
+2. motor/gorevler/haber_reels.md'yi TÜR `demec` ile H0'dan H8'e uygula (Reels + hikâye). Reels açıklaması:
    ```
-   🎙️ <MAÇ SONU / MAÇ ÖNCESİ> KONUŞTULAR | <EV> – <DEP>
+   🎙️ MAÇ ÖNCESİ KONUŞTU | <EV> – <DEP>        (birden çok kişi: KONUŞTULAR)
 
    <Kim, rol>: "<demecin tam metni>"
    (her kişi için bir paragraf)
 
-   Sence haklılar mı? Yorumlara yaz 👇
+   <iki seçenekli soru> Yorumlara yaz 👇
 
    Kaynak: <…>
 
@@ -278,8 +265,8 @@ Her gönderi için:
 
    #<takım> #<turnuva> #ilk11 #futbol
    ```
-   Instagram açıklaması en fazla 2.200 karakterdir. Tam metin sığmazsa açıklamada her kişinin ilk 1–2 cümlesi birebir verilir ve "Demeçlerin tamamı kartlarda 👉" satırı eklenir; tam metin her durumda kartlarda ve hikâyede bulunur.
-4. KAYIT ve B adımlarını uygula.
+   Instagram açıklaması en fazla 2.200 karakterdir. Tam metin sığmazsa açıklamada her kişinin ilk 1–2 cümlesi birebir verilir, "Demeçlerin tamamı ilk yorumda 👇" satırı eklenir ve tam metin (kim, rol ve söz; birebir) REEL'in `firstCommentText` alanına yazılır (≤ 2.200 karakter; o da yetmezse kalan kısım yalnız hikâyede). Tam metin her durumda hikâyede de bulunur.
+3. KAYIT ve B adımlarını uygula (haber_reels.md H8).
 
 ## FİKSTÜR / KALAN MAÇLAR
 Kullanıcı istediğinde (ya da yeni tur kurası çekildiğinde) Avrupa'daki ya da bir turnuvadaki kalan maçlar paylaşılır.
