@@ -10,9 +10,25 @@
   "tribun_toplam": 0,
   "takipci": null,
   "lig": "Halı Saha Ligi",
-  "lig_sirasi": ["Halı Saha Ligi", "Mahalle Ligi", "Amatör Lig", "BAL", "3. Lig", "2. Lig", "1. Lig", "Süper Lig"],
+  "lig_sirasi": [
+    "Halı Saha Ligi",
+    "Mahalle Ligi",
+    "Amatör Lig",
+    "BAL",
+    "3. Lig",
+    "2. Lig",
+    "1. Lig",
+    "Süper Lig"
+  ],
   "lig_atlama_galibiyet": 5,
-  "mac": {"oynanan": 0, "galibiyet": 0, "beraberlik": 0, "maglubiyet": 0, "lig_galibiyet": 0, "son_skor": null},
+  "mac": {
+    "oynanan": 0,
+    "galibiyet": 0,
+    "beraberlik": 0,
+    "maglubiyet": 0,
+    "lig_galibiyet": 0,
+    "son_skor": null
+  },
   "kaleci": "yok — şimdilik gol yiyen kaleye geçiyor",
   "acik_karar": {
     "bolum": 1,
@@ -23,9 +39,17 @@
   },
   "yarin_soz": "Bölüm 2 = ilk maç: Anadoluspor – Muhtarlık Gençlik (3 yıldır yenilmiyor; hakem de muhtar)",
   "notlar": [
-    "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok)."
+    "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
+    "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar)."
   ],
   "gecmis": [
-    {"bolum": 1, "tarih": "2026-11-09", "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.", "begeni": null, "yorum": null, "izlenme": null}
+    {
+      "bolum": 1,
+      "tarih": "2026-11-09",
+      "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.",
+      "begeni": null,
+      "yorum": null,
+      "izlenme": null
+    }
   ]
 }

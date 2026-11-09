@@ -28,6 +28,10 @@ Lig sırası: Halı Saha Ligi → Mahalle Ligi → Amatör Lig → BAL → 3. Li
 | selim.png | **Pas Vermeyen Selim** (10) | Topu bırakmaz, kibirli; "son pas: 2019" |
 | burak.png | **Ful Ekipman Burak** (4) | Her ekipman var (GPS yelek, 2 akıllı saat, gözlük) ama yeteneği yok; "her şey pro, kendisi hariç" |
 | muhtar.png | **Muhtar** | Rakip Muhtarlık Gençlik'in sahibi ve aynı zamanda hakem; kırmızı kart + mühür |
+| tribun_lideri.png | **Tribün lideri** (TL) | Taraftardan; megafon + davul, mor kova şapka, sarı kapüşonlu (kim olduğu taraftarlar.json'da) |
+| forvet.png | **Taraftardan forvet** (9) | Kıvırcık saçlı, ayağı topun üstünde, yumruk havada |
+| taraftar_kaleci.png | **Taraftardan kaleci** (1) | Neon yeşil kaleci forması, kocaman eldivenler |
+| taraftar/t1–t8.png | Tribün taraftarları | Motor `tribun` alanıyla otomatik yerleştirir (genç, nine, bıyıklı amca, başörtülü genç kadın, kız çocuğu, korna öttüren, kalp tabelalı, simitli dede) |
 | _karakter_sayfasi.jpg | Tüm karakterlerin referans sayfası (yeni çizimlerde stil referansı) | |
 
 Yeni karakter eklenebilir (rakip takım oyuncusu, transfer, taraftar…): gerçek kişi, gerçek kulüp, marka ya da logo YOK. Yeni karakter tutarlılığı için referans sayfasını bağla.
@@ -36,8 +40,19 @@ Yeni karakter eklenebilir (rakip takım oyuncusu, transfer, taraftar…): gerçe
 
 **Çizim stili (arka plan):** "Vertical 2D cartoon background illustration in a polished mobile-game art style: clean outlines, rich cel-shaded colors, slightly exaggerated perspective. No people, no characters, no text, no logos." + mekân + "The lower 40–45% of the image is open, empty ground, leaving room for characters." (9:16, 2K).
 
+## Taraftar oyuncular (yorum yapanlardan) — taraftarlar.json
+Sayfa sahibinin isteği (2026-11-09): yorum yapanlardan biri **tribün lideri**, biri **forvet**, biri **kaleci** olur. **Kimin seçileceğine YALNIZ sayfa sahibi karar verir** ve Instagram kullanıcı adlarını kendisi verir; adlar `taraftarlar.json`'a yazılır. Claude yorumcu seçmez, kullanıcı adı uydurmaz, beğenenlerin adlarını bilemez (Metricool yalnız sayı verir).
+- **Rol boşken** (kullanici null): hikâyede o rol "ARANIYOR" diye duyurulur ("Taraftardan forvet arıyoruz; yorum yazanlar arasından seçeceğiz, seçilen sayfada ilan edilecek"). Bu cümle doğrudur, çünkü seçimi sayfa sahibi yapar. Bölüm 2'de üç rolün de aranacağı duyurulur; sonra en fazla 2–3 bölümde bir hatırlatılır.
+- **Rol dolunca** (kullanici var, tanitildi_bolum null): o günkü bölümde büyük bir tanıtım sahnesiyle kadroya katılır: karakter (tribun_lideri.png / forvet.png / taraftar_kaleci.png), `isim` künyesi (no = TL / 9 / 1, ad = "@kullanici", alt = unvan), açıklamada `@kullanici` etiketi. Seslendirmede `okunus` varsa o söylenir, yoksa "yorumlarımızdan gelen yeni forvetimiz" gibi ad söylemeden anlatılır; ekranda @kullanici görünür. Tanıtıldığı bölüm numarası `tanitildi_bolum`'a yazılır.
+- **Gerçek insanlar:** bu kişiler gerçek takipçilerdir. Her zaman olumlu, kahraman ya da sevimli komik rollerde (gol atar, kurtarış yapar, tezahürat başlatır); asla aşağılama, alay, utandırma, kişisel bilgi (yaş, şehir, okul, iş, görünüş) yok. Gerçek yüzlerini/fotoğraflarını kullanma; çizgi karakterler temsilidir. Sayfa sahibi birini çıkarmak isterse `cikarilanlar`'a eklenir ve bir daha anılmaz.
+- **Kaleci geçişi:** Bölüm 1'deki KARAR #1 (100 beğeni → Necmi abi, yoksa Burak) ilk maçta (Bölüm 2) uygulanır. Taraftardan kaleci gelince kaleyi o devralır; önceki kaleci yedeğe geçer (komik bir devir teslim).
+- Forvet maçlarda gol atar; tribün lideri tribün sahnelerinin başında megafon ve davulla tezahürat yönetir.
+
+## Tribün
+Bölüm 2'den itibaren her maç bölümünde ve diğer bölümlerin çoğunda bir **tribün sahnesi** olur: arka plan `tribun`, sahnede `"tribun": {"sayi": <tribun_toplam>}` → yorum sayısı kadar çizgi taraftar sıralara yerleşip zıplar (en çok ~75 görünür; fazlası "tribün doldu!" esprisi). 0–5 taraftar = boş tribün esprisi (Necmi abi tek başına alkışlar vb.). Tribün lideri tanıtıldıysa tribün sahnesinde önde (h ≈ 760) megafonla durur. Sayfa sahibi `tribun_isimleri`'ne ad verirse bunlar `pankart` öğesiyle ("@ad TRİBÜNDE!") gösterilir.
+
 ## Mekânlar (varliklar/arka/*.jpg)
-halisaha (gün batımı, kafesli halı saha, sol arkada kulübe) · kulube (Necmi abinin kulübesi, saat, ışık şalterleri) · hoca_koltugu (gece, boş beyaz sandalye + soru işaretli taktik tahtası) · stadyum (hayal: dolu mor-sarı Süper Lig stadı) · bos_kale (gece, boş kale, yerde eldivenler). Yeni mekân eklenebilir (soyunma odası, mahalle kahvesi, otobüs, rakip saha…).
+tribun (5 sıralı mor-sarı koltuklu küçük tribün; taraftarlar `tribun` alanıyla yerleşir, sıra düzeni tribun.json) · halisaha (gün batımı, kafesli halı saha, sol arkada kulübe) · kulube (Necmi abinin kulübesi, saat, ışık şalterleri) · hoca_koltugu (gece, boş beyaz sandalye + soru işaretli taktik tahtası) · stadyum (hayal: dolu mor-sarı Süper Lig stadı) · bos_kale (gece, boş kale, yerde eldivenler). Yeni mekân eklenebilir (soyunma odası, mahalle kahvesi, otobüs, rakip saha…).
 
 ## Ton ve sınırlar
 Aile dostu mahalle mizahı; kimseyi aşağılama, küfür yok, siyaset yok, bahis/kumar yok, gerçek kişi/kulüp/marka yok, şiddet yok (kırmızı kart, itiraz, komik düşme olur). Futbol jargonu ve halı saha klişeleri serbest (son dakika golü, "abi ofsayt yok burada", su molası, IBAN atan adam…).

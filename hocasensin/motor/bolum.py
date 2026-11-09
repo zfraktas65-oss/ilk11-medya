@@ -220,6 +220,21 @@ def bubble(text):
     img.alpha_composite(t, (30, 22))
     return shadowed(img)
 
+def banner(text, bg=(255, 250, 235), fg=PURPLE, tilt=-3):
+    f = font("black", fit_text(text, "black", 56, 820))
+    l, t, r, b = f.getbbox(text)
+    w, h = r - l + 90, b - t + 60
+    img = Image.new("RGBA", (w, h + 30), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    # hafif sarkık kumaş
+    pts = [(0, 10)] + [(x, 10 + 10 * math.sin(math.pi * x / w)) for x in range(0, w + 1, 20)] + [(w, 10), (w, h + 10)] + \
+          [(x, h + 10 + 10 * math.sin(math.pi * x / w)) for x in range(w, -1, -20)]
+    d.polygon(pts, fill=bg, outline=INK)
+    d.line([(0, 10), (0, h + 10)], fill=INK, width=6); d.line([(w - 1, 10), (w - 1, h + 10)], fill=INK, width=6)
+    d.text(((w - (r - l)) // 2 - l, 10 + (h - (b - t)) // 2 - t + 4), text, font=f, fill=fg)
+    for x in (12, w - 12):
+        d.ellipse((x - 9, 1, x + 9, 19), fill=YELLOW, outline=INK, width=3)
+    return shadowed(img).rotate(tilt, resample=Image.BICUBIC, expand=True)
+
 def scoreboard(home, away, hs, as_, minute):
     w, h = 980, 150
     img = rrect((w, h), 26, INK, 0); d = ImageDraw.Draw(img)
@@ -353,6 +368,8 @@ class Bolum:
             return progress_bar(o.get("sol", "HALI SAHA"), o.get("sag", "SÜPER LİG"), o.get("oran", 0.0), o.get("isaret", "BURADAYIZ"))
         if tip == "balon":
             return bubble(o["metin"])
+        if tip == "pankart":
+            return banner(o["metin"], rk(o.get("zemin", [255, 250, 235])), rk(o.get("renk", "mor")), o.get("egim", -3))
         if tip == "skor":
             return scoreboard(o["ev"], o["dep"], o.get("ev_skor", 0), o.get("dep_skor", 0), o.get("dakika", ""))
         if tip == "resim":
@@ -381,9 +398,10 @@ class Bolum:
                 ovs.append(dict(img=self._ov_img(o), t0=self.T(o.get("bas", t0)), t1=self.T(o["bitis"]) if "bitis" in o else None,
                                 x=o.get("x", 540), y=o.get("y", 320), anim=o.get("anim", "pop"), sure=o.get("sure", 0.3 if o.get("anim", "pop") != "stamp" else 0.2),
                                 rot=o.get("dondur", 0), nabiz=o.get("nabiz", False), titre=o.get("titre", False)))
+            crowd = build_crowd(s["arka"], s["tribun"]) if s.get("tribun") else []
             dark = [(self.T(a), self.T(b)) for a, b in s.get("isik_kapali", [])]
             z = s.get("zoom", [1.0, 1.08]); m = s.get("merkez", [[0.5, 0.55], [0.5, 0.55]])
-            self.scenes.append(dict(t0=t0, t1=t1, bg=bg, z=z, m=m, chars=chars, ovs=ovs, dark=dark))
+            self.scenes.append(dict(t0=t0, t1=t1, bg=bg, z=z, m=m, chars=chars, ovs=ovs, dark=dark, crowd=crowd))
 
     # ------------------------------------------------------------ çizim
     @lru_cache(None)
@@ -416,7 +434,12 @@ class Bolum:
         punch = 1 + 0.07 * (1 - ease_out(lt / 0.25)) if lt < 0.25 else 1.0
         cx = sc["m"][0][0] + (sc["m"][1][0] - sc["m"][0][0]) * k
         cy = sc["m"][0][1] + (sc["m"][1][1] - sc["m"][0][1]) * k
-        fr = bg_frame(sc["bg"], z * punch, cx, cy)
+        if sc["crowd"]:
+            bgc = sc["bg"].copy().convert("RGBA")
+            draw_crowd(bgc, sc["crowd"], t)
+            fr = bg_frame(bgc, z * punch, cx, cy)
+        else:
+            fr = bg_frame(sc["bg"], z * punch, cx, cy)
         for c in sc["chars"]: draw_char(fr, c, t)
         for a, b in sc["dark"]:
             if a <= t < b: fr = darken(fr, 0.16)
@@ -496,6 +519,52 @@ class Bolum:
         for i, im in enumerate(ims): sheet.paste(im, ((i % cols) * 360, (i // cols) * 640))
         sheet.save(os.path.join(outdir, "onizleme.jpg"), quality=85)
         print("önizleme:", os.path.join(outdir, "onizleme.jpg"))
+
+# ---------------------------------------------------------------- tribün
+@lru_cache(None)
+def fan_imgs():
+    d = os.path.join(VAR, "taraftar")
+    return [Image.open(os.path.join(d, f)).convert("RGBA") for f in sorted(os.listdir(d)) if f.endswith(".png")]
+
+@lru_cache(None)
+def fan_scaled(i, h, flip):
+    im = fan_imgs()[i]; r = h / im.height
+    im = im.resize((max(1, int(im.width * r)), h), Image.LANCZOS)
+    return im.transpose(Image.FLIP_LEFT_RIGHT) if flip else im
+
+def build_crowd(bgname, spec):
+    """spec: {"sayi": N, "tohum": 7}. Sıralar varliklar/arka/<arka>.json içindeki "siralar"dan (arka plan piksel koordinatı)."""
+    meta = os.path.join(VAR, "arka", bgname + ".json")
+    if not os.path.exists(meta): raise SystemExit(f"tribün düzeni yok: {meta}")
+    rows = json.load(open(meta))["siralar"]          # arkadan öne: [{"ayak":y,"x0":..,"x1":..,"h":..}]
+    n = max(0, int(spec.get("sayi", 0))); rng = np.random.default_rng(spec.get("tohum", 7))
+    caps = [max(1, int((r["x1"] - r["x0"]) / (r["h"] * 0.38))) for r in rows]
+    order = list(range(len(rows)))[::-1]             # önce ön sıralar dolsun
+    fill = {i: 0 for i in order}; left = min(n, sum(caps))
+    while left > 0:
+        for i in order:
+            if left and fill[i] < caps[i]: fill[i] += 1; left -= 1
+    nf = len(fan_imgs()); out = []; k = 0
+    for i, r in enumerate(rows):                      # arkadan öne çiz
+        m = fill[i]
+        if not m: continue
+        slots = rng.permutation(caps[i])[:m]; slots.sort()
+        step = (r["x1"] - r["x0"]) / caps[i]
+        for sl in slots:
+            x = r["x0"] + step * (sl + 0.5) + rng.uniform(-0.2, 0.2) * step
+            h = int(r["h"] * rng.uniform(0.9, 1.08))
+            out.append(dict(img=(k + int(rng.integers(0, nf))) % nf, h=h, x=x, y=r["ayak"], flip=bool(rng.integers(0, 2)), ph=float(rng.uniform(0, 1)), sp=float(rng.uniform(1.2, 2.0))))
+            k += 1
+    return out
+
+def draw_crowd(bg, crowd, t):
+    for f in crowd:
+        im = fan_scaled(f["img"], f["h"], f["flip"])
+        jump = abs(math.sin(math.pi * (t * f["sp"] + f["ph"]))) * f["h"] * 0.06
+        x, y = int(f["x"] - im.width / 2), int(f["y"] - im.height - jump)
+        x0, y0 = max(x, 0), max(y, 0); x1, y1 = min(x + im.width, bg.width), min(y + im.height, bg.height)
+        if x1 > x0 and y1 > y0:
+            bg.alpha_composite(im.crop((x0 - x, y0 - y, x1 - x, y1 - y)), (x0, y0))
 
 # ---------------------------------------------------------------- kompozisyon
 def paste(frame, img, cx, cy, scale=1.0, alpha=1.0, rot=0.0):

@@ -1,0 +1,10 @@
+{
+  "aciklama": "Yorum yapanlardan seçilen taraftar oyuncular. Kullanıcı adlarını YALNIZ sayfa sahibi verir (Claude seçmez, uydurmaz). kullanici null ise rol boştur ('aranıyor'). okunus: seslendirmede söylenecek okunabilir ad (null ise anlatıcı adı söylemez, ekranda @kullanici yazar). tanitildi_bolum: ilk tanıtıldığı bölüm (null = henüz tanıtılmadı).",
+  "roller": [
+    {"rol": "tribun_lideri", "unvan": "TRİBÜN LİDERİ", "no": "TL", "karakter": "tribun_lideri", "kullanici": null, "okunus": null, "tanitildi_bolum": null},
+    {"rol": "forvet", "unvan": "TARAFTARDAN FORVET", "no": "9", "karakter": "forvet", "kullanici": null, "okunus": null, "tanitildi_bolum": null},
+    {"rol": "kaleci", "unvan": "TARAFTARDAN KALECİ", "no": "1", "karakter": "taraftar_kaleci", "kullanici": null, "okunus": null, "tanitildi_bolum": null}
+  ],
+  "tribun_isimleri": [],
+  "cikarilanlar": []
+}

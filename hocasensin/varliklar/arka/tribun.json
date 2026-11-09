@@ -1,0 +1,8 @@
+{"not": "Tribün sıraları (arka plan piksel koordinatı, 1152x2048): arkadan öne. ayak = taraftarın ayak hizası, h = boy.",
+ "siralar": [
+  {"ayak": 805,  "x0": 95, "x1": 1060, "h": 165},
+  {"ayak": 890,  "x0": 60, "x1": 1095, "h": 175},
+  {"ayak": 985,  "x0": 25, "x1": 1125, "h": 185},
+  {"ayak": 1088, "x0": 5,  "x1": 1147, "h": 195},
+  {"ayak": 1195, "x0": 5,  "x1": 1147, "h": 205}
+ ]}
