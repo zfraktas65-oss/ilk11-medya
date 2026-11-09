@@ -124,7 +124,7 @@ Görev metni şunları verir: EV, DEP, TURNUVA, TARIH, SAAT (başlama, Europe/Is
 ## SONUÇ GÖREVİ
 Görev metni şunları verir: EV, DEP, TURNUVA, TARIH ve başlama saati.
 
-1. K0'ı uygula. Anahtar KADRO'daki gibidir. Kayıtta ` (reels)` ile biten (ya da "Reels yapılamadı" notlu) bir `sonuc <anahtar>` satırı varsa dur; yalnız hikâye satırı (`… hikâye`) varsa 2–5. adımları atla ve doğrudan 6. adımla (Reels) devam et.
+1. K0'ı uygula. Anahtar KADRO'daki gibidir. Kayıtta ` (reels)` ile biten (ya da "Reels yapılamadı" notlu) bir `sonuc <anahtar>` satırı varsa dur; yalnız hikâye satırı (`… hikâye`) varsa 2–4. adımları uygula (sonuc.json'u yeniden yaz), 5. adımı (hikâye) ATLA ve 6. adımla (Reels) devam et.
 2. **Maç bitti mi?** "<ev> <dep> maç sonucu" diye ara.
    - **Bitmediyse** (uzatma, penaltılar ya da gecikme varsa): `mcp__claude-code-remote__create_trigger` ile bu görev metninin aynısıyla tek seferlik yeni bir görev kur. run_once_at şu an + 8 dk olur (sayfa sahibinin isteği, 2026-11-05: skor maç biter bitmez hikâye olarak paylaşılsın). Ad aynı kalır; initiation "human_schedule", notifications {"push": true}. Ardından dur. Başlamadan 4 saat sonrasını geçtiyse yeniden kurma; durumu bildir.
    - **Ertelendi ya da tatil edildiyse:** resmî açıklama varsa SON DAKİKA biçiminde paylaş, yoksa yalnız bildir.
