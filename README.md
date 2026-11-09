@@ -10,3 +10,6 @@
 
 Günlük medya dosyaları `medya-haber` ve `medya-hikaye` dallarında geçici olarak tutulur.
 Yazı tipleri: Anton, Bebas Neue (SIL Open Font License).
+
+## hocasensin/
+@hocasensin1 Instagram sayfasının "Anadoluspor" çizgi dizisi (izleyicinin beğeni/yorum sayılarıyla ilerleyen kulüp hikâyesi). Günlük görev: `hocasensin/GOREV.md`; dizi kitabı: `hocasensin/HIKAYE.md`; motor: `hocasensin/motor/bolum.py` (biçim `hocasensin/MOTOR.md`). Videolar `medya-hocasensin` dalında tutulur.

@@ -1,0 +1,142 @@
+{
+  "slug": "anadoluspor_bolum001",
+  "ses": "ses.mp3",
+  "kelimeler": "kelimeler.json",
+  "muzik": "neseli_1",
+  "kapak": 3.6,
+  "birlestir": [
+    [["iki", "bin", "on", "dokuzda"], "2019'da"],
+    [["bin", "beş", "yüz", "lira"], "1.500 lira"],
+    [["on", "lira"], "10 lira"],
+    [["gün", "bir"], "Gün 1"],
+    [["yüz", "beğeniyi"], "100 beğeniyi"]
+  ],
+  "sesler": [
+    {"tip": "duduk", "t": "w:8-0.12"},
+    {"tip": "zil", "t": "w:43+0.05", "ses": 1.0},
+    {"tip": "tezahurat", "t": "w:78", "ses": 0.6},
+    {"tip": "uzgun", "t": "w:83+0.2", "ses": 1.0},
+    {"tip": "kisa_duduk", "t": "w:128-0.2"},
+    {"tip": "kisa_duduk", "t": "w:128+0.1"}
+  ],
+  "sahneler": [
+    {"bas": 0, "arka": "hoca_koltugu", "zoom": [1.0, 1.16], "merkez": [[0.55, 0.55], [0.62, 0.55]],
+     "ogeler": [
+       {"tip": "seri", "bolum": 1, "bas": 0.05, "y": 300, "anim": "down"},
+       {"tip": "etiket", "metin": "TEKNİK DİREKTÖR: ???", "boyut": 58, "renk": "beyaz", "zemin": "kirmizi", "egim": -3, "bas": 0.25, "bitis": "w:8-0.02", "y": 520},
+       {"tip": "baslik", "metin": "SENSİN!", "boyut": 230, "bas": "w:8", "y": 560, "anim": "stamp", "titre": true}
+     ]},
+    {"bas": "w:9-0.1", "arka": "halisaha", "zoom": [1.04, 1.12], "merkez": [[0.5, 0.62], [0.5, 0.6]],
+     "karakterler": [{"ad": "cem", "h": 980, "x": 540}],
+     "ogeler": [
+       {"tip": "etiket", "metin": "TAKİP ET", "boyut": 74, "renk": "siyah", "zemin": "sari", "egim": -3, "bas": "w:9", "bitis": "w:15-0.05", "y": 330, "nabiz": true},
+       {"tip": "etiket", "metin": "= TEKNİK HEYETTESİN", "boyut": 50, "renk": "beyaz", "zemin": "mor", "egim": 2, "bas": "w:11-0.4", "bitis": "w:15-0.05", "y": 470},
+       {"tip": "baslik", "metin": "GÜN 1", "boyut": 230, "bas": "w:15", "bitis": "w:17", "y": 420, "anim": "stamp"},
+       {"tip": "arma", "boyut": 230, "bas": "w:17", "bitis": "w:19", "y": 360},
+       {"tip": "baslik", "metin": "ANADOLUSPOR", "boyut": 120, "bas": "w:17+0.1", "bitis": "w:19", "y": 560},
+       {"tip": "isim", "no": "C", "ad": "KAPTAN CEM", "alt": "KURUCU · MAÇI AYARLAYAN ADAM", "bas": "w:19", "x": 500, "y": 400}
+     ]},
+    {"bas": "w:22-0.05", "arka": "halisaha", "zoom": [1.0, 1.08], "merkez": [[0.5, 0.45], [0.38, 0.47]],
+     "ogeler": [
+       {"tip": "etiket", "metin": "KULÜP TESİSLERİ", "boyut": 58, "egim": -2, "y": 320, "anim": "down"},
+       {"tip": "tabela", "ust": "SAATİ", "metin": "1.500 TL", "bas": "w:24", "x": 330, "y": 800},
+       {"tip": "etiket", "metin": "SAATLİK KİRALIK!", "boyut": 52, "renk": "beyaz", "zemin": "kirmizi", "egim": 4, "bas": "w:25", "x": 700, "y": 1100}
+     ]},
+    {"bas": "w:29-0.05", "arka": "kulube", "zoom": [1.0, 1.07], "merkez": [[0.5, 0.55], [0.55, 0.55]],
+     "karakterler": [{"ad": "necmi", "h": 930, "x": 470}],
+     "isik_kapali": [["w:37-0.1", "w:37+0.45"], ["w:40", "w:41-0.05"]],
+     "ogeler": [
+       {"tip": "isim", "no": "₺", "ad": "NECMİ ABİ", "alt": "SAHA SAHİBİ · SAATİ ŞAŞMAZ", "bas": "w:29+0.2", "x": 520, "y": 360},
+       {"tip": "baslik", "metin": "KLİK!", "boyut": 170, "egim": 8, "bas": "w:37-0.1", "bitis": "w:37+0.45", "x": 760, "y": 700, "sure": 0.15},
+       {"tip": "etiket", "metin": "PENALTIDA BİLE!", "boyut": 56, "renk": "beyaz", "zemin": "kirmizi", "egim": -4, "bas": "w:38", "y": 600},
+       {"tip": "baslik", "metin": "KLİK!", "boyut": 170, "egim": -8, "bas": "w:40", "bitis": "w:41-0.05", "x": 330, "y": 800, "sure": 0.15}
+     ]},
+    {"bas": "w:41-0.05", "arka": "halisaha", "bulanik": 10, "karanlik": 0.7, "zoom": [1.06, 1.1], "merkez": [[0.5, 0.6], [0.5, 0.6]],
+     "karakterler": [
+       {"ad": "yasin", "h": 760, "x": 230, "ayak": 1600, "golge": true, "giris": "pop", "sure": 0.25, "bas": "w:41"},
+       {"ad": "selim", "h": 800, "x": 540, "ayak": 1620, "golge": true, "giris": "pop", "sure": 0.25, "bas": "w:41+0.1", "faz": 0.3},
+       {"ad": "burak", "h": 780, "x": 850, "ayak": 1600, "golge": true, "giris": "pop", "sure": 0.25, "bas": "w:41+0.2", "faz": 0.6}
+     ],
+     "ogeler": [{"tip": "baslik", "metin": "KADRO", "boyut": 220, "bas": "w:41", "y": 420, "anim": "stamp"}]},
+    {"bas": "w:43", "arka": "halisaha", "bulanik": 12, "karanlik": 0.85, "zoom": [1.1, 1.14], "merkez": [[0.3, 0.6], [0.36, 0.6]],
+     "karakterler": [{"ad": "yasin", "h": 990, "x": 560, "giris": "right", "sure": 0.45, "kos": true}],
+     "ogeler": [
+       {"tip": "isim", "no": "7", "ad": "YOLDAYIM YASİN", "alt": "MEVKİ: HEP YOLDA", "bas": "w:43+0.1", "x": 520, "y": 330},
+       {"tip": "balon", "metin": "YOLDAYIM ABİ, 5 DK!", "bas": "w:45", "x": 650, "y": 560}
+     ]},
+    {"bas": "w:48-0.05", "arka": "halisaha", "bulanik": 12, "karanlik": 0.85, "zoom": [1.1, 1.14], "merkez": [[0.62, 0.6], [0.56, 0.6]],
+     "karakterler": [{"ad": "selim", "h": 1000, "x": 540}],
+     "ogeler": [
+       {"tip": "isim", "no": "10", "ad": "PAS VERMEYEN SELİM", "alt": "TOP ONUN, SİZ İZLEYİN", "bas": "w:48+0.05", "x": 520, "y": 330},
+       {"tip": "etiket", "metin": "SON PAS: 2019", "boyut": 58, "renk": "beyaz", "zemin": "kirmizi", "egim": -4, "bas": "w:54", "y": 560, "anim": "stamp"}
+     ]},
+    {"bas": "w:59-0.05", "arka": "halisaha", "bulanik": 12, "karanlik": 0.85, "zoom": [1.1, 1.14], "merkez": [[0.45, 0.6], [0.5, 0.6]],
+     "karakterler": [{"ad": "burak", "h": 1000, "x": 540}],
+     "ogeler": [
+       {"tip": "isim", "no": "4", "ad": "FUL EKİPMAN BURAK", "alt": "GPS'Lİ YELEK · 2 AKILLI SAAT", "bas": "w:59+0.05", "x": 520, "y": 330},
+       {"tip": "etiket", "metin": "HER ŞEY PRO", "boyut": 56, "renk": "siyah", "zemin": "sari", "egim": -3, "bas": "w:64", "y": 540},
+       {"tip": "etiket", "metin": "...KENDİSİ HARİÇ", "boyut": 50, "renk": "beyaz", "zemin": "kirmizi", "egim": 3, "bas": "w:65", "x": 560, "y": 650}
+     ]},
+    {"bas": "w:67-0.05", "arka": "bos_kale", "zoom": [1.0, 1.1], "merkez": [[0.5, 0.4], [0.5, 0.42]],
+     "ogeler": [
+       {"tip": "etiket", "metin": "KALECİ", "boyut": 64, "egim": -2, "y": 330, "anim": "down"},
+       {"tip": "damga", "metin": "YOK!", "boyut": 170, "bas": "w:69", "y": 760, "anim": "stamp"},
+       {"tip": "etiket", "metin": "GOL YİYEN KALEYE!", "boyut": 54, "renk": "siyah", "zemin": "sari", "egim": 3, "bas": "w:71", "y": 1060}
+     ]},
+    {"bas": "w:75-0.05", "arka": "stadyum", "zoom": [1.0, 1.06], "merkez": [[0.5, 0.5], [0.5, 0.5]],
+     "karakterler": [
+       {"ad": "yasin", "h": 600, "x": 170, "faz": 0.1},
+       {"ad": "burak", "h": 610, "x": 905, "faz": 0.5, "bas": "w:75"},
+       {"ad": "selim", "h": 630, "x": 380, "ayak": 1650, "faz": 0.3, "bas": "w:75+0.1"},
+       {"ad": "cem", "h": 660, "x": 690, "ayak": 1660, "faz": 0.7, "bas": "w:75+0.15"}
+     ],
+     "ogeler": [
+       {"tip": "etiket", "metin": "HEDEF", "boyut": 64, "renk": "siyah", "zemin": "sari", "egim": -2, "y": 300, "anim": "down"},
+       {"tip": "ilerleme", "oran": 0.0, "bas": "w:76", "y": 680, "anim": "fade"},
+       {"tip": "baslik", "metin": "SÜPER LİG", "boyut": 190, "bas": "w:78", "y": 470, "anim": "stamp"}
+     ]},
+    {"bas": "w:80-0.05", "arka": "kulube", "zoom": [1.04, 1.12], "merkez": [[0.5, 0.56], [0.56, 0.56]],
+     "karakterler": [{"ad": "necmi", "h": 900, "x": 760, "ayak": 1650, "ayna": true}],
+     "isik_kapali": [["w:95", "w:97-0.05"]],
+     "ogeler": [
+       {"tip": "etiket", "metin": "ÖNCE KİRA", "boyut": 60, "renk": "beyaz", "zemin": "kirmizi", "egim": -3, "y": 300, "anim": "down"},
+       {"tip": "sayac", "baslik": "KULÜP KASASI", "deger": "0 TL", "alt": "HAFTALIK SAHA KİRASI: 1.500 TL", "bas": "w:83", "bitis": "w:95", "y": 560, "titre": true},
+       {"tip": "begeni", "metin": "1 BEĞENİ = 10 TL", "bas": "w:89", "bitis": "w:95", "x": 520, "y": 820},
+       {"tip": "damga", "metin": "MAÇ YOK!", "boyut": 150, "bas": "w:95", "y": 760, "anim": "stamp"}
+     ]},
+    {"bas": "w:97-0.05", "arka": "halisaha", "zoom": [1.12, 1.18], "merkez": [[0.52, 0.66], [0.48, 0.66]],
+     "karakterler": [{"ad": "cem", "h": 900, "x": 540, "ayak": 1660}],
+     "ogeler": [
+       {"tip": "etiket", "metin": "TRİBÜN DE SİZSİNİZ", "boyut": 54, "egim": -2, "y": 300, "anim": "down"},
+       {"tip": "sayac", "baslik": "TRİBÜN", "deger": "0 TARAFTAR", "alt": "HER YORUM = 1 TARAFTAR", "alt_renk": "yesil", "bas": "w:100", "y": 560}
+     ]},
+    {"bas": "w:105-0.05", "arka": "bos_kale", "bulanik": 6, "karanlik": 0.75, "zoom": [1.05, 1.12], "merkez": [[0.5, 0.45], [0.5, 0.45]],
+     "ogeler": [
+       {"tip": "etiket", "metin": "KARAR #1", "boyut": 80, "renk": "siyah", "zemin": "sari", "egim": -3, "y": 300, "anim": "stamp"},
+       {"tip": "etiket", "metin": "HEDEF: 100 BEĞENİ", "boyut": 54, "renk": "beyaz", "zemin": "mor", "egim": 2, "bas": "w:109", "y": 440},
+       {"tip": "etiket", "metin": "GEÇERSE", "boyut": 44, "renk": "beyaz", "zemin": "yesil", "bas": "w:111", "x": 300, "y": 600},
+       {"tip": "secenek", "harf": "A", "ad": "NECMİ ABİ", "karakter": "necmi", "oran": 0.40, "renk": [130, 220, 150], "bas": "w:112", "x": 300, "y": 900, "dondur": 3},
+       {"tip": "etiket", "metin": "GEÇMEZSE", "boyut": 44, "renk": "beyaz", "zemin": "kirmizi", "bas": "w:116", "x": 790, "y": 600},
+       {"tip": "secenek", "harf": "B", "ad": "BURAK", "karakter": "burak", "oran": 0.36, "renk": [255, 150, 160], "bas": "w:117", "x": 790, "y": 900, "dondur": -3}
+     ]},
+    {"bas": "w:120-0.05", "arka": "halisaha", "karanlik": 0.8, "renk": [40, 10, 60], "zoom": [1.06, 1.14], "merkez": [[0.5, 0.6], [0.5, 0.6]],
+     "karakterler": [{"ad": "muhtar", "h": 1000, "x": 540, "bas": "w:120+0.2"}],
+     "ogeler": [
+       {"tip": "etiket", "metin": "YARIN: 1. MAÇ", "boyut": 60, "renk": "siyah", "zemin": "sari", "egim": -3, "y": 300, "anim": "down"},
+       {"tip": "isim", "no": "VS", "ad": "MUHTARLIK GENÇLİK", "alt": "3 YILDIR YENİLMİYOR", "bas": "w:123", "x": 520, "y": 470},
+       {"tip": "damga", "metin": "HAKEM: MUHTAR", "boyut": 96, "egim": 8, "bas": "w:128", "y": 1110, "anim": "stamp"}
+     ]},
+    {"bas": "w:129-0.05", "arka": "halisaha", "zoom": [1.06, 1.0], "merkez": [[0.5, 0.62], [0.5, 0.62]],
+     "karakterler": [
+       {"ad": "yasin", "h": 760, "x": 180, "ayak": 1630, "faz": 0.2},
+       {"ad": "burak", "h": 770, "x": 905, "ayak": 1630, "faz": 0.6, "bas": "w:129+0.05"},
+       {"ad": "selim", "h": 800, "x": 360, "ayak": 1650, "faz": 0.4, "bas": "w:129+0.1"},
+       {"ad": "cem", "h": 900, "x": 650, "ayak": 1680}
+     ],
+     "ogeler": [
+       {"tip": "etiket", "metin": "TAKİP ET", "boyut": 84, "renk": "siyah", "zemin": "sari", "egim": -3, "y": 320, "nabiz": true},
+       {"tip": "etiket", "metin": "+ BEĞEN · YORUM YAZ", "boyut": 50, "renk": "beyaz", "zemin": "mor", "egim": 2, "bas": "w:131", "y": 470},
+       {"tip": "arma", "boyut": 170, "bas": "w:135", "y": 660}
+     ]}
+  ]
+}

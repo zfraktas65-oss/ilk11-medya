@@ -1,0 +1,31 @@
+{
+  "son_bolum": 1,
+  "son_bolum_tarihi": "2026-11-09",
+  "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 1",
+  "kasa_tl": 0,
+  "borc_tl": 0,
+  "kira_haftalik_tl": 1500,
+  "begeni_tl": 10,
+  "sonraki_kira_bolumu": 7,
+  "tribun_toplam": 0,
+  "takipci": null,
+  "lig": "Halı Saha Ligi",
+  "lig_sirasi": ["Halı Saha Ligi", "Mahalle Ligi", "Amatör Lig", "BAL", "3. Lig", "2. Lig", "1. Lig", "Süper Lig"],
+  "lig_atlama_galibiyet": 5,
+  "mac": {"oynanan": 0, "galibiyet": 0, "beraberlik": 0, "maglubiyet": 0, "lig_galibiyet": 0, "son_skor": null},
+  "kaleci": "yok — şimdilik gol yiyen kaleye geçiyor",
+  "acik_karar": {
+    "bolum": 1,
+    "metrik": "begeni",
+    "esik": 100,
+    "gecerse": "Necmi abi kalıcı kaleci olur",
+    "gecmezse": "Ful Ekipman Burak kalıcı kaleci olur"
+  },
+  "yarin_soz": "Bölüm 2 = ilk maç: Anadoluspor – Muhtarlık Gençlik (3 yıldır yenilmiyor; hakem de muhtar)",
+  "notlar": [
+    "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok)."
+  ],
+  "gecmis": [
+    {"bolum": 1, "tarih": "2026-11-09", "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.", "begeni": null, "yorum": null, "izlenme": null}
+  ]
+}
