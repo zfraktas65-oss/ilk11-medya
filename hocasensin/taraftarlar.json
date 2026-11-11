@@ -1,5 +1,5 @@
 {
- "aciklama": "Yorum yapan / takip eden gerçek kişiler. Adlar YALNIZ sayfa sahibinin gönderdiği ekran görüntülerinden alınır; Claude uydurmaz. Sayfa sahibinin kuralı (2026-11-11): her bölümde 7 futbolcu + 1 tribün lideri, HEM takip edip HEM yorumunda mevkisini yazanlar arasından Claude tarafından seçilir (istenen mevkiye göre; halı saha 7 kişilik). Hem takip edip hem yorum yapanlar (oyuncu/tribün lideri olmayanlar) ve yalnız takip edenler LOCADA; yalnız yorum yapanlar TRİBÜNDE. Sayfa sahibinin bizzat seçtikleri (secen='sayfa sahibi') takipçi listesinde görünmese de o bölüm yerinde kalır. okunus = seslendirmede söylenecek ad (null: ad söylenmez, ekranda @ad yazar). Seslendirmede isimler tek tek sayılmaz; isimler ekranda figürlerin başının altında küçük etiketle yazar.",
+ "aciklama": "Yorum yapan / takip eden gerçek kişiler. Adlar YALNIZ sayfa sahibinin gönderdiği ekran görüntülerinden alınır; Claude uydurmaz. Sayfa sahibinin kuralı (2026-11-11): her bölümde 7 futbolcu + 3 yedek + 1 tribün lideri, HEM takip edip HEM yorumunda mevkisini yazanlar arasından Claude tarafından seçilir (istenen mevkiye göre; halı saha 7 kişilik). Hem takip edip hem yorum yapanlar (oyuncu/tribün lideri olmayanlar) ve yalnız takip edenler LOCADA; yalnız yorum yapanlar TRİBÜNDE. Sayfa sahibinin bizzat seçtikleri (secen='sayfa sahibi') takipçi listesinde görünmese de o bölüm yerinde kalır. okunus = seslendirmede söylenecek ad (null: ad söylenmez, ekranda @ad yazar). Seslendirmede isimler tek tek sayılmaz; isimler ekranda figürlerin başının altında küçük etiketle yazar.",
  "roller": [
   {
    "rol": "tribun_lideri",
@@ -734,5 +734,6 @@
    "not": "hecerr1959 ve who_is.yamal takipçi listesinde görünmediği için yeni kurala göre kadro yerine tribüne alındı; gultentalha ve demirkentsk sayfa sahibinin seçimi olarak kaldı."
   }
  ],
- "takip_kaynagi": "takip bilgisi: sayfa sahibinin 2026-11-10 ekran görüntüleri (64 takipçi). Yeni ekran görüntüsü gelince güncelle."
+ "takip_kaynagi": "takip bilgisi: sayfa sahibinin 2026-11-10 ekran görüntüleri (64 takipçi). Yeni ekran görüntüsü gelince güncelle.",
+ "yedekler": []
 }

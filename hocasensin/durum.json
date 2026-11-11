@@ -37,12 +37,13 @@
     "gecerse": "kasadan kulübün ilk formaları alınır (makul bir forma gideri kasa defterine yazılır)",
     "gecmezse": "yarın da Burak'ın evden getirdiği (uyumsuz, komik) formalarla oynanır"
   },
-  "yarin_soz": "Bölüm 3: Karar #2 sonucu (forma); günün 7 oyuncusu + tribün lideri takip edip yorum yapanlardan; kasa defteri.",
+  "yarin_soz": "Bölüm 3: Karar #2 sonucu (170 beğeni → ilk formalar / Burak'ın formaları); günün 7 oyuncusu + 3 yedek + tribün lideri takip edip yorum yapanlardan; kasa defteri; BELEDİYE DUYURUSU (eski stat + eski otobüs), 'Yarın yeni sahamıza taşınıyoruz!'",
   "notlar": [
     "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
     "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
     "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
-    "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca."
+    "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca.",
+    "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan."
   ],
   "gecmis": [
     {
@@ -180,5 +181,24 @@
         "Sanayi Demir 1-1 Pazar Yıldız"
       ]
     }
-  }
+  },
+  "yol_haritasi": {
+    "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
+    "4": "Eski otobüsle yeni sahaya taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı seçenekler + fiyat)",
+    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk geliştirme"
+  },
+  "saha": {
+    "mevcut": "Necmi abinin halı sahası",
+    "yeni": "belediyenin eski stadı (ad henüz yok)",
+    "tasinma_bolumu": 4,
+    "seviye": 0,
+    "gelistirmeler": [],
+    "acik_oylama": null,
+    "not": "Saha belediyeden, geliştirmeler kulüp kasasından. Bölüm 4'ten sonra halı saha kirası yok."
+  },
+  "otobus": {
+    "durum": "Bölüm 3'te duyurulur, Bölüm 4'te gelir: belediyenin eski otobüsü",
+    "degisim": "ileride (büyük hedef ya da KARAR)"
+  },
+  "yedek_sayisi": 3
 }
