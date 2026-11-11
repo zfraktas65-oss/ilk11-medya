@@ -1,0 +1,1702 @@
+{
+ "slug": "anadoluspor_bolum002",
+ "ses": "ses.mp3",
+ "kelimeler": "kelimeler.json",
+ "muzik": "neseli_2",
+ "kapak": "w:106+0.3",
+ "birlestir": [
+  [
+   [
+    "gün",
+    "iki"
+   ],
+   "Gün 2"
+  ],
+  [
+   [
+    "yüz",
+    "otuz",
+    "iki",
+    "beğeni"
+   ],
+   "132 beğeni"
+  ],
+  [
+   [
+    "on",
+    "üç",
+    "bin",
+    "iki",
+    "yüz",
+    "lira"
+   ],
+   "13.200 lira"
+  ],
+  [
+   [
+    "on",
+    "bin",
+    "dört",
+    "yüz",
+    "lira"
+   ],
+   "10.400 lira"
+  ],
+  [
+   [
+    "bin",
+    "beş",
+    "yüz"
+   ],
+   "1.500"
+  ],
+  [
+   [
+    "sekiz",
+    "yüz"
+   ],
+   "800"
+  ],
+  [
+   [
+    "beş",
+    "yüz",
+    "lira"
+   ],
+   "500 lira"
+  ],
+  [
+   [
+    "yüz",
+    "yetmiş",
+    "beğeniyi"
+   ],
+   "170 beğeniyi"
+  ],
+  [
+   [
+    "yüz",
+    "beğeni"
+   ],
+   "100 beğeni"
+  ],
+  [
+   [
+    "yüz",
+    "lira"
+   ],
+   "100 lira"
+  ],
+  [
+   [
+    "yedi",
+    "kişi"
+   ],
+   "7 kişi"
+  ],
+  [
+   [
+    "yedi",
+    "mevkinin"
+   ],
+   "7 mevkinin"
+  ],
+  [
+   [
+    "yedisi"
+   ],
+   "7'si"
+  ],
+  [
+   [
+    "iki",
+    "penaltı"
+   ],
+   "2 penaltı"
+  ],
+  [
+   [
+    "İki",
+    "sıfır"
+   ],
+   "2-0"
+  ],
+  [
+   [
+    "doksan",
+    "yorum"
+   ],
+   "90 yorum"
+  ],
+  [
+   [
+    "doksan",
+    "taraftar"
+   ],
+   "90 taraftar"
+  ],
+  [
+   [
+    "doksan",
+    "kişilik"
+   ],
+   "90 kişilik"
+  ],
+  [
+   [
+    "on",
+    "numaradan"
+   ],
+   "10 numaradan"
+  ],
+  [
+   [
+    "iki",
+    "bir"
+   ],
+   "2-1"
+  ],
+  [
+   [
+    "üçüncü",
+    "penaltı"
+   ],
+   "3. penaltı"
+  ],
+  [
+   [
+    "iki",
+    "iki"
+   ],
+   "2-2"
+  ],
+  [
+   [
+    "karar",
+    "iki"
+   ],
+   "Karar #2"
+  ]
+ ],
+ "sesler": [
+  {
+   "tip": "gum",
+   "t": "w:6"
+  },
+  {
+   "tip": "kasa",
+   "t": "w:36",
+   "ses": 1.0
+  },
+  {
+   "tip": "kasa",
+   "t": "w:59",
+   "ses": 1.0
+  },
+  {
+   "tip": "zil",
+   "t": "w:68",
+   "ses": 1.0
+  },
+  {
+   "tip": "klik",
+   "t": "w:79"
+  },
+  {
+   "tip": "pop",
+   "t": "w:98"
+  },
+  {
+   "tip": "pop",
+   "t": "w:98+0.3"
+  },
+  {
+   "tip": "pop",
+   "t": "w:99-0.1"
+  },
+  {
+   "tip": "pop",
+   "t": "w:99+0.25"
+  },
+  {
+   "tip": "pop",
+   "t": "w:100"
+  },
+  {
+   "tip": "pop",
+   "t": "w:101"
+  },
+  {
+   "tip": "pop",
+   "t": "w:102"
+  },
+  {
+   "tip": "duduk",
+   "t": "w:107-0.1"
+  },
+  {
+   "tip": "kisa_duduk",
+   "t": "w:120"
+  },
+  {
+   "tip": "kisa_duduk",
+   "t": "w:121+0.2"
+  },
+  {
+   "tip": "uzgun",
+   "t": "w:124",
+   "ses": 1.0
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:126",
+   "ses": 0.6
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:152",
+   "ses": 0.7
+  },
+  {
+   "tip": "kisa_duduk",
+   "t": "w:157"
+  },
+  {
+   "tip": "gum",
+   "t": "w:163"
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:163+0.1",
+   "ses": 0.7
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:171",
+   "ses": 0.7
+  },
+  {
+   "tip": "duduk",
+   "t": "we:173+0.1"
+  },
+  {
+   "tip": "zil",
+   "t": "we:173+1.9",
+   "ses": 0.9
+  }
+ ],
+ "sahneler": [
+  {
+   "bas": 0,
+   "arka": "bos_kale",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.44
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "seri",
+     "bolum": 2,
+     "bas": 0.05,
+     "y": 300,
+     "anim": "down"
+    },
+    {
+     "tip": "etiket",
+     "metin": "GEÇEN BÖLÜM: KALECİ YOK",
+     "boyut": 56,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "bas": "w:2",
+     "bitis": "w:5-0.05",
+     "y": 600
+    },
+    {
+     "tip": "baslik",
+     "metin": "BUGÜN",
+     "boyut": 210,
+     "bas": "w:5",
+     "bitis": "w:6-0.05",
+     "y": 640,
+     "anim": "stamp"
+    },
+    {
+     "tip": "baslik",
+     "metin": "KADRO SİZDEN!",
+     "boyut": 140,
+     "bas": "w:6",
+     "y": 660,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": "w:9-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.04,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.62
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "h": 980,
+     "x": 540
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TAKİP ET",
+     "boyut": 74,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:9",
+     "y": 330,
+     "nabiz": true
+    },
+    {
+     "tip": "etiket",
+     "metin": "YORUMUNA MEVKİNİ YAZ",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:11",
+     "y": 470
+    },
+    {
+     "tip": "etiket",
+     "metin": "HER GÜN 7 KİŞİ KADROYA!",
+     "boyut": 52,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:14",
+     "y": 610
+    }
+   ]
+  },
+  {
+   "bas": "w:20-0.05",
+   "arka": "kulube",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.55,
+     0.56
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "necmi",
+     "h": 900,
+     "x": 790,
+     "ayak": 1690,
+     "ayna": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "baslik",
+     "metin": "GÜN 2",
+     "boyut": 230,
+     "bas": "w:20",
+     "bitis": "w:22-0.05",
+     "y": 420,
+     "anim": "stamp"
+    },
+    {
+     "tip": "begeni",
+     "metin": "132 BEĞENİ",
+     "bas": "w:22",
+     "x": 360,
+     "y": 480
+    },
+    {
+     "tip": "etiket",
+     "metin": "YENİ KURAL!",
+     "boyut": 60,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -4,
+     "bas": "w:29",
+     "x": 360,
+     "y": 700
+    },
+    {
+     "tip": "begeni",
+     "metin": "1 BEĞENİ = 100 TL",
+     "zemin": "mor",
+     "bas": "w:31",
+     "x": 430,
+     "y": 880
+    }
+   ]
+  },
+  {
+   "bas": "w:35-0.05",
+   "arka": "kulube",
+   "bulanik": 10,
+   "karanlik": 0.7,
+   "zoom": [
+    1.06,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "kasa",
+     "baslik": "KULÜP KASASI",
+     "satirlar": [
+      [
+       "132 BEĞENİ × 100 TL",
+       "+13.200 TL"
+      ]
+     ],
+     "kalan": "13.200 TL",
+     "bas": "w:35",
+     "bitis": "w:44-0.03",
+     "y": 620
+    },
+    {
+     "tip": "kasa",
+     "baslik": "KULÜP KASASI",
+     "satirlar": [
+      [
+       "132 BEĞENİ × 100 TL",
+       "+13.200 TL"
+      ],
+      [
+       "SAHA KİRASI (1 HAFTA)",
+       "−1.500 TL"
+      ],
+      [
+       "KALECİ ELDİVENİ",
+       "−800 TL"
+      ],
+      [
+       "YENİ TOP",
+       "−500 TL"
+      ]
+     ],
+     "kalan": "10.400 TL",
+     "not": "SONRAKİ KİRA: 7 BÖLÜM SONRA",
+     "bas": "w:44",
+     "y": 760,
+     "anim": "fade",
+     "sure": 0.15
+    },
+    {
+     "tip": "damga",
+     "metin": "10.400 TL",
+     "boyut": 110,
+     "egim": -8,
+     "bas": "w:59",
+     "y": 1180,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:65-0.05",
+   "arka": "bos_kale",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.44
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "necmi",
+     "h": 950,
+     "x": 560,
+     "ayak": 1730,
+     "bas": "w:69"
+    }
+   ],
+   "isik_kapali": [
+    [
+     "w:79",
+     "w:80+0.35"
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "KARAR #1: TUTTU!",
+     "boyut": 64,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "isim",
+     "no": "1",
+     "ad": "KALECİ NECMİ ABİ",
+     "alt": "GÖREV SÜRESİ: 3 DAKİKA",
+     "bas": "w:72",
+     "x": 520,
+     "y": 470
+    },
+    {
+     "tip": "balon",
+     "metin": "SAAT DOLDU!",
+     "bas": "w:77",
+     "bitis": "w:79-0.02",
+     "x": 700,
+     "y": 640
+    },
+    {
+     "tip": "baslik",
+     "metin": "KLİK!",
+     "boyut": 170,
+     "egim": 8,
+     "bas": "w:79",
+     "bitis": "w:80+0.35",
+     "x": 700,
+     "y": 700,
+     "sure": 0.15
+    }
+   ]
+  },
+  {
+   "bas": "w:84-0.05",
+   "arka": "halisaha",
+   "bulanik": 12,
+   "karanlik": 0.85,
+   "zoom": [
+    1.1,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.45,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "burak",
+     "h": 1000,
+     "x": 540
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "isim",
+     "no": "M",
+     "ad": "MALZEMECİ BURAK",
+     "alt": "TÜM EKİPMAN ONDA",
+     "bas": "w:84+0.05",
+     "x": 520,
+     "y": 330
+    }
+   ]
+  },
+  {
+   "bas": "w:87-0.05",
+   "arka": "halisaha",
+   "bulanik": 12,
+   "karanlik": 0.85,
+   "zoom": [
+    1.1,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.3,
+     0.6
+    ],
+    [
+     0.36,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "yasin",
+     "h": 990,
+     "x": 560,
+     "giris": "right",
+     "sure": 0.45,
+     "kos": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "isim",
+     "no": "7",
+     "ad": "YOLDAYIM YASİN",
+     "alt": "GÜN 2: HÂLÂ YOLDA",
+     "bas": "w:87+0.1",
+     "x": 520,
+     "y": 330
+    },
+    {
+     "tip": "balon",
+     "metin": "GELİYORUM ABİ, 2 DK!",
+     "bas": "w:89",
+     "x": 650,
+     "y": 560
+    }
+   ]
+  },
+  {
+   "bas": "w:91-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "altyazi_y": 1232,
+   "karakterler": [
+    {
+     "ad": "taraftar_kaleci",
+     "h": 470,
+     "x": 140,
+     "ayak": 1130,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:98",
+     "faz": 0,
+     "etiket": "gultentalha",
+     "etiket_alt": "KALECİ"
+    },
+    {
+     "ad": "oyuncu_stoper",
+     "h": 470,
+     "x": 395,
+     "ayak": 1130,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:98+0.3",
+     "faz": 0.2,
+     "etiket": "tyremred",
+     "etiket_alt": "STOPER"
+    },
+    {
+     "ad": "oyuncu_solbek",
+     "h": 470,
+     "x": 685,
+     "ayak": 1130,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:99-0.1",
+     "faz": 0.4,
+     "etiket": "dadi_metin_taha",
+     "etiket_alt": "SAĞ KANAT"
+    },
+    {
+     "ad": "oyuncu_ortasaha",
+     "h": 470,
+     "x": 940,
+     "ayak": 1130,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:99+0.25",
+     "faz": 0.6,
+     "etiket": "yafeskahveci",
+     "etiket_alt": "ORTA SAHA"
+    },
+    {
+     "ad": "oyuncu_10",
+     "h": 600,
+     "x": 215,
+     "ayak": 1905,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:100",
+     "faz": 0.1,
+     "etiket": "tuncaym_095",
+     "etiket_alt": "10 NUMARA"
+    },
+    {
+     "ad": "oyuncu_solkanat",
+     "h": 600,
+     "x": 540,
+     "ayak": 1905,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:101",
+     "faz": 0.5,
+     "etiket": "gulbaycinar",
+     "etiket_alt": "SOL KANAT"
+    },
+    {
+     "ad": "forvet",
+     "h": 600,
+     "x": 865,
+     "ayak": 1905,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:102",
+     "faz": 0.3,
+     "etiket": "nesihaorgun",
+     "etiket_alt": "FORVET"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "YOĞUN İSTEK ÜZERİNE",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -2,
+     "bas": "w:91",
+     "y": 250,
+     "anim": "down"
+    },
+    {
+     "tip": "baslik",
+     "metin": "KADRO SİZDEN!",
+     "boyut": 130,
+     "bas": "w:94",
+     "y": 410,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:107-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.52,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "muhtar",
+     "h": 900,
+     "x": 770,
+     "ayak": 1700,
+     "bas": "w:111"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "MUHTARLIK G.",
+     "ev_skor": 0,
+     "dep_skor": 0,
+     "dakika": "1'",
+     "bas": "w:107",
+     "y": 300
+    },
+    {
+     "tip": "isim",
+     "no": "VS",
+     "ad": "MUHTARLIK GENÇLİK",
+     "alt": "3 YILDIR YENİLMİYOR",
+     "bas": "w:111",
+     "x": 520,
+     "y": 580
+    },
+    {
+     "tip": "damga",
+     "metin": "HAKEM: MUHTAR",
+     "boyut": 96,
+     "egim": 8,
+     "bas": "w:114",
+     "y": 1110,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:116-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.06,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "muhtar",
+     "h": 1000,
+     "x": 540
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "MUHTARLIK G.",
+     "ev_skor": 0,
+     "dep_skor": 0,
+     "dakika": "12'",
+     "bas": "w:116",
+     "bitis": "w:122-0.05",
+     "y": 300
+    },
+    {
+     "tip": "balon",
+     "metin": "PENALTI!",
+     "bas": "w:119",
+     "bitis": "w:121",
+     "x": 740,
+     "y": 560
+    },
+    {
+     "tip": "balon",
+     "metin": "BİR TANE DAHA!",
+     "bas": "w:121",
+     "x": 360,
+     "y": 640
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "MUHTARLIK G.",
+     "ev_skor": 0,
+     "dep_skor": 2,
+     "dakika": "34'",
+     "bas": "w:122",
+     "y": 300
+    }
+   ]
+  },
+  {
+   "bas": "w:125-0.05",
+   "arka": "tribun",
+   "zoom": [
+    1.75,
+    1.75
+   ],
+   "merkez": [
+    [
+     0.28,
+     0.47
+    ],
+    [
+     0.72,
+     0.47
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "cengo8540",
+     "mustafackmk066",
+     "cinaralitemel2",
+     "cinar57464",
+     "anaht_arci2",
+     "the.alidemirell",
+     "hiziralivatansever",
+     "kerem52455",
+     "miranbotan21",
+     "aktas__mustafa_0227",
+     "yagiz_yazicioglu54",
+     "alielifimbalik",
+     "gs_mert_bjk_fb",
+     "cansenell57",
+     "sezgin_cengiz25",
+     "tahire_aydin23",
+     "muhammed.emin.onaran",
+     "gulsenyildirim907",
+     "oguz_sr_4",
+     "orhanhulya56",
+     "nicatk409",
+     "alex7641912",
+     "yusuf_aras7y",
+     "hecerr1959",
+     "who_is.yamal"
+    ],
+    "ozel": {
+     "yusuf_aras7y": "DAVULCU",
+     "zorbeymermi": "YRD. HOCA"
+    },
+    "etiket_boyut": 15,
+    "sayi": 14
+   },
+   "karakterler": [
+    {
+     "ad": "tribun_lideri",
+     "h": 560,
+     "x": 540,
+     "ayak": 1700,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:133",
+     "etiket": "demirkentsk",
+     "etiket_alt": "TRİBÜN LİDERİ"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "90 YORUM = 90 TARAFTAR",
+     "boyut": 52,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:129",
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": "w:136-0.05",
+   "arka": "loca",
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "merkez": [
+    [
+     0.33,
+     0.38
+    ],
+    [
+     0.67,
+     0.38
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "zorbeymermi",
+     "ruzgar_3800",
+     "demirhands.gk",
+     "tutucu.vlr02",
+     "halitozgenur",
+     "hakoootraore",
+     "azra.ile.hayata.baglann",
+     "mertcan330077",
+     "bendebilmiyomki61",
+     "hamza_ben2861",
+     "omer.blnx",
+     "memoaali.10",
+     "efekara661",
+     "arda_sayioglu",
+     "bilal35_25",
+     "sutpidelerozduman",
+     "fatmaaaacfc",
+     "mehmetalitts56",
+     "azraylldd",
+     "alis62278",
+     "tunaaydn4",
+     "nurmuhammetjorakuliyew",
+     "huseyinoktay673",
+     "haddurayfer879",
+     "mehmet_delenn.7",
+     "asimakar68",
+     "ayazefeee_gk1",
+     "rahim.galavani1362",
+     "yusuftopraktomruk"
+    ],
+    "ozel": {
+     "yusuf_aras7y": "DAVULCU",
+     "zorbeymermi": "YRD. HOCA"
+    },
+    "etiket_boyut": 15,
+    "aralik": 0.42
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "LOCA · 90 KİŞİLİK TEKNİK HEYET",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": "w:136",
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": "w:144",
+   "arka": "loca",
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "merkez": [
+    [
+     0.67,
+     0.38
+    ],
+    [
+     0.33,
+     0.38
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "kerem_aslankvp",
+     "aartur221",
+     "mavikuafor.serap",
+     "aras.sara26",
+     "mehmetdkkya",
+     "settartaha9",
+     "cumasahin636",
+     "yildiraysavas8912",
+     "yalcingelen",
+     "06furkan_bostan",
+     "muhammed_muhyiddin",
+     "cetindemir791",
+     "efe91632",
+     "denizq7",
+     "alfro_37",
+     "atakan.3590",
+     "enverali837",
+     "kerim4toprak",
+     "ismailcirah07",
+     "mahmut_2773",
+     "yagiz_.m",
+     "emirhan_sumbul_33",
+     "aykut_memisoglu",
+     "cahid__202",
+     "mertirki",
+     "mortioffline",
+     "imdylanmusic_",
+     "kaden.z0"
+    ],
+    "ozel": {
+     "yusuf_aras7y": "DAVULCU",
+     "zorbeymermi": "YRD. HOCA"
+    },
+    "etiket_boyut": 15,
+    "aralik": 0.42,
+    "tohum": 11
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "ÇAYLAR NECMİ ABİDEN",
+     "boyut": 48,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 2,
+     "bas": "w:144",
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": "w:148-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_10",
+     "h": 820,
+     "x": 290,
+     "ayak": 1720,
+     "etiket": "tuncaym_095",
+     "etiket_alt": "10 NUMARA"
+    },
+    {
+     "ad": "forvet",
+     "h": 880,
+     "x": 790,
+     "ayak": 1740,
+     "giris": "right",
+     "sure": 0.3,
+     "bas": "w:150",
+     "etiket": "nesihaorgun",
+     "etiket_alt": "FORVET"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "PAS!",
+     "boyut": 64,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -6,
+     "bas": "w:150",
+     "bitis": "w:152-0.02",
+     "x": 540,
+     "y": 720
+    },
+    {
+     "tip": "baslik",
+     "metin": "GOL!",
+     "boyut": 230,
+     "bas": "w:152",
+     "y": 560,
+     "anim": "stamp",
+     "titre": true
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "MUHTARLIK G.",
+     "ev_skor": 1,
+     "dep_skor": 2,
+     "dakika": "78'",
+     "bas": "w:153",
+     "y": 260
+    }
+   ]
+  },
+  {
+   "bas": "w:155-0.05",
+   "arka": "bos_kale",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.44
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "taraftar_kaleci",
+     "h": 900,
+     "x": 540,
+     "ayak": 1740,
+     "etiket": "gultentalha",
+     "etiket_alt": "KALECİ"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "SON DAKİKA",
+     "boyut": 60,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "y": 280,
+     "anim": "down"
+    },
+    {
+     "tip": "damga",
+     "metin": "3. PENALTI",
+     "boyut": 120,
+     "bas": "w:157",
+     "bitis": "w:159-0.05",
+     "y": 560,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "YENİ ELDİVENLER!",
+     "boyut": 54,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 3,
+     "bas": "w:160",
+     "bitis": "w:163-0.05",
+     "y": 560
+    },
+    {
+     "tip": "baslik",
+     "metin": "KURTARDI!",
+     "boyut": 170,
+     "bas": "w:163",
+     "y": 560,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": "w:164-0.05",
+   "arka": "kulube",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.56,
+     0.56
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "necmi",
+     "h": 930,
+     "x": 760,
+     "ayak": 1690,
+     "ayna": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "SAAT DOLUYOR!",
+     "boyut": 60,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "y": 320,
+     "anim": "down"
+    },
+    {
+     "tip": "balon",
+     "metin": "ŞALTER HAZIR...",
+     "bas": "w:165",
+     "x": 380,
+     "y": 620
+    }
+   ]
+  },
+  {
+   "bas": "w:168-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.08,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.62
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "h": 980,
+     "x": 540,
+     "ayak": 1760,
+     "etiket": "nesihaorgun",
+     "etiket_alt": "FORVET"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "baslik",
+     "metin": "GOL!",
+     "boyut": 230,
+     "bas": "w:171",
+     "y": 540,
+     "anim": "stamp",
+     "titre": true
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "MUHTARLIK G.",
+     "ev_skor": 2,
+     "dep_skor": 2,
+     "dakika": "90+5'",
+     "bas": "w:172",
+     "y": 260
+    }
+   ]
+  },
+  {
+   "bas": "we:173+0.08",
+   "arka": "halisaha",
+   "bulanik": 10,
+   "karanlik": 0.7,
+   "zoom": [
+    1.04,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "altyazi_y": false,
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "İLK PUANIMIZ!",
+     "boyut": 60,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "we:173+0.2",
+     "y": 250,
+     "anim": "down"
+    },
+    {
+     "tip": "puan",
+     "baslik": "HALI SAHA LİGİ · 1. HAFTA",
+     "satirlar": [
+      [
+       "KAHVECİ SPOR",
+       1,
+       1,
+       0,
+       0,
+       "+2",
+       3
+      ],
+      [
+       "BAKKAL GÜCÜ",
+       1,
+       1,
+       0,
+       0,
+       "+2",
+       3
+      ],
+      [
+       "ANADOLUSPOR",
+       1,
+       0,
+       1,
+       0,
+       "0",
+       1
+      ],
+      [
+       "MUHTARLIK GENÇLİK",
+       1,
+       0,
+       1,
+       0,
+       "0",
+       1
+      ],
+      [
+       "SANAYİ DEMİR",
+       1,
+       0,
+       1,
+       0,
+       "0",
+       1
+      ],
+      [
+       "PAZAR YILDIZ",
+       1,
+       0,
+       1,
+       0,
+       "0",
+       1
+      ],
+      [
+       "FIRIN SPOR",
+       1,
+       0,
+       0,
+       1,
+       "-2",
+       0
+      ],
+      [
+       "BERBER FK",
+       1,
+       0,
+       0,
+       1,
+       "-2",
+       0
+      ]
+     ],
+     "eski": [
+      "BAKKAL GÜCÜ",
+      "BERBER FK",
+      "FIRIN SPOR",
+      "KAHVECİ SPOR",
+      "MUHTARLIK GENÇLİK",
+      "PAZAR YILDIZ",
+      "SANAYİ DEMİR",
+      "ANADOLUSPOR"
+     ],
+     "vurgu": "ANADOLUSPOR",
+     "rozet": "▲5",
+     "alt": "ŞAMPİYON 5 GALİBİYETLE ÜST LİGE ÇIKAR",
+     "bas": "we:173+0.15",
+     "gecikme": 0.7,
+     "kayma": 1.1,
+     "y": 860
+    }
+   ]
+  },
+  {
+   "bas": "w:174-0.05",
+   "arka": "bos_kale",
+   "bulanik": 6,
+   "karanlik": 0.75,
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.45
+    ],
+    [
+     0.5,
+     0.45
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "KARAR #2",
+     "boyut": 80,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "HEDEF: 170 BEĞENİ",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:178",
+     "y": 440
+    },
+    {
+     "tip": "etiket",
+     "metin": "GEÇERSE",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "yesil",
+     "bas": "w:181",
+     "x": 300,
+     "y": 600
+    },
+    {
+     "tip": "secenek",
+     "harf": "A",
+     "ad": "İLK FORMALAR",
+     "karakter": "oyuncu_10",
+     "oran": 0.4,
+     "renk": [
+      130,
+      220,
+      150
+     ],
+     "bas": "w:182",
+     "x": 300,
+     "y": 900,
+     "dondur": 3
+    },
+    {
+     "tip": "etiket",
+     "metin": "GEÇMEZSE",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "bas": "w:187",
+     "x": 790,
+     "y": 600
+    },
+    {
+     "tip": "secenek",
+     "harf": "B",
+     "ad": "BURAK'IN FORMALARI",
+     "karakter": "burak",
+     "oran": 0.36,
+     "renk": [
+      255,
+      150,
+      160
+     ],
+     "bas": "w:188",
+     "x": 790,
+     "y": 900,
+     "dondur": -3
+    }
+   ]
+  },
+  {
+   "bas": "w:195-0.05",
+   "arka": "halisaha",
+   "zoom": [
+    1.06,
+    1.0
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.62
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "h": 760,
+     "x": 180,
+     "ayak": 1630,
+     "faz": 0.2
+    },
+    {
+     "ad": "oyuncu_10",
+     "h": 770,
+     "x": 905,
+     "ayak": 1630,
+     "faz": 0.6,
+     "bas": "w:195+0.05"
+    },
+    {
+     "ad": "taraftar_kaleci",
+     "h": 800,
+     "x": 360,
+     "ayak": 1650,
+     "faz": 0.4,
+     "bas": "w:195+0.1"
+    },
+    {
+     "ad": "cem",
+     "h": 900,
+     "x": 650,
+     "ayak": 1680
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TAKİP ET",
+     "boyut": 84,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "y": 320,
+     "nabiz": true
+    },
+    {
+     "tip": "etiket",
+     "metin": "+ BEĞEN · YORUMUNA MEVKİNİ YAZ",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:197",
+     "y": 470
+    },
+    {
+     "tip": "etiket",
+     "metin": "YARIN SAHADA SEN OL!",
+     "boyut": 54,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:201",
+     "y": 610
+    }
+   ]
+  }
+ ]
+}

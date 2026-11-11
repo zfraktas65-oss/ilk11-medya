@@ -68,3 +68,13 @@ Ortak: `tip`, `bas`, `bitis`, `x` (540), `y` (320), `anim` (`pop` | `stamp` | `d
 - Bir sahnede en fazla 3 yazı öğesi; her öğe konuşmada geçtiği kelimede (`w:N`) belirsin.
 - Karakter başı (ayak 1640, h 980 için ≈ y 660–900) ile yazılar çakışmasın: başlıkları y 300–560'a koy.
 - Önizlemede taşma, çakışma, boş sahne olmadığını kontrol et.
+
+## Yeni öğeler ve alanlar (2026-11-11)
+- **`kasa`** — kasa defteri: `{"tip":"kasa","baslik":"KULÜP KASASI","satirlar":[["132 BEĞENİ × 100 TL","+13.200 TL"],["SAHA KİRASI (1 HAFTA)","−1.500 TL"]],"kalan":"11.700 TL","not":"SONRAKİ KİRA: 7 BÖLÜM SONRA","y":760}`. Satır rengi `+` ile başlıyorsa yeşil, değilse kırmızı (3. eleman renk adı verilebilir). Kademeli göstermek için iki `kasa` öğesi kullan (ilki `bitis`, ikincisi `anim:"fade"`).
+- **`puan`** — hareketli puan tablosu: `{"tip":"puan","baslik":"HALI SAHA LİGİ · 2. HAFTA","satirlar":[["TAKIM",O,G,B,M,"AV",P], ...yeni sırada],"eski":[eski sıradaki takım adları],"vurgu":"ANADOLUSPOR","rozet":"▲5","alt":"ŞAMPİYON 5 GALİBİYETLE ÜST LİGE ÇIKAR","bas":"we:N+0.15","gecikme":0.7,"kayma":1.1,"y":860}`. Satırlar `gecikme` sn sonra `kayma` sn içinde eski yerden yeni yere kayar; rozet kayma bitince çıkar ("▼N" düşüş).
+- **`yazi`** — çok satırlı düz yazı (`metin` içinde `\n`, `font`, `boyut`, `renk`, `kontur`). **`bayrak`** — dalgalanan Türk bayrağı direkte (`genislik`, `yarim`: yarıya indirilmiş).
+- **Karakter etiketi:** karakterde `"etiket":"kullanici","etiket_alt":"MEVKİ"` → başın hemen altında küçük @isim + sarı unvan şeridi (`etiket_y` oranı, varsayılan 0.37). `giris:"pop"` ise etiket giriş bitince çıkar.
+- **Kalabalık isimleri:** sahnede `"tribun":{"isimler":[...],"ozel":{"kullanici":"UNVAN"},"sayi":ek_isimsiz,"aralik":0.42,"etiket_boyut":15,"tohum":11}` → isimler ön sıralardan başlayarak figürlerin başının altına yazılır. Okunurluk için tribünde zoom 1.75 + merkez x 0.28→0.72, locada zoom 1.6 + merkez y 0.38 ve sahne başına ≤30 isim.
+- **Sahne `altyazi_y`:** o sahnede altyazının y konumu (`false` = altyazı yok). Kadro sahnesinde 1232 (iki sıra oyuncunun arası).
+- **Üst düzey `muzik_bas`:** müziğin başlama zamanı (çapa da olur), yumuşak girişle.
+- **Sese sessizlik ekleme** (isim/tablo sahneleri için): ham sesi `atrim` + `anullsrc` ile böl, kelimeler.json'daki `start/end` değerlerini ekleme noktasından sonra kaydır (Bölüm 2 örneği: 56.06 s +0.8, 60.82 s +1.5, 72.68 s +3.0).

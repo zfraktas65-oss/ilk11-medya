@@ -144,6 +144,83 @@ def counter_card(title, value, sub, value_col=PURPLE, sub_col=RED):
         card.alpha_composite(f, ((w - f.width) // 2, h - f.height - 24))
     return shadowed(card)
 
+def ledger_card(title, rows, total_label, total_value, note=""):
+    """Kasa defteri: başlık, (etiket, tutar, renk) satırları, KALAN satırı, isteğe bağlı not."""
+    w = 860; row_h = 76; head_h = 96
+    h = head_h + 24 + row_h * len(rows) + 22 + 110 + (60 if note else 0) + 20
+    card = rrect((w, h), 30, WHITE, 7); d = ImageDraw.Draw(card)
+    d.rounded_rectangle((7, 7, w - 8, head_h), 24, fill=PURPLE); d.rectangle((7, head_h - 30, w - 8, head_h), fill=PURPLE)
+    t = text_img(title, "black", fit_text(title, "black", 46, w - 60), YELLOW, shadow=False)
+    card.alpha_composite(t, ((w - t.width) // 2, (head_h + 7) // 2 - t.height // 2))
+    y = head_h + 24
+    for i, (lab, val, col) in enumerate(rows):
+        if i % 2 == 0: d.rectangle((14, y, w - 15, y + row_h), fill=(246, 240, 252))
+        L = text_img(lab, "xbold", fit_text(lab, "xbold", 40, w - 330), INK, shadow=False)
+        V = text_img(val, "anton", fit_text(val, "anton", 54, 290), col, shadow=False)
+        card.alpha_composite(L, (36, y + (row_h - L.height) // 2))
+        card.alpha_composite(V, (w - 36 - V.width, y + (row_h - V.height) // 2))
+        y += row_h
+    y += 10; d.line((30, y, w - 30, y), fill=INK, width=5); y += 12
+    d.rounded_rectangle((20, y, w - 21, y + 100), 22, fill=YELLOW, outline=INK, width=4)
+    L = text_img(total_label, "black", fit_text(total_label, "black", 48, w - 420), INK, shadow=False)
+    V = text_img(total_value, "anton", fit_text(total_value, "anton", 78, 380), PURPLE, shadow=False)
+    card.alpha_composite(L, (46, y + (100 - L.height) // 2)); card.alpha_composite(V, (w - 46 - V.width, y + (100 - V.height) // 2))
+    y += 110
+    if note:
+        N = text_img(note, "xbold", fit_text(note, "xbold", 32, w - 60), RED, shadow=False)
+        card.alpha_composite(N, ((w - N.width) // 2, y + 8))
+    return shadowed(card)
+
+@lru_cache(maxsize=256)
+def standings_card(title, rows, old_order, hl, pq, badge, sub=""):
+    """Puan tablosu. rows: ((takım, O, G, B, M, AV, P), ...) yeni sırada; old_order: eski sıradaki takım adları;
+    hl: vurgulanan takım; pq: 0..100 geçiş ilerlemesi (eski sıradan yeni sıraya kayma)."""
+    p = ease_out(pq / 100.0)
+    w = 960; head = 96; colh = 50; rh = 74; n = len(rows)
+    h = head + colh + rh * n + (64 if sub else 24)
+    card = rrect((w, h), 30, WHITE, 7); d = ImageDraw.Draw(card)
+    d.rounded_rectangle((7, 7, w - 8, head), 24, fill=PURPLE); d.rectangle((7, head - 30, w - 8, head), fill=PURPLE)
+    t = text_img(title, "black", fit_text(title, "black", 44, w - 60), YELLOW, shadow=False)
+    card.alpha_composite(t, ((w - t.width) // 2, (head + 7) // 2 - t.height // 2))
+    xs = [44, 96, 560, 625, 690, 755, 830, 905]   # #, takım, O, G, B, M, AV, P (sütun merkezleri / sol)
+    fh = font("xbold", 26)
+    for j, lab in enumerate(["#", "TAKIM", "O", "G", "B", "M", "AV", "P"]):
+        d.text((xs[j], head + colh // 2 + 4), lab, font=fh, fill=(120, 110, 140), anchor="lm" if j == 1 else "mm")
+    top = head + colh
+    def ypos(name):
+        a = old_order.index(name) if name in old_order else rows.index(next(r for r in rows if r[0] == name))
+        b = [r[0] for r in rows].index(name)
+        return top + (a + (b - a) * p) * rh
+    order = [r for r in rows if r[0] != hl] + [r for r in rows if r[0] == hl]
+    for i in range(n):
+        if i % 2 == 0: d.rectangle((14, top + i * rh, w - 15, top + (i + 1) * rh), fill=(246, 240, 252))
+    for i in range(n):
+        d.text((xs[0], top + i * rh + rh // 2), str(i + 1), font=font("anton", 40), fill=INK, anchor="mm")
+    for r in order:
+        y = ypos(r[0]); is_hl = r[0] == hl
+        if is_hl:
+            d.rounded_rectangle((70, y + 6, w - 18, y + rh - 6), 18, fill=YELLOW, outline=INK, width=4)
+        name_f = font("black" if is_hl else "xbold", fit_text(r[0], "black" if is_hl else "xbold", 38, 420))
+        d.text((xs[1], y + rh // 2), r[0], font=name_f, fill=PURPLE if is_hl else INK, anchor="lm")
+        for j, v in enumerate(r[1:]):
+            col = INK
+            if j == 4: col = GREEN if str(v).startswith("+") else (RED if str(v).startswith("-") else INK)
+            d.text((xs[j + 2], y + rh // 2), str(v), font=font("anton", 46 if j == 5 else 38), fill=PURPLE if (j == 5 and is_hl) else col, anchor="mm")
+    if badge and pq >= 100:
+        hy = top + [r[0] for r in rows].index(hl) * rh
+        num = text_img(badge.lstrip("▲▼ "), "anton", 36, WHITE, shadow=False)
+        bw, bh = num.width + 60, 50
+        b = rrect((bw, bh), bh // 2, GREEN, 4); bd = ImageDraw.Draw(b)
+        up = not badge.startswith("▼")
+        tri = [(14, 35), (36, 35), (25, 14)] if up else [(14, 15), (36, 15), (25, 36)]
+        bd.polygon(tri, fill=WHITE)
+        b.alpha_composite(num, (44, (bh - num.height) // 2))
+        card.alpha_composite(b, (434, int(hy + (rh - bh) / 2)))
+    if sub:
+        sb = text_img(sub, "xbold", fit_text(sub, "xbold", 30, w - 60), RED, shadow=False)
+        card.alpha_composite(sb, ((w - sb.width) // 2, h - 44 - sb.height // 2 + 8))
+    return shadowed(card)
+
 def like_sticker(text, bg=GREEN):
     hrt = heart(64, WHITE)
     t = text_img(text, "black", fit_text(text, "black", 50, 760), WHITE, shadow=False)
@@ -234,6 +311,69 @@ def banner(text, bg=(255, 250, 235), fg=PURPLE, tilt=-3):
     for x in (12, w - 12):
         d.ellipse((x - 9, 1, x + 9, 19), fill=YELLOW, outline=INK, width=3)
     return shadowed(img).rotate(tilt, resample=Image.BICUBIC, expand=True)
+
+@lru_cache(None)
+def name_label(name, size, title=""):
+    """Küçük isim etiketi (beyaz hap, mor yazı) + isteğe bağlı sarı unvan şeridi."""
+    txt = name if name.startswith("@") else "@" + name
+    f = font("xbold", size); l, t, r, b = f.getbbox(txt)
+    pad = max(4, size // 3); w, h = r - l + pad * 2, b - t + pad * 2 - 2
+    bw = max(2, size // 8)
+    img = rrect((w, h), h // 2, WHITE, bw, PURPLE)
+    ImageDraw.Draw(img).text(((w - (r - l)) // 2 - l, (h - (b - t)) // 2 - t), txt, font=f, fill=PURPLE)
+    if title:
+        ft = font("black", max(9, int(size * 0.72))); l2, t2, r2, b2 = ft.getbbox(title)
+        tw, th = r2 - l2 + pad * 2, b2 - t2 + pad
+        tb = rrect((tw, th), th // 2, YELLOW, max(1, bw - 1), INK)
+        ImageDraw.Draw(tb).text(((tw - (r2 - l2)) // 2 - l2, (th - (b2 - t2)) // 2 - t2), title, font=ft, fill=INK)
+        out = Image.new("RGBA", (max(w, tw), h + th - 2), (0, 0, 0, 0))
+        out.alpha_composite(img, ((out.width - w) // 2, 0)); out.alpha_composite(tb, ((out.width - tw) // 2, h - 2))
+        img = out
+    return shadowed(img, off=(0, 3), blur=2, alpha=120)
+
+@lru_cache(None)
+def turk_bayragi(w):
+    """Türk bayrağı (Bayrak Kanunu oranları: G yükseklik, 1,5G en; hilal ve yıldız ölçüleri)."""
+    G = int(w / 1.5); S = 3
+    img = Image.new("RGBA", (w * S, G * S), (227, 10, 23, 255)); d = ImageDraw.Draw(img)
+    g = G * S; cy = g / 2
+    def circ(cx, r, col): d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col)
+    circ(0.5 * g, 0.25 * g, WHITE)            # hilal dış çemberi
+    circ(0.5625 * g, 0.2 * g, (227, 10, 23))  # iç çember (1/16 G kaydırılmış)
+    sx, R = 0.8208 * g, 0.125 * g             # yıldız çemberi (çap 1/4 G), bir ucu göndere bakar
+    r_in = R * 0.381966
+    pts = []
+    for k in range(10):
+        ang = math.pi + k * math.pi / 5
+        rr = R if k % 2 == 0 else r_in
+        pts.append((sx + rr * math.cos(ang), cy + rr * math.sin(ang)))
+    d.polygon(pts, fill=WHITE)
+    return img.resize((w, G), Image.LANCZOS)
+
+def wave_flag(base, t, amp=None):
+    a = np.asarray(base).astype(np.float32); h, w = a.shape[:2]
+    amp = amp if amp is not None else h * 0.045
+    xs = np.arange(w); ramp = (xs / w) ** 0.8
+    dy = amp * ramp * np.sin(2 * np.pi * (xs / (w * 0.55) - t * 0.9))
+    shade = 1 + 0.16 * ramp * np.cos(2 * np.pi * (xs / (w * 0.55) - t * 0.9))
+    pad = int(amp) + 4
+    out = np.zeros((h + pad * 2, w, 4), np.float32)
+    ys = np.arange(h + pad * 2)[:, None] - pad - dy[None, :]
+    yi = np.clip(np.round(ys).astype(int), 0, h - 1); valid = (ys >= 0) & (ys <= h - 1)
+    out = a[yi, xs[None, :]]
+    out[..., :3] *= shade[None, :, None]
+    out[..., 3] *= valid
+    return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8), "RGBA")
+
+def flag_with_pole(t, w, half_mast=True):
+    fl = wave_flag(turk_bayragi(w), t)
+    pole_h = int(fl.height * 1.75); pw = max(8, w // 45)
+    img = Image.new("RGBA", (w + pw * 3, pole_h + pw * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+    d.rectangle((pw, pw * 2, pw * 2, pole_h + pw * 2), fill=(225, 225, 230), outline=INK, width=2)
+    d.ellipse((pw * 0.4, 0, pw * 2.6, pw * 2.2), fill=(240, 200, 60), outline=INK, width=2)
+    y = int(pole_h * (0.30 if half_mast else 0.06))
+    img.alpha_composite(fl, (pw * 2, y))
+    return img
 
 LIST_W, LIST_ROW, LIST_VIS = 920, 60, 9
 
@@ -388,6 +528,9 @@ class Bolum:
             return crest(o.get("boyut", 230))
         if tip == "sayac":
             return counter_card(o["baslik"], o["deger"], o.get("alt", ""), rk(o.get("deger_renk", "mor")), rk(o.get("alt_renk", "kirmizi")))
+        if tip == "kasa":
+            rows = [(r[0], r[1], rk(r[2]) if len(r) > 2 else (GREEN if str(r[1]).startswith("+") else RED)) for r in o["satirlar"]]
+            return ledger_card(o.get("baslik", "KULÜP KASASI"), rows, o.get("kalan_etiket", "KASADA KALAN"), o["kalan"], o.get("not", ""))
         if tip == "begeni":
             return like_sticker(o["metin"], rk(o.get("zemin", "yesil")))
         if tip == "secenek":
@@ -398,6 +541,10 @@ class Bolum:
             return progress_bar(o.get("sol", "HALI SAHA"), o.get("sag", "SÜPER LİG"), o.get("oran", 0.0), o.get("isaret", "BURADAYIZ"))
         if tip == "balon":
             return bubble(o["metin"])
+        if tip == "yazi":
+            fn = o.get("font", "black"); lines = o["metin"].split("\n"); size = o.get("boyut", 54)
+            ims = [text_img(L, fn, fit_text(L, fn, size, 980), rk(o.get("renk", "beyaz")), o.get("kontur", 0), shadow=o.get("golge", True)) for L in lines]
+            return stack(ims, gap=o.get("aralik", 6))
         if tip == "pankart":
             return banner(o["metin"], rk(o.get("zemin", [255, 250, 235])), rk(o.get("renk", "mor")), o.get("egim", -3))
         if tip == "skor":
@@ -422,9 +569,25 @@ class Bolum:
                 chars.append(dict(ad=c["ad"], h=int(c.get("h", 980)), x=c.get("x", 540), ayak=c.get("ayak", 1640),
                                   t0=self.T(c.get("bas", t0)), t1=self.T(c["bitis"]) if "bitis" in c else None,
                                   giris=c.get("giris", "up"), sure=c.get("sure", 0.35), ayna=c.get("ayna", False),
-                                  golge=c.get("golge", False), kos=c.get("kos", False), faz=c.get("faz", 0)))
+                                  golge=c.get("golge", False), kos=c.get("kos", False), faz=c.get("faz", 0),
+                                  etiket=c.get("etiket"), etiket_alt=c.get("etiket_alt", ""), etiket_y=c.get("etiket_y", 0.37)))
             ovs = []
             for o in s.get("ogeler", []):
+                if o["tip"] == "bayrak":
+                    w_ = o.get("genislik", 560)
+                    ovs.append(dict(img=flag_with_pole(0, w_, o.get("yarim", True)), bayrak=(w_, o.get("yarim", True)),
+                                    t0=self.T(o.get("bas", t0)), t1=self.T(o["bitis"]) if "bitis" in o else None,
+                                    x=o.get("x", 540), y=o.get("y", 700), anim=o.get("anim", "fade"), sure=o.get("sure", 0.8), rot=0, nabiz=False, titre=False))
+                    continue
+                if o["tip"] == "puan":
+                    pdat = (o.get("baslik", "PUAN TABLOSU"), tuple(tuple(r) for r in o["satirlar"]), tuple(o.get("eski", [r[0] for r in o["satirlar"]])),
+                            o.get("vurgu", "ANADOLUSPOR"), o.get("rozet", ""), o.get("alt", ""))
+                    t0p = self.T(o.get("bas", t0))
+                    ovs.append(dict(img=standings_card(pdat[0], pdat[1], pdat[2], pdat[3], 0, pdat[4], pdat[5]), puan=pdat,
+                                    kay=(t0p + float(o.get("gecikme", 0.7)), float(o.get("kayma", 1.1))),
+                                    t0=t0p, t1=self.T(o["bitis"]) if "bitis" in o else None,
+                                    x=o.get("x", 540), y=o.get("y", 760), anim=o.get("anim", "pop"), sure=o.get("sure", 0.3), rot=0, nabiz=False, titre=False))
+                    continue
                 if o["tip"] == "liste":
                     body = list_body(o["isimler"], o.get("sutun", 2))
                     ovs.append(dict(img=list_frame(o.get("baslik", "TRİBÜN"), body, 0, o.get("satir", LIST_VIS)), liste=(o.get("baslik", "TRİBÜN"), body, o.get("satir", LIST_VIS)),
@@ -437,7 +600,7 @@ class Bolum:
             crowd = build_crowd(s["arka"], s["tribun"]) if s.get("tribun") else []
             dark = [(self.T(a), self.T(b)) for a, b in s.get("isik_kapali", [])]
             z = s.get("zoom", [1.0, 1.08]); m = s.get("merkez", [[0.5, 0.55], [0.5, 0.55]])
-            self.scenes.append(dict(t0=t0, t1=t1, bg=bg, z=z, m=m, chars=chars, ovs=ovs, dark=dark, crowd=crowd))
+            self.scenes.append(dict(t0=t0, t1=t1, bg=bg, z=z, m=m, chars=chars, ovs=ovs, dark=dark, crowd=crowd, sub_y=s.get("altyazi_y")))
 
     # ------------------------------------------------------------ çizim
     @lru_cache(None)
@@ -455,12 +618,13 @@ class Bolum:
             x += widths[j] + sp
         return shadowed(img, off=(0, 7), blur=5, alpha=150)
 
-    def draw_subs(self, frame, t):
+    def draw_subs(self, frame, t, y=None):
+        if y is False: return
         for ci, c in enumerate(self.chunks):
             if c[0]["s"] <= t < c[0]["ce"]:
                 active = max([j for j, w in enumerate(c) if w["s"] <= t] or [0])
                 k = min((t - c[0]["s"]) / 0.12, 1.0)
-                paste(frame, self.sub_img(ci, active), W // 2, self.sub_y, 1.12 - 0.12 * ease_out(k))
+                paste(frame, self.sub_img(ci, active), W // 2, self.sub_y if y is None else int(y), 1.12 - 0.12 * ease_out(k))
                 return
 
     def frame(self, t):
@@ -480,7 +644,7 @@ class Bolum:
         for a, b in sc["dark"]:
             if a <= t < b: fr = darken(fr, 0.16)
         for o in sc["ovs"]: draw_ov(fr, o, t)
-        self.draw_subs(fr, t)
+        self.draw_subs(fr, t, sc.get("sub_y"))
         return fr.convert("RGB")
 
     # ------------------------------------------------------------ ses
@@ -510,9 +674,10 @@ class Bolum:
         muz = self.s.get("muzik", "neseli_1")
         muz = muz if os.path.isabs(muz) else os.path.join(VAR, "muzik", muz if "." in muz else muz + ".mp3")
         vol = self.s.get("muzik_ses", 0.30); D = self.end
+        mb = float(self.T(self.s.get("muzik_bas", 0))); ms = int(mb * 1000)
         out = os.path.join(outdir, "mix.m4a")
         fc = (f"[0:a]aresample={SR},aformat=channel_layouts=stereo,apad=whole_dur={D},asplit=2[v1][v2];"
-              f"[1:a]aresample={SR},aformat=channel_layouts=stereo,atrim=0:{D},volume={vol},afade=t=out:st={max(D-1.8,0)}:d=1.8[m];"
+              f"[1:a]aresample={SR},aformat=channel_layouts=stereo,atrim=0:{max(D-mb,1)},volume={vol},afade=t=in:st=0:d={1.2 if mb else 0.01},adelay={ms}|{ms},afade=t=out:st={max(D-1.8,0)}:d=1.8[m];"
               f"[m][v2]sidechaincompress=threshold=0.04:ratio=4:attack=15:release=350[md];"
               f"[v1][md][2:a]amix=inputs=3:normalize=0:duration=first,loudnorm=I=-14:TP=-1.5:LRA=11[o]")
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", ses, "-stream_loop", "-1", "-i", muz, "-i", sfx, "-filter_complex", fc,
@@ -573,8 +738,10 @@ def build_crowd(bgname, spec):
     meta = os.path.join(VAR, "arka", bgname + ".json")
     if not os.path.exists(meta): raise SystemExit(f"tribün düzeni yok: {meta}")
     rows = json.load(open(meta))["siralar"]          # arkadan öne: [{"ayak":y,"x0":..,"x1":..,"h":..}]
-    n = max(0, int(spec.get("sayi", 0))); rng = np.random.default_rng(spec.get("tohum", 7))
-    caps = [max(1, int((r["x1"] - r["x0"]) / (r["h"] * 0.38))) for r in rows]
+    names = list(spec.get("isimler", [])); ozel = spec.get("ozel", {})
+    n = len(names) + max(0, int(spec.get("sayi", 0))); rng = np.random.default_rng(spec.get("tohum", 7))
+    fac = spec.get("aralik", 0.5 if names else 0.38)
+    caps = [max(1, int((r["x1"] - r["x0"]) / (r["h"] * fac))) for r in rows]
     order = list(range(len(rows)))[::-1]             # önce ön sıralar dolsun
     fill = {i: 0 for i in order}; left = min(n, sum(caps))
     while left > 0:
@@ -589,11 +756,21 @@ def build_crowd(bgname, spec):
         for sl in slots:
             x = r["x0"] + step * (sl + 0.5) + rng.uniform(-0.2, 0.2) * step
             h = int(r["h"] * rng.uniform(0.9, 1.08))
-            out.append(dict(img=(k + int(rng.integers(0, nf))) % nf, h=h, x=x, y=r["ayak"], flip=bool(rng.integers(0, 2)), ph=float(rng.uniform(0, 1)), sp=float(rng.uniform(1.2, 2.0))))
+            out.append(dict(img=(k + int(rng.integers(0, nf))) % nf, h=h, x=x, y=r["ayak"], flip=bool(rng.integers(0, 2)), ph=float(rng.uniform(0, 1)), sp=float(rng.uniform(1.2, 2.0)), row=i, name=None, zig=0))
             k += 1
+    # isimleri önce ön sıralara, soldan sağa ver; komşu etiketler çakışmasın diye zikzak
+    order = sorted(range(len(out)), key=lambda j: (-out[j]["row"], out[j]["x"]))
+    lsize = spec.get("etiket_boyut", 16)
+    for idx, j in enumerate(order[:len(names)]):
+        nm = names[idx]; out[j]["name"] = nm; out[j]["title"] = ozel.get(nm.lstrip("@"), "")
+    for i in set(f["row"] for f in out):
+        rowf = sorted([f for f in out if f["row"] == i], key=lambda f: f["x"])
+        for m, f in enumerate(rowf): f["zig"] = m % 2
+    for f in out: f["lsize"] = lsize
     return out
 
 def draw_crowd(bg, crowd, t):
+    labels = []
     for f in crowd:
         im = fan_scaled(f["img"], f["h"], f["flip"])
         jump = abs(math.sin(math.pi * (t * f["sp"] + f["ph"]))) * f["h"] * 0.06
@@ -601,6 +778,13 @@ def draw_crowd(bg, crowd, t):
         x0, y0 = max(x, 0), max(y, 0); x1, y1 = min(x + im.width, bg.width), min(y + im.height, bg.height)
         if x1 > x0 and y1 > y0:
             bg.alpha_composite(im.crop((x0 - x, y0 - y, x1 - x, y1 - y)), (x0, y0))
+        if f.get("name"):
+            lab = name_label(f["name"], f["lsize"], f.get("title", ""))
+            labels.append((lab, int(f["x"] - lab.width / 2), int(y + im.height * (0.30 + 0.13 * f["zig"]))))
+    for lab, lx, ly in labels:
+        x0, y0 = max(lx, 0), max(ly, 0); x1, y1 = min(lx + lab.width, bg.width), min(ly + lab.height, bg.height)
+        if x1 > x0 and y1 > y0:
+            bg.alpha_composite(lab.crop((x0 - lx, y0 - ly, x1 - lx, y1 - ly)), (x0, y0))
 
 # ---------------------------------------------------------------- kompozisyon
 def paste(frame, img, cx, cy, scale=1.0, alpha=1.0, rot=0.0):
@@ -638,10 +822,19 @@ def draw_char(frame, c, t):
     br = 1 + 0.012 * math.sin(2 * math.pi * (t * 0.8 + c["faz"]))
     w2, h2 = int(im.width * sx), int(im.height * sx * br)
     if (w2, h2) != im.size: im = im.resize((max(w2, 1), max(h2, 1)), Image.BILINEAR)
-    safe_comp(frame, im, int(x - im.width / 2), int(feet - im.height - bob))
+    top = int(feet - im.height - bob)
+    safe_comp(frame, im, int(x - im.width / 2), top)
+    if c.get("etiket") and (c["giris"] != "pop" or k >= 1):
+        lab = name_label(c["etiket"], max(24, int(c["h"] * 0.034)), c.get("etiket_alt", ""))
+        safe_comp(frame, lab, int(x - lab.width / 2), int(top + im.height * c.get("etiket_y", 0.37)))
 
 def draw_ov(frame, o, t):
     if t < o["t0"] or (o["t1"] is not None and t > o["t1"]): return
+    if o.get("bayrak"):
+        o = dict(o, img=flag_with_pole(t, *o["bayrak"]))
+    if o.get("puan"):
+        a, dur = o["kay"]; pq = int(round(min(max((t - a) / dur, 0), 1) * 50)) * 2
+        P = o["puan"]; o = dict(o, img=standings_card(P[0], P[1], P[2], P[3], pq, P[4], P[5]))
     if o.get("liste"):
         title, body, vr = o["liste"]
         end = o["t1"] if o["t1"] is not None else o["t_end"]

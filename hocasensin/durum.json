@@ -1,14 +1,14 @@
 {
-  "son_bolum": 1,
-  "son_bolum_tarihi": "2026-11-09",
-  "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 1",
-  "kasa_tl": 0,
+  "son_bolum": 2,
+  "son_bolum_tarihi": "2026-11-11",
+  "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 2",
+  "kasa_tl": 10400,
   "borc_tl": 0,
   "kira_haftalik_tl": 1500,
-  "begeni_tl": 10,
-  "sonraki_kira_bolumu": 7,
-  "tribun_toplam": 0,
-  "takipci": null,
+  "begeni_tl": 100,
+  "sonraki_kira_bolumu": 9,
+  "tribun_toplam": 90,
+  "takipci": 90,
   "lig": "Halı Saha Ligi",
   "lig_sirasi": [
     "Halı Saha Ligi",
@@ -22,34 +22,163 @@
   ],
   "lig_atlama_galibiyet": 5,
   "mac": {
-    "oynanan": 0,
+    "oynanan": 1,
     "galibiyet": 0,
-    "beraberlik": 0,
+    "beraberlik": 1,
     "maglubiyet": 0,
     "lig_galibiyet": 0,
-    "son_skor": null
+    "son_skor": "Anadoluspor 2-2 Muhtarlık Gençlik (Bölüm 2)"
   },
-  "kaleci": "yok — şimdilik gol yiyen kaleye geçiyor",
+  "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
   "acik_karar": {
-    "bolum": 1,
+    "bolum": 2,
     "metrik": "begeni",
-    "esik": 100,
-    "gecerse": "Necmi abi kalıcı kaleci olur",
-    "gecmezse": "Ful Ekipman Burak kalıcı kaleci olur"
+    "esik": 170,
+    "gecerse": "kasadan kulübün ilk formaları alınır (makul bir forma gideri kasa defterine yazılır)",
+    "gecmezse": "yarın da Burak'ın evden getirdiği (uyumsuz, komik) formalarla oynanır"
   },
-  "yarin_soz": "Bölüm 2 = ilk maç: Anadoluspor – Muhtarlık Gençlik (3 yıldır yenilmiyor; hakem de muhtar)",
+  "yarin_soz": "Bölüm 3: Karar #2 sonucu (forma); günün 7 oyuncusu + tribün lideri takip edip yorum yapanlardan; kasa defteri.",
   "notlar": [
     "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
-    "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar)."
+    "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
+    "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
+    "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca."
   ],
   "gecmis": [
     {
       "bolum": 1,
       "tarih": "2026-11-09",
       "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.",
+      "begeni": 132,
+      "yorum": 90,
+      "izlenme": 3632
+    },
+    {
+      "bolum": 2,
+      "tarih": "2026-11-11",
+      "ozet": "Karar #1 tuttu (132 beğeni): Necmi abi kaleye geçti ama ışıkları kapatmak için bıraktı. Yeni kural 1 beğeni=100 TL; kasa 13.200 TL gelir, 2.800 TL harcama, 10.400 TL kaldı. Kadronun tamamı takipçi-yorumculardan; ilk maç Muhtarlık Gençlik 2-2 (2-0 gerideyken: 10 numaradan pas–forvet golü, kaleci 3. penaltıyı kurtardı, son dakika forvet). Halı Saha Ligi 3. sıra (▲5). Karar #2: 170 beğeni → ilk formalar / Burak'ın formaları.",
       "begeni": null,
       "yorum": null,
       "izlenme": null
     }
-  ]
+  ],
+  "kasa_defteri": [
+    {
+      "bolum": 2,
+      "aciklama": "Bölüm 1: 132 beğeni × 100 TL",
+      "tutar": 13200
+    },
+    {
+      "bolum": 2,
+      "aciklama": "Saha kirası (1 hafta, Bölüm 2–8)",
+      "tutar": -1500
+    },
+    {
+      "bolum": 2,
+      "aciklama": "Kaleci eldiveni",
+      "tutar": -800
+    },
+    {
+      "bolum": 2,
+      "aciklama": "Yeni top",
+      "tutar": -500
+    }
+  ],
+  "lig_tablosu": {
+    "lig": "Halı Saha Ligi",
+    "hafta": 1,
+    "sampiyonluk": "5 galibiyetle üst lige çıkılır",
+    "takimlar": [
+      {
+        "takim": "KAHVECİ SPOR",
+        "O": 1,
+        "G": 1,
+        "B": 0,
+        "M": 0,
+        "AG": 2,
+        "YG": 0,
+        "P": 3
+      },
+      {
+        "takim": "BAKKAL GÜCÜ",
+        "O": 1,
+        "G": 1,
+        "B": 0,
+        "M": 0,
+        "AG": 3,
+        "YG": 1,
+        "P": 3
+      },
+      {
+        "takim": "ANADOLUSPOR",
+        "O": 1,
+        "G": 0,
+        "B": 1,
+        "M": 0,
+        "AG": 2,
+        "YG": 2,
+        "P": 1
+      },
+      {
+        "takim": "MUHTARLIK GENÇLİK",
+        "O": 1,
+        "G": 0,
+        "B": 1,
+        "M": 0,
+        "AG": 2,
+        "YG": 2,
+        "P": 1
+      },
+      {
+        "takim": "SANAYİ DEMİR",
+        "O": 1,
+        "G": 0,
+        "B": 1,
+        "M": 0,
+        "AG": 1,
+        "YG": 1,
+        "P": 1
+      },
+      {
+        "takim": "PAZAR YILDIZ",
+        "O": 1,
+        "G": 0,
+        "B": 1,
+        "M": 0,
+        "AG": 1,
+        "YG": 1,
+        "P": 1
+      },
+      {
+        "takim": "FIRIN SPOR",
+        "O": 1,
+        "G": 0,
+        "B": 0,
+        "M": 1,
+        "AG": 1,
+        "YG": 3,
+        "P": 0
+      },
+      {
+        "takim": "BERBER FK",
+        "O": 1,
+        "G": 0,
+        "B": 0,
+        "M": 1,
+        "AG": 0,
+        "YG": 2,
+        "P": 0
+      }
+    ],
+    "anadoluspor_sira": 3,
+    "onceki_sira": 8,
+    "hafta_sonuclari": {
+      "1": [
+        "Anadoluspor 2-2 Muhtarlık Gençlik",
+        "Bakkal Gücü 3-1 Fırın Spor",
+        "Kahveci Spor 2-0 Berber FK",
+        "Sanayi Demir 1-1 Pazar Yıldız"
+      ]
+    }
+  }
 }

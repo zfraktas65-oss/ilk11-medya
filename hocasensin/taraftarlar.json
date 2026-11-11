@@ -1,35 +1,738 @@
 {
-  "aciklama": "Yorum yapanlardan seçilen taraftar oyuncular ve isimleri videoda gösterilecek taraftarlar. Kullanıcı adlarını YALNIZ sayfa sahibi verir (Claude seçmez, uydurmaz; Metricool beğenen/takip eden adı vermez). roller: kullanici null ise rol boştur ('aranıyor'); okunus = seslendirmede söylenecek ad (null ise ad söylenmez, ekranda @kullanici yazar); tanitildi_bolum = ilk tanıtıldığı bölüm. tribun_isimleri = sayfa sahibinin verdiği BEĞENENLER (tribünde gösterilir). loca_isimleri = sayfa sahibinin verdiği TAKİP EDENLER (locada gösterilir). Her kayıt: {kullanici, eklendi (tarih), gosterildi_bolum (null = henüz gösterilmedi)}. cikarilanlar = bir daha anılmayacak kullanıcı adları.",
-  "roller": [
-    {
-      "rol": "tribun_lideri",
-      "unvan": "TRİBÜN LİDERİ",
-      "no": "TL",
-      "karakter": "tribun_lideri",
-      "kullanici": null,
-      "okunus": null,
-      "tanitildi_bolum": null
-    },
-    {
-      "rol": "forvet",
-      "unvan": "TARAFTARDAN FORVET",
-      "no": "9",
-      "karakter": "forvet",
-      "kullanici": null,
-      "okunus": null,
-      "tanitildi_bolum": null
-    },
-    {
-      "rol": "kaleci",
-      "unvan": "TARAFTARDAN KALECİ",
-      "no": "1",
-      "karakter": "taraftar_kaleci",
-      "kullanici": null,
-      "okunus": null,
-      "tanitildi_bolum": null
-    }
-  ],
-  "tribun_isimleri": [],
-  "loca_isimleri": [],
-  "cikarilanlar": []
+ "aciklama": "Yorum yapan / takip eden gerçek kişiler. Adlar YALNIZ sayfa sahibinin gönderdiği ekran görüntülerinden alınır; Claude uydurmaz. Sayfa sahibinin kuralı (2026-11-11): her bölümde 7 futbolcu + 1 tribün lideri, HEM takip edip HEM yorumunda mevkisini yazanlar arasından Claude tarafından seçilir (istenen mevkiye göre; halı saha 7 kişilik). Hem takip edip hem yorum yapanlar (oyuncu/tribün lideri olmayanlar) ve yalnız takip edenler LOCADA; yalnız yorum yapanlar TRİBÜNDE. Sayfa sahibinin bizzat seçtikleri (secen='sayfa sahibi') takipçi listesinde görünmese de o bölüm yerinde kalır. okunus = seslendirmede söylenecek ad (null: ad söylenmez, ekranda @ad yazar). Seslendirmede isimler tek tek sayılmaz; isimler ekranda figürlerin başının altında küçük etiketle yazar.",
+ "roller": [
+  {
+   "rol": "tribun_lideri",
+   "unvan": "TRİBÜN LİDERİ",
+   "no": "TL",
+   "karakter": "tribun_lideri",
+   "kullanici": "demirkentsk",
+   "okunus": null,
+   "istek": "tribün lideri yapsana",
+   "secen": "sayfa sahibi",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2
+  }
+ ],
+ "kadro": [
+  {
+   "rol": "kaleci",
+   "unvan": "KALECİ",
+   "no": "1",
+   "karakter": "taraftar_kaleci",
+   "kullanici": "gultentalha",
+   "okunus": null,
+   "istek": "beni koy",
+   "secen": "sayfa sahibi",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2,
+   "takip": false
+  },
+  {
+   "rol": "forvet",
+   "unvan": "FORVET",
+   "no": "9",
+   "karakter": "forvet",
+   "kullanici": "nesihaorgun",
+   "okunus": null,
+   "istek": "forvete koy",
+   "secen": "sayfa sahibi",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2,
+   "takip": true
+  },
+  {
+   "rol": "stoper",
+   "unvan": "STOPER",
+   "no": "5",
+   "karakter": "oyuncu_stoper",
+   "kullanici": "tyremred",
+   "okunus": null,
+   "istek": "kaleci / her mevki",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-11",
+   "tanitildi_bolum": 2
+  },
+  {
+   "rol": "sag_kanat",
+   "unvan": "SAĞ KANAT",
+   "no": "7",
+   "karakter": "oyuncu_solbek",
+   "kullanici": "dadi_metin_taha",
+   "okunus": null,
+   "istek": "kaleci ya da kanat",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-11",
+   "tanitildi_bolum": 2
+  },
+  {
+   "rol": "orta_saha",
+   "unvan": "ORTA SAHA",
+   "no": "8",
+   "karakter": "oyuncu_ortasaha",
+   "kullanici": "yafeskahveci",
+   "okunus": null,
+   "istek": "orta sahaya al",
+   "secen": "Claude",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2,
+   "takip": true
+  },
+  {
+   "rol": "on_numara",
+   "unvan": "10 NUMARA",
+   "no": "10",
+   "karakter": "oyuncu_10",
+   "kullanici": "tuncaym_095",
+   "okunus": null,
+   "istek": "10 numara",
+   "secen": "Claude",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2,
+   "takip": true
+  },
+  {
+   "rol": "sol_kanat",
+   "unvan": "SOL KANAT",
+   "no": "11",
+   "karakter": "oyuncu_solkanat",
+   "kullanici": "gulbaycinar",
+   "okunus": null,
+   "istek": "sol kanat",
+   "secen": "Claude",
+   "eklendi": "2026-11-10",
+   "tanitildi_bolum": 2,
+   "takip": true
+  }
+ ],
+ "eski_kadro": {
+  "yasin": "hâlâ yolda (kadro dışı, ara sıra komik görünür)",
+  "selim": "topu bırakmadığı için kadro dışı (ara sıra görünür)",
+  "burak": "artık MALZEMECİ (tüm ekipman onda)"
+ },
+ "tribun_isimleri": [
+  {
+   "kullanici": "cengo8540",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mustafackmk066",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cinaralitemel2",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cinar57464",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "anaht_arci2",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "the.alidemirell",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hiziralivatansever",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kerem52455",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "miranbotan21",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "aktas__mustafa_0227",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yagiz_yazicioglu54",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "alielifimbalik",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "gs_mert_bjk_fb",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cansenell57",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "sezgin_cengiz25",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tahire_aydin23",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "muhammed.emin.onaran",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "gulsenyildirim907",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "oguz_sr_4",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "orhanhulya56",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "nicatk409",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "alex7641912",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yusuf_aras7y",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2,
+   "unvan": "DAVULCU"
+  },
+  {
+   "kullanici": "hecerr1959",
+   "eklendi": "2026-11-11",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "who_is.yamal",
+   "eklendi": "2026-11-11",
+   "gosterildi_bolum": 2
+  }
+ ],
+ "loca_isimleri": [
+  {
+   "kullanici": "zorbeymermi",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2,
+   "unvan": "YRD. HOCA"
+  },
+  {
+   "kullanici": "ruzgar_3800",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "demirhands.gk",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tutucu.vlr02",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "halitozgenur",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hakoootraore",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "azra.ile.hayata.baglann",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mertcan330077",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "bendebilmiyomki61",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hamza_ben2861",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "omer.blnx",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "memoaali.10",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "efekara661",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "arda_sayioglu",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "bilal35_25",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "sutpidelerozduman",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "fatmaaaacfc",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmetalitts56",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "azraylldd",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "alis62278",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tunaaydn4",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "nurmuhammetjorakuliyew",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "huseyinoktay673",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "haddurayfer879",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmet_delenn.7",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "asimakar68",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "ayazefeee_gk1",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "rahim.galavani1362",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yusuftopraktomruk",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kerem_aslankvp",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "aartur221",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mavikuafor.serap",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "aras.sara26",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmetdkkya",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "settartaha9",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cumasahin636",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yildiraysavas8912",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yalcingelen",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "06furkan_bostan",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "muhammed_muhyiddin",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cetindemir791",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "efe91632",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "denizq7",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "alfro_37",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "atakan.3590",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "enverali837",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kerim4toprak",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "ismailcirah07",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mahmut_2773",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yagiz_.m",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "emirhan_sumbul_33",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "aykut_memisoglu",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cahid__202",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mertirki",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mortioffline",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "imdylanmusic_",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kaden.z0",
+   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  }
+ ],
+ "adaylar": [
+  {
+   "kullanici": "aartur221",
+   "istek": "kaleci (31 numara)",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "gulsenyildirim907",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "atakan.3590",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "alex7641912",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "miranbotan21",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "aktas__mustafa_0227",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "memoaali.10",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "mertcan330077",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "mustafackmk066",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "bilal35_25",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "hiziralivatansever",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "alielifimbalik",
+   "istek": "kaleci",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "tyremred",
+   "istek": "kaleci / her mevki",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": [
+    2
+   ]
+  },
+  {
+   "kullanici": "dadi_metin_taha",
+   "istek": "kaleci ya da kanat",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": [
+    2
+   ]
+  },
+  {
+   "kullanici": "orhanhulya56",
+   "istek": "10 numara",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "yildiraysavas8912",
+   "istek": "forvet",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "hamza_ben2861",
+   "istek": "forvet",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "mehmet_delenn.7",
+   "istek": "forvet",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "tunaaydn4",
+   "istek": "forvet",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "cinar57464",
+   "istek": "forvet",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "yagiz_yazicioglu54",
+   "istek": "tribün lideri",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "halitozgenur",
+   "istek": "tribün",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "06furkan_bostan",
+   "istek": "tribün",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "nicatk409",
+   "istek": "teknik direktör",
+   "eklendi": "2026-11-10",
+   "takip": false,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "zorbeymermi",
+   "istek": "teknik direktör yardımcısı",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  },
+  {
+   "kullanici": "yusuf_aras7y",
+   "istek": "tribün davulcusu",
+   "eklendi": "2026-11-10",
+   "takip": true,
+   "oynadigi_bolumler": []
+  }
+ ],
+ "cikarilanlar": [],
+ "kadro_gecmisi": [
+  {
+   "bolum": 2,
+   "tarih": "2026-11-11",
+   "oyuncular": [
+    "gultentalha",
+    "nesihaorgun",
+    "tyremred",
+    "dadi_metin_taha",
+    "yafeskahveci",
+    "tuncaym_095",
+    "gulbaycinar"
+   ],
+   "tribun_lideri": "demirkentsk",
+   "not": "hecerr1959 ve who_is.yamal takipçi listesinde görünmediği için yeni kurala göre kadro yerine tribüne alındı; gultentalha ve demirkentsk sayfa sahibinin seçimi olarak kaldı."
+  }
+ ],
+ "takip_kaynagi": "takip bilgisi: sayfa sahibinin 2026-11-10 ekran görüntüleri (64 takipçi). Yeni ekran görüntüsü gelince güncelle."
 }

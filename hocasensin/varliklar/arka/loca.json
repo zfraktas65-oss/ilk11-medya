@@ -1,5 +1,7 @@
-{"not": "Loca (Necmi abinin kulübesinin çatısı) — iki sıra sandalye, arkadan öne. Kapasite ≈ 16.",
+{"not": "Loca (Necmi abinin kulübesinin çatısı). Arkadan öne 4 sıra: arkada ayakta, arka sandalyeler, ön sandalyeler, çatı kenarı. İsimli kapasite ≈ 30.",
  "siralar": [
-  {"ayak": 708, "x0": 205, "x1": 950,  "h": 240},
-  {"ayak": 880, "x0": 160, "x1": 1000, "h": 265}
+  {"ayak": 640, "x0": 150, "x1": 1000, "h": 205},
+  {"ayak": 708, "x0": 205, "x1": 950,  "h": 225},
+  {"ayak": 880, "x0": 140, "x1": 1010, "h": 250},
+  {"ayak": 968, "x0": 60,  "x1": 1090, "h": 262}
  ]}
