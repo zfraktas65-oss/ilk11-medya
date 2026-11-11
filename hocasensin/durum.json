@@ -44,7 +44,8 @@
     "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
     "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca.",
     "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan.",
-    "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi."
+    "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi.",
+    "2026-11-11 (16:26): Sayfa sahibi: reklam alanları şimdilik boş kalsın — sponsor gösterme/yazma yok."
   ],
   "gecmis": [
     {
@@ -207,8 +208,9 @@
   "yedek_sayisi": 3,
   "stadyum_adi": null,
   "sponsorlar": {
+    "durum": "YOK — reklam alanları sayfa sahibinin isteğiyle şimdilik boş",
     "aktif": [],
-    "sira": [
+    "askidaki_plan": [
       {
         "ad": "Usta Döner",
         "yer": "forma göğsü",
