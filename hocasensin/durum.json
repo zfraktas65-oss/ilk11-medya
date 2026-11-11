@@ -43,7 +43,8 @@
     "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
     "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
     "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca.",
-    "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan."
+    "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan.",
+    "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi."
   ],
   "gecmis": [
     {
@@ -184,8 +185,10 @@
   },
   "yol_haritasi": {
     "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
-    "4": "Eski otobüsle yeni sahaya taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı seçenekler + fiyat)",
-    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk geliştirme"
+    "4": "Eski otobüsle yeni sahaya taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı seçenekler + fiyat); 'Stadın adı ne olsun?' önerileri",
+    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk geliştirme",
+    "6": "Derbi rakibi KARADUMAN GÜCÜ tanıtılır (rakip başkan meydan okur)",
+    "8": "İlk Komşu Derbisi (lig dışı kupa maçı)"
   },
   "saha": {
     "mevcut": "Necmi abinin halı sahası",
@@ -198,7 +201,39 @@
   },
   "otobus": {
     "durum": "Bölüm 3'te duyurulur, Bölüm 4'te gelir: belediyenin eski otobüsü",
-    "degisim": "ileride (büyük hedef ya da KARAR)"
+    "degisim": "kasa giderlerden sonra 50.000 TL'yi geçince yeni otobüs alınır",
+    "yeni_otobus_hedefi_tl": 50000
   },
-  "yedek_sayisi": 3
+  "yedek_sayisi": 3,
+  "stadyum_adi": null,
+  "sponsorlar": {
+    "aktif": [],
+    "sira": [
+      {
+        "ad": "Usta Döner",
+        "yer": "forma göğsü",
+        "esik_takipci": 150,
+        "gelir_tl": 2500
+      },
+      {
+        "ad": "Yıldız Market",
+        "yer": "tribün panosu",
+        "esik_takipci": 300,
+        "gelir_tl": 4000
+      },
+      {
+        "ad": "Gül Pastanesi",
+        "yer": "otobüs reklamı",
+        "esik_takipci": 500,
+        "gelir_tl": 6000
+      }
+    ]
+  },
+  "derbi": {
+    "rakip": "KARADUMAN GÜCÜ",
+    "tanitim_bolumu": 6,
+    "ilk_derbi_bolumu": 8,
+    "siklik": "yaklaşık her 4 maç bölümünde bir",
+    "skorlar": []
+  }
 }
