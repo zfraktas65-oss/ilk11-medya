@@ -46,7 +46,8 @@
     "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan.",
     "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi.",
     "2026-11-11 (16:26): Sayfa sahibi: reklam alanları şimdilik boş kalsın — sponsor gösterme/yazma yok.",
-    "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler."
+    "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler.",
+    "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak."
   ],
   "gecmis": [
     {
@@ -188,7 +189,7 @@
   "yol_haritasi": {
     "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
     "4": "Eski otobüsle yeni sahaya taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı seçenekler + fiyat); 'Stadın adı ne olsun?' önerileri",
-    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk geliştirme",
+    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk saha geliştirmesi; VİDEONUN SONUNDA: 'Taraftar grubumuzun adı ne olsun? En çok beğenilen isim seçilecek!'",
     "6": "Derbi rakibi KARADUMAN GÜCÜ tanıtılır (rakip başkan meydan okur)",
     "8": "İlk Komşu Derbisi (lig dışı kupa maçı)"
   },
@@ -259,5 +260,12 @@
     "ilk_derbi_bolumu": 8,
     "siklik": "yaklaşık her 4 maç bölümünde bir",
     "skorlar": []
+  },
+  "taraftar_grubu": {
+    "ad": null,
+    "soru_bolumu": 5,
+    "kural": "en çok beğenilen yorumdaki isim (sayfa sahibinin ekran görüntüsünden); uygunsuzsa sıradaki",
+    "oneren": null,
+    "aciklandigi_bolum": null
   }
 }
