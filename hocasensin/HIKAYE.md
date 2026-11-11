@@ -40,7 +40,7 @@ Saatlik kiralık bir halı sahada kurulan mahalle takımı **Anadoluspor**. Tak�
 - **Takipçiler = teknik heyet** (takipçi sayısı).
 - **Haftalık saha kirası 1.500 TL**, kira günü her 7. bölümde (7, 14, 21…). Kasa yetmezse eksik kısım Necmi abiye **borç** (veresiye) yazılır; sonraki kasadan önce borç ödenir. Borç 3.000 TL'yi geçerse Necmi abi sahayı başka takıma vermekle tehdit eder (kriz bölümü).
 - **Her bölüm bir KARAR ile biter:** "Bu video **X beğeniyi** geçerse A, geçmezse B." Ertesi gün beğeni sayısına göre uygulanır ve yeni bölümün başında açıklanır. İsteğe bağlı ikinci hedef yorumla verilebilir ("Y yorumu geçerse tribün tezahürat yapar…").
-- **Yorum METİNLERİ okunamaz** (Metricool yalnız sayı verir). Bu yüzden "en çok beğenilen yorum", "yorumlarda en çok istenen", "siz seçtiniz: X" gibi ifadeler KULLANMA, izleyici yorumu ya da kullanıcı adı UYDURMA. Kararlar yalnız sayılarla (beğeni / yorum / takipçi) verilir.
+- **Yorum METİNLERİ okunamaz** (Metricool yalnız sayı verir). Bu yüzden "en çok beğenilen yorum", "yorumlarda en çok istenen", "siz seçtiniz: X" gibi ifadeler KULLANMA, izleyici yorumu ya da kullanıcı adı UYDURMA. Kararlar yalnız sayılarla (beğeni / yorum / takipçi) verilir. **Tek istisna:** sayfa sahibinin gönderdiği ekran görüntüsüyle (ya da kendi söylediğiyle) belirlenen oylama sonuçları — saha geliştirme oylaması, stat adı, taraftar grubu adı; bunlar "en çok yorum/beğeni alan" diye duyurulabilir.
 - **Hedef eşiği:** son bölümün beğenisinin ≈ 1,3 katı, 10'a yuvarla, en az 20 (Bölüm 1'de 100'dü). 3–4 bölümde bir bilerek daha kolay bir hedef koy (izleyici kazanmanın tadını alsın). Veri yoksa önceki eşiği koru.
 
 ## İlerleme
