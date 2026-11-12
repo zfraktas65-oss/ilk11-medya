@@ -38,7 +38,7 @@
     "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL)",
     "gecmezse": "Burak otobüsün üstüne kalemle 'Anadoluspor' yazar (komik, bedava)"
   },
-  "yarin_soz": "Bölüm 4: MAÇ (yeni sahada açılış maçı, lig 3. hafta, rakip tablodan ör. Muhtarlık Gençlik ya da Bakkal Gücü); Karar #3 sonucu (410 → otobüs mor-sarı / Burak'ın kalemi); eski otobüsle yeni sahaya taşınma (duman şakası), Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı, fiyatlı) + 'Stadın adı ne olsun?'; günün kadrosu (7+3+lider) adları sesli; kasa defteri.",
+  "yarin_soz": "Bölüm 4: MAÇ (yeni sahada açılış maçı, lig 3. hafta, rakip tablodan ör. Muhtarlık Gençlik ya da Bakkal Gücü); Karar #3 sonucu (410 → otobüs mor-sarı / Burak'ın kalemi); eski otobüsle yeni sahaya taşınma (duman şakası), Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı, fiyatlı) + 'Stadın adı ne olsun?'; günün kadrosu (7+3+lider) adları sesli; kasa defteri. | ZORUNLU: kadroya giremeyenlere sıcak duyuru (bkz. bolum4_zorunlu).",
   "notlar": [
     "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
     "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -51,7 +51,8 @@
     "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak.",
     "2026-11-12: Sayfa sahibi Bölüm 2 verisi: 314 beğeni, 472 yorum, 228 takipçi; Bölüm 3 kadrosu ekran görüntülerinden kuruldu (sayfa sahibi 4 oyuncu seçti, kalanı Claude). Oyuncu adları artık seslendirmede söylenir.",
     "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir.",
-    "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun."
+    "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun.",
+    "2026-11-12 (22:46): Sayfa sahibi: Bölüm 4'te takıma giremeyenlere güzel bir duyuru — herkesi takıma almaya çalışıyoruz, alamadıklarımız için ayrı sürprizler olacak."
   ],
   "gecmis": [
     {
@@ -304,5 +305,15 @@
     "yorum": 472,
     "takipci": 228,
     "not": "Sayfa sahibinin verdiği sayılar. ADIM 2/3'te Bölüm 2 için bunları kullan (Metricool daha yüksek gösterirse yükseği). Bölüm 2 → kasa +31.400 TL, Karar #2 (170) TUTTU → formalar alınır."
-  }
+  },
+  "bolum4_zorunlu": [
+    "KADROYA GİREMEYENLERE DUYURU (sayfa sahibi, 2026-11-12, Bölüm 4'te ZORUNLU): kadro/yedek tanıtımından hemen sonra ~6-8 sn'lik sıcak bir bölüm. Anlatım örneği (anlamı koru, kelimeleri bölüme uydur): 'Kadroya giremeyen arkadaşlar, sakın üzülmeyin! Herkesi sırayla takıma almaya çalışıyoruz. Bu sefer alamadıklarımız için de ayrı sürprizlerimiz var... yakında!' Ekranda: 'SIRA SİZDE!' / 'HERKES SIRAYLA KADROYA' etiketi + 'SÜRPRİZ YAKINDA 🎁' yerine yazıyla 'SÜRPRİZ YAKINDA!' (emoji fontta yok), arka planda tribün/loca kalabalığı ya da Cem hocanın el sallaması. Sürprizin ne olduğunu SÖYLEME ve somut vaat verme (ör. ödül, para, hediye); sadece merak uyandır. Açıklamaya da tek satır ekle."
+  ],
+  "acik_sozler": [
+    {
+      "tarih": "2026-11-12",
+      "bolum": 4,
+      "soz": "Kadroya giremeyenler için 'ayrı sürprizler' duyuruldu; içeriği sayfa sahibi belirleyecek. Belirlenmeden sürprizin ne olduğu söylenmez."
+    }
+  ]
 }
