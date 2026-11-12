@@ -37,7 +37,7 @@
     "gecerse": "kasadan kulübün ilk formaları alınır (makul bir forma gideri kasa defterine yazılır)",
     "gecmezse": "yarın da Burak'ın evden getirdiği (uyumsuz, komik) formalarla oynanır"
   },
-  "yarin_soz": "Bölüm 3: Karar #2 sonucu (170 beğeni → ilk formalar / Burak'ın formaları); günün 7 oyuncusu + 3 yedek + tribün lideri takip edip yorum yapanlardan; kasa defteri; BELEDİYE DUYURUSU (eski stat + eski otobüs), 'Yarın yeni sahamıza taşınıyoruz!'",
+  "yarin_soz": "Bölüm 3: Karar #2 TUTTU (314 beğeni ≥ 170) → kasadan kulübün ilk formaları; kadro HAZIR (taraftarlar.json kadro + yedekler + roller, kadro_gecmisi bölüm 3 — yeniden seçme); oyuncu adları seslendirmede söylenir (okunus); kasa defteri; BELEDİYE DUYURUSU (eski stat + eski otobüs), 'Yarın yeni sahamıza taşınıyoruz!'",
   "notlar": [
     "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
     "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -47,7 +47,8 @@
     "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi.",
     "2026-11-11 (16:26): Sayfa sahibi: reklam alanları şimdilik boş kalsın — sponsor gösterme/yazma yok.",
     "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler.",
-    "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak."
+    "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak.",
+    "2026-11-12: Sayfa sahibi Bölüm 2 verisi: 314 beğeni, 472 yorum, 228 takipçi; Bölüm 3 kadrosu ekran görüntülerinden kuruldu (sayfa sahibi 4 oyuncu seçti, kalanı Claude). Oyuncu adları artık seslendirmede söylenir."
   ],
   "gecmis": [
     {
@@ -267,5 +268,13 @@
     "kural": "en çok beğenilen yorumdaki isim (sayfa sahibinin ekran görüntüsünden); uygunsuzsa sıradaki",
     "oneren": null,
     "aciklandigi_bolum": null
+  },
+  "sayfa_sahibi_verisi": {
+    "bolum": 2,
+    "tarih": "2026-11-12 11:51",
+    "begeni": 314,
+    "yorum": 472,
+    "takipci": 228,
+    "not": "Sayfa sahibinin verdiği sayılar. ADIM 2/3'te Bölüm 2 için bunları kullan (Metricool daha yüksek gösterirse yükseği). Bölüm 2 → kasa +31.400 TL, Karar #2 (170) TUTTU → formalar alınır."
   }
 }

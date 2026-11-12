@@ -1,17 +1,16 @@
 {
- "aciklama": "Yorum yapan / takip eden gerçek kişiler. Adlar YALNIZ sayfa sahibinin gönderdiği ekran görüntülerinden alınır; Claude uydurmaz. Sayfa sahibinin kuralı (2026-11-11): her bölümde 7 futbolcu + 3 yedek + 1 tribün lideri, HEM takip edip HEM yorumunda mevkisini yazanlar arasından Claude tarafından seçilir (istenen mevkiye göre; halı saha 7 kişilik). Hem takip edip hem yorum yapanlar (oyuncu/tribün lideri olmayanlar) ve yalnız takip edenler LOCADA; yalnız yorum yapanlar TRİBÜNDE. Sayfa sahibinin bizzat seçtikleri (secen='sayfa sahibi') takipçi listesinde görünmese de o bölüm yerinde kalır. okunus = seslendirmede söylenecek ad (null: ad söylenmez, ekranda @ad yazar). Seslendirmede isimler tek tek sayılmaz; isimler ekranda figürlerin başının altında küçük etiketle yazar.",
+ "aciklama": "Yorum yapan / takip eden gerçek kişiler. Adlar YALNIZ sayfa sahibinin gönderdiği ekran görüntülerinden alınır; Claude uydurmaz. Sayfa sahibinin kuralı (2026-11-11): her bölümde 7 futbolcu + 3 yedek + 1 tribün lideri, HEM takip edip HEM yorumunda mevkisini yazanlar arasından Claude tarafından seçilir (istenen mevkiye göre; halı saha 7 kişilik). Hem takip edip hem yorum yapanlar (oyuncu/tribün lideri olmayanlar) ve yalnız takip edenler LOCADA; yalnız yorum yapanlar TRİBÜNDE. Sayfa sahibinin bizzat seçtikleri (secen='sayfa sahibi') takipçi listesinde görünmese de o bölüm yerinde kalır. okunus = seslendirmede söylenecek ad (null: ad söylenmez, ekranda @ad yazar). Sayfa sahibinin kuralı (2026-11-12): OYUNCULARIN (asil + yedek) ve tribün liderinin adı seslendirmede SÖYLENİR — yalnız `okunus` (isim kısmı). Tribün/loca isimleri söylenmez, yalnız ekranda başların altında yazar.",
  "roller": [
   {
    "rol": "tribun_lideri",
    "unvan": "TRİBÜN LİDERİ",
-   "no": "TL",
    "karakter": "tribun_lideri",
-   "kullanici": "demirkentsk",
-   "okunus": null,
-   "istek": "tribün lideri yapsana",
-   "secen": "sayfa sahibi",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2
+   "kullanici": "yusuf_aras7y",
+   "okunus": "Yusuf",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   }
  ],
  "kadro": [
@@ -20,91 +19,91 @@
    "unvan": "KALECİ",
    "no": "1",
    "karakter": "taraftar_kaleci",
-   "kullanici": "gultentalha",
-   "okunus": null,
-   "istek": "beni koy",
+   "kullanici": "yasar75899773993",
+   "okunus": "Yaşar",
+   "istek": "Kaleye beni koy",
    "secen": "sayfa sahibi",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2,
-   "takip": false
-  },
-  {
-   "rol": "forvet",
-   "unvan": "FORVET",
-   "no": "9",
-   "karakter": "forvet",
-   "kullanici": "nesihaorgun",
-   "okunus": null,
-   "istek": "forvete koy",
-   "secen": "sayfa sahibi",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2,
-   "takip": true
+   "takip": false,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   },
   {
    "rol": "stoper",
    "unvan": "STOPER",
    "no": "5",
    "karakter": "oyuncu_stoper",
-   "kullanici": "tyremred",
-   "okunus": null,
-   "istek": "kaleci / her mevki",
+   "kullanici": "dorukateskosar",
+   "okunus": "Doruk",
+   "istek": "Stoper abi lütfen",
    "secen": "Claude",
    "takip": true,
-   "eklendi": "2026-11-11",
-   "tanitildi_bolum": 2
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   },
   {
    "rol": "sag_kanat",
    "unvan": "SAĞ KANAT",
    "no": "7",
    "karakter": "oyuncu_solbek",
-   "kullanici": "dadi_metin_taha",
-   "okunus": null,
-   "istek": "kaleci ya da kanat",
+   "kullanici": "eymenaydn657",
+   "okunus": "Eymen",
+   "istek": "Abi sağ kanat",
    "secen": "Claude",
    "takip": true,
-   "eklendi": "2026-11-11",
-   "tanitildi_bolum": 2
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   },
   {
    "rol": "orta_saha",
    "unvan": "ORTA SAHA",
    "no": "8",
    "karakter": "oyuncu_ortasaha",
-   "kullanici": "yafeskahveci",
-   "okunus": null,
-   "istek": "orta sahaya al",
+   "kullanici": "alperenkudretbasturk",
+   "okunus": "Alperen",
+   "istek": "Ortasaha 8 10",
    "secen": "Claude",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2,
-   "takip": true
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   },
   {
    "rol": "on_numara",
    "unvan": "10 NUMARA",
    "no": "10",
    "karakter": "oyuncu_10",
-   "kullanici": "tuncaym_095",
-   "okunus": null,
-   "istek": "10 numara",
-   "secen": "Claude",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2,
-   "takip": true
+   "kullanici": "muhammed.rasit.aktas",
+   "okunus": "Muhammed Raşit",
+   "istek": "(sayfa sahibi seçti)",
+   "secen": "sayfa sahibi",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   },
   {
    "rol": "sol_kanat",
    "unvan": "SOL KANAT",
    "no": "11",
    "karakter": "oyuncu_solkanat",
-   "kullanici": "gulbaycinar",
-   "okunus": null,
-   "istek": "sol kanat",
-   "secen": "Claude",
-   "eklendi": "2026-11-10",
-   "tanitildi_bolum": 2,
-   "takip": true
+   "kullanici": "sezginturk_",
+   "okunus": "Sezgin",
+   "istek": "(sayfa sahibi seçti)",
+   "secen": "sayfa sahibi",
+   "takip": false,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
+  },
+  {
+   "rol": "forvet",
+   "unvan": "FORVET",
+   "no": "9",
+   "karakter": "forvet",
+   "kullanici": "hasankaya.4444",
+   "okunus": "Hasan",
+   "istek": "Senin forvetin eksikmiş kardeşim ben geldim",
+   "secen": "sayfa sahibi",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
   }
  ],
  "eski_kadro": {
@@ -114,504 +113,3117 @@
  },
  "tribun_isimleri": [
   {
-   "kullanici": "cengo8540",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "6_2014_hamza",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "mustafackmk066",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "__aysenevzat_",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "cinaralitemel2",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "_mkayumov",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "cinar57464",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "_yigit_okten",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "anaht_arci2",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "ahmet_35_bjk",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "the.alidemirell",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "hiziralivatansever",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "kerem52455",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "miranbotan21",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "ahmet_asim28",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "aktas__mustafa_0227",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "yagiz_yazicioglu54",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "alielifimbalik",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "gs_mert_bjk_fb",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "cansenell57",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "sezgin_cengiz25",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "tahire_aydin23",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "muhammed.emin.onaran",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "gulsenyildirim907",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "oguz_sr_4",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "orhanhulya56",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "nicatk409",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
    "kullanici": "alex7641912",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "yusuf_aras7y",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2,
-   "unvan": "DAVULCU"
+   "kullanici": "ali.mert_69",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alial.k33",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alielifimbalik",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "aliye_lc27",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alperacar1077",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alperenfutcu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alperensimsek5516",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alptugnas",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aminehuma",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "anaht_arci2",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "arasdemircigvn",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "arasefe2017",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "arzuminnetoglu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aslan_emre4108",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ayaz35bucaa",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ayaz52355235",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aydogduondeveli",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aysel.tinaz",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "baran79_1179",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bayrakhalilefe",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bear.91719030",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bedriye_mehmet_doganturk",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "berat4747753",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "berkeeyncl",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "betultoy07",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "boranbulbul0321",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cakiyagiz0",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "caneriken",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cansenell57",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cengo8540",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cevat12345hamza_1235",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cinar57464",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cinaralitemel2",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "cinarkeremkaplan16",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "demirkentsk",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "demirsemra3547",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "deryahusnusarikaya",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "dilber.erdogdu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "do.ruk4838",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "efrakyn",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "elifbp4",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "elife9112",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "emin15582",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "emine.bicak4545",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "emine_oner49",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "emir_huseyin2014",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "enes.senw1",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "eres_hakanemir56",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ersingaygin",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ertugrul44094",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "eymenvurgunn",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "fatih.00d",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "fevziyeyoldasercekus",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "filiz_omer3",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "fundaozguryusuf",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "g.ecee1905",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "gedik_nadime",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "gulayoktaymurat",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "gulsenyildirim907",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "gultentalha",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hamiyet1267",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hamzaklnc13",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "harunalizade_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "haticerhanhayta",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hayri.pasa07",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "hecerr1959",
-   "eklendi": "2026-11-11",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "who_is.yamal",
-   "eklendi": "2026-11-11",
+   "kullanici": "hira.ozgun",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hiziralivatansever",
    "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hus213406",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "husynova_aytac",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ibrahimmertyazici9",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "idrisesen80",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "irfancabalak4627",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "isa_93628",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "jsp_2677",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kazasahin",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kerem52455",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "keziban_atc45",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kilinc_aslan_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "leonleon0809",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "leyladurmuuss",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mecitcelik112",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "melahatceloglu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "meral_ayhan45",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "metin10359",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "miracbaba01_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "miranbotan21",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "moldivya_59",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mrvfnr",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhammed.emin.onaran",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "muhammededizgonultas",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhammedkilali",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mustafackmk066",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "nazanabukan",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "nazifeyusuf1",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "nicatk409",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "oguz_sr_4",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "orhanhulya56",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "qarayevali2016",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "realefedalmis",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "reistuza76",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "renas_arhat__sozdar",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "rey_emirio",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "rusensinan",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ruzo_bayroo31",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "saidaltunbas1221",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "saim_4692",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sajadsaya27poldasht",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "selahattin_erten63",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sezgin_cengiz25",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "smtdmr58",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "spideralpp",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "suleymangumustok",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tahaatis3",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tahire_aydin23",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "the.alidemirell",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tugraozyurt26",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "turan_erdal66",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "umutcan61868",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "userrrhrbbb77",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "wegh510111",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "who_is.yamal",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yagizooo67",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yakup60268",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yaseminboynuince",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yusuf041604",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yusuf99hassa",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yusufftokmak10",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "zinardagkapi",
+   "gosterildi_bolum": null
   }
  ],
  "loca_isimleri": [
   {
-   "kullanici": "zorbeymermi",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2,
-   "unvan": "YRD. HOCA"
-  },
-  {
-   "kullanici": "ruzgar_3800",
-   "eklendi": "2026-11-10",
+   "kullanici": "06furkan_bostan",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "demirhands.gk",
-   "eklendi": "2026-11-10",
+   "kullanici": "2922kadir",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "4.muhammed.0",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "7allahyarovi",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "_emir_derya",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "_yoruk_rasitt_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aartur221",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "tutucu.vlr02",
-   "eklendi": "2026-11-10",
+   "kullanici": "abfulhamidbaba",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "adem_uratt",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ademulker21",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "adnanyalinkilic",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ahmet_kavc_80",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "al1yews_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "alfro_37",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "halitozgenur",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "hakoootraore",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "azra.ile.hayata.baglann",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "mertcan330077",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "bendebilmiyomki61",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "hamza_ben2861",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "omer.blnx",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "memoaali.10",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "efekara661",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "arda_sayioglu",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "bilal35_25",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "sutpidelerozduman",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "fatmaaaacfc",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "mehmetalitts56",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "azraylldd",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "aliaslanbnz",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "alis62278",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "tunaaydn4",
-   "eklendi": "2026-11-10",
+   "kullanici": "apoyr.z",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aras.sara26",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "nurmuhammetjorakuliyew",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "arda_demirci0808",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "huseyinoktay673",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "haddurayfer879",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "mehmet_delenn.7",
-   "eklendi": "2026-11-10",
+   "kullanici": "arda_sayioglu",
    "gosterildi_bolum": 2
   },
   {
    "kullanici": "asimakar68",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "atabe.g",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "atakan.3590",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "atar.kiymet",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ayaz61473",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "ayazefeee_gk1",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "rahim.galavani1362",
-   "eklendi": "2026-11-10",
+   "kullanici": "ayazimsi_cocuk",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aydnnmete",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aydogduneriman08",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "aykut_memisoglu",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "yusuftopraktomruk",
-   "eklendi": "2026-11-10",
+   "kullanici": "aysel.dogan81",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "azra.ile.hayata.baglann",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "kerem_aslankvp",
-   "eklendi": "2026-11-10",
+   "kullanici": "azraylldd",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "aartur221",
-   "eklendi": "2026-11-10",
+   "kullanici": "baharibrahim07",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "barisyahyadmrci",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "beditasdemir_01",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bendebilmiyomki61",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "mavikuafor.serap",
-   "eklendi": "2026-11-10",
+   "kullanici": "beratcelik41_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "beyazid_16",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bilal134665",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "bilal35_25",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "aras.sara26",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "bxeatwxx",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "mehmetdkkya",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "byat_las1617",
+   "gosterildi_bolum": null
   },
   {
-   "kullanici": "settartaha9",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "cumasahin636",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "yildiraysavas8912",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "yalcingelen",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "06furkan_bostan",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "muhammed_muhyiddin",
-   "eklendi": "2026-11-10",
+   "kullanici": "cahid__202",
    "gosterildi_bolum": 2
   },
   {
    "kullanici": "cetindemir791",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "efe91632",
-   "eklendi": "2026-11-10",
+   "kullanici": "ciko37786",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cinar24371",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cinardemir058",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cumaqbg.10",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "cumasahin636",
    "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "dadi_metin_taha",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "defne.efe.7967",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "demirhands.gk",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "deniz3457bjk",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "denizq7",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "alfro_37",
-   "eklendi": "2026-11-10",
+   "kullanici": "doganumutkunbetl",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "dtahmiscioglu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "duygu_gocuklar",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "dwddwdm",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "efe91632",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "atakan.3590",
-   "eklendi": "2026-11-10",
+   "kullanici": "efe_ugrac11",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "efekara661",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "enverali837",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "kerim4toprak",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "ismailcirah07",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "mahmut_2773",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "yagiz_.m",
-   "eklendi": "2026-11-10",
-   "gosterildi_bolum": 2
+   "kullanici": "ekin3415357",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "emirhan_sumbul_33",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "aykut_memisoglu",
-   "eklendi": "2026-11-10",
+   "kullanici": "enes_kapankaya",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "enverali837",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "cahid__202",
-   "eklendi": "2026-11-10",
+   "kullanici": "envr_htc",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "erto.c1",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ertu3675",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "esma.cicekli",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "esra_dulger",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "fatmaaaacfc",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "mertirki",
-   "eklendi": "2026-11-10",
+   "kullanici": "gamidovyusuf",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "goknur730",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "gozde77305",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "gs_mert_bjk_fb",
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "mortioffline",
-   "eklendi": "2026-11-10",
+   "kullanici": "gulbaycinar",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "haddurayfer879",
    "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hakoootraore",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "halitozgenur",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hamdi_gizem",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hamza_ben2861",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "hamza_ortak02",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hatice_altnbss",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "helvacioznur",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "hircafatma88",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "humasuer",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "huseyin_kyt76",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "huseyinoktay673",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "ibrahsmbudak",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ich.teymullahx",
+   "gosterildi_bolum": null
   },
   {
    "kullanici": "imdylanmusic_",
-   "eklendi": "2026-11-10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "imislifc2",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ismailcirah07",
    "gosterildi_bolum": 2
   },
   {
    "kullanici": "kaden.z0",
-   "eklendi": "2026-11-10",
    "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kahraman_duman56",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "karaflex777",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kemukgul",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kerem_aslankvp",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "kerim4toprak",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "ketizmenfatma",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "kosif.56",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "krk_mehmet46",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "layla__1029",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mahmut_2773",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mametulby11",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "maq8486",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mavikuafor.serap",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmet_ali_ellek",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mehmet_delenn.7",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmetalitts56",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mehmetatilll",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mehmetdkkya",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "memo9758584",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "memoaali.10",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mertcan330077",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mertirki",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mertyildirim9377",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "merveaynkfc",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "meryemahmt3",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mhamzasengoz",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "miraykaracaa",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mirhat_tuna",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "mortioffline",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "mrmkarais",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "msalih1116",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhammed_emir_yldrm__",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhammed_muhyiddin",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "muhhabbet_73",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhsinyildiz685432",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "muhummed_guneri",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "munuremin",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "neco94243erol",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "nesihaorgun",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "nurmuhammetjorakuliyew",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "o6_cinarr",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "omer.blnx",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "omer.ozdemir_4_",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "omer_ilhomov",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "omer_pinarli61",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "omerasaf59200",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "omercan_.k28",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "owl.4109819",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "penes8401",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "poyrazkiyikoglu",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "qulam.hy",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "rahim.galavani1362",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "reyiscan12",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ruzgar64744",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "ruzgar_3800",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "ruzgarcatal9",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "s_ahinpars",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sadettin0687",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "samet_sw10",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sayginer_123",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "scq.cakir",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sdymne",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "seheracikg",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "settartaha9",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "sevim.mesut21",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sibel_cali21",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "sutpidelerozduman",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tanosman32",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tunaaydn4",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tunamisiroglu37",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tuncaym_095",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tutucu.vlr02",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "tuz_10.7",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "tyremred",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "usta_polat",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "varliibrahimm",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "vatansever.ayaz1905",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "veliyeberber",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "y3l9a7_6300",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yafeskahveci",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yagiz_.m",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yagiz_yazicioglu54",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yagizkyaa_61",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yagizyunuskose",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yakupoglusultan",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yalcingelen",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yasercelik54",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yasin_ramanov",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yigitege4242",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "yildiraysavas8912",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "yusuftopraktomruk",
+   "gosterildi_bolum": 2
+  },
+  {
+   "kullanici": "zaesburakaktas.2",
+   "gosterildi_bolum": null
+  },
+  {
+   "kullanici": "zorbeymermi",
+   "gosterildi_bolum": 2,
+   "unvan": "YRD. HOCA"
   }
  ],
  "adaylar": [
+  {
+   "kullanici": "hasankaya.4444",
+   "mevki": "forvet",
+   "istek": "Senin forvetin eksikmiş kardeşim ben geldim",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sezginturk_",
+   "mevki": "forvet",
+   "istek": "Forvetin geldi Broom",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "husynova_aytac",
+   "mevki": "kaleci",
+   "istek": "Gknolur",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "renas_arhat__sozdar",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "cevat12345hamza_1235",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "merveaynkfc",
+   "mevki": "forvet",
+   "istek": "Forvet olsam",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ruzgarcatal9",
+   "mevki": "kaleci",
+   "istek": "Abi kale lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "byat_las1617",
+   "mevki": "her_yer",
+   "istek": "Abi nereye koyarsan oynarım",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "fevziyeyoldasercekus",
+   "mevki": "sol_bek",
+   "istek": "Abi sol bek",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ruzo_bayroo31",
+   "mevki": "kaleci",
+   "istek": "Mevki kale abi al bence",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "leonleon0809",
+   "mevki": "stoper",
+   "istek": "Ben defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yakupoglusultan",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "deryahusnusarikaya",
+   "mevki": "forvet",
+   "istek": "Abi forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ibrahimmertyazici9",
+   "mevki": "sag_kanat",
+   "istek": "Sağ kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "_yigit_okten",
+   "mevki": "stoper",
+   "istek": "Stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "munuremin",
+   "mevki": "sag_kanat",
+   "istek": "Sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ahmet_kavc_80",
+   "mevki": "kaleci",
+   "istek": "Abi kaleci / Numara 1",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "turan_erdal66",
+   "mevki": "sag_bek",
+   "istek": "Sağbek",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "omerasaf59200",
+   "mevki": "orta_saha",
+   "istek": "Ömer orta sağa",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sibel_cali21",
+   "mevki": "sag_kanat",
+   "istek": "Sağ kana",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "emin15582",
+   "mevki": "sol_kanat",
+   "istek": "Abi beni sol kanat oyuncusu yapar mısın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yagizyunuskose",
+   "mevki": "sag_kanat",
+   "istek": "Sağa açık",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "barisyahyadmrci",
+   "mevki": "stoper",
+   "istek": "defans duvarım",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "nazifeyusuf1",
+   "mevki": "stoper",
+   "istek": "Defansu11",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "arasdemircigvn",
+   "mevki": "forvet",
+   "istek": "Aras snt",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "emir_huseyin2014",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "y3l9a7_6300",
+   "mevki": "stoper",
+   "istek": "Beni stoper yapar mısın?",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "4.muhammed.0",
+   "mevki": "sol_bek",
+   "istek": "Abi sol bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ich.teymullahx",
+   "mevki": "stoper",
+   "istek": "Abi defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alperensimsek5516",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "fundaozguryusuf",
+   "mevki": "kaleci",
+   "istek": "Kaleci nolur adım yusuf",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "apoyr.z",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleci yap abi lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "reistuza76",
+   "mevki": "kaleci",
+   "istek": "Kaleye geçerim",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "smtdmr58",
+   "mevki": "orta_saha",
+   "istek": "Orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "fatih.00d",
+   "mevki": "forvet",
+   "istek": "Abi beni forvet yapar mısın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "miracbaba01_",
+   "mevki": "sol_bek",
+   "istek": "Sol dek beni koy",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hamiyet1267",
+   "mevki": "stoper",
+   "istek": "Abi Ben Defans çok iyiyim",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sajadsaya27poldasht",
+   "mevki": "stoper",
+   "istek": "defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kahraman_duman56",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "efe_ugrac11",
+   "mevki": "orta_saha",
+   "istek": "orta saha",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hira.ozgun",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ege_akmn_",
+   "mevki": "kaleci",
+   "istek": "Ben kaleci",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "eymenaydn657",
+   "mevki": "sag_kanat",
+   "istek": "Abi sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yasin_ramanov",
+   "mevki": "kaleci",
+   "istek": "kaleci (ya da orta saha / kanat)",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "samet_sw10",
+   "mevki": "orta_saha",
+   "istek": "Abi orta saha yada sol kanat lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "wegh510111",
+   "mevki": "kaleci",
+   "istek": "Gk",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "efrakyn",
+   "mevki": "orta_saha",
+   "istek": "Ben orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "melahatceloglu",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "harunalizade_",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleci yap",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mehmetatilll",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yakup60268",
+   "mevki": "kaleci",
+   "istek": "beni kaleci yap",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "deniz3457bjk",
+   "mevki": "kaleci",
+   "istek": "Kaleci mükemmelim veya defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "envr_htc",
+   "mevki": "sol_kanat",
+   "istek": "Mevkını sol kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "muhammededizgonultas",
+   "mevki": "orta_saha",
+   "istek": "Abi nolurr orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "maq8486",
+   "mevki": "sag_kanat",
+   "istek": "Abi Sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "cinaralitemel2",
+   "mevki": "orta_saha",
+   "istek": "Orta, saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aminehuma",
+   "mevki": "kaleci",
+   "istek": "Abi beni koyyy nolurrrrr kalleeee",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "moldivya_59",
+   "mevki": "sag_kanat",
+   "istek": "Hocam sağ kanat koy",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "bxeatwxx",
+   "mevki": "orta_saha",
+   "istek": "Abi ben orat say",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alptugnas",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "bilal134665",
+   "mevki": "sol_kanat",
+   "istek": "Slk",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "defne.efe.7967",
+   "mevki": "forvet",
+   "istek": "Forvet please",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hus213406",
+   "mevki": "kaleci",
+   "istek": "Abi kaleci",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "qulam.hy",
+   "mevki": "kaleci",
+   "istek": "Kaleci",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "muhsinyildiz685432",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mehmet_ali_ellek",
+   "mevki": "sag_kanat",
+   "istek": "Abi sağkanada",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "tunamisiroglu37",
+   "mevki": "forvet",
+   "istek": "Forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "userrrhrbbb77",
+   "mevki": "kaleci",
+   "istek": "Kaleci ben ola bilirmiyim",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "poyrazkiyikoglu",
+   "mevki": "kaleci",
+   "istek": "Poyraz kaleci",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yigitege4242",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "tutucu.vlr02",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mecitcelik112",
+   "mevki": "kaleci",
+   "istek": "Beni kalleci yap",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ayazimsi_cocuk",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "rey_emirio",
+   "mevki": "kaleci",
+   "istek": "Abi kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "idrisesen80",
+   "mevki": "sag_kanat",
+   "istek": "Abi beni sağ kanat yap",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "layla__1029",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "filiz_omer3",
+   "mevki": "yedek",
+   "istek": "Yedek sağ kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hamza_ortak02",
+   "mevki": "forvet",
+   "istek": "Abi forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "miraykaracaa",
+   "mevki": "kaleci",
+   "istek": "KALE",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "doganumutkunbetl",
+   "mevki": "sag_kanat",
+   "istek": "Abi sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "gs_mert_bjk_fb",
+   "mevki": "kaleci",
+   "istek": "Abi kale",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sevim.mesut21",
+   "mevki": "kaleci",
+   "istek": "Abi örümcek kaleci",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yasar75899773993",
+   "mevki": "kaleci",
+   "istek": "Kaleye beni koy",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ayaz61473",
+   "mevki": "stoper",
+   "istek": "Abi ben defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "veliyeberber",
+   "mevki": "kaleci",
+   "istek": "Kale ben kral",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "__aysenevzat_",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleye",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "spideralpp",
+   "mevki": "sag_bek",
+   "istek": "Sağ bek",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "emine_oner49",
+   "mevki": "sag_bek",
+   "istek": "Abi beni sağbek yaparmın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "reyiscan12",
+   "mevki": "sag_kanat",
+   "istek": "Abi sağkanat yap cihan",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "isa_93628",
+   "mevki": "on_numara",
+   "istek": "Abi on numara",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "cakiyagiz0",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "saim_4692",
+   "mevki": "sol_kanat",
+   "istek": "Abi sol kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "eymenvurgunn",
+   "mevki": "stoper",
+   "istek": "Abi sol stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "al1yews_",
+   "mevki": "stoper",
+   "istek": "defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kemukgul",
+   "mevki": "-",
+   "istek": "Moo beğendim takip ettim",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "erto.c1",
+   "mevki": "forvet",
+   "istek": "Abi forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "irfancabalak4627",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "neco94243erol",
+   "mevki": "forvet",
+   "istek": "forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "realefedalmis",
+   "mevki": "kaleci",
+   "istek": "Beni kaleci yap çok iyiyim",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "g.ecee1905",
+   "mevki": "sag_kanat",
+   "istek": "Ben sağ kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "eres_hakanemir56",
+   "mevki": "sol_bek",
+   "istek": "Sol bek",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yasercelik54",
+   "mevki": "sag_kanat",
+   "istek": "Sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "do.ruk4838",
+   "mevki": "stoper",
+   "istek": "Stoper sağ",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "elifbp4",
+   "mevki": "forvet",
+   "istek": "Forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "meryemahmt3",
+   "mevki": "sag_bek",
+   "istek": "Sağ bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aydogduondeveli",
+   "mevki": "-",
+   "istek": "Futbol",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "humasuer",
+   "mevki": "stoper",
+   "istek": "Abi beni defans yapar mısın lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "gedik_nadime",
+   "mevki": "orta_saha",
+   "istek": "Abı merkez ortasaha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "demirsemra3547",
+   "mevki": "kaleci",
+   "istek": "Ben kale al beni bedava",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yaseminboynuince",
+   "mevki": "forvet",
+   "istek": "Santrafor olayım abi",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "beditasdemir_01",
+   "mevki": "her_yer",
+   "istek": "Ben",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yusuf041604",
+   "mevki": "stoper",
+   "istek": "Defans bennnn",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "berat4747753",
+   "mevki": "kaleci",
+   "istek": "Abi kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "enes_kapankaya",
+   "mevki": "forvet",
+   "istek": "Forvetttt",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "omer_ilhomov",
+   "mevki": "forvet",
+   "istek": "CR7 olmak istiyorum",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "selahattin_erten63",
+   "mevki": "orta_saha",
+   "istek": "Selahattin defansif orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ayaz35bucaa",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleciye al",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yusuf99hassa",
+   "mevki": "stoper",
+   "istek": "Stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "dilber.erdogdu",
+   "mevki": "stoper",
+   "istek": "Sol stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "tahaatis3",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "muhummed_guneri",
+   "mevki": "forvet",
+   "istek": "Abi beni forvet alsan yaa",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alperenfutcu",
+   "mevki": "orta_saha",
+   "istek": "Orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "_yoruk_rasitt_",
+   "mevki": "kaleci",
+   "istek": "Al kaleye",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "duygu_gocuklar",
+   "mevki": "orta_saha",
+   "istek": "Beni orta saha",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yagiz_yazicioglu54",
+   "mevki": "sag_kanat",
+   "istek": "Sağ kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hayri.pasa07",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alial.k33",
+   "mevki": "forvet",
+   "istek": "Satnrafoe",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "tuz_10.7",
+   "mevki": "sol_kanat",
+   "istek": "Abi beni sol kanat yap",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "beyazid_16",
+   "mevki": "kaleci",
+   "istek": "Abi kale",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "jsp_2677",
+   "mevki": "kaleci",
+   "istek": "Abi kale yap beni",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "cinarkeremkaplan16",
+   "mevki": "kaleci",
+   "istek": "Abi kaleci",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ertugrul44094",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleci yop",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "baran79_1179",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yusuf_aras7y",
+   "mevki": "-",
+   "istek": "170 beğeni haydi",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aydnnmete",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "abfulhamidbaba",
+   "mevki": "sol_bek",
+   "istek": "Sol bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "rusensinan",
+   "mevki": "sag_kanat",
+   "istek": "Abi sag kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ketizmenfatma",
+   "mevki": "sag_bek",
+   "istek": "Ben sağ bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "betultoy07",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aliye_lc27",
+   "mevki": "-",
+   "istek": "Abi beni Salcano popo",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "keziban_atc45",
+   "mevki": "sol_bek",
+   "istek": "Sol beke al beni",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aydogduneriman08",
+   "mevki": "forvet",
+   "istek": "Santrafor",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "saidaltunbas1221",
+   "mevki": "her_yer",
+   "istek": "Said heryer olur",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "metin10359",
+   "mevki": "kaleci",
+   "istek": "Kaleci",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "enes.senw1",
+   "mevki": "forvet",
+   "istek": "Forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "muhammed_emir_yldrm__",
+   "mevki": "forvet",
+   "istek": "ABİ BEN FORVET LÜTFEN",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "atar.kiymet",
+   "mevki": "forvet",
+   "istek": "Forvet abi",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "haticerhanhayta",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "caneriken",
+   "mevki": "kaleci",
+   "istek": "Can kale okulda okul takımındayım",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "bear.91719030",
+   "mevki": "stoper",
+   "istek": "Defans yap beni",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "leyladurmuuss",
+   "mevki": "orta_saha",
+   "istek": "Orta saha Berat 7",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ayaz52355235",
+   "mevki": "kaleci",
+   "istek": "Abi kaleci",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sadettin0687",
+   "mevki": "stoper",
+   "istek": "Abi lütfen ben takip ediyorum defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "gulayoktaymurat",
+   "mevki": "orta_saha",
+   "istek": "Abi beni orta saha yapar mısın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "zinardagkapi",
+   "mevki": "forvet",
+   "istek": "Forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ahmet_35_bjk",
+   "mevki": "stoper",
+   "istek": "Stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "nazanabukan",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "meral_ayhan45",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ahmet_asim28",
+   "mevki": "orta_saha",
+   "istek": "Ortasaha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "suleymangumustok",
+   "mevki": "sag_kanat",
+   "istek": "Abu ben sag mangat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ali.mert_69",
+   "mevki": "sag_kanat",
+   "istek": "Sag kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "bayrakhalilefe",
+   "mevki": "sol_kanat",
+   "istek": "Sol kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "omer.ozdemir_4_",
+   "mevki": "sag_bek",
+   "istek": "Sağ bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "arda_demirci0808",
+   "mevki": "kaleci",
+   "istek": "Kaleci",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "tugraozyurt26",
+   "mevki": "kaleci",
+   "istek": "Abi kaleci",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "6_2014_hamza",
+   "mevki": "orta_saha",
+   "istek": "Orta saha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "arzuminnetoglu",
+   "mevki": "kaleci",
+   "istek": "Abi kale oynarım",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mrmkarais",
+   "mevki": "stoper",
+   "istek": "Stp sol",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "qarayevali2016",
+   "mevki": "sag_kanat",
+   "istek": "Sağ qanad olummu",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alperacar1077",
+   "mevki": "her_yer",
+   "istek": "Abi ileride oynarım istediğin yerde",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "omercan_.k28",
+   "mevki": "orta_saha",
+   "istek": "Orta saha",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kaan218205",
+   "mevki": "sag_kanat",
+   "istek": "Sağ Kanat",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ciko37786",
+   "mevki": "kaleci",
+   "istek": "Ben kale olurum",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mrvfnr",
+   "mevki": "sag_kanat",
+   "istek": "Sag kanat",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yagizooo67",
+   "mevki": "her_yer",
+   "istek": "Ben",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "vatansever.ayaz1905",
+   "mevki": "stoper",
+   "istek": "Defans",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mavikuafor.serap",
+   "mevki": "sol_bek",
+   "istek": "Sol bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "arasefe2017",
+   "mevki": "kaleci",
+   "istek": "Abi kale",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aysel.tinaz",
+   "mevki": "stoper",
+   "istek": "Defansı",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "umutcan61868",
+   "mevki": "kaleci",
+   "istek": "Kalcı plesa",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "bedriye_mehmet_doganturk",
+   "mevki": "forvet",
+   "istek": "Abi forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mertyildirim9377",
+   "mevki": "kaleci",
+   "istek": "Kale",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "fatmaaaacfc",
+   "mevki": "forvet",
+   "istek": "Abi forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aslan_emre4108",
+   "mevki": "orta_saha",
+   "istek": "Abü orta saha yapar mısın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "boranbulbul0321",
+   "mevki": "-",
+   "istek": "Boran",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kerim4toprak",
+   "mevki": "stoper",
+   "istek": "Kerim stoper",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "cengo8540",
+   "mevki": "baskan",
+   "istek": "Abi baskan",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kilinc_aslan_",
+   "mevki": "forvet",
+   "istek": "Forvet",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "muhammedkilali",
+   "mevki": "kaleci",
+   "istek": "Abi kale lütfen",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mhamzasengoz",
+   "mevki": "forvet",
+   "istek": "Abi 2. forvet",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "yusufftokmak10",
+   "mevki": "stoper",
+   "istek": "Stoper",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "mirhat_tuna",
+   "mevki": "kaleci",
+   "istek": "Abi beni kaleci yap",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alfro_37",
+   "mevki": "stoper",
+   "istek": "Stoper yap beni pls",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sutpidelerozduman",
+   "mevki": "kaleci",
+   "istek": "Kaleci beni yap abi lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "emine.bicak4545",
+   "mevki": "orta_saha",
+   "istek": "Abi orta saha lütfen",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "nicatk409",
+   "mevki": "forvet",
+   "istek": "beni santrofor yap",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "aysel.dogan81",
+   "mevki": "sol_bek",
+   "istek": "Sol bek kendime çok güveniyom",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "2922kadir",
+   "mevki": "sag_bek",
+   "istek": "Abi sağ bek",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "balayevffs",
+   "mevki": "yedek",
+   "istek": "Abi yedek oynarım yada mevkimi sen seçersin",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "varliibrahimm",
+   "mevki": "orta_saha",
+   "istek": "Ofansif orta saha yada sağ açık",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "baharibrahim07",
+   "mevki": "orta_saha",
+   "istek": "Ortasah",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "berkeeyncl",
+   "mevki": "sol_bek",
+   "istek": "Hızlı bir sol bek işinizi görür",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "imislifc2",
+   "mevki": "stoper",
+   "istek": "Stoper benim",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "elife9112",
+   "mevki": "stoper",
+   "istek": "Abi defans",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "ersingaygin",
+   "mevki": "forvet",
+   "istek": "16 numara forvet yaparmisin",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "_mkayumov",
+   "mevki": "yedek",
+   "istek": "Yedek oynarım",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "kazasahin",
+   "mevki": "orta_saha",
+   "istek": "Abi defansif ortasaha",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "alperenkudretbasturk",
+   "mevki": "orta_saha",
+   "istek": "Ortasaha 8 10",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "7allahyarovi",
+   "mevki": "sol_kanat",
+   "istek": "Abi sol Kanad nolur",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "dorukateskosar",
+   "mevki": "stoper",
+   "istek": "Stoper abi lütfen",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "hamzaklnc13",
+   "mevki": "sag_kanat",
+   "istek": "Abi beni sağ kanat yaparmısın",
+   "takip": false,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "atakan.3590",
+   "mevki": "forvet",
+   "istek": "Abi forvet yap benii",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "esma.cicekli",
+   "mevki": "orta_saha",
+   "istek": "Ortasahada oyniyimmi abican",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "zaesburakaktas.2",
+   "mevki": "kaleci",
+   "istek": "Kaleci yap abi beni",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
+  {
+   "kullanici": "sayginer_123",
+   "mevki": "forvet",
+   "istek": "Abi forvet yap beni abi takip etim abi",
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 2 yorumları (2026-11-12)"
+  },
   {
    "kullanici": "aartur221",
    "istek": "kaleci (31 numara)",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "gulsenyildirim907",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
-  },
-  {
-   "kullanici": "atakan.3590",
-   "istek": "kaleci",
-   "eklendi": "2026-11-10",
-   "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "alex7641912",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "miranbotan21",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "aktas__mustafa_0227",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "memoaali.10",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "mertcan330077",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "mustafackmk066",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "bilal35_25",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "hiziralivatansever",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "alielifimbalik",
    "istek": "kaleci",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "tyremred",
@@ -620,7 +3232,8 @@
    "takip": true,
    "oynadigi_bolumler": [
     2
-   ]
+   ],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "dadi_metin_taha",
@@ -629,91 +3242,80 @@
    "takip": true,
    "oynadigi_bolumler": [
     2
-   ]
+   ],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "orhanhulya56",
    "istek": "10 numara",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "yildiraysavas8912",
    "istek": "forvet",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "hamza_ben2861",
    "istek": "forvet",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "mehmet_delenn.7",
    "istek": "forvet",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "tunaaydn4",
    "istek": "forvet",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "cinar57464",
    "istek": "forvet",
    "eklendi": "2026-11-10",
    "takip": false,
-   "oynadigi_bolumler": []
-  },
-  {
-   "kullanici": "yagiz_yazicioglu54",
-   "istek": "tribün lideri",
-   "eklendi": "2026-11-10",
-   "takip": false,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "halitozgenur",
    "istek": "tribün",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "06furkan_bostan",
    "istek": "tribün",
    "eklendi": "2026-11-10",
-   "takip": false,
-   "oynadigi_bolumler": []
-  },
-  {
-   "kullanici": "nicatk409",
-   "istek": "teknik direktör",
-   "eklendi": "2026-11-10",
-   "takip": false,
-   "oynadigi_bolumler": []
+   "takip": true,
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   },
   {
    "kullanici": "zorbeymermi",
    "istek": "teknik direktör yardımcısı",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": []
-  },
-  {
-   "kullanici": "yusuf_aras7y",
-   "istek": "tribün davulcusu",
-   "eklendi": "2026-11-10",
-   "takip": true,
-   "oynadigi_bolumler": []
+   "oynadigi_bolumler": [],
+   "kaynak": "Bölüm 1 yorumları (2026-11-10)"
   }
  ],
  "cikarilanlar": [],
@@ -732,8 +3334,88 @@
    ],
    "tribun_lideri": "demirkentsk",
    "not": "hecerr1959 ve who_is.yamal takipçi listesinde görünmediği için yeni kurala göre kadro yerine tribüne alındı; gultentalha ve demirkentsk sayfa sahibinin seçimi olarak kaldı."
+  },
+  {
+   "bolum": 3,
+   "tarih": "2026-11-12",
+   "oyuncular": [
+    "yasar75899773993",
+    "dorukateskosar",
+    "eymenaydn657",
+    "alperenkudretbasturk",
+    "muhammed.rasit.aktas",
+    "sezginturk_",
+    "hasankaya.4444"
+   ],
+   "yedekler": [
+    "ege_akmn_",
+    "balayevffs",
+    "kaan218205"
+   ],
+   "tribun_lideri": "yusuf_aras7y",
+   "not": "Sayfa sahibi seçti: yasar75899773993 (kaleci), muhammed.rasit.aktas (10), sezginturk_ (sol kanat), hasankaya.4444 (forvet). Claude seçti (takip + mevki yazan): dorukateskosar, eymenaydn657, alperenkudretbasturk; yedek ege_akmn_, balayevffs, kaan218205; tribün lideri yusuf_aras7y."
   }
  ],
- "takip_kaynagi": "takip bilgisi: sayfa sahibinin 2026-11-10 ekran görüntüleri (64 takipçi). Yeni ekran görüntüsü gelince güncelle.",
- "yedekler": []
+ "takip_kaynagi": "Takip: sayfa sahibinin 2026-11-12 takipçi ekran görüntüleri (görünen ~175 ad; toplam 228) + 2026-11-10 listesi. Yorum: Bölüm 2 yorum ekran görüntüleri (215 kişi) + Bölüm 1.",
+ "yedekler": [
+  {
+   "rol": "yedek",
+   "unvan": "YEDEK KALECİ",
+   "no": "12",
+   "karakter": "taraftar_kaleci",
+   "kullanici": "ege_akmn_",
+   "okunus": "Ege",
+   "istek": "Ben kaleci",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
+  },
+  {
+   "rol": "yedek",
+   "unvan": "YEDEK",
+   "no": "14",
+   "karakter": "oyuncu_ortasaha",
+   "kullanici": "balayevffs",
+   "okunus": "Balayev",
+   "istek": "Abi yedek oynarım yada mevkimi sen seçersin",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
+  },
+  {
+   "rol": "yedek",
+   "unvan": "YEDEK KANAT",
+   "no": "17",
+   "karakter": "oyuncu_solbek",
+   "kullanici": "kaan218205",
+   "okunus": "Kaan",
+   "istek": "Sağ Kanat",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-12",
+   "tanitildi_bolum": null
+  }
+ ],
+ "loca_kesik_isimler": {
+  "not": "Takipçi ekran görüntüsünde kesik görünen adlar; tam ad bilinmediği için ekranda GÖSTERİLMEZ (tam ad öğrenilince eklenir).",
+  "onekler": [
+   "canannkaraa",
+   "merve_kalp_z",
+   "omerensarer",
+   "bugra_kiran_",
+   "omer_eymen1",
+   "selimcoskun3",
+   "kerem_bursa_",
+   "ricardokakafa",
+   "suleyman862",
+   "beratykt6327",
+   "yigi.tkerem52",
+   "ulku.yuksel12",
+   "alparslanyigit",
+   "solmazsonme",
+   "samir_osman"
+  ]
+ }
 }
