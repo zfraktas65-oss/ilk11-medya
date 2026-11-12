@@ -221,6 +221,30 @@ def standings_card(title, rows, old_order, hl, pq, badge, sub=""):
         card.alpha_composite(sb, ((w - sb.width) // 2, h - 44 - sb.height // 2 + 8))
     return shadowed(card)
 
+@lru_cache(maxsize=128)
+def jersey_back(name, number, w=300):
+    """Mor-sarı forma sırtı: üstte isim, ortada numara (taraftar adları için)."""
+    h = int(w * 1.15); S = 3
+    big = Image.new("RGBA", (w * S, h * S), (0, 0, 0, 0)); d = ImageDraw.Draw(big)
+    W_, H_ = w * S, h * S
+    body = [(0.22, 0.06), (0.38, 0.0), (0.62, 0.0), (0.78, 0.06), (1.0, 0.24), (0.88, 0.40), (0.80, 0.34),
+            (0.80, 1.0), (0.20, 1.0), (0.20, 0.34), (0.12, 0.40), (0.0, 0.24)]
+    m = 0.04
+    pts = [((m + x * (1 - 2 * m)) * W_, (m + y * (1 - 2 * m)) * H_) for x, y in body]
+    d.polygon(pts, fill=PURPLE, outline=INK); d.line(pts + [pts[0]], fill=INK, width=6 * S)
+    P = lambda x, y: ((m + x * (1 - 2 * m)) * W_, (m + y * (1 - 2 * m)) * H_)
+    d.line([P(0.38, 0.0), P(0.5, 0.05), P(0.62, 0.0)], fill=YELLOW, width=7 * S)
+    d.line([P(0.03, 0.27), P(0.13, 0.37)], fill=YELLOW, width=6 * S); d.line([P(0.97, 0.27), P(0.87, 0.37)], fill=YELLOW, width=6 * S)
+    big = big.resize((w, h), Image.LANCZOS)
+    nm = tr_upper(name.lstrip("@"))
+    fs = int(w * 0.11)
+    while fs > 11 and font("black", fs).getlength(nm) > w * 0.5: fs -= 1
+    t = text_img(nm, "black", fs, YELLOW, shadow=False)
+    big.alpha_composite(t, ((w - t.width) // 2, int(h * 0.17)))
+    n = text_img(str(number), "anton", int(w * 0.42), YELLOW, shadow=False)
+    big.alpha_composite(n, ((w - n.width) // 2, int(h * 0.33)))
+    return shadowed(big)
+
 def like_sticker(text, bg=GREEN):
     hrt = heart(64, WHITE)
     t = text_img(text, "black", fit_text(text, "black", 50, 760), WHITE, shadow=False)
@@ -528,6 +552,8 @@ class Bolum:
             return crest(o.get("boyut", 230))
         if tip == "sayac":
             return counter_card(o["baslik"], o["deger"], o.get("alt", ""), rk(o.get("deger_renk", "mor")), rk(o.get("alt_renk", "kirmizi")))
+        if tip == "forma":
+            return jersey_back(o["isim"], o.get("no", "12"), int(o.get("genislik", 300)))
         if tip == "kasa":
             rows = [(r[0], r[1], rk(r[2]) if len(r) > 2 else (GREEN if str(r[1]).startswith("+") else RED)) for r in o["satirlar"]]
             return ledger_card(o.get("baslik", "KULÜP KASASI"), rows, o.get("kalan_etiket", "KASADA KALAN"), o["kalan"], o.get("not", ""))

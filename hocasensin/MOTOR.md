@@ -78,3 +78,5 @@ Ortak: `tip`, `bas`, `bitis`, `x` (540), `y` (320), `anim` (`pop` | `stamp` | `d
 - **Sahne `altyazi_y`:** o sahnede altyazının y konumu (`false` = altyazı yok). Kadro sahnesinde 1232 (iki sıra oyuncunun arası).
 - **Üst düzey `muzik_bas`:** müziğin başlama zamanı (çapa da olur), yumuşak girişle.
 - **Sese sessizlik ekleme** (isim/tablo sahneleri için): ham sesi `atrim` + `anullsrc` ile böl, kelimeler.json'daki `start/end` değerlerini ekleme noktasından sonra kaydır (Bölüm 2 örneği: 56.06 s +0.8, 60.82 s +1.5, 72.68 s +3.0).
+
+- **`forma`** — mor-sarı forma sırtı: `{"tip":"forma","isim":"@kullanici","no":"7","genislik":300,"x":200,"y":800,"bas":"w:N"}`. Uzun adlar otomatik küçülür. "Forma duvarı" için 6–9 tanesini 3'lü sıralar hâlinde diz (genislik 280–320, aralık ~350 px).
