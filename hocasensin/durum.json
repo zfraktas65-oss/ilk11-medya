@@ -28,7 +28,7 @@
     "maglubiyet": 0,
     "lig_galibiyet": 1,
     "son_skor": "Anadoluspor 2-1 Kahveci Spor (Bölüm 3; goller: Hasan kafa, Muhammed Raşit frikik)",
-    "not": "Sayfa sahibi Bölüm 3'te de maç istedi; maç bölümü düzeni esnek (yeni sahadaki ilk maç Bölüm 5)."
+    "not": "Sayfa sahibi (2026-11-12): HER bölümde maç. Bölüm M = lig haftası M−1 (derbi hariç)."
   },
   "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
   "acik_karar": {
@@ -38,7 +38,7 @@
     "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL)",
     "gecmezse": "Burak otobüsün üstüne kalemle 'Anadoluspor' yazar (komik, bedava)"
   },
-  "yarin_soz": "Bölüm 4: Karar #3 sonucu (410 → otobüs mor-sarı / Burak'ın kalemi); eski otobüsle yeni sahaya taşınma (duman şakası), Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı, fiyatlı) + 'Stadın adı ne olsun?'; günün kadrosu (7+3+lider) adları sesli; kasa defteri.",
+  "yarin_soz": "Bölüm 4: MAÇ (yeni sahada açılış maçı, lig 3. hafta, rakip tablodan ör. Muhtarlık Gençlik ya da Bakkal Gücü); Karar #3 sonucu (410 → otobüs mor-sarı / Burak'ın kalemi); eski otobüsle yeni sahaya taşınma (duman şakası), Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı, fiyatlı) + 'Stadın adı ne olsun?'; günün kadrosu (7+3+lider) adları sesli; kasa defteri.",
   "notlar": [
     "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
     "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -50,7 +50,8 @@
     "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler.",
     "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak.",
     "2026-11-12: Sayfa sahibi Bölüm 2 verisi: 314 beğeni, 472 yorum, 228 takipçi; Bölüm 3 kadrosu ekran görüntülerinden kuruldu (sayfa sahibi 4 oyuncu seçti, kalanı Claude). Oyuncu adları artık seslendirmede söylenir.",
-    "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir."
+    "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir.",
+    "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun."
   ],
   "gecmis": [
     {
@@ -215,10 +216,10 @@
   },
   "yol_haritasi": {
     "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
-    "4": "Eski otobüsle yeni sahaya taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı seçenekler + fiyat); 'Stadın adı ne olsun?' önerileri",
-    "5": "Yeni sahada ilk maç (maç bölümü); oylama sonucu varsa ilk saha geliştirmesi; VİDEONUN SONUNDA: 'Taraftar grubumuzun adı ne olsun? En çok beğenilen isim seçilecek!'",
-    "6": "Derbi rakibi KARADUMAN GÜCÜ tanıtılır (rakip başkan meydan okur)",
-    "8": "İlk Komşu Derbisi (lig dışı kupa maçı)"
+    "4": "MAÇ: yeni sahada AÇILIŞ MAÇI (lig 3. hafta). Eski otobüsle taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması + 'Stadın adı ne olsun?'",
+    "5": "MAÇ (lig 4. hafta); oylama sonucu varsa ilk saha geliştirmesi; VİDEONUN SONUNDA taraftar grubu adı sorusu",
+    "6": "MAÇ (lig 5. hafta); derbi rakibi KARADUMAN GÜCÜ tanıtılır",
+    "8": "MAÇ: ilk Komşu Derbisi (lig dışı kupa maçı, lig haftası ilerlemez)"
   },
   "saha": {
     "mevcut": "Necmi abinin halı sahası",
