@@ -53,6 +53,7 @@ Lig sırası: Halı Saha Ligi → Mahalle Ligi → Amatör Lig → BAL → 3. Li
 **Maçlar:** her 3 bölümde bir maç bölümü (2, 5, 8, 11…). Maç sonucunu rastgele verme, verilere bağla: önceki bölümün KARARI maçla ilgiliyse onun sonucu belirler; değilse hedef tuttuysa galibiyet, tutmadıysa beraberlik ya da komik bir mağlubiyet. Tribün toplamı ≥ 20 ise "taraftar desteği" bir avantaj olarak sahneye girer. Skorlar gerçekçi halı saha skorları olabilir (7–5, 3–3…). Maç bölümünde "skor" öğesi kullan.
 
 ## Karakterler (varliklar/karakter/*.png)
+- **Belediye Başkanı** (`baskan`) — kurgusal, güler yüzlü ilçe başkanı; elinde büyük anahtar. **Eski otobüs** (`otobus`, boyalı: `otobus_morsari`; seçenek kartı: `otobus_kart`, `otobus_morsari_kart`). Arka plan **eski stat**: `varliklar/arka/eski_stadyum.jpg` (Bölüm 3).
 | Dosya | Kim | Özellik / tekrar eden şaka |
 |---|---|---|
 | cem.png | **Kaptan Cem** (C) | Kurucu, anlatıcı, maçı ayarlayan ve parayı toplayan adam; mor eşofman, sarı kaptan bandı, el sallar |
