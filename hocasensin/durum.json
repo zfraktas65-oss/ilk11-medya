@@ -53,7 +53,8 @@
     "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir.",
     "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun.",
     "2026-11-12 (22:46): Sayfa sahibi: Bölüm 4'te takıma giremeyenlere güzel bir duyuru — herkesi takıma almaya çalışıyoruz, alamadıklarımız için ayrı sürprizler olacak.",
-    "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı."
+    "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı.",
+    "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10."
   ],
   "gecmis": [
     {
@@ -220,9 +221,11 @@
     "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
     "4": "MAÇ: yeni sahada AÇILIŞ MAÇI (lig 3. hafta). Eski otobüsle taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması + 'Stadın adı ne olsun?'",
     "5": "MAÇ (lig 4. hafta); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı, sonra her bölüm); oylama sonucu varsa ilk saha geliştirmesi; videonun sonunda taraftar grubu adı sorusu",
-    "6": "MAÇ (lig 5. hafta); derbi rakibi KARADUMAN GÜCÜ tanıtılır; SÜRPRİZ 2 duyurulur: 'Yarın TARAFTAR MAÇI!'",
+    "6": "MAÇ (lig 5. hafta); derbi rakibi KARADUMAN GÜCÜ tanıtılır",
     "8": "MAÇ: ilk Komşu Derbisi (lig dışı kupa maçı, lig haftası ilerlemez)",
-    "7": "TARAFTAR MAÇI: kadro tamamen hiç oynamamış takipçi+yorumculardan, rakip Belediye Personel Takımı (kalede Başkan); lig haftası ilerlemez"
+    "7": "MAÇ (lig 6. hafta)",
+    "9": "MAÇ (lig 7. hafta); SÜRPRİZ 2 duyurulur: 'Yarın TARAFTAR MAÇI!'",
+    "10": "TARAFTAR MAÇI: kadro tamamen hiç oynamamış takipçi+yorumculardan, rakip Belediye Personel Takımı (kalede Başkan); lig haftası ilerlemez"
   },
   "saha": {
     "mevcut": "Necmi abinin halı sahası",
@@ -318,14 +321,15 @@
       "soz": "Kadroya giremeyenler için 'ayrı sürprizler' Bölüm 4'te duyurulur (içerik açıklanmaz).",
       "sürprizler": [
         "Formada isim — Bölüm 5'te açıklanır, sonra her bölüm forma duvarı",
-        "Taraftar Maçı — Bölüm 6'da duyurulur, ilki Bölüm 7, sonra ayda bir"
+        "Taraftar Maçı — Bölüm 9'da duyurulur, ilki Bölüm 10, sonra ayda bir"
       ]
     }
   ],
   "taraftar_maci": {
-    "ilk_bolum": 7,
-    "siklik": "ayda bir (≈ her 30 bölüm: 37, 67…)",
+    "ilk_bolum": 10,
+    "siklik": "ayda bir (≈ her 30 bölüm: 40, 70…)",
     "rakip": "Belediye Personel Takımı (kalede Belediye Başkanı)",
-    "oynananlar": []
+    "oynananlar": [],
+    "duyuru_bolumu": 9
   }
 }
