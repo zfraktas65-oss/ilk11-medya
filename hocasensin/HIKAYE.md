@@ -70,6 +70,8 @@ Lig sırası: Halı Saha Ligi → Mahalle Ligi → Amatör Lig → BAL → 3. Li
 | tribun_lideri.png | **Tribün lideri** (TL) | Taraftardan; megafon + davul, mor kova şapka, sarı kapüşonlu (kim olduğu taraftarlar.json'da) |
 | forvet.png | **Taraftardan forvet** (9) | Kıvırcık saçlı, ayağı topun üstünde, yumruk havada |
 | taraftar_kaleci.png | **Taraftardan kaleci** (1) | Neon yeşil kaleci forması, kocaman eldivenler |
+| oyuncu_forvet_kadin.png | **Kadın forvet** (9) | At kuyruğu saç, mor forma sarı 9, ayağı topun üstünde, yumruk havada (Bölüm 4: Merve, takımın ilk kadın futbolcusu) |
+| otobus_kalem.png | **Eski otobüs, kalem yazılı** | Karar #3 tutmayınca Burak'ın kalemle yazdığı "Anadoluspor" (Bölüm 4) |
 | taraftar/t1–t8.png | Tribün taraftarları | Motor `tribun` alanıyla otomatik yerleştirir (genç, nine, bıyıklı amca, başörtülü genç kadın, kız çocuğu, korna öttüren, kalp tabelalı, simitli dede) |
 | _karakter_sayfasi.jpg | Tüm karakterlerin referans sayfası (yeni çizimlerde stil referansı) | |
 

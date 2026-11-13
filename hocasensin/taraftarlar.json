@@ -10,7 +10,7 @@
    "secen": "Claude",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   }
  ],
  "kadro": [
@@ -25,7 +25,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "stoper",
@@ -38,7 +38,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "def_orta_saha",
@@ -51,7 +51,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "orta_saha",
@@ -64,7 +64,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "sol_kanat",
@@ -77,7 +77,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "ikinci_forvet",
@@ -90,7 +90,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "forvet",
@@ -103,7 +103,7 @@
    "secen": "sayfa sahibi",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null,
+   "tanitildi_bolum": 4,
    "ozel": "TAKIMIN İLK KADIN FUTBOLCUSU (sayfa sahibinin isteği, ona özel kadın futbolcu figürü)",
    "yedek_karakter": "forvet"
   }
@@ -252,11 +252,11 @@
   },
   {
    "kullanici": "cakiyagiz0",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "caneriken",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "cansenell57",
@@ -268,7 +268,7 @@
   },
   {
    "kullanici": "cevat12345hamza_1235",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "cinar57464",
@@ -280,103 +280,103 @@
   },
   {
    "kullanici": "cinarkeremkaplan16",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "demirkentsk",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "demirsemra3547",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "deryahusnusarikaya",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "dilber.erdogdu",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "do.ruk4838",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "efrakyn",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "elifbp4",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "elife9112",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "emin15582",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "emine.bicak4545",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "emine_oner49",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "emir_huseyin2014",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "enes.senw1",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "eres_hakanemir56",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "ersingaygin",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "ertugrul44094",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "eymenvurgunn",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "fatih.00d",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "fevziyeyoldasercekus",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "filiz_omer3",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "fundaozguryusuf",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "g.ecee1905",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "gedik_nadime",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "gulayoktaymurat",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "gulsenyildirim907",
@@ -384,11 +384,11 @@
   },
   {
    "kullanici": "gultentalha",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "hamiyet1267",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "hamzaklnc13",
@@ -1014,7 +1014,7 @@
   },
   {
    "kullanici": "ich.teymullahx",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "imdylanmusic_",
@@ -1030,15 +1030,15 @@
   },
   {
    "kullanici": "kahraman_duman56",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "karaflex777",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "kemukgul",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "kerem_aslankvp",
@@ -1050,15 +1050,15 @@
   },
   {
    "kullanici": "kosif.56",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "krk_mehmet46",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "layla__1029",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mahmut_2773",
@@ -1066,11 +1066,11 @@
   },
   {
    "kullanici": "mametulby11",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "maq8486",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mavikuafor.serap",
@@ -1078,7 +1078,7 @@
   },
   {
    "kullanici": "mehmet_ali_ellek",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mehmet_delenn.7",
@@ -1090,7 +1090,7 @@
   },
   {
    "kullanici": "mehmetatilll",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mehmetdkkya",
@@ -1098,7 +1098,7 @@
   },
   {
    "kullanici": "memo9758584",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "memoaali.10",
@@ -1114,23 +1114,23 @@
   },
   {
    "kullanici": "mertyildirim9377",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "meryemahmt3",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mhamzasengoz",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "miraykaracaa",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mirhat_tuna",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "mortioffline",
@@ -1138,15 +1138,15 @@
   },
   {
    "kullanici": "mrmkarais",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "msalih1116",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "muhammed_emir_yldrm__",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "muhammed_muhyiddin",
@@ -1154,27 +1154,27 @@
   },
   {
    "kullanici": "muhhabbet_73",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "muhsinyildiz685432",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "muhummed_guneri",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "munuremin",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "neco94243erol",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "nesihaorgun",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "nurmuhammetjorakuliyew",
@@ -1182,7 +1182,7 @@
   },
   {
    "kullanici": "o6_cinarr",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "omer.blnx",
@@ -1190,39 +1190,39 @@
   },
   {
    "kullanici": "omer.ozdemir_4_",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "omer_ilhomov",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "omer_pinarli61",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "omerasaf59200",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "omercan_.k28",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "owl.4109819",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "penes8401",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "poyrazkiyikoglu",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "qulam.hy",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "rahim.galavani1362",
@@ -1230,11 +1230,11 @@
   },
   {
    "kullanici": "reyiscan12",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "ruzgar64744",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "ruzgar_3800",
@@ -1242,35 +1242,35 @@
   },
   {
    "kullanici": "ruzgarcatal9",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "s_ahinpars",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "sadettin0687",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "samet_sw10",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "sayginer_123",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "scq.cakir",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "sdymne",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "seheracikg",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "settartaha9",
@@ -1278,11 +1278,11 @@
   },
   {
    "kullanici": "sevim.mesut21",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "sibel_cali21",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "sutpidelerozduman",
@@ -1290,7 +1290,7 @@
   },
   {
    "kullanici": "tanosman32",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "tunaaydn4",
@@ -1298,7 +1298,7 @@
   },
   {
    "kullanici": "tuncaym_095",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "tutucu.vlr02",
@@ -1306,35 +1306,35 @@
   },
   {
    "kullanici": "tuz_10.7",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "tyremred",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "usta_polat",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "varliibrahimm",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "vatansever.ayaz1905",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "veliyeberber",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "y3l9a7_6300",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "yafeskahveci",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "yagiz_.m",
@@ -1346,11 +1346,11 @@
   },
   {
    "kullanici": "yagizkyaa_61",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "yagizyunuskose",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 4
   },
   {
    "kullanici": "yakupoglusultan",
@@ -1485,7 +1485,9 @@
    "mevki": "forvet",
    "istek": "Forvet olsam",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -1899,7 +1901,9 @@
    "mevki": "kaleci",
    "istek": "Kaleci mükemmelim veya defans",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -2133,7 +2137,9 @@
    "mevki": "forvet",
    "istek": "Abi forvet",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -2475,7 +2481,9 @@
    "mevki": "orta_saha",
    "istek": "Selahattin defansif orta saha",
    "takip": false,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -2673,7 +2681,9 @@
    "mevki": "sag_bek",
    "istek": "Ben sağ bek",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3258,7 +3268,9 @@
    "mevki": "stoper",
    "istek": "Stoper benim",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    4
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3644,7 +3656,7 @@
    "secen": "Claude",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "yedek",
@@ -3657,7 +3669,7 @@
    "secen": "Claude",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   },
   {
    "rol": "yedek",
@@ -3670,7 +3682,7 @@
    "secen": "Claude",
    "takip": true,
    "eklendi": "2026-11-13",
-   "tanitildi_bolum": null
+   "tanitildi_bolum": 4
   }
  ],
  "loca_kesik_isimler": {

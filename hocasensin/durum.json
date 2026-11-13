@@ -1,343 +1,406 @@
 {
-  "son_bolum": 3,
-  "son_bolum_tarihi": "2026-11-12",
-  "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 3",
-  "kasa_tl": 37300,
-  "borc_tl": 0,
-  "kira_haftalik_tl": 1500,
-  "begeni_tl": 100,
-  "sonraki_kira_bolumu": null,
-  "tribun_toplam": 562,
-  "takipci": 228,
-  "lig": "Halı Saha Ligi",
-  "lig_sirasi": [
-    "Halı Saha Ligi",
-    "Mahalle Ligi",
-    "Amatör Lig",
-    "BAL",
-    "3. Lig",
-    "2. Lig",
-    "1. Lig",
-    "Süper Lig"
-  ],
-  "lig_atlama_galibiyet": 5,
-  "mac": {
-    "oynanan": 2,
-    "galibiyet": 1,
-    "beraberlik": 1,
-    "maglubiyet": 0,
-    "lig_galibiyet": 1,
-    "son_skor": "Anadoluspor 2-1 Kahveci Spor (Bölüm 3; goller: Hasan kafa, Muhammed Raşit frikik)",
-    "not": "Sayfa sahibi (2026-11-12): HER bölümde maç. Bölüm M = lig haftası M−1 (derbi hariç)."
+ "son_bolum": 4,
+ "son_bolum_tarihi": "2026-11-13",
+ "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 4",
+ "kasa_tl": 39800,
+ "borc_tl": 0,
+ "kira_haftalik_tl": 1500,
+ "begeni_tl": 100,
+ "sonraki_kira_bolumu": null,
+ "tribun_toplam": 651,
+ "takipci": 264,
+ "lig": "Halı Saha Ligi",
+ "lig_sirasi": [
+  "Halı Saha Ligi",
+  "Mahalle Ligi",
+  "Amatör Lig",
+  "BAL",
+  "3. Lig",
+  "2. Lig",
+  "1. Lig",
+  "Süper Lig"
+ ],
+ "lig_atlama_galibiyet": 5,
+ "mac": {
+  "oynanan": 3,
+  "galibiyet": 1,
+  "beraberlik": 2,
+  "maglubiyet": 0,
+  "lig_galibiyet": 1,
+  "son_skor": "Anadoluspor 3-3 Bakkal Gücü (Bölüm 4; goller: Hamza, Kartal Aras Çağan, Merve 90+3; Ketizmen penaltı kurtardı)",
+  "not": "Sayfa sahibi (2026-11-12): HER bölümde maç. Bölüm M = lig haftası M−1 (derbi hariç)."
+ },
+ "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
+ "acik_karar": {
+  "bolum": 4,
+  "metrik": "begeni",
+  "esik": 50,
+  "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL; görsel otobus_morsari.png)",
+  "gecmezse": "Burak'ın kalem yazısı yağmurda silinir (komik, bedava; otobüs yine yazısız eski hâline döner)"
+ },
+ "yarin_soz": "Bölüm 5: MAÇ (lig 4. hafta); Karar #4 sonucu (50 → mor-sarı otobüs / yazı yağmurda silinir); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı); saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden (yoksa 'oylama sürüyor', seçenekler açık kalır); stat adı önerileri toplanıyor; videonun sonunda taraftar grubu adı sorusu.",
+ "notlar": [
+  "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
+  "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
+  "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
+  "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca.",
+  "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan.",
+  "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi.",
+  "2026-11-11 (16:26): Sayfa sahibi: reklam alanları şimdilik boş kalsın — sponsor gösterme/yazma yok.",
+  "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler.",
+  "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak.",
+  "2026-11-12: Sayfa sahibi Bölüm 2 verisi: 314 beğeni, 472 yorum, 228 takipçi; Bölüm 3 kadrosu ekran görüntülerinden kuruldu (sayfa sahibi 4 oyuncu seçti, kalanı Claude). Oyuncu adları artık seslendirmede söylenir.",
+  "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir.",
+  "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun.",
+  "2026-11-12 (22:46): Sayfa sahibi: Bölüm 4'te takıma giremeyenlere güzel bir duyuru — herkesi takıma almaya çalışıyoruz, alamadıklarımız için ayrı sürprizler olacak.",
+  "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı.",
+  "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10.",
+  "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü).",
+  "2026-11-13 18:20: Otomatik görev Seslendirme bağlantı hatası yüzünden bölüm üretemedi; Bölüm 4 sayfa sahibinin isteğiyle sohbetten üretildi. Sayfa sahibinin isteğiyle Metricool'a PLANLANMADI — videoyu ve açıklamayı kendisi manuel paylaşıyor (açıklama ilk satırı 'Anadoluspor · Bölüm 4'). Yeni karakter: oyuncu_forvet_kadin (Merve)."
+ ],
+ "gecmis": [
+  {
+   "bolum": 1,
+   "tarih": "2026-11-09",
+   "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.",
+   "begeni": 132,
+   "yorum": 90,
+   "izlenme": 3632
   },
-  "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
-  "acik_karar": {
-    "bolum": 3,
-    "metrik": "begeni",
-    "esik": 410,
-    "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL)",
-    "gecmezse": "Burak otobüsün üstüne kalemle 'Anadoluspor' yazar (komik, bedava)"
+  {
+   "bolum": 2,
+   "tarih": "2026-11-11",
+   "ozet": "Karar #1 tuttu (132 beğeni): Necmi abi kaleye geçti ama ışıkları kapatmak için bıraktı. Yeni kural 1 beğeni=100 TL; kasa 13.200 TL gelir, 2.800 TL harcama, 10.400 TL kaldı. Kadronun tamamı takipçi-yorumculardan; ilk maç Muhtarlık Gençlik 2-2 (2-0 gerideyken: 10 numaradan pas–forvet golü, kaleci 3. penaltıyı kurtardı, son dakika forvet). Halı Saha Ligi 3. sıra (▲5). Karar #2: 170 beğeni → ilk formalar / Burak'ın formaları.",
+   "begeni": 314,
+   "yorum": 472,
+   "izlenme": null
   },
-  "yarin_soz": "Bölüm 4: MAÇ (yeni sahada açılış maçı, lig 3. hafta, rakip tablodan ör. Muhtarlık Gençlik ya da Bakkal Gücü); Karar #3 sonucu (410 → otobüs mor-sarı / Burak'ın kalemi); eski otobüsle yeni sahaya taşınma (duman şakası), Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması (numaralı, fiyatlı) + 'Stadın adı ne olsun?'; günün kadrosu (7+3+lider) adları sesli; kasa defteri. | ZORUNLU: kadroya giremeyenlere sıcak duyuru (bkz. bolum4_zorunlu).",
-  "notlar": [
-    "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
-    "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
-    "2026-11-11: Bölüm 2 kullanım sınırı yüzünden 10 Kasım'da yayınlanamadı; sayfa sahibinin isteğiyle 11 Kasım öğlen hemen paylaşıldı (10 Kasım anması çıkarıldı). Ertesi günden itibaren 19:00 düzeni.",
-    "2026-11-11: Sayfa sahibi: her beğeni 100 TL; kasa defteri (gelir/harcama/kalan) her bölümde; puan tablosu ve yükseliş; her gün 7 oyuncu + 1 tribün lideri takip+yorumculardan; hem takip hem yorum → loca.",
-    "2026-11-11 (15:46): Sayfa sahibi yol haritası: belediye eski stat + eski otobüs ('Saha bizden, geliştirme sizden'); Bölüm 3 duyuru, Bölüm 4 taşınma; Bölüm 4'ten itibaren her bölüm 'Sahada neyi değiştirelim?' sorusu (en çok yorum alan yapılır); her bölüm yedek oyuncular da takip+yorumculardan.",
-    "2026-11-11 (15:51): Onaylanan ekler: stadın adı taraftardan, yeni otobüs hedefi 50.000 TL, kurgusal yerel sponsorlar (takipçi 150/300/500), derbi rakibi Karaduman Gücü (Bölüm 6 tanıtım, Bölüm 8 ilk derbi). Önce/sonra görüntüsü istenmedi.",
-    "2026-11-11 (16:26): Sayfa sahibi: reklam alanları şimdilik boş kalsın — sponsor gösterme/yazma yok.",
-    "2026-11-11 (16:33): Sayfa sahibi: yeni sahada tribün yalnız bir kenarda; bütçeye göre çoğaltılacak; tribüne sığmayan taraftar ayakta izler.",
-    "2026-11-11 (16:36): Sayfa sahibi: Bölüm 5'in sonunda taraftar grubu adı sorulacak; en çok beğenilen isim taraftar grubunun adı olacak.",
-    "2026-11-12: Sayfa sahibi Bölüm 2 verisi: 314 beğeni, 472 yorum, 228 takipçi; Bölüm 3 kadrosu ekran görüntülerinden kuruldu (sayfa sahibi 4 oyuncu seçti, kalanı Claude). Oyuncu adları artık seslendirmede söylenir.",
-    "2026-11-12: Bölüm 3 sayfa sahibinin isteğiyle 13:00'te + 13:04 'yayında' hikâyesi. Bundan sonra 19:00 düzeni; sayfa sahibi isterse saat dışı paylaşılabilir.",
-    "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun.",
-    "2026-11-12 (22:46): Sayfa sahibi: Bölüm 4'te takıma giremeyenlere güzel bir duyuru — herkesi takıma almaya çalışıyoruz, alamadıklarımız için ayrı sürprizler olacak.",
-    "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı.",
-    "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10.",
-    "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü)."
-  ],
-  "gecmis": [
-    {
-      "bolum": 1,
-      "tarih": "2026-11-09",
-      "ozet": "Kuruluş: Cem, Necmi abi ve kadro (Yasin, Selim, Burak) tanıtıldı; kalecimiz yok; hedef Süper Lig; karar #1: 100 beğeni geçerse kaleye Necmi abi, geçmezse Burak.",
-      "begeni": 132,
-      "yorum": 90,
-      "izlenme": 3632
-    },
-    {
-      "bolum": 2,
-      "tarih": "2026-11-11",
-      "ozet": "Karar #1 tuttu (132 beğeni): Necmi abi kaleye geçti ama ışıkları kapatmak için bıraktı. Yeni kural 1 beğeni=100 TL; kasa 13.200 TL gelir, 2.800 TL harcama, 10.400 TL kaldı. Kadronun tamamı takipçi-yorumculardan; ilk maç Muhtarlık Gençlik 2-2 (2-0 gerideyken: 10 numaradan pas–forvet golü, kaleci 3. penaltıyı kurtardı, son dakika forvet). Halı Saha Ligi 3. sıra (▲5). Karar #2: 170 beğeni → ilk formalar / Burak'ın formaları.",
-      "begeni": 314,
-      "yorum": 472,
-      "izlenme": null
-    },
-    {
-      "bolum": 3,
-      "tarih": "2026-11-12",
-      "ozet": "Sayfa sahibinin isteğiyle 13:00'te paylaşıldı. Karar #2 tuttu (314): formalar alındı (4.500 TL), kasa 37.300 TL. Kadro adları sesli okundu. Lig 2. hafta: Anadoluspor 2-1 Kahveci Spor (Hasan kafa, Muhammed Raşit frikik), lider olduk. Belediye Başkanı eski stat + eski otobüs verdi ('Saha bizden, geliştirme sizden'). Yeni otobüs hedefi 50.000 TL. Karar #3: 410 beğeni → otobüs mor-sarı / Burak'ın kalemi.",
-      "begeni": null,
-      "yorum": null,
-      "izlenme": null
-    }
-  ],
-  "kasa_defteri": [
-    {
-      "bolum": 2,
-      "aciklama": "Bölüm 1: 132 beğeni × 100 TL",
-      "tutar": 13200
-    },
-    {
-      "bolum": 2,
-      "aciklama": "Saha kirası (1 hafta, Bölüm 2–8)",
-      "tutar": -1500
-    },
-    {
-      "bolum": 2,
-      "aciklama": "Kaleci eldiveni",
-      "tutar": -800
-    },
-    {
-      "bolum": 2,
-      "aciklama": "Yeni top",
-      "tutar": -500
-    },
-    {
-      "bolum": 3,
-      "aciklama": "Bölüm 2: 314 beğeni × 100 TL",
-      "tutar": 31400
-    },
-    {
-      "bolum": 3,
-      "aciklama": "Kulüp formaları (Karar #2)",
-      "tutar": -4500
-    }
-  ],
-  "lig_tablosu": {
-    "lig": "Halı Saha Ligi",
-    "hafta": 2,
-    "sampiyonluk": "5 galibiyetle üst lige çıkılır",
-    "takimlar": [
-      {
-        "takim": "ANADOLUSPOR",
-        "O": 2,
-        "G": 1,
-        "B": 1,
-        "M": 0,
-        "AG": 4,
-        "YG": 3,
-        "P": 4
-      },
-      {
-        "takim": "MUHTARLIK GENÇLİK",
-        "O": 2,
-        "G": 1,
-        "B": 1,
-        "M": 0,
-        "AG": 3,
-        "YG": 2,
-        "P": 4
-      },
-      {
-        "takim": "BAKKAL GÜCÜ",
-        "O": 2,
-        "G": 1,
-        "B": 0,
-        "M": 1,
-        "AG": 3,
-        "YG": 2,
-        "P": 3
-      },
-      {
-        "takim": "KAHVECİ SPOR",
-        "O": 2,
-        "G": 1,
-        "B": 0,
-        "M": 1,
-        "AG": 3,
-        "YG": 2,
-        "P": 3
-      },
-      {
-        "takim": "BERBER FK",
-        "O": 2,
-        "G": 1,
-        "B": 0,
-        "M": 1,
-        "AG": 1,
-        "YG": 2,
-        "P": 3
-      },
-      {
-        "takim": "SANAYİ DEMİR",
-        "O": 2,
-        "G": 0,
-        "B": 2,
-        "M": 0,
-        "AG": 2,
-        "YG": 2,
-        "P": 2
-      },
-      {
-        "takim": "PAZAR YILDIZ",
-        "O": 2,
-        "G": 0,
-        "B": 1,
-        "M": 1,
-        "AG": 1,
-        "YG": 2,
-        "P": 1
-      },
-      {
-        "takim": "FIRIN SPOR",
-        "O": 2,
-        "G": 0,
-        "B": 1,
-        "M": 1,
-        "AG": 2,
-        "YG": 4,
-        "P": 1
-      }
-    ],
-    "anadoluspor_sira": 1,
-    "onceki_sira": 3,
-    "hafta_sonuclari": {
-      "1": [
-        "Anadoluspor 2-2 Muhtarlık Gençlik",
-        "Bakkal Gücü 3-1 Fırın Spor",
-        "Kahveci Spor 2-0 Berber FK",
-        "Sanayi Demir 1-1 Pazar Yıldız"
-      ],
-      "2": [
-        "Anadoluspor 2-1 Kahveci Spor",
-        "Bakkal Gücü 0-1 Muhtarlık Gençlik",
-        "Sanayi Demir 1-1 Fırın Spor",
-        "Pazar Yıldız 0-1 Berber FK"
-      ]
-    }
+  {
+   "bolum": 3,
+   "tarih": "2026-11-12",
+   "ozet": "Sayfa sahibinin isteğiyle 13:00'te paylaşıldı. Karar #2 tuttu (314): formalar alındı (4.500 TL), kasa 37.300 TL. Kadro adları sesli okundu. Lig 2. hafta: Anadoluspor 2-1 Kahveci Spor (Hasan kafa, Muhammed Raşit frikik), lider olduk. Belediye Başkanı eski stat + eski otobüs verdi ('Saha bizden, geliştirme sizden'). Yeni otobüs hedefi 50.000 TL. Karar #3: 410 beğeni → otobüs mor-sarı / Burak'ın kalemi.",
+   "begeni": 40,
+   "yorum": 89,
+   "izlenme": 1792
   },
-  "yol_haritasi": {
-    "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
-    "4": "MAÇ: yeni sahada AÇILIŞ MAÇI (lig 3. hafta). Eski otobüsle taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması + 'Stadın adı ne olsun?'",
-    "5": "MAÇ (lig 4. hafta); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı, sonra her bölüm); oylama sonucu varsa ilk saha geliştirmesi; videonun sonunda taraftar grubu adı sorusu",
-    "6": "MAÇ (lig 5. hafta); derbi rakibi KARADUMAN GÜCÜ tanıtılır",
-    "8": "MAÇ: ilk Komşu Derbisi (lig dışı kupa maçı, lig haftası ilerlemez)",
-    "7": "MAÇ (lig 6. hafta)",
-    "9": "MAÇ (lig 7. hafta); SÜRPRİZ 2 duyurulur: 'Yarın TARAFTAR MAÇI!'",
-    "10": "TARAFTAR MAÇI: kadro tamamen hiç oynamamış takipçi+yorumculardan, rakip Belediye Personel Takımı (kalede Başkan); lig haftası ilerlemez"
-  },
-  "saha": {
-    "mevcut": "Necmi abinin halı sahası",
-    "yeni": "belediyenin eski stadı (ad henüz yok)",
-    "tasinma_bolumu": 4,
-    "seviye": 0,
-    "gelistirmeler": [],
-    "acik_oylama": null,
-    "not": "Saha belediyeden, geliştirmeler kulüp kasasından. Bölüm 4'ten sonra halı saha kirası yok.",
-    "tribun": {
-      "yer": "yalnız bir uzun kenar (eski, küçük); ortadaki gölgelikli sıralar loca",
-      "kapasite": 50,
-      "ayakta": "sığmayanlar tel örgü/saha kenarı boyunca ayakta izler",
-      "genisleme_secenekleri": [
-        {
-          "is": "Tribünü genişlet (+50 koltuk)",
-          "tl": 10000,
-          "tekrar": true
-        },
-        {
-          "is": "Kale arkasına tribün",
-          "tl": 20000
-        },
-        {
-          "is": "Karşı tarafa tribün",
-          "tl": 30000
-        }
-      ],
-      "yapilanlar": []
-    },
-    "durum": "Bölüm 3'te duyuruldu; Bölüm 4'te taşınma (arka plan varliklar/arka/eski_stadyum.jpg — tribün sıraları ölçülmedi, isimli kalabalık için kullanma)"
-  },
-  "otobus": {
-    "durum": "Bölüm 3'te geldi: belediyenin eski, dumanlı otobüsü (varliklar/karakter/otobus.png; boyalı hâli otobus_morsari.png)",
-    "degisim": "kasa giderlerden sonra 50.000 TL'yi geçince yeni otobüs alınır",
-    "yeni_otobus_hedefi_tl": 50000
-  },
-  "yedek_sayisi": 3,
-  "stadyum_adi": null,
-  "sponsorlar": {
-    "durum": "YOK — reklam alanları sayfa sahibinin isteğiyle şimdilik boş",
-    "aktif": [],
-    "askidaki_plan": [
-      {
-        "ad": "Usta Döner",
-        "yer": "forma göğsü",
-        "esik_takipci": 150,
-        "gelir_tl": 2500
-      },
-      {
-        "ad": "Yıldız Market",
-        "yer": "tribün panosu",
-        "esik_takipci": 300,
-        "gelir_tl": 4000
-      },
-      {
-        "ad": "Gül Pastanesi",
-        "yer": "otobüs reklamı",
-        "esik_takipci": 500,
-        "gelir_tl": 6000
-      }
-    ]
-  },
-  "derbi": {
-    "rakip": "KARADUMAN GÜCÜ",
-    "tanitim_bolumu": 6,
-    "ilk_derbi_bolumu": 8,
-    "siklik": "yaklaşık her 4 maç bölümünde bir",
-    "skorlar": []
-  },
-  "taraftar_grubu": {
-    "ad": null,
-    "soru_bolumu": 5,
-    "kural": "en çok beğenilen yorumdaki isim (sayfa sahibinin ekran görüntüsünden); uygunsuzsa sıradaki",
-    "oneren": null,
-    "aciklandigi_bolum": null
-  },
-  "sayfa_sahibi_verisi": {
-    "bolum": 2,
-    "tarih": "2026-11-12 11:51",
-    "begeni": 314,
-    "yorum": 472,
-    "takipci": 228,
-    "not": "Sayfa sahibinin verdiği sayılar. ADIM 2/3'te Bölüm 2 için bunları kullan (Metricool daha yüksek gösterirse yükseği). Bölüm 2 → kasa +31.400 TL, Karar #2 (170) TUTTU → formalar alınır."
-  },
-  "bolum4_zorunlu": [
-    "KADROYA GİREMEYENLERE DUYURU (sayfa sahibi, 2026-11-12, Bölüm 4'te ZORUNLU): kadro/yedek tanıtımından hemen sonra ~6-8 sn'lik sıcak bir bölüm. Anlatım örneği (anlamı koru, kelimeleri bölüme uydur): 'Kadroya giremeyen arkadaşlar, sakın üzülmeyin! Herkesi sırayla takıma almaya çalışıyoruz. Bu sefer alamadıklarımız için de ayrı sürprizlerimiz var... yakında!' Ekranda: 'SIRA SİZDE!' / 'HERKES SIRAYLA KADROYA' etiketi + 'SÜRPRİZ YAKINDA 🎁' yerine yazıyla 'SÜRPRİZ YAKINDA!' (emoji fontta yok), arka planda tribün/loca kalabalığı ya da Cem hocanın el sallaması. Sürprizin ne olduğunu SÖYLEME ve somut vaat verme (ör. ödül, para, hediye); sadece merak uyandır. Açıklamaya da tek satır ekle.",
-    "KADIN FUTBOLCU MERVE (sayfa sahibi, 2026-11-13, ZORUNLU): forvet @merveaynkfc takımın İLK KADIN FUTBOLCUSU — ona özel. ADIM 6'da önce karakter `oyuncu_forvet_kadin` üret (stil referansı düğümü ISbFe07kniQBedi2K7LS bağlı, gpt-image-2.5-sunburst, 16:9 2K, düz açık gri #d9d9d9 arka plan, tek figür, tam boy): genç kadın futbolcu, at kuyruğu saç, mor forma sarı yaka ve kol şeritleri, göğüste sarı 9 numara, siyah şort, mor-sarı tozluk, krampon, kendinden emin gülümseme, bir ayağı topun üstünde ya da şut pozu; yazı/logo yok. kes.py ile varliklar/karakter/oyuncu_forvet_kadin.png olarak kes ve gözle kontrol et. Üretilemezse BİR kez daha dene; yine olmazsa `forvet` figürüyle devam et ve SendUserMessage'da belirt. Videoda: kadro tanıtımında forvet sırası gelince özel an — anlatım ör. 'Ve forvette... takımımızın ilk kadın futbolcusu Merve!', ekranda 'İLK KADIN FUTBOLCUMUZ!' etiketi (damga/etiket) ve kısa alkış/tezahürat sesi; maçta Merve'ye bir gol ya da asist ver. Açıklamada da öne çık.",
-    "KADRO HAZIR (taraftarlar.json kadro_gecmisi bölüm 4): 7 asil sayfa sahibinin seçimi, yeniden seçme. Okunuşlar: Ketizmen (sayfa sahibinin isteği; 'Fatma' DEME), Deniz, Selahattin, Taha, Kartal Aras Çağan, Hamza, Merve; yedekler Mürsel, Kamuran, Çınar; tribün lideri Tuna."
-  ],
-  "acik_sozler": [
-    {
-      "tarih": "2026-11-12",
-      "bolum": 4,
-      "soz": "Kadroya giremeyenler için 'ayrı sürprizler' Bölüm 4'te duyurulur (içerik açıklanmaz).",
-      "sürprizler": [
-        "Formada isim — Bölüm 5'te açıklanır, sonra her bölüm forma duvarı",
-        "Taraftar Maçı — Bölüm 9'da duyurulur, ilki Bölüm 10, sonra ayda bir"
-      ]
-    }
-  ],
-  "taraftar_maci": {
-    "ilk_bolum": 10,
-    "siklik": "ayda bir (≈ her 30 bölüm: 40, 70…)",
-    "rakip": "Belediye Personel Takımı (kalede Belediye Başkanı)",
-    "oynananlar": [],
-    "duyuru_bolumu": 9
-  },
-  "sayfa_sahibi_verisi_b3": {
-    "tarih": "2026-11-13 16:29",
-    "takipci": 264,
-    "not": "Takipçi sayısı sayfa sahibinin ekran görüntüsünden (264). Beğeni/yorum Metricool'dan alınır."
+  {
+   "bolum": 4,
+   "tarih": "2026-11-13",
+   "ozet": "Karar #3 tutmadı (40 beğeni, hedef 410): Burak otobüse kalemle 'Anadoluspor' yazdı. Eski otobüsle yeni sahaya taşınma (duman, taraftar itti); Necmi abi saha sorumlusu, kira bitti. Kasa +4.000, −1.500 (mazot, kireç) → 39.800 TL. Merve takımın ilk kadın futbolcusu (forvet). Kadroya giremeyenlere 'sürprizler yakında' duyurusu. Lig 3. hafta açılış maçı: Anadoluspor 3-3 Bakkal Gücü (0-2 geriden Hamza, Kartal Aras Çağan; 2-3 sonrası Ketizmen penaltı kurtardı; 90+3 Merve). 5 puanla zirvede (atılan golle). İlk saha oylaması (1 fileler 1.500 / 2 tribün boyası 4.000 / 3 projektörler 6.000 / 4 +50 koltuk 10.000) + stat adı soruldu. Karar #4: 50 beğeni → otobüs mor-sarı / Burak'ın yazısı yağmurda silinir.",
+   "begeni": null,
+   "yorum": null,
+   "izlenme": null
   }
+ ],
+ "kasa_defteri": [
+  {
+   "bolum": 2,
+   "aciklama": "Bölüm 1: 132 beğeni × 100 TL",
+   "tutar": 13200
+  },
+  {
+   "bolum": 2,
+   "aciklama": "Saha kirası (1 hafta, Bölüm 2–8)",
+   "tutar": -1500
+  },
+  {
+   "bolum": 2,
+   "aciklama": "Kaleci eldiveni",
+   "tutar": -800
+  },
+  {
+   "bolum": 2,
+   "aciklama": "Yeni top",
+   "tutar": -500
+  },
+  {
+   "bolum": 3,
+   "aciklama": "Bölüm 2: 314 beğeni × 100 TL",
+   "tutar": 31400
+  },
+  {
+   "bolum": 3,
+   "aciklama": "Kulüp formaları (Karar #2)",
+   "tutar": -4500
+  },
+  {
+   "bolum": 4,
+   "aciklama": "Bölüm 3: 40 beğeni × 100 TL",
+   "tutar": 4000
+  },
+  {
+   "bolum": 4,
+   "aciklama": "Otobüse mazot (taşınma)",
+   "tutar": -1000
+  },
+  {
+   "bolum": 4,
+   "aciklama": "Çizgi kireci (yeni saha)",
+   "tutar": -500
+  }
+ ],
+ "lig_tablosu": {
+  "lig": "Halı Saha Ligi",
+  "hafta": 3,
+  "sampiyonluk": "5 galibiyetle üst lige çıkılır",
+  "takimlar": [
+   {
+    "takim": "ANADOLUSPOR",
+    "O": 3,
+    "G": 1,
+    "B": 2,
+    "M": 0,
+    "AG": 7,
+    "YG": 6,
+    "P": 5
+   },
+   {
+    "takim": "MUHTARLIK GENÇLİK",
+    "O": 3,
+    "G": 1,
+    "B": 2,
+    "M": 0,
+    "AG": 5,
+    "YG": 4,
+    "P": 5
+   },
+   {
+    "takim": "SANAYİ DEMİR",
+    "O": 3,
+    "G": 1,
+    "B": 2,
+    "M": 0,
+    "AG": 4,
+    "YG": 3,
+    "P": 5
+   },
+   {
+    "takim": "BAKKAL GÜCÜ",
+    "O": 3,
+    "G": 1,
+    "B": 1,
+    "M": 1,
+    "AG": 6,
+    "YG": 5,
+    "P": 4
+   },
+   {
+    "takim": "BERBER FK",
+    "O": 3,
+    "G": 1,
+    "B": 1,
+    "M": 1,
+    "AG": 3,
+    "YG": 4,
+    "P": 4
+   },
+   {
+    "takim": "KAHVECİ SPOR",
+    "O": 3,
+    "G": 1,
+    "B": 0,
+    "M": 2,
+    "AG": 4,
+    "YG": 4,
+    "P": 3
+   },
+   {
+    "takim": "PAZAR YILDIZ",
+    "O": 3,
+    "G": 0,
+    "B": 2,
+    "M": 1,
+    "AG": 3,
+    "YG": 4,
+    "P": 2
+   },
+   {
+    "takim": "FIRIN SPOR",
+    "O": 3,
+    "G": 0,
+    "B": 2,
+    "M": 1,
+    "AG": 4,
+    "YG": 6,
+    "P": 2
+   }
+  ],
+  "anadoluspor_sira": 1,
+  "onceki_sira": 1,
+  "hafta_sonuclari": {
+   "1": [
+    "Anadoluspor 2-2 Muhtarlık Gençlik",
+    "Bakkal Gücü 3-1 Fırın Spor",
+    "Kahveci Spor 2-0 Berber FK",
+    "Sanayi Demir 1-1 Pazar Yıldız"
+   ],
+   "2": [
+    "Anadoluspor 2-1 Kahveci Spor",
+    "Bakkal Gücü 0-1 Muhtarlık Gençlik",
+    "Sanayi Demir 1-1 Fırın Spor",
+    "Pazar Yıldız 0-1 Berber FK"
+   ],
+   "3": [
+    "Anadoluspor 3-3 Bakkal Gücü",
+    "Muhtarlık Gençlik 2-2 Berber FK",
+    "Kahveci Spor 1-2 Sanayi Demir",
+    "Pazar Yıldız 2-2 Fırın Spor"
+   ]
+  }
+ },
+ "yol_haritasi": {
+  "3": "Belediye duyurusu: Başkan eski stadı ve eski belediye otobüsünü veriyor ('Saha bizden, geliştirme sizden'); kapanış 'Yarın yeni sahamıza taşınıyoruz!'",
+  "4": "MAÇ: yeni sahada AÇILIŞ MAÇI (lig 3. hafta). Eski otobüsle taşınma; Necmi abi saha sorumlusu; ilk 'Sahada neyi değiştirelim?' oylaması + 'Stadın adı ne olsun?'",
+  "5": "MAÇ (lig 4. hafta); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı, sonra her bölüm); oylama sonucu varsa ilk saha geliştirmesi; videonun sonunda taraftar grubu adı sorusu",
+  "6": "MAÇ (lig 5. hafta); derbi rakibi KARADUMAN GÜCÜ tanıtılır",
+  "8": "MAÇ: ilk Komşu Derbisi (lig dışı kupa maçı, lig haftası ilerlemez)",
+  "7": "MAÇ (lig 6. hafta)",
+  "9": "MAÇ (lig 7. hafta); SÜRPRİZ 2 duyurulur: 'Yarın TARAFTAR MAÇI!'",
+  "10": "TARAFTAR MAÇI: kadro tamamen hiç oynamamış takipçi+yorumculardan, rakip Belediye Personel Takımı (kalede Başkan); lig haftası ilerlemez"
+ },
+ "saha": {
+  "mevcut": "belediyenin eski stadı (Bölüm 4'te taşınıldı)",
+  "yeni": "belediyenin eski stadı (ad henüz yok)",
+  "tasinma_bolumu": 4,
+  "seviye": 0,
+  "gelistirmeler": [],
+  "acik_oylama": {
+   "bolum": 4,
+   "secenekler": [
+    {
+     "no": 1,
+     "is": "Kale fileleri",
+     "tl": 1500
+    },
+    {
+     "no": 2,
+     "is": "Tribün boyası",
+     "tl": 4000
+    },
+    {
+     "no": 3,
+     "is": "Projektörler",
+     "tl": 6000
+    },
+    {
+     "no": 4,
+     "is": "Tribünü genişlet (+50 koltuk)",
+     "tl": 10000
+    }
+   ],
+   "sonuc": null,
+   "not": "Kazanan yalnız sayfa sahibinin yorum ekran görüntülerinden ya da söylediğinden; yoksa oylama sürüyor."
+  },
+  "not": "Saha belediyeden, geliştirmeler kulüp kasasından. Bölüm 4'ten sonra halı saha kirası yok.",
+  "tribun": {
+   "yer": "yalnız bir uzun kenar (eski, küçük); ortadaki gölgelikli sıralar loca",
+   "kapasite": 50,
+   "ayakta": "sığmayanlar tel örgü/saha kenarı boyunca ayakta izler",
+   "genisleme_secenekleri": [
+    {
+     "is": "Tribünü genişlet (+50 koltuk)",
+     "tl": 10000,
+     "tekrar": true
+    },
+    {
+     "is": "Kale arkasına tribün",
+     "tl": 20000
+    },
+    {
+     "is": "Karşı tarafa tribün",
+     "tl": 30000
+    }
+   ],
+   "yapilanlar": []
+  },
+  "durum": "Bölüm 4'te taşınıldı (arka plan eski_stadyum.jpg — tribün sıraları ölçülmedi, isimli kalabalık için tribun/loca kullanılıyor)"
+ },
+ "otobus": {
+  "durum": "Bölüm 3'te geldi: belediyenin eski, dumanlı otobüsü (varliklar/karakter/otobus.png; boyalı hâli otobus_morsari.png) · Bölüm 4: Karar #3 tutmadı, Burak kalemle 'Anadoluspor' yazdı (varliklar/karakter/otobus_kalem.png)",
+  "degisim": "kasa giderlerden sonra 50.000 TL'yi geçince yeni otobüs alınır",
+  "yeni_otobus_hedefi_tl": 50000
+ },
+ "yedek_sayisi": 3,
+ "stadyum_adi": null,
+ "sponsorlar": {
+  "durum": "YOK — reklam alanları sayfa sahibinin isteğiyle şimdilik boş",
+  "aktif": [],
+  "askidaki_plan": [
+   {
+    "ad": "Usta Döner",
+    "yer": "forma göğsü",
+    "esik_takipci": 150,
+    "gelir_tl": 2500
+   },
+   {
+    "ad": "Yıldız Market",
+    "yer": "tribün panosu",
+    "esik_takipci": 300,
+    "gelir_tl": 4000
+   },
+   {
+    "ad": "Gül Pastanesi",
+    "yer": "otobüs reklamı",
+    "esik_takipci": 500,
+    "gelir_tl": 6000
+   }
+  ]
+ },
+ "derbi": {
+  "rakip": "KARADUMAN GÜCÜ",
+  "tanitim_bolumu": 6,
+  "ilk_derbi_bolumu": 8,
+  "siklik": "yaklaşık her 4 maç bölümünde bir",
+  "skorlar": []
+ },
+ "taraftar_grubu": {
+  "ad": null,
+  "soru_bolumu": 5,
+  "kural": "en çok beğenilen yorumdaki isim (sayfa sahibinin ekran görüntüsünden); uygunsuzsa sıradaki",
+  "oneren": null,
+  "aciklandigi_bolum": null
+ },
+ "sayfa_sahibi_verisi": {
+  "bolum": 2,
+  "tarih": "2026-11-12 11:51",
+  "begeni": 314,
+  "yorum": 472,
+  "takipci": 228,
+  "not": "Sayfa sahibinin verdiği sayılar. ADIM 2/3'te Bölüm 2 için bunları kullan (Metricool daha yüksek gösterirse yükseği). Bölüm 2 → kasa +31.400 TL, Karar #2 (170) TUTTU → formalar alınır."
+ },
+ "bolum4_zorunlu": [
+  "KADROYA GİREMEYENLERE DUYURU (sayfa sahibi, 2026-11-12, Bölüm 4'te ZORUNLU): kadro/yedek tanıtımından hemen sonra ~6-8 sn'lik sıcak bir bölüm. Anlatım örneği (anlamı koru, kelimeleri bölüme uydur): 'Kadroya giremeyen arkadaşlar, sakın üzülmeyin! Herkesi sırayla takıma almaya çalışıyoruz. Bu sefer alamadıklarımız için de ayrı sürprizlerimiz var... yakında!' Ekranda: 'SIRA SİZDE!' / 'HERKES SIRAYLA KADROYA' etiketi + 'SÜRPRİZ YAKINDA 🎁' yerine yazıyla 'SÜRPRİZ YAKINDA!' (emoji fontta yok), arka planda tribün/loca kalabalığı ya da Cem hocanın el sallaması. Sürprizin ne olduğunu SÖYLEME ve somut vaat verme (ör. ödül, para, hediye); sadece merak uyandır. Açıklamaya da tek satır ekle.",
+  "KADIN FUTBOLCU MERVE (sayfa sahibi, 2026-11-13, ZORUNLU): forvet @merveaynkfc takımın İLK KADIN FUTBOLCUSU — ona özel. ADIM 6'da önce karakter `oyuncu_forvet_kadin` üret (stil referansı düğümü ISbFe07kniQBedi2K7LS bağlı, gpt-image-2.5-sunburst, 16:9 2K, düz açık gri #d9d9d9 arka plan, tek figür, tam boy): genç kadın futbolcu, at kuyruğu saç, mor forma sarı yaka ve kol şeritleri, göğüste sarı 9 numara, siyah şort, mor-sarı tozluk, krampon, kendinden emin gülümseme, bir ayağı topun üstünde ya da şut pozu; yazı/logo yok. kes.py ile varliklar/karakter/oyuncu_forvet_kadin.png olarak kes ve gözle kontrol et. Üretilemezse BİR kez daha dene; yine olmazsa `forvet` figürüyle devam et ve SendUserMessage'da belirt. Videoda: kadro tanıtımında forvet sırası gelince özel an — anlatım ör. 'Ve forvette... takımımızın ilk kadın futbolcusu Merve!', ekranda 'İLK KADIN FUTBOLCUMUZ!' etiketi (damga/etiket) ve kısa alkış/tezahürat sesi; maçta Merve'ye bir gol ya da asist ver. Açıklamada da öne çık.",
+  "KADRO HAZIR (taraftarlar.json kadro_gecmisi bölüm 4): 7 asil sayfa sahibinin seçimi, yeniden seçme. Okunuşlar: Ketizmen (sayfa sahibinin isteği; 'Fatma' DEME), Deniz, Selahattin, Taha, Kartal Aras Çağan, Hamza, Merve; yedekler Mürsel, Kamuran, Çınar; tribün lideri Tuna."
+ ],
+ "acik_sozler": [
+  {
+   "tarih": "2026-11-12",
+   "bolum": 4,
+   "soz": "Kadroya giremeyenler için 'ayrı sürprizler' Bölüm 4'te duyurulur (içerik açıklanmaz).",
+   "sürprizler": [
+    "Formada isim — Bölüm 5'te açıklanır, sonra her bölüm forma duvarı",
+    "Taraftar Maçı — Bölüm 9'da duyurulur, ilki Bölüm 10, sonra ayda bir"
+   ],
+   "durum": "Bölüm 4'te duyuruldu (içerik açıklanmadı)"
+  }
+ ],
+ "taraftar_maci": {
+  "ilk_bolum": 10,
+  "siklik": "ayda bir (≈ her 30 bölüm: 40, 70…)",
+  "rakip": "Belediye Personel Takımı (kalede Belediye Başkanı)",
+  "oynananlar": [],
+  "duyuru_bolumu": 9
+ },
+ "sayfa_sahibi_verisi_b3": {
+  "tarih": "2026-11-13 16:29",
+  "takipci": 264,
+  "not": "Takipçi sayısı sayfa sahibinin ekran görüntüsünden (264). Beğeni/yorum Metricool'dan alınır. Bölüm 3 beğenisi 40 (sayfa sahibi, 2026-11-13 18:10); yorum 89 ve izlenme 1.792 Metricool'dan.",
+  "begeni": 40
+ },
+ "stadyum_adi_sorusu": {
+  "soruldu_bolum": 4,
+  "oneriler": [],
+  "not": "Öneriler yalnız sayfa sahibinin ekran görüntülerinden; 3 finalist sonraki uygun bölümde oylanır."
+ }
 }
