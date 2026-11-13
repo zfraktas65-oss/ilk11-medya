@@ -54,7 +54,8 @@
     "2026-11-12 (12:44): Sayfa sahibi: her bölümde maç olsun.",
     "2026-11-12 (22:46): Sayfa sahibi: Bölüm 4'te takıma giremeyenlere güzel bir duyuru — herkesi takıma almaya çalışıyoruz, alamadıklarımız için ayrı sürprizler olacak.",
     "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı.",
-    "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10."
+    "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10.",
+    "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü)."
   ],
   "gecmis": [
     {
@@ -312,7 +313,9 @@
     "not": "Sayfa sahibinin verdiği sayılar. ADIM 2/3'te Bölüm 2 için bunları kullan (Metricool daha yüksek gösterirse yükseği). Bölüm 2 → kasa +31.400 TL, Karar #2 (170) TUTTU → formalar alınır."
   },
   "bolum4_zorunlu": [
-    "KADROYA GİREMEYENLERE DUYURU (sayfa sahibi, 2026-11-12, Bölüm 4'te ZORUNLU): kadro/yedek tanıtımından hemen sonra ~6-8 sn'lik sıcak bir bölüm. Anlatım örneği (anlamı koru, kelimeleri bölüme uydur): 'Kadroya giremeyen arkadaşlar, sakın üzülmeyin! Herkesi sırayla takıma almaya çalışıyoruz. Bu sefer alamadıklarımız için de ayrı sürprizlerimiz var... yakında!' Ekranda: 'SIRA SİZDE!' / 'HERKES SIRAYLA KADROYA' etiketi + 'SÜRPRİZ YAKINDA 🎁' yerine yazıyla 'SÜRPRİZ YAKINDA!' (emoji fontta yok), arka planda tribün/loca kalabalığı ya da Cem hocanın el sallaması. Sürprizin ne olduğunu SÖYLEME ve somut vaat verme (ör. ödül, para, hediye); sadece merak uyandır. Açıklamaya da tek satır ekle."
+    "KADROYA GİREMEYENLERE DUYURU (sayfa sahibi, 2026-11-12, Bölüm 4'te ZORUNLU): kadro/yedek tanıtımından hemen sonra ~6-8 sn'lik sıcak bir bölüm. Anlatım örneği (anlamı koru, kelimeleri bölüme uydur): 'Kadroya giremeyen arkadaşlar, sakın üzülmeyin! Herkesi sırayla takıma almaya çalışıyoruz. Bu sefer alamadıklarımız için de ayrı sürprizlerimiz var... yakında!' Ekranda: 'SIRA SİZDE!' / 'HERKES SIRAYLA KADROYA' etiketi + 'SÜRPRİZ YAKINDA 🎁' yerine yazıyla 'SÜRPRİZ YAKINDA!' (emoji fontta yok), arka planda tribün/loca kalabalığı ya da Cem hocanın el sallaması. Sürprizin ne olduğunu SÖYLEME ve somut vaat verme (ör. ödül, para, hediye); sadece merak uyandır. Açıklamaya da tek satır ekle.",
+    "KADIN FUTBOLCU MERVE (sayfa sahibi, 2026-11-13, ZORUNLU): forvet @merveaynkfc takımın İLK KADIN FUTBOLCUSU — ona özel. ADIM 6'da önce karakter `oyuncu_forvet_kadin` üret (stil referansı düğümü ISbFe07kniQBedi2K7LS bağlı, gpt-image-2.5-sunburst, 16:9 2K, düz açık gri #d9d9d9 arka plan, tek figür, tam boy): genç kadın futbolcu, at kuyruğu saç, mor forma sarı yaka ve kol şeritleri, göğüste sarı 9 numara, siyah şort, mor-sarı tozluk, krampon, kendinden emin gülümseme, bir ayağı topun üstünde ya da şut pozu; yazı/logo yok. kes.py ile varliklar/karakter/oyuncu_forvet_kadin.png olarak kes ve gözle kontrol et. Üretilemezse BİR kez daha dene; yine olmazsa `forvet` figürüyle devam et ve SendUserMessage'da belirt. Videoda: kadro tanıtımında forvet sırası gelince özel an — anlatım ör. 'Ve forvette... takımımızın ilk kadın futbolcusu Merve!', ekranda 'İLK KADIN FUTBOLCUMUZ!' etiketi (damga/etiket) ve kısa alkış/tezahürat sesi; maçta Merve'ye bir gol ya da asist ver. Açıklamada da öne çık.",
+    "KADRO HAZIR (taraftarlar.json kadro_gecmisi bölüm 4): 7 asil sayfa sahibinin seçimi, yeniden seçme. Okunuşlar: Fatma, Deniz, Selahattin, Taha, Kartal Aras Çağan, Hamza, Merve; yedekler Mürsel, Kamuran, Çınar; tribün lideri Tuna."
   ],
   "acik_sozler": [
     {
@@ -331,5 +334,10 @@
     "rakip": "Belediye Personel Takımı (kalede Belediye Başkanı)",
     "oynananlar": [],
     "duyuru_bolumu": 9
+  },
+  "sayfa_sahibi_verisi_b3": {
+    "tarih": "2026-11-13 16:29",
+    "takipci": 264,
+    "not": "Takipçi sayısı sayfa sahibinin ekran görüntüsünden (264). Beğeni/yorum Metricool'dan alınır."
   }
 }

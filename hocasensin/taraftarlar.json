@@ -5,12 +5,12 @@
    "rol": "tribun_lideri",
    "unvan": "TRİBÜN LİDERİ",
    "karakter": "tribun_lideri",
-   "kullanici": "yusuf_aras7y",
-   "okunus": "Yusuf",
+   "kullanici": "tunamisiroglu37",
+   "okunus": "Tuna",
    "secen": "Claude",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   }
  ],
  "kadro": [
@@ -19,91 +19,93 @@
    "unvan": "KALECİ",
    "no": "1",
    "karakter": "taraftar_kaleci",
-   "kullanici": "yasar75899773993",
-   "okunus": "Yaşar",
-   "istek": "Kaleye beni koy",
+   "kullanici": "ketizmenfatma",
+   "okunus": "Fatma",
+   "istek": "Beni kaleciye al lütfen like atıp takip ediyorum",
    "secen": "sayfa sahibi",
-   "takip": false,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "takip": true,
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
    "rol": "stoper",
    "unvan": "STOPER",
    "no": "5",
    "karakter": "oyuncu_stoper",
-   "kullanici": "dorukateskosar",
-   "okunus": "Doruk",
-   "istek": "Stoper abi lütfen",
-   "secen": "Claude",
+   "kullanici": "deniz3457bjk",
+   "okunus": "Deniz",
+   "istek": "Abi kale veya stoper al beni her mevki oynuyorum",
+   "secen": "sayfa sahibi",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
-   "rol": "sag_kanat",
-   "unvan": "SAĞ KANAT",
-   "no": "7",
+   "rol": "def_orta_saha",
+   "unvan": "DEF. ORTA SAHA",
+   "no": "6",
    "karakter": "oyuncu_solbek",
-   "kullanici": "eymenaydn657",
-   "okunus": "Eymen",
-   "istek": "Abi sağ kanat",
-   "secen": "Claude",
+   "kullanici": "selahattin_erten63",
+   "okunus": "Selahattin",
+   "istek": "Defansif orta saha beni kat",
+   "secen": "sayfa sahibi",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
    "rol": "orta_saha",
    "unvan": "ORTA SAHA",
    "no": "8",
    "karakter": "oyuncu_ortasaha",
-   "kullanici": "alperenkudretbasturk",
-   "okunus": "Alperen",
-   "istek": "Ortasaha 8 10",
-   "secen": "Claude",
-   "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
-  },
-  {
-   "rol": "on_numara",
-   "unvan": "10 NUMARA",
-   "no": "10",
-   "karakter": "oyuncu_10",
-   "kullanici": "muhammed.rasit.aktas",
-   "okunus": "Muhammed Raşit",
-   "istek": "(sayfa sahibi seçti)",
+   "kullanici": "tahaakifylmaz",
+   "okunus": "Taha",
+   "istek": "Abi like attım beni orta sahayı alır mısın",
    "secen": "sayfa sahibi",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
    "rol": "sol_kanat",
    "unvan": "SOL KANAT",
    "no": "11",
    "karakter": "oyuncu_solkanat",
-   "kullanici": "sezginturk_",
-   "okunus": "Sezgin",
-   "istek": "(sayfa sahibi seçti)",
+   "kullanici": "kartalarascagan.81",
+   "okunus": "Kartal Aras Çağan",
+   "istek": "Sol kanat. Takipteyim",
    "secen": "sayfa sahibi",
-   "takip": false,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "takip": true,
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
+  },
+  {
+   "rol": "ikinci_forvet",
+   "unvan": "İKİNCİ FORVET",
+   "no": "10",
+   "karakter": "oyuncu_10",
+   "kullanici": "hamza_ortak02",
+   "okunus": "Hamza",
+   "istek": "Ya abi nezamandır yazıyor forvet nolur",
+   "secen": "sayfa sahibi",
+   "takip": true,
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
    "rol": "forvet",
    "unvan": "FORVET",
    "no": "9",
-   "karakter": "forvet",
-   "kullanici": "hasankaya.4444",
-   "okunus": "Hasan",
-   "istek": "Senin forvetin eksikmiş kardeşim ben geldim",
+   "karakter": "oyuncu_forvet_kadin",
+   "kullanici": "merveaynkfc",
+   "okunus": "Merve",
+   "istek": "Forvet olmak istiyorum",
    "secen": "sayfa sahibi",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null,
+   "ozel": "TAKIMIN İLK KADIN FUTBOLCUSU (sayfa sahibinin isteği, ona özel kadın futbolcu figürü)",
+   "yedek_karakter": "forvet"
   }
  ],
  "eski_kadro": {
@@ -577,10 +579,6 @@
    "gosterildi_bolum": null
   },
   {
-   "kullanici": "selahattin_erten63",
-   "gosterildi_bolum": null
-  },
-  {
    "kullanici": "sezgin_cengiz25",
    "gosterildi_bolum": 2
   },
@@ -875,10 +873,6 @@
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "deniz3457bjk",
-   "gosterildi_bolum": 3
-  },
-  {
    "kullanici": "denizq7",
    "gosterildi_bolum": 2
   },
@@ -991,10 +985,6 @@
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "hamza_ortak02",
-   "gosterildi_bolum": 3
-  },
-  {
    "kullanici": "hatice_altnbss",
    "gosterildi_bolum": 3
   },
@@ -1031,10 +1021,6 @@
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "imislifc2",
-   "gosterildi_bolum": null
-  },
-  {
    "kullanici": "ismailcirah07",
    "gosterildi_bolum": 2
   },
@@ -1061,10 +1047,6 @@
   {
    "kullanici": "kerim4toprak",
    "gosterildi_bolum": 2
-  },
-  {
-   "kullanici": "ketizmenfatma",
-   "gosterildi_bolum": null
   },
   {
    "kullanici": "kosif.56",
@@ -1132,10 +1114,6 @@
   },
   {
    "kullanici": "mertyildirim9377",
-   "gosterildi_bolum": null
-  },
-  {
-   "kullanici": "merveaynkfc",
    "gosterildi_bolum": null
   },
   {
@@ -1319,10 +1297,6 @@
    "gosterildi_bolum": 2
   },
   {
-   "kullanici": "tunamisiroglu37",
-   "gosterildi_bolum": null
-  },
-  {
    "kullanici": "tuncaym_095",
    "gosterildi_bolum": null
   },
@@ -1414,6 +1388,50 @@
    "kullanici": "zorbeymermi",
    "gosterildi_bolum": 2,
    "unvan": "YRD. HOCA"
+  },
+  {
+   "kullanici": "yasar75899773993",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "dorukateskosar",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "eymenaydn657",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "alperenkudretbasturk",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "muhammed.rasit.aktas",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "sezginturk_",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "hasankaya.4444",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "ege_akmn_",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "balayevffs",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "kaan218205",
+   "gosterildi_bolum": 3
+  },
+  {
+   "kullanici": "yusuf_aras7y",
+   "gosterildi_bolum": 3
   }
  ],
  "adaylar": [
@@ -3591,6 +3609,26 @@
    ],
    "tribun_lideri": "yusuf_aras7y",
    "not": "Sayfa sahibi seçti: yasar75899773993 (kaleci), muhammed.rasit.aktas (10), sezginturk_ (sol kanat), hasankaya.4444 (forvet). Claude seçti (takip + mevki yazan): dorukateskosar, eymenaydn657, alperenkudretbasturk; yedek ege_akmn_, balayevffs, kaan218205; tribün lideri yusuf_aras7y."
+  },
+  {
+   "bolum": 4,
+   "tarih": "2026-11-13",
+   "oyuncular": [
+    "ketizmenfatma",
+    "deniz3457bjk",
+    "selahattin_erten63",
+    "tahaakifylmaz",
+    "kartalarascagan.81",
+    "hamza_ortak02",
+    "merveaynkfc"
+   ],
+   "yedekler": [
+    "imislifc2",
+    "kamuran.celik.315",
+    "cinargulen808"
+   ],
+   "tribun_lideri": "tunamisiroglu37",
+   "not": "7 asil oyuncuyu sayfa sahibi seçti (tek tek gönderdiği yorumlar). merveaynkfc = takımın ilk kadın futbolcusu (forvet). Yedekler ve tribün lideri Claude: takip eden + yorum yapan, ilk kez."
   }
  ],
  "takip_kaynagi": "Takip: sayfa sahibinin 2026-11-12 takipçi ekran görüntüleri (görünen ~175 ad; toplam 228) + 2026-11-10 listesi. Yorum: Bölüm 2 yorum ekran görüntüleri (215 kişi) + Bölüm 1.",
@@ -3600,39 +3638,39 @@
    "unvan": "YEDEK KALECİ",
    "no": "12",
    "karakter": "taraftar_kaleci",
-   "kullanici": "ege_akmn_",
-   "okunus": "Ege",
-   "istek": "Ben kaleci",
+   "kullanici": "imislifc2",
+   "okunus": "Mürsel",
+   "istek": "yedek kalecei benim mürsəl",
    "secen": "Claude",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
+  },
+  {
+   "rol": "yedek",
+   "unvan": "YEDEK",
+   "no": "17",
+   "karakter": "oyuncu_solbek",
+   "kullanici": "kamuran.celik.315",
+   "okunus": "Kamuran",
+   "istek": "Abi sağ kanat yapsana beni",
+   "secen": "Claude",
+   "takip": true,
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   },
   {
    "rol": "yedek",
    "unvan": "YEDEK",
    "no": "14",
    "karakter": "oyuncu_ortasaha",
-   "kullanici": "balayevffs",
-   "okunus": "Balayev",
-   "istek": "Abi yedek oynarım yada mevkimi sen seçersin",
+   "kullanici": "cinargulen808",
+   "okunus": "Çınar",
+   "istek": "Çınar mevki ortasaha",
    "secen": "Claude",
    "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
-  },
-  {
-   "rol": "yedek",
-   "unvan": "YEDEK KANAT",
-   "no": "17",
-   "karakter": "oyuncu_solbek",
-   "kullanici": "kaan218205",
-   "okunus": "Kaan",
-   "istek": "Sağ Kanat",
-   "secen": "Claude",
-   "takip": true,
-   "eklendi": "2026-11-12",
-   "tanitildi_bolum": 3
+   "eklendi": "2026-11-13",
+   "tanitildi_bolum": null
   }
  ],
  "loca_kesik_isimler": {
