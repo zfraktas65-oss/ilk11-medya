@@ -5,17 +5,12 @@
  "sahneler": [
   {
    "bas": 0,
-   "arka": "eski_stadyum",
-   "bulanik": 3,
-   "karanlik": 0.75,
-   "renk": [
-    40,
-    10,
-    60
-   ],
+   "arka": "eski_stadyum_uzak",
+   "bulanik": 0,
+   "karanlik": 0.95,
    "zoom": [
-    1.05,
-    1.05
+    1.0,
+    1.0
    ],
    "merkez": [
     [
@@ -38,7 +33,7 @@
      "zemin": "mor",
      "egim": 0,
      "bas": 0,
-     "y": 720,
+     "y": 300,
      "anim": "fade",
      "sure": 0.05
     },
@@ -50,7 +45,7 @@
      "zemin": "sari",
      "egim": 0,
      "bas": 0,
-     "y": 840,
+     "y": 420,
      "anim": "fade",
      "sure": 0.05
     },
@@ -59,7 +54,7 @@
      "metin": "YAYINDA!",
      "boyut": 240,
      "bas": 0,
-     "y": 1030,
+     "y": 610,
      "anim": "fade",
      "sure": 0.05
     }
