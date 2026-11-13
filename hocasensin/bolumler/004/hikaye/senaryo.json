@@ -6,8 +6,8 @@
   {
    "bas": 0,
    "arka": "eski_stadyum",
-   "bulanik": 6,
-   "karanlik": 0.6,
+   "bulanik": 3,
+   "karanlik": 0.75,
    "renk": [
     40,
     10,
@@ -28,85 +28,7 @@
     ]
    ],
    "altyazi_y": false,
-   "karakterler": [
-    {
-     "ad": "taraftar_kaleci",
-     "h": 430,
-     "x": 140,
-     "ayak": 1205,
-     "bas": 0,
-     "faz": 0,
-     "etiket": "ketizmenfatma",
-     "etiket_alt": "KALECİ",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_stoper",
-     "h": 430,
-     "x": 395,
-     "ayak": 1205,
-     "bas": 0,
-     "faz": 0.2,
-     "etiket": "deniz3457bjk",
-     "etiket_alt": "STOPER",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_solbek",
-     "h": 430,
-     "x": 685,
-     "ayak": 1205,
-     "bas": 0,
-     "faz": 0.4,
-     "etiket": "selahattin_erten63",
-     "etiket_alt": "DEF. ORTA SAHA",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_ortasaha",
-     "h": 430,
-     "x": 940,
-     "ayak": 1205,
-     "bas": 0,
-     "faz": 0.6,
-     "etiket": "tahaakifylmaz",
-     "etiket_alt": "ORTA SAHA",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_solkanat",
-     "h": 520,
-     "x": 200,
-     "ayak": 1545,
-     "bas": 0,
-     "faz": 0.1,
-     "etiket": "kartalarascagan.81",
-     "etiket_alt": "SOL KANAT",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_forvet_kadin",
-     "h": 580,
-     "x": 540,
-     "ayak": 1560,
-     "bas": 0,
-     "faz": 0.5,
-     "etiket": "merveaynkfc",
-     "etiket_alt": "FORVET",
-     "giris": "none"
-    },
-    {
-     "ad": "oyuncu_10",
-     "h": 520,
-     "x": 880,
-     "ayak": 1545,
-     "bas": 0,
-     "faz": 0.3,
-     "etiket": "hamza_ortak02",
-     "etiket_alt": "İKİNCİ FORVET",
-     "giris": "none"
-    }
-   ],
+   "karakterler": [],
    "ogeler": [
     {
      "tip": "etiket",
@@ -116,7 +38,7 @@
      "zemin": "mor",
      "egim": 0,
      "bas": 0,
-     "y": 240,
+     "y": 720,
      "anim": "fade",
      "sure": 0.05
     },
@@ -128,64 +50,16 @@
      "zemin": "sari",
      "egim": 0,
      "bas": 0,
-     "y": 350,
+     "y": 840,
      "anim": "fade",
      "sure": 0.05
     },
     {
      "tip": "baslik",
      "metin": "YAYINDA!",
-     "boyut": 215,
+     "boyut": 240,
      "bas": 0,
-     "y": 530,
-     "anim": "fade",
-     "sure": 0.05
-    },
-    {
-     "tip": "etiket",
-     "metin": "YENİ SAHA + İLK KADIN FUTBOLCU!",
-     "boyut": 50,
-     "renk": "beyaz",
-     "zemin": "kirmizi",
-     "egim": -2,
-     "bas": 0,
-     "y": 700,
-     "anim": "fade",
-     "sure": 0.05
-    },
-    {
-     "tip": "etiket",
-     "metin": "AÇILIŞ MAÇI: BAKKAL GÜCÜ",
-     "boyut": 48,
-     "renk": "sari",
-     "zemin": "mor",
-     "egim": 0,
-     "bas": 0,
-     "y": 1615,
-     "anim": "fade",
-     "sure": 0.05
-    },
-    {
-     "tip": "etiket",
-     "metin": "SAHADA NEYİ DEĞİŞTİRELİM? OYLAMA BAŞLADI",
-     "boyut": 40,
-     "renk": "siyah",
-     "zemin": "sari",
-     "egim": 0,
-     "bas": 0,
-     "y": 1712,
-     "anim": "fade",
-     "sure": 0.05
-    },
-    {
-     "tip": "etiket",
-     "metin": "İZLE: PROFİLDEKİ SON REELS",
-     "boyut": 50,
-     "renk": "beyaz",
-     "zemin": "yesil",
-     "egim": 0,
-     "bas": 0,
-     "y": 1808,
+     "y": 1030,
      "anim": "fade",
      "sure": 0.05
     }
