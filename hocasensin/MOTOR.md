@@ -80,3 +80,17 @@ Ortak: `tip`, `bas`, `bitis`, `x` (540), `y` (320), `anim` (`pop` | `stamp` | `d
 - **Sese sessizlik ekleme** (isim/tablo sahneleri için): ham sesi `atrim` + `anullsrc` ile böl, kelimeler.json'daki `start/end` değerlerini ekleme noktasından sonra kaydır (Bölüm 2 örneği: 56.06 s +0.8, 60.82 s +1.5, 72.68 s +3.0).
 
 - **`forma`** — mor-sarı forma sırtı: `{"tip":"forma","isim":"@kullanici","no":"7","genislik":300,"x":200,"y":800,"bas":"w:N"}`. Uzun adlar otomatik küçülür. "Forma duvarı" için 6–9 tanesini 3'lü sıralar hâlinde diz (genislik 280–320, aralık ~350 px).
+
+## Yeni saha görselleri (2026-11-13) — halı saha görselleri ve eski tribün/loca artık kullanılmaz
+| arka | ne için |
+|---|---|
+| eski_stadyum | saha içi, gün batımı (genel sahneler, oyuncu yakın planı) |
+| eski_stadyum_gece | projektörler altında maç gecesi (maç sahneleri, geniş/yakın açı) |
+| eski_stadyum_kale | kale önü: kaleci, penaltı, kurtarış, KARAR sahnesi (eski bos_kale yerine) |
+| eski_stadyum_kulube | yedek kulübesi: kadro, yedekler, teknik konuşma |
+| eski_stadyum_soyunma | soyunma odası: kasa defteri, Necmi abi, forma duvarı (askılar boş), taktik tahtası (boş) |
+| eski_stadyum_tribun (+ .json) | yeni tek tribün: `tribun.sayi` ile taraftar, `tribun.isimler` ile isimler (zoom 1.75, merkez x 0.28→0.72, y 0.50; ≤30 isim). Sıralar: 4 koltuk sırası + en önde tel örgü boyunca ayakta |
+| eski_stadyum_loca (+ .json) | aynı tribünün gölgelikli orta bölümü: loca isimleri (zoom 1.6, merkez x 0.42→0.58, y 0.50, `tribun.aralik` 1.3, ≤20 isim/çekim) |
+| eski_stadyum_uzak | stadın uzaktan görünüşü: açılış/kapanış, hikâye kartı (üst %40 gökyüzü yazıya boş) |
+
+**Canlı yayın hissi:** maçta 1–2 sn'de bir kesme; geniş açı (gece/uzak, zoom 1.0→1.08) → oyuncu yakın planı (zoom 1.1→1.2, merkez kaydırma) → kale önü → tribün tepkisi (`tribun.sayi`, tezahürat sesi) → yedek kulübesi tepkisi; koşan oyuncuda `kos: true` ve `giris: left/right`; skor tabelası her maç sahnesinde; golden sonra aynı anın daha yakın ~1 sn'lik "TEKRAR" çekimi (`etiket` "TEKRAR", zoom 1.3).

@@ -1,0 +1,35 @@
+{
+ "not": "Yeni sahanın tek tribünü (1152x2048 piksel). Arkadan öne 4 koltuk sırası + en önde tel örgü boyunca AYAKTA sırası. Kapasite: oturan ≈ 50 (hikâye), ayakta sınırsız. İsimler önden arkaya yazılır.",
+ "siralar": [
+  {
+   "ayak": 942,
+   "x0": 120,
+   "x1": 1035,
+   "h": 104
+  },
+  {
+   "ayak": 996,
+   "x0": 100,
+   "x1": 1055,
+   "h": 112
+  },
+  {
+   "ayak": 1052,
+   "x0": 80,
+   "x1": 1075,
+   "h": 120
+  },
+  {
+   "ayak": 1120,
+   "x0": 45,
+   "x1": 1105,
+   "h": 130
+  },
+  {
+   "ayak": 1352,
+   "x0": 25,
+   "x1": 1125,
+   "h": 190
+  }
+ ]
+}

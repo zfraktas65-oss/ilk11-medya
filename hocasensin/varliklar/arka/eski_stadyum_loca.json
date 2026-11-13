@@ -1,0 +1,29 @@
+{
+ "not": "Loca = yeni tribünün gölgelikli orta bölümü (görsel eski_stadyum_tribun ile aynı). Arkadan öne 4 sıranın orta kısmı; ≈30 isim. Zoom 1.45, merkez x 0.42→0.58, y 0.50.",
+ "siralar": [
+  {
+   "ayak": 942,
+   "x0": 190,
+   "x1": 965,
+   "h": 104
+  },
+  {
+   "ayak": 996,
+   "x0": 170,
+   "x1": 985,
+   "h": 112
+  },
+  {
+   "ayak": 1052,
+   "x0": 150,
+   "x1": 1005,
+   "h": 120
+  },
+  {
+   "ayak": 1120,
+   "x0": 130,
+   "x1": 1025,
+   "h": 130
+  }
+ ]
+}

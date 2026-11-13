@@ -56,7 +56,8 @@
   "2026-11-12 (22:48): Sayfa sahibi onayladı: sürprizler = formada isim + taraftar maçı.",
   "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10.",
   "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü).",
-  "2026-11-13 18:20: Otomatik görev Seslendirme bağlantı hatası yüzünden bölüm üretemedi; Bölüm 4 sayfa sahibinin isteğiyle sohbetten üretildi. Sayfa sahibinin isteğiyle Metricool'a PLANLANMADI — videoyu ve açıklamayı kendisi manuel paylaşıyor (açıklama ilk satırı 'Anadoluspor · Bölüm 4'). Yeni karakter: oyuncu_forvet_kadin (Merve)."
+  "2026-11-13 18:20: Otomatik görev Seslendirme bağlantı hatası yüzünden bölüm üretemedi; Bölüm 4 sayfa sahibinin isteğiyle sohbetten üretildi. Sayfa sahibinin isteğiyle Metricool'a PLANLANMADI — videoyu ve açıklamayı kendisi manuel paylaşıyor (açıklama ilk satırı 'Anadoluspor · Bölüm 4'). Yeni karakter: oyuncu_forvet_kadin (Merve).",
+  "2026-11-13 18:54: Sayfa sahibi: halı saha görsellerini ve eski tribünü artık kullanma; yeni sahanın görsellerini üret ve kullan; insanlara gerçek bir maç/video izliyormuş hissi ver (GOREV.md 'GÖRSEL KURAL'). Yeni saha görselleri üretildi ve tribün/loca sıraları ölçüldü."
  ],
  "gecmis": [
   {
@@ -313,7 +314,7 @@
    ],
    "yapilanlar": []
   },
-  "durum": "Bölüm 4'te taşınıldı (arka plan eski_stadyum.jpg — tribün sıraları ölçülmedi, isimli kalabalık için tribun/loca kullanılıyor)"
+  "durum": "Bölüm 4'te taşınıldı. 2026-11-13'ten beri yalnız yeni saha görselleri: eski_stadyum, _gece, _kale, _kulube, _soyunma, _tribun (+json, kalibre), _loca (+json, kalibre), _uzak. Halı saha görselleri ve eski tribün/loca kullanılmaz."
  },
  "otobus": {
   "durum": "Bölüm 3'te geldi: belediyenin eski, dumanlı otobüsü (varliklar/karakter/otobus.png; boyalı hâli otobus_morsari.png) · Bölüm 4: Karar #3 tutmadı, Burak kalemle 'Anadoluspor' yazdı (varliklar/karakter/otobus_kalem.png)",
