@@ -75,7 +75,21 @@ Ortak: `tip`, `bas`, `bitis`, `x` (540), `y` (320), `anim` (`pop` | `stamp` | `d
 - **`yazi`** — çok satırlı düz yazı (`metin` içinde `\n`, `font`, `boyut`, `renk`, `kontur`). **`bayrak`** — dalgalanan Türk bayrağı direkte (`genislik`, `yarim`: yarıya indirilmiş).
 - **Karakter etiketi:** karakterde `"etiket":"kullanici","etiket_alt":"MEVKİ"` → başın hemen altında küçük @isim + sarı unvan şeridi (`etiket_y` oranı, varsayılan 0.37). `giris:"pop"` ise etiket giriş bitince çıkar.
 - **Kalabalık isimleri:** sahnede `"tribun":{"isimler":[...],"ozel":{"kullanici":"UNVAN"},"sayi":ek_isimsiz,"aralik":0.42,"etiket_boyut":15,"tohum":11}` → isimler ön sıralardan başlayarak figürlerin başının altına yazılır. Okunurluk için tribünde zoom 1.75 + merkez x 0.28→0.72, locada zoom 1.6 + merkez y 0.38 ve sahne başına ≤30 isim.
-- **Sahne `altyazi_y`:** o sahnede altyazının y konumu (`false` = altyazı yok). Kadro sahnesinde 1232 (iki sıra oyuncunun arası).
+- **Sahne `altyazi_y`:** o sahnede altyazının y konumu (`false` = altyazı yok). Eski 7 kişilik iki sıralı kadroda 1232; kadro grup sahnelerinde varsayılan (1395) kalır.
+- **Karakter `etiket_boyut`** (2026-11-14): etiket yazı boyutu (px). Verilmezse boyuta göre (en az 24). Etiket kadraj kenarından taşmaz (motor içeri iter).
+- **Kadro grupları (İLK 11 + 7 yedek; sayfa sahibi 2026-11-14: hep karakter animasyonu, 3'er/4'er kişi):** 5 sahne, toplam ≈ 14–16 sn, her biri o gruptaki ilk adın çapasında başlar.
+  | sahne | kimler | arka | üst başlık (`etiket`, y 270, sarı zemin siyah yazı, anim down) + alt başlık (`etiket`, boyut 40, y 380, mor) |
+  |---|---|---|---|
+  | 1 | kaleci, sol bek, stoper, stoper | eski_stadyum | İLK 11 · KALE VE DEFANS |
+  | 2 | sağ bek, 3 orta saha | eski_stadyum_gece | İLK 11 · DEFANS VE ORTA SAHA |
+  | 3 | sol kanat, forvet, sağ kanat | eski_stadyum_kale | İLK 11 · HÜCUM HATTI |
+  | 4 | 4 yedek (yedek kaleci dahil) | eski_stadyum_kulube | YEDEKLER · 1 / 2 |
+  | 5 | 3 yedek + tribün lideri | eski_stadyum_kulube (merkez [[0.45,0.55],[0.5,0.55]]) | YEDEKLER · 2 / 2 + TRİBÜN LİDERİ |
+  - **4'lü grup (zikzak):** x 160 · 410 · 670 · 920. 1. ve 3. figür ÖNDE (`h` 640, `ayak` 1560), 2. ve 4. ARKADA (`h` 560, `ayak` 1385); arkadakileri `karakterler` listesine ÖNCE yaz (önce çizilir). `etiket_boyut` 28.
+  - **3'lü grup:** x 215 · 540 · 865. Ortadaki ARKADA (`h` 620, `ayak` 1450, listede önce), yanlar ÖNDE (`h` 700, `ayak` 1580). `etiket_boyut` 30.
+  - Her figür: `giris` "pop", `sure` 0.25, `bas` = adının kelime çapası, `faz` farklı (0–0.6), `zoom` [1.0, 1.03].
+  - **Figür havuzu:** kaleci ve yedek kaleci `taraftar_kaleci`; erkek saha oyuncuları `oyuncu_solbek`, `oyuncu_stoper`, `oyuncu_ortasaha`, `oyuncu_10`, `oyuncu_solkanat`, `forvet`; `oyuncu_forvet_kadin` YALNIZ kadın futbolcularda (ör. @merveaynkfc); tribün lideri `tribun_lideri`. Aynı sahnede bir figür iki kez kullanılmaz (sahneler arasında tekrar serbest). Formalarda numara yazdığı için `ayna` KULLANMA (numara ters döner). Varliklar/karakter'e yeni oyuncu figürü eklenirse havuza kat.
+
 - **Üst düzey `muzik_bas`:** müziğin başlama zamanı (çapa da olur), yumuşak girişle.
 - **Sese sessizlik ekleme** (isim/tablo sahneleri için): ham sesi `atrim` + `anullsrc` ile böl, kelimeler.json'daki `start/end` değerlerini ekleme noktasından sonra kaydır (Bölüm 2 örneği: 56.06 s +0.8, 60.82 s +1.5, 72.68 s +3.0).
 

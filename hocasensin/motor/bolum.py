@@ -596,7 +596,7 @@ class Bolum:
                                   t0=self.T(c.get("bas", t0)), t1=self.T(c["bitis"]) if "bitis" in c else None,
                                   giris=c.get("giris", "up"), sure=c.get("sure", 0.35), ayna=c.get("ayna", False),
                                   golge=c.get("golge", False), kos=c.get("kos", False), faz=c.get("faz", 0),
-                                  etiket=c.get("etiket"), etiket_alt=c.get("etiket_alt", ""), etiket_y=c.get("etiket_y", 0.37)))
+                                  etiket=c.get("etiket"), etiket_alt=c.get("etiket_alt", ""), etiket_y=c.get("etiket_y", 0.37), etiket_boyut=c.get("etiket_boyut")))
             ovs = []
             for o in s.get("ogeler", []):
                 if o["tip"] == "bayrak":
@@ -851,8 +851,9 @@ def draw_char(frame, c, t):
     top = int(feet - im.height - bob)
     safe_comp(frame, im, int(x - im.width / 2), top)
     if c.get("etiket") and (c["giris"] != "pop" or k >= 1):
-        lab = name_label(c["etiket"], max(24, int(c["h"] * 0.034)), c.get("etiket_alt", ""))
-        safe_comp(frame, lab, int(x - lab.width / 2), int(top + im.height * c.get("etiket_y", 0.37)))
+        lab = name_label(c["etiket"], c.get("etiket_boyut") or max(24, int(c["h"] * 0.034)), c.get("etiket_alt", ""))
+        lx = min(max(int(x - lab.width / 2), 8), W - 8 - lab.width)  # etiket kadrajdan taşmasın
+        safe_comp(frame, lab, lx, int(top + im.height * c.get("etiket_y", 0.37)))
 
 def draw_ov(frame, o, t):
     if t < o["t0"] or (o["t1"] is not None and t > o["t1"]): return

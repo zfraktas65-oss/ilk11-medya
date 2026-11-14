@@ -38,7 +38,7 @@
   "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL; görsel otobus_morsari.png)",
   "gecmezse": "Burak'ın kalem yazısı yağmurda silinir (komik, bedava; otobüs yine yazısız eski hâline döner)"
  },
- "yarin_soz": "Bölüm 5: MAÇ (lig 4. hafta); Karar #4 sonucu (50 → mor-sarı otobüs / yazı yağmurda silinir); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı); saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden (yoksa 'oylama sürüyor', seçenekler açık kalır); stat adı önerileri toplanıyor; videonun sonunda taraftar grubu adı sorusu.",
+ "yarin_soz": "Bölüm 5: MAÇ (lig 4. hafta); Karar #4 sonucu (50 → mor-sarı otobüs / yazı yağmurda silinir); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı); saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden (yoksa 'oylama sürüyor', seçenekler açık kalır); stat adı önerileri toplanıyor; videonun sonunda taraftar grubu adı sorusu. + TFF bildirimi: bugünden itibaren İLK 11 + 7 yedek (bkz. bolum5_zorunlu).",
  "notlar": [
   "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
   "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -57,7 +57,8 @@
   "2026-11-12 (22:51): Taraftar maçı derbiden ayrıldı: duyuru Bölüm 9, ilk maç Bölüm 10.",
   "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü).",
   "2026-11-13 18:20: Otomatik görev Seslendirme bağlantı hatası yüzünden bölüm üretemedi; Bölüm 4 sayfa sahibinin isteğiyle sohbetten üretildi. Sayfa sahibinin isteğiyle Metricool'a PLANLANMADI — videoyu ve açıklamayı kendisi manuel paylaşıyor (açıklama ilk satırı 'Anadoluspor · Bölüm 4'). Yeni karakter: oyuncu_forvet_kadin (Merve).",
-  "2026-11-13 18:54: Sayfa sahibi: halı saha görsellerini ve eski tribünü artık kullanma; yeni sahanın görsellerini üret ve kullan; insanlara gerçek bir maç/video izliyormuş hissi ver (GOREV.md 'GÖRSEL KURAL'). Yeni saha görselleri üretildi ve tribün/loca sıraları ölçüldü."
+  "2026-11-13 18:54: Sayfa sahibi: halı saha görsellerini ve eski tribünü artık kullanma; yeni sahanın görsellerini üret ve kullan; insanlara gerçek bir maç/video izliyormuş hissi ver (GOREV.md 'GÖRSEL KURAL'). Yeni saha görselleri üretildi ve tribün/loca sıraları ölçüldü.",
+  "2026-11-14: sayfa sahibi — 'TFF bildirim gönderdi, amatör kulüplerde oyuncu sayısı ilk 11, yedekte 7 kişi.' Bölüm 5'ten itibaren kadro 11+7+TL. 14:11: kadro yine karakter animasyonu olsun, sığmazsa 3'er/4'er kişi gösterilsin (MOTOR.md → Kadro grupları)."
  ],
  "gecmis": [
   {
@@ -403,5 +404,18 @@
   "soruldu_bolum": 4,
   "oneriler": [],
   "not": "Öneriler yalnız sayfa sahibinin ekran görüntülerinden; 3 finalist sonraki uygun bölümde oylanır."
- }
+ },
+ "kadro_kurali": {
+  "ilk11": 11,
+  "yedek": 7,
+  "tribun_lideri": 1,
+  "sema_varsayilan": "4-3-3",
+  "baslangic_bolumu": 5,
+  "kaynak": "Hikâyede TFF'nin amatör kulüplere bildirimi (sayfa sahibi, 2026-11-14 14:02). Önceden 7 asil + 3 yedek."
+ },
+ "bolum5_zorunlu": [
+  "TFF BİLDİRİMİ (sayfa sahibi, 2026-11-14, Bölüm 5'te ZORUNLU): bölümün ilk üçte birinde ~6–8 sn'lik haber anı. Cem hoca elinde resmi bir yazıyla koşarak gelir; ekranda 'RESMİ BİLDİRİM — AMATÖR KULÜPLERE' yazılı kâğıt (`pankart`/`yazi`). TFF logosu, amblemi, gerçek imza ya da kişi adı KULLANILMAZ; 'TFF' yalnız metinde geçer. Anlatım örneği (anlamı koru): 'Ve sıcak bir haber! TFF amatör kulüplere bildirim gönderdi: artık sahaya ilk on bir çıkacak, yedek kulübesinde de yedi kişi olacak!' Ekranda 'İLK 11 + 7 YEDEK' damgası. Bunu taraftara müjde gibi sun: 'Yani bugünden itibaren daha çok kişi takımda!'",
+  "YENİ FORMALAR: kadro 10'dan 18 oyuncuya çıktı → kasa defterine '8 YENİ FORMA (TFF KURALI)' harcaması: 8 × 450 = −3.600 TL (Karar #2 formalarıyla aynı birim fiyat). Bunu SÜRPRİZ 1'e (formada isim) bağla: 'Yeni formalar geldi... ve sırtlarında bir sürpriz var!' → FORMA DUVARI.",
+  "KADRO: İLK 11 + 7 yedek + tribün lideri, GÜNCEL KURALLAR 2'ye göre (sayfa sahibi bugün kendi seçtiklerini gönderirse onlar öncelikli; `kadro_gecmisi`'nde bölüm 5 varsa yeniden seçme). Kadro sahnesi diğer bölümlerdeki gibi KARAKTER ANİMASYONU: 3'er/4'er kişilik 5 grup sahnesi (MOTOR.md → \"Kadro grupları\"); adlar spiker dizilişi gibi gruplanarak okunur. Bölüm uzadığı için diğer sahneleri sıkı tut (hedef ≤ 115 sn); maçta 11'e 11 oynanır, golü/asisti/kurtarışı günün oyuncuları (yedekten giren biri dahil) yapar."
+ ]
 }
