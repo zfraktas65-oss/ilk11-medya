@@ -1,0 +1,323 @@
+{
+ "slug": "hikaye_bolum5",
+ "ses": "sessiz.mp3",
+ "kelimeler": "kelimeler_bos.json",
+ "muzik": "neseli_1",
+ "muzik_ses": 0.6,
+ "kapak": 1.5,
+ "son": 12.0,
+ "sesler": [
+  {
+   "tip": "gum",
+   "t": 0.6
+  },
+  {
+   "tip": "pop",
+   "t": 3.35
+  },
+  {
+   "tip": "pop",
+   "t": 3.65
+  },
+  {
+   "tip": "pop",
+   "t": 3.95
+  },
+  {
+   "tip": "pop",
+   "t": 4.25
+  },
+  {
+   "tip": "kisa_duduk",
+   "t": 6.1
+  },
+  {
+   "tip": "tezahurat",
+   "t": 6.8,
+   "ses": 1.0
+  },
+  {
+   "tip": "zil",
+   "t": 10.0,
+   "ses": 0.8
+  }
+ ],
+ "sahneler": [
+  {
+   "bas": 0,
+   "arka": "eski_stadyum_uzak",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "altyazi_y": false,
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1600,
+     "h": 820,
+     "giris": "up",
+     "sure": 0.4,
+     "bas": 0.25
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "ANADOLUSPOR",
+     "boyut": 66,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": 0,
+     "bas": 0.05,
+     "y": 320,
+     "anim": "down"
+    },
+    {
+     "tip": "etiket",
+     "metin": "BÖLÜM 5",
+     "boyut": 52,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 0,
+     "bas": 0.2,
+     "y": 440,
+     "anim": "down"
+    },
+    {
+     "tip": "baslik",
+     "metin": "YAYINDA!",
+     "boyut": 230,
+     "bas": 0.6,
+     "y": 650,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": 3.2,
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.05
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "altyazi_y": false,
+   "karakterler": [
+    {
+     "ad": "oyuncu_solkanat",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": 3.65,
+     "faz": 0.2
+    },
+    {
+     "ad": "tribun_lideri",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": 4.25,
+     "faz": 0.6
+    },
+    {
+     "ad": "taraftar_kaleci",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": 3.35,
+     "faz": 0
+    },
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": 3.95,
+     "faz": 0.4
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "18 KİŞİLİK KADRO!",
+     "boyut": 64,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": 3.25,
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "ADIN KADRODA MI?",
+     "boyut": 54,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": 3.8,
+     "y": 430
+    }
+   ]
+  },
+  {
+   "bas": 6.0,
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.04,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.52
+    ]
+   ],
+   "altyazi_y": false,
+   "karakterler": [
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 540,
+     "ayak": 1640,
+     "h": 900,
+     "giris": "right",
+     "sure": 0.35,
+     "kos": true,
+     "bas": 6.05
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 2,
+     "dep_skor": 1,
+     "dakika": "88'",
+     "bas": 6.0,
+     "bitis": 6.75,
+     "y": 300
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 3,
+     "dep_skor": 1,
+     "dakika": "88'",
+     "bas": 6.8,
+     "y": 300
+    },
+    {
+     "tip": "baslik",
+     "metin": "GOL!",
+     "boyut": 230,
+     "bas": 6.8,
+     "y": 580,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": 8.8,
+   "arka": "eski_stadyum_kale",
+   "bulanik": 6,
+   "karanlik": 0.75,
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.45
+    ],
+    [
+     0.5,
+     0.45
+    ]
+   ],
+   "altyazi_y": false,
+   "karakterler": [
+    {
+     "ad": "otobus_morsari",
+     "x": 540,
+     "ayak": 1020,
+     "h": 360,
+     "giris": "left",
+     "sure": 0.5,
+     "bas": 9.2
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "KARAR #5",
+     "boyut": 80,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": 8.85,
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "260 BEĞENİ = YENİ OTOBÜS!",
+     "boyut": 52,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": 9.4,
+     "y": 430
+    },
+    {
+     "tip": "etiket",
+     "metin": "YENİ BÖLÜM PROFİLDE · HEMEN İZLE!",
+     "boyut": 50,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": 10.0,
+     "y": 1180,
+     "nabiz": true
+    }
+   ]
+  }
+ ]
+}
