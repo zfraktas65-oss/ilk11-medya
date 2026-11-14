@@ -666,7 +666,9 @@ class Bolum:
             fr = bg_frame(bgc, z * punch, cx, cy)
         else:
             fr = bg_frame(sc["bg"], z * punch, cx, cy)
-        for c in sc["chars"]: draw_char(fr, c, t)
+        labs = [draw_char(fr, c, t) for c in sc["chars"]]
+        for lab in labs:  # etiketler tüm figürlerin üstünde (öndeki figür arkadakinin adını örtmesin)
+            if lab: safe_comp(fr, *lab)
         for a, b in sc["dark"]:
             if a <= t < b: fr = darken(fr, 0.16)
         for o in sc["ovs"]: draw_ov(fr, o, t)
@@ -853,7 +855,7 @@ def draw_char(frame, c, t):
     if c.get("etiket") and (c["giris"] != "pop" or k >= 1):
         lab = name_label(c["etiket"], c.get("etiket_boyut") or max(24, int(c["h"] * 0.034)), c.get("etiket_alt", ""))
         lx = min(max(int(x - lab.width / 2), 8), W - 8 - lab.width)  # etiket kadrajdan taşmasın
-        safe_comp(frame, lab, lx, int(top + im.height * c.get("etiket_y", 0.37)))
+        return (lab, lx, int(top + im.height * c.get("etiket_y", 0.37)))
 
 def draw_ov(frame, o, t):
     if t < o["t0"] or (o["t1"] is not None and t > o["t1"]): return

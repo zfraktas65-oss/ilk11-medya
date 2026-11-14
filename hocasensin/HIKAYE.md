@@ -74,6 +74,11 @@ Lig sırası: Halı Saha Ligi → Mahalle Ligi → Amatör Lig → BAL → 3. Li
 | forvet.png | **Taraftardan forvet** (9) | Kıvırcık saçlı, ayağı topun üstünde, yumruk havada |
 | taraftar_kaleci.png | **Taraftardan kaleci** (1) | Neon yeşil kaleci forması, kocaman eldivenler |
 | oyuncu_forvet_kadin.png | **Kadın forvet** (9) | At kuyruğu saç, mor forma sarı 9, ayağı topun üstünde, yumruk havada (Bölüm 4: Merve, takımın ilk kadın futbolcusu) |
+| oyuncu_sagbek.png | **Sağ bek** (2) | Yandan kesik saç, kısa sakal, bindirmeye koşarken ileriyi gösteriyor (2026-11-14) |
+| oyuncu_stoper2.png | **İkinci stoper** (4) | Uzun boylu, gür sakal, topuz saç; ellerini başının üstünde çırpıp takımı gaza getiriyor (2026-11-14) |
+| oyuncu_libero.png | **Ön libero** (6) | Dalgalı kumral saç, sakin; top koltuğunun altında, başparmak havada (2026-11-14) |
+| oyuncu_sagkanat.png | **Sağ kanat** (7) | Uçları sarıya boyalı diken saç, sarı bileklik, dil dışarıda çalım atarken (2026-11-14) |
+| oyuncu_kaleci2.png | **Yedek kaleci** (12) | Turuncu kaleci forması, omuz hizası dalgalı saç ve saç bandı, topu göğsünde tutuyor (2026-11-14) |
 | otobus_kalem.png | **Eski otobüs, kalem yazılı** | Karar #3 tutmayınca Burak'ın kalemle yazdığı "Anadoluspor" (Bölüm 4) |
 | taraftar/t1–t8.png | Tribün taraftarları | Motor `tribun` alanıyla otomatik yerleştirir (genç, nine, bıyıklı amca, başörtülü genç kadın, kız çocuğu, korna öttüren, kalp tabelalı, simitli dede) |
 | _karakter_sayfasi.jpg | Tüm karakterlerin referans sayfası (yeni çizimlerde stil referansı) | |
