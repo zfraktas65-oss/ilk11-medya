@@ -8,7 +8,7 @@
  "begeni_tl": 100,
  "sonraki_kira_bolumu": null,
  "tribun_toplam": 651,
- "takipci": 264,
+ "takipci": 325,
  "lig": "Halı Saha Ligi",
  "lig_sirasi": [
   "Halı Saha Ligi",
@@ -291,7 +291,13 @@
     }
    ],
    "sonuc": null,
-   "not": "Kazanan yalnız sayfa sahibinin yorum ekran görüntülerinden ya da söylediğinden; yoksa oylama sürüyor."
+   "not": "Kazanan yalnız sayfa sahibinin yorum ekran görüntülerinden ya da söylediğinden; yoksa oylama sürüyor. 2026-11-14 ekran görüntülerinde yalnız 1 oy görüldü (merveaynkfc: 3 = Projektörler) → Bölüm 5'te 'oylama sürüyor, Projektörler önde' denebilir; karar yok.",
+   "gelen_oylar": [
+    {
+     "kullanici": "merveaynkfc",
+     "secenek": 3
+    }
+   ]
   },
   "not": "Saha belediyeden, geliştirmeler kulüp kasasından. Bölüm 4'ten sonra halı saha kirası yok.",
   "tribun": {
@@ -402,7 +408,16 @@
  },
  "stadyum_adi_sorusu": {
   "soruldu_bolum": 4,
-  "oneriler": [],
+  "oneriler": [
+   {
+    "ad": "Anadolu",
+    "oneren": [
+     "tarikozyakis",
+     "jsp_2677"
+    ],
+    "not": "iki taraftar ayrı ayrı önerdi ('Abi ben kl saha ismi anadolu', 'Stadyumun adı Anadolu olsun' — 2 beğeni)"
+   }
+  ],
   "not": "Öneriler yalnız sayfa sahibinin ekran görüntülerinden; 3 finalist sonraki uygun bölümde oylanır."
  },
  "kadro_kurali": {
@@ -416,6 +431,14 @@
  "bolum5_zorunlu": [
   "TFF BİLDİRİMİ (sayfa sahibi, 2026-11-14, Bölüm 5'te ZORUNLU): bölümün ilk üçte birinde ~6–8 sn'lik haber anı. Cem hoca elinde resmi bir yazıyla koşarak gelir; ekranda 'RESMİ BİLDİRİM — AMATÖR KULÜPLERE' yazılı kâğıt (`pankart`/`yazi`). TFF logosu, amblemi, gerçek imza ya da kişi adı KULLANILMAZ; 'TFF' yalnız metinde geçer. Anlatım örneği (anlamı koru): 'Ve sıcak bir haber! TFF amatör kulüplere bildirim gönderdi: artık sahaya ilk on bir çıkacak, yedek kulübesinde de yedi kişi olacak!' Ekranda 'İLK 11 + 7 YEDEK' damgası. Bunu taraftara müjde gibi sun: 'Yani bugünden itibaren daha çok kişi takımda!'",
   "YENİ FORMALAR: kadro 10'dan 18 oyuncuya çıktı → kasa defterine '8 YENİ FORMA (TFF KURALI)' harcaması: 8 × 450 = −3.600 TL (Karar #2 formalarıyla aynı birim fiyat). Bunu SÜRPRİZ 1'e (formada isim) bağla: 'Yeni formalar geldi... ve sırtlarında bir sürpriz var!' → FORMA DUVARI.",
-  "KADRO: İLK 11 + 7 yedek + tribün lideri, GÜNCEL KURALLAR 2'ye göre (sayfa sahibi bugün kendi seçtiklerini gönderirse onlar öncelikli; `kadro_gecmisi`'nde bölüm 5 varsa yeniden seçme). Kadro sahnesi diğer bölümlerdeki gibi KARAKTER ANİMASYONU: 3'er/4'er kişilik 5 grup sahnesi (MOTOR.md → \"Kadro grupları\"); adlar spiker dizilişi gibi gruplanarak okunur. Bölüm uzadığı için diğer sahneleri sıkı tut (hedef ≤ 115 sn); maçta 11'e 11 oynanır, golü/asisti/kurtarışı günün oyuncuları (yedekten giren biri dahil) yapar."
- ]
+  "KADRO: İLK 11 + 7 yedek + tribün lideri, GÜNCEL KURALLAR 2'ye göre (sayfa sahibi bugün kendi seçtiklerini gönderirse onlar öncelikli; `kadro_gecmisi`'nde bölüm 5 varsa yeniden seçme). Kadro sahnesi diğer bölümlerdeki gibi KARAKTER ANİMASYONU: 3'er/4'er kişilik 5 grup sahnesi (MOTOR.md → \"Kadro grupları\"); adlar spiker dizilişi gibi gruplanarak okunur. Bölüm uzadığı için diğer sahneleri sıkı tut (hedef ≤ 115 sn); maçta 11'e 11 oynanır, golü/asisti/kurtarışı günün oyuncuları (yedekten giren biri dahil) yapar.",
+  "SAYFA SAHİBİ VERİSİ (2026-11-14 17:03): Bölüm 4 = 200 beğeni, 250 yorum, takipçi 325 (Metricool yerine bunları kullan). Gelir: 200 × 100 = +20.000 TL. Karar #4 (eşik 50 beğeni) GEÇTİ → otobüs mor-sarıya boyanır, kasa defterine 'OTOBÜS BOYASI −3.000 TL', görsel otobus_morsari.png. Kadro taraftarlar.json'da HAZIR (kadro_gecmisi bölüm 5, şema 4-4-2): Mert'i (gs_mert_bjk_fb, forvet) sayfa sahibi seçti → kadro anlatımında 'Hocanın özel seçimi: Mert!' gibi kısa bir vurgu. Çok ısrar edenler alındı: bunu sıcak bir dille söyle ('Yorumlarda en çok ısrar edenler bugün sahada!'). Çınar (cinargulen808) 'ben niye yedekteyim' demişti → 'Çınar artık İLK 11'de!'. Elif (elif_priw55566) takımın ikinci kadın futbolcusu (oyuncu_forvet_kadin). Tribün lideri kayratoksozz davulcu olmak istedi → 'davulumuz onda'; okunuşu belirsiz olduğu için adı SESLİ OKUNMAZ, yalnız etiket. Stat adı önerisi: 'ANADOLU' (iki taraftar önerdi) — 'öne çıkan öneri ANADOLU STADI' de, kesin karar verme. Saha oylamasında yalnız 1 oy görüldü (3 = Projektörler) → 'oylama sürüyor'."
+ ],
+ "sayfa_sahibi_verisi_b4": {
+  "tarih": "2026-11-14 17:03",
+  "begeni": 200,
+  "yorum": 250,
+  "takipci": 325,
+  "not": "Sayfa sahibinin verdiği Bölüm 4 sayıları; Metricool yerine bunlar kullanılır. 200 beğeni × 100 TL = +20.000 TL."
+ }
 }
