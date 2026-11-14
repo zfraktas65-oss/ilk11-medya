@@ -26,6 +26,11 @@ Kök klasör: `~/ilk11-medya/hocasensin` (aşağıda K). Önce **K/HIKAYE.md** (
 - **Hazır kadro:** `taraftarlar.json` → `kadro_gecmisi` içinde bu bölümün numarası varsa kadro sayfa sahibinin/Claude'un önceden kurduğu hâliyle kullanılır, YENİDEN SEÇİLMEZ. Yoksa GÜNCEL KURALLAR 2'ye göre seç (sayfa sahibinin seçtikleri öncelikli) ve `okunus`u kullanıcı adındaki isimden yaz (ör. dorukateskosar → "Doruk"; ad çıkarılamıyorsa null).
 - **İsim gösterimi (çok isim olduğu için):** her bölümde en fazla ~30 tribün adı (tek çekim) ve ~60 loca adı (yeni sahada 20'şerlik üç çekim) gösterilir; önce `gosterildi_bolum` null olanlar, sonra en eski gösterilenler. Gösterilenlere `gosterildi_bolum` = M yaz. Böylece herkes sırayla ekrana gelir. `loca_kesik_isimler` gösterilmez.
 
+
+## Stat adı ve teknik ekip (sayfa sahibi, 2026-11-14)
+- Stadın adı **ANADOLU ARENA PARK** (taraftar önerisi 'Anadolu'dan, sayfa sahibi kararı). Bölüm 5'te açıklanır; sonra her bölümde stat bu adla anılır (`durum.json` → `stadyum_adi`).
+- **Yardımcı antrenörler (kalıcı):** @hasan_zengi83 (okunuş 'Hasan', figür `yardimci_antrenor1`) ve @s_ahinpars (okunuş 'Şahin', figür `yardimci_antrenor2`). Her bölüm yeniden seçilmezler; maç sahnelerinde kulübede Cem'in yanında görünebilir, adları gerektiğinde sesli söylenir (`durum.json` → `teknik_ekip`, `taraftarlar.json` → `roller`).
+
 ## 🏟️ YOL HARİTASI: Belediye sahası ve takım otobüsü (sayfa sahibi, 2026-11-11)
 **Arka plan:** Anadoluspor ilçenin tek takımı ve dikkat çekiyor. Taraftarın hızla çoğaldığını gören **Belediye Başkanı** kulübe eski bir saha (yıpranmış çim, paslı kaleler, kırık/eski tribünler, sönük ışıklar) ve eski bir **belediye otobüsünü** takım otobüsü olarak veriyor. Başkanın sözü: **"Saha bizden, geliştirme sizden."** Geliştirmelerin parası kulüp kasasından çıkar.
 - **Bölüm 3 — duyuru:** Karar #2 sonucundan sonra ana olay belediye haberi. Başkan kulübeye gelir (yeni karakter `baskan`), anahtarı ve eski otobüsün anahtarını verir; stadın eski hâline kısa bir "ilk bakış" (yeni arka plan `eski_stadyum`). Kapanış merakı: **"Yarın yeni sahamıza taşınıyoruz!"**

@@ -262,7 +262,7 @@
  },
  "saha": {
   "mevcut": "belediyenin eski stadı (Bölüm 4'te taşınıldı)",
-  "yeni": "belediyenin eski stadı (ad henüz yok)",
+  "yeni": "ANADOLU ARENA PARK (belediyenin eski stadı)",
   "tasinma_bolumu": 4,
   "seviye": 0,
   "gelistirmeler": [],
@@ -329,7 +329,7 @@
   "yeni_otobus_hedefi_tl": 50000
  },
  "yedek_sayisi": 7,
- "stadyum_adi": null,
+ "stadyum_adi": "ANADOLU ARENA PARK",
  "sponsorlar": {
   "durum": "YOK — reklam alanları sayfa sahibinin isteğiyle şimdilik boş",
   "aktif": [],
@@ -418,7 +418,13 @@
     "not": "iki taraftar ayrı ayrı önerdi ('Abi ben kl saha ismi anadolu', 'Stadyumun adı Anadolu olsun' — 2 beğeni)"
    }
   ],
-  "not": "Öneriler yalnız sayfa sahibinin ekran görüntülerinden; 3 finalist sonraki uygun bölümde oylanır."
+  "not": "Öneriler yalnız sayfa sahibinin ekran görüntülerinden; 3 finalist sonraki uygun bölümde oylanır.",
+  "karar": {
+   "ad": "ANADOLU ARENA PARK",
+   "karar_veren": "sayfa sahibi (2026-11-14 17:11)",
+   "ilham": "taraftar önerisi 'Anadolu' (tarikozyakis, jsp_2677)",
+   "aciklanacagi_bolum": 5
+  }
  },
  "kadro_kurali": {
   "ilk11": 11,
@@ -432,7 +438,9 @@
   "TFF BİLDİRİMİ (sayfa sahibi, 2026-11-14, Bölüm 5'te ZORUNLU): bölümün ilk üçte birinde ~6–8 sn'lik haber anı. Cem hoca elinde resmi bir yazıyla koşarak gelir; ekranda 'RESMİ BİLDİRİM — AMATÖR KULÜPLERE' yazılı kâğıt (`pankart`/`yazi`). TFF logosu, amblemi, gerçek imza ya da kişi adı KULLANILMAZ; 'TFF' yalnız metinde geçer. Anlatım örneği (anlamı koru): 'Ve sıcak bir haber! TFF amatör kulüplere bildirim gönderdi: artık sahaya ilk on bir çıkacak, yedek kulübesinde de yedi kişi olacak!' Ekranda 'İLK 11 + 7 YEDEK' damgası. Bunu taraftara müjde gibi sun: 'Yani bugünden itibaren daha çok kişi takımda!'",
   "YENİ FORMALAR: kadro 10'dan 18 oyuncuya çıktı → kasa defterine '8 YENİ FORMA (TFF KURALI)' harcaması: 8 × 450 = −3.600 TL (Karar #2 formalarıyla aynı birim fiyat). Bunu SÜRPRİZ 1'e (formada isim) bağla: 'Yeni formalar geldi... ve sırtlarında bir sürpriz var!' → FORMA DUVARI.",
   "KADRO: İLK 11 + 7 yedek + tribün lideri, GÜNCEL KURALLAR 2'ye göre (sayfa sahibi bugün kendi seçtiklerini gönderirse onlar öncelikli; `kadro_gecmisi`'nde bölüm 5 varsa yeniden seçme). Kadro sahnesi diğer bölümlerdeki gibi KARAKTER ANİMASYONU: 3'er/4'er kişilik 5 grup sahnesi (MOTOR.md → \"Kadro grupları\"); adlar spiker dizilişi gibi gruplanarak okunur. Bölüm uzadığı için diğer sahneleri sıkı tut (hedef ≤ 115 sn); maçta 11'e 11 oynanır, golü/asisti/kurtarışı günün oyuncuları (yedekten giren biri dahil) yapar.",
-  "SAYFA SAHİBİ VERİSİ (2026-11-14 17:03): Bölüm 4 = 200 beğeni, 250 yorum, takipçi 325 (Metricool yerine bunları kullan). Gelir: 200 × 100 = +20.000 TL. Karar #4 (eşik 50 beğeni) GEÇTİ → otobüs mor-sarıya boyanır, kasa defterine 'OTOBÜS BOYASI −3.000 TL', görsel otobus_morsari.png. Kadro taraftarlar.json'da HAZIR (kadro_gecmisi bölüm 5, şema 4-4-2): Mert'i (gs_mert_bjk_fb, forvet) sayfa sahibi seçti → kadro anlatımında 'Hocanın özel seçimi: Mert!' gibi kısa bir vurgu. Çok ısrar edenler alındı: bunu sıcak bir dille söyle ('Yorumlarda en çok ısrar edenler bugün sahada!'). Çınar (cinargulen808) 'ben niye yedekteyim' demişti → 'Çınar artık İLK 11'de!'. Elif (elif_priw55566) takımın ikinci kadın futbolcusu (oyuncu_forvet_kadin). Tribün lideri kayratoksozz davulcu olmak istedi → 'davulumuz onda'; okunuşu belirsiz olduğu için adı SESLİ OKUNMAZ, yalnız etiket. Stat adı önerisi: 'ANADOLU' (iki taraftar önerdi) — 'öne çıkan öneri ANADOLU STADI' de, kesin karar verme. Saha oylamasında yalnız 1 oy görüldü (3 = Projektörler) → 'oylama sürüyor'."
+  "SAYFA SAHİBİ VERİSİ (2026-11-14 17:03–17:11): Bölüm 4 = 200 beğeni, 250 yorum, takipçi 325 (Metricool yerine bunları kullan). Gelir: 200 × 100 = +20.000 TL. Karar #4 (eşik 50 beğeni) GEÇTİ → otobüs mor-sarıya boyanır, kasa defterine 'OTOBÜS BOYASI −3.000 TL', görsel otobus_morsari.png. Kadro taraftarlar.json'da HAZIR (kadro_gecmisi bölüm 5, şema 4-4-2). Mert (gs_mert_bjk_fb, forvet) diğer oyuncular gibi NORMAL okunur — 'özel seçim' vb. DENMEZ. Çok ısrar edenler alındı: sıcak bir dille söyle ('Yorumlarda en çok ısrar edenler bugün sahada!'). Çınar (cinargulen808) 'ben niye yedekteyim' demişti → 'Çınar artık İLK 11'de!'. Elif (elif_priw55566) takımın ikinci kadın futbolcusu (oyuncu_forvet_kadin). Tribün lideri kayratoksozz davulcu olmak istedi → 'davulumuz Kayrat'ta!' — adı 'Kayrat' diye SESLİ okunur.",
+  "STAT ADI (sayfa sahibi kararı, 2026-11-14 17:11): stadın adı ANADOLU ARENA PARK. Bölüm 5'te kısa ve coşkulu açıkla: 'Taraftarlarımız Anadolu dedi, biz de koyduk: ANADOLU ARENA PARK!' (öneren tarikozyakis ve jsp_2677'ye teşekkür; adları okunmaz, ekranda etiket olabilir). Ekranda stadın girişine tabela gibi 'ANADOLU ARENA PARK' yazısı (`pankart`/`yazi`, mor zemin sarı yazı; gerçek logo/marka yok). Bundan sonra stat bu adla anılır.",
+  "TEKNİK EKİP (sayfa sahibi, 2026-11-14 17:11): iki YARDIMCI ANTRENÖR kadroya katılır: @hasan_zengi83 (okunuş 'Hasan', figür yardimci_antrenor1) ve @s_ahinpars (okunuş 'Şahin', figür yardimci_antrenor2). Yedek sahnelerinden hemen sonra ~3–4 sn'lik ayrı bir 'TEKNİK EKİP' sahnesi: iki figür yan yana (3'lü grup yerleşimi, ortada Cem — cem.png — arkada), etiket @kullanici + 'YARDIMCI ANTRENÖR'; anlatım: 'Ve teknik ekibimiz de büyüdü: yardımcı antrenörlerimiz Hasan ve Şahin!' Figür dosyası yoksa iki figür yerine Cem'in iki yanına yalnız isim etiketleri (pill) koy. İkisi de istek olarak teknik direktörlük istemişti."
  ],
  "sayfa_sahibi_verisi_b4": {
   "tarih": "2026-11-14 17:03",
@@ -440,5 +448,21 @@
   "yorum": 250,
   "takipci": 325,
   "not": "Sayfa sahibinin verdiği Bölüm 4 sayıları; Metricool yerine bunlar kullanılır. 200 beğeni × 100 TL = +20.000 TL."
+ },
+ "teknik_ekip": {
+  "kaptan": "Cem",
+  "yardimci_antrenorler": [
+   {
+    "kullanici": "hasan_zengi83",
+    "okunus": "Hasan",
+    "karakter": "yardimci_antrenor1"
+   },
+   {
+    "kullanici": "s_ahinpars",
+    "okunus": "Şahin",
+    "karakter": "yardimci_antrenor2"
+   }
+  ],
+  "not": "Sayfa sahibi 2026-11-14: ikisi de yardımcı antrenör. Kalıcı roller (her bölüm yeniden seçilmez); maçlarda kulübede Cem'in yanında görünebilirler."
  }
 }

@@ -6,13 +6,39 @@
    "unvan": "TRİBÜN LİDERİ",
    "karakter": "tribun_lideri",
    "kullanici": "kayratoksozz",
-   "okunus": "",
+   "okunus": "Kayrat",
    "istek": "Abi taraftar beni davulcu yap pls",
    "secen": "Claude",
    "takip": null,
    "eklendi": "2026-11-14",
    "tanitildi_bolum": 5,
-   "not": "davulcu olmak istedi → davullu tribün lideri; okunuşu belirsiz (Kayra/Kayrat), adı sesli okunmaz, yalnız etikette"
+   "not": "davulcu olmak istedi → davullu tribün lideri; sayfa sahibi: \"Kayrat\" diye oku"
+  },
+  {
+   "rol": "yardimci_antrenor",
+   "unvan": "YARDIMCI ANTRENÖR",
+   "karakter": "yardimci_antrenor1",
+   "kullanici": "hasan_zengi83",
+   "okunus": "Hasan",
+   "istek": "Abi nolur teknik direktör yap nolur takip ettim beğendim nolur",
+   "secen": "sayfa sahibi (2026-11-14 17:11)",
+   "takip": true,
+   "eklendi": "2026-11-14",
+   "tanitildi_bolum": 5,
+   "kalici": true
+  },
+  {
+   "rol": "yardimci_antrenor",
+   "unvan": "YARDIMCI ANTRENÖR",
+   "karakter": "yardimci_antrenor2",
+   "kullanici": "s_ahinpars",
+   "okunus": "Şahin",
+   "istek": "Abi beni asistan teknik direktör yapar mısın eğer hocamız varsa yoksa beni de",
+   "secen": "sayfa sahibi (2026-11-14 17:11)",
+   "takip": null,
+   "eklendi": "2026-11-14",
+   "tanitildi_bolum": 5,
+   "kalici": true
   }
  ],
  "kadro": [
@@ -144,8 +170,7 @@
    "secen": "sayfa sahibi (2026-11-14 17:03: 'Merti forvete al')",
    "takip": true,
    "eklendi": "2026-11-14",
-   "tanitildi_bolum": 5,
-   "ozel": "SAYFA SAHİBİNİN SEÇİMİ"
+   "tanitildi_bolum": 5
   },
   {
    "rol": "forvet",
@@ -4854,7 +4879,11 @@
     "elif_priw55566"
    ],
    "tribun_lideri": "kayratoksozz",
-   "not": "Sayfa sahibi 17:03: 'Merti forvete al, çok ısrar eden diğer yorumları da oku onları da kadroya al'. Mert (gs_mert_bjk_fb) forvet; çok yorum yapan/yalvaran takipçiler İLK 11 ve yedeklere alındı; boş mevkiler mevki yazan yorumculardan (Claude). Şema 4-4-2 (çok forvet isteği). Kadro grupları 4+4+3 kadro sırasıyla: [kaleci, sol bek, 2 stoper] [sağ bek, sol kanat, 2 orta saha] [sağ kanat, 2 forvet]."
+   "not": "Sayfa sahibi 17:03: 'Merti forvete al, çok ısrar eden diğer yorumları da oku onları da kadroya al'. Mert (gs_mert_bjk_fb) forvet (videoda 'özel seçim' DENMEZ, normal okunur); çok yorum yapan/yalvaran takipçiler İLK 11 ve yedeklere alındı; boş mevkiler mevki yazan yorumculardan (Claude). Şema 4-4-2 (çok forvet isteği). Kadro grupları 4+4+3 kadro sırasıyla: [kaleci, sol bek, 2 stoper] [sağ bek, sol kanat, 2 orta saha] [sağ kanat, 2 forvet].",
+   "yardimci_antrenorler": [
+    "hasan_zengi83",
+    "s_ahinpars"
+   ]
   }
  ],
  "takip_kaynagi": "Takip: sayfa sahibinin 2026-11-12 takipçi ekran görüntüleri (görünen ~175 ad; toplam 228) + 2026-11-10 listesi. Yorum: Bölüm 2 yorum ekran görüntüleri (215 kişi) + Bölüm 1. + 2026-11-14 17:00 takipçi ekran görüntüleri (görünen ~60 ad; toplam 325) ve Bölüm 4 yorum ekran görüntüleri (~95 kişi).",
