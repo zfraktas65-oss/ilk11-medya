@@ -1,13 +1,13 @@
 {
- "son_bolum": 4,
- "son_bolum_tarihi": "2026-11-13",
- "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 4",
- "kasa_tl": 39800,
+ "son_bolum": 5,
+ "son_bolum_tarihi": "2026-11-14",
+ "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 5",
+ "kasa_tl": 53200,
  "borc_tl": 0,
  "kira_haftalik_tl": 1500,
  "begeni_tl": 100,
  "sonraki_kira_bolumu": null,
- "tribun_toplam": 651,
+ "tribun_toplam": 901,
  "takipci": 325,
  "lig": "Halı Saha Ligi",
  "lig_sirasi": [
@@ -22,23 +22,24 @@
  ],
  "lig_atlama_galibiyet": 5,
  "mac": {
-  "oynanan": 3,
-  "galibiyet": 1,
+  "oynanan": 4,
+  "galibiyet": 2,
   "beraberlik": 2,
   "maglubiyet": 0,
-  "lig_galibiyet": 1,
-  "son_skor": "Anadoluspor 3-3 Bakkal Gücü (Bölüm 4; goller: Hamza, Kartal Aras Çağan, Merve 90+3; Ketizmen penaltı kurtardı)",
+  "lig_galibiyet": 2,
+  "son_skor": "Anadoluspor 3-1 Sanayi Demir (Bölüm 5, lig 4. hafta; goller: Mert 18', Kılınç Aslan 64' kafa (Rojvan asist), Elif 88' yedekten; Tarık iki kurtarış)",
   "not": "Sayfa sahibi (2026-11-12): HER bölümde maç. Bölüm M = lig haftası M−1 (derbi hariç)."
  },
  "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
  "acik_karar": {
-  "bolum": 4,
+  "bolum": 5,
   "metrik": "begeni",
-  "esik": 50,
-  "gecerse": "otobüs mor-sarıya boyanır (kasadan makul boya gideri, ör. 3.000 TL; görsel otobus_morsari.png)",
-  "gecmezse": "Burak'ın kalem yazısı yağmurda silinir (komik, bedava; otobüs yine yazısız eski hâline döner)"
+  "esik": 260,
+  "gecerse": "yeni takım otobüsü alınır (50.000 TL kasadan; ayrı coşkulu sahne; boyalı eski otobüs emekli/yedek)",
+  "gecmezse": "boyalı eski otobüsle devam; para sahaya (saha oylaması kazananı yapılır — kazanan yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden)",
+  "not": "Kasa (53.200) otobüs hedefi 50.000'i geçti; aynı gün otobüs boyandığı için otomatik alım yerine izleyiciye KARAR olarak soruldu (HIKAYE: otobüs 'büyük hedef ya da bir KARAR ile' değişir)."
  },
- "yarin_soz": "Bölüm 5: MAÇ (lig 4. hafta); Karar #4 sonucu (50 → mor-sarı otobüs / yazı yağmurda silinir); SÜRPRİZ 1 açıklanır: kadroya giremeyenlerin isimleri formalarda (forma duvarı); saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden (yoksa 'oylama sürüyor', seçenekler açık kalır); stat adı önerileri toplanıyor; videonun sonunda taraftar grubu adı sorusu. + TFF bildirimi: bugünden itibaren İLK 11 + 7 yedek (bkz. bolum5_zorunlu).",
+ "yarin_soz": "Bölüm 6: MAÇ (lig 5. hafta); Karar #5 sonucu (260 beğeni → yeni otobüs 50.000 TL / boyalı otobüsle devam, para sahaya); derbi rakibi KARADUMAN GÜCÜ tanıtılır; saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden (yoksa 'oylama sürüyor'); taraftar grubu adı önerileri toplanıyor (kazanan yalnız sayfa sahibinin ekran görüntüsünden); forma duvarı her bölüm.",
  "notlar": [
   "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
   "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -58,7 +59,8 @@
   "2026-11-13 17:08: Sayfa sahibi Bölüm 4 kadrosunu verdi; Merve forvet ve takımın ilk kadın futbolcusu (ona özel kadın figürü).",
   "2026-11-13 18:20: Otomatik görev Seslendirme bağlantı hatası yüzünden bölüm üretemedi; Bölüm 4 sayfa sahibinin isteğiyle sohbetten üretildi. Sayfa sahibinin isteğiyle Metricool'a PLANLANMADI — videoyu ve açıklamayı kendisi manuel paylaşıyor (açıklama ilk satırı 'Anadoluspor · Bölüm 4'). Yeni karakter: oyuncu_forvet_kadin (Merve).",
   "2026-11-13 18:54: Sayfa sahibi: halı saha görsellerini ve eski tribünü artık kullanma; yeni sahanın görsellerini üret ve kullan; insanlara gerçek bir maç/video izliyormuş hissi ver (GOREV.md 'GÖRSEL KURAL'). Yeni saha görselleri üretildi ve tribün/loca sıraları ölçüldü.",
-  "2026-11-14: sayfa sahibi — 'TFF bildirim gönderdi, amatör kulüplerde oyuncu sayısı ilk 11, yedekte 7 kişi.' Bölüm 5'ten itibaren kadro 11+7+TL. 14:11: kadro yine karakter animasyonu olsun, sığmazsa 3'er/4'er kişi gösterilsin (MOTOR.md → Kadro grupları)."
+  "2026-11-14: sayfa sahibi — 'TFF bildirim gönderdi, amatör kulüplerde oyuncu sayısı ilk 11, yedekte 7 kişi.' Bölüm 5'ten itibaren kadro 11+7+TL. 14:11: kadro yine karakter animasyonu olsun, sığmazsa 3'er/4'er kişi gösterilsin (MOTOR.md → Kadro grupları).",
+  "2026-11-14 17:46: Bölüm 5 otomatik görevle üretildi ve Metricool'a 19:00'a planlandı (post 428060165). Video 114 sn (78 MB; GitHub 100 MB sınırı için yeniden kodlandı). Instagram 20 @ sınırı nedeniyle açıklamada 18 oyuncu + tribün lideri + @hocasensin1 etiketlendi; yardımcı antrenörler @ olmadan yazıldı."
  ],
  "gecmis": [
   {
@@ -89,9 +91,19 @@
    "bolum": 4,
    "tarih": "2026-11-13",
    "ozet": "Karar #3 tutmadı (40 beğeni, hedef 410): Burak otobüse kalemle 'Anadoluspor' yazdı. Eski otobüsle yeni sahaya taşınma (duman, taraftar itti); Necmi abi saha sorumlusu, kira bitti. Kasa +4.000, −1.500 (mazot, kireç) → 39.800 TL. Merve takımın ilk kadın futbolcusu (forvet). Kadroya giremeyenlere 'sürprizler yakında' duyurusu. Lig 3. hafta açılış maçı: Anadoluspor 3-3 Bakkal Gücü (0-2 geriden Hamza, Kartal Aras Çağan; 2-3 sonrası Ketizmen penaltı kurtardı; 90+3 Merve). 5 puanla zirvede (atılan golle). İlk saha oylaması (1 fileler 1.500 / 2 tribün boyası 4.000 / 3 projektörler 6.000 / 4 +50 koltuk 10.000) + stat adı soruldu. Karar #4: 50 beğeni → otobüs mor-sarı / Burak'ın yazısı yağmurda silinir.",
+   "begeni": 200,
+   "yorum": 250,
+   "izlenme": 2364,
+   "not_metricool": "Metricool (14 Kasım 17:30): 76 beğeni, 122 yorum, 2364 izlenme; sayfa sahibinin sayıları (200/250) kullanıldı"
+  },
+  {
+   "bolum": 5,
+   "tarih": "2026-11-14",
+   "ozet": "Karar #4 tuttu (200 beğeni): otobüs mor-sarı (−3.000). TFF bildirimi: İLK 11 + 7 yedek; 8 yeni forma (−3.600) ve SÜRPRİZ 1: kadroya giremeyenlerin isimleri formalarda (forma duvarı). Kasa 53.200 TL. Stadın adı ANADOLU ARENA PARK. 18 kişilik kadro (4-4-2) + tribün lideri Kayrat + yardımcı antrenörler Hasan ve Şahin. Lig 4. hafta: Anadoluspor 3-1 Sanayi Demir (Mert, Kılınç Aslan kafa, yedekten Elif; Tarık iki kurtarış), 8 puanla zirve. Saha oylaması sürüyor (projektörler önde). Kasa 50.000'i geçti → Karar #5: 260 beğeni → yeni otobüs / boyalı otobüsle devam, para sahaya. Taraftar grubu adı soruldu (en çok beğenilen).",
    "begeni": null,
    "yorum": null,
-   "izlenme": null
+   "izlenme": null,
+   "metricool_post_id": 428060165
   }
  ],
  "kasa_defteri": [
@@ -139,91 +151,106 @@
    "bolum": 4,
    "aciklama": "Çizgi kireci (yeni saha)",
    "tutar": -500
+  },
+  {
+   "bolum": 5,
+   "aciklama": "Bölüm 4: 200 beğeni × 100 TL",
+   "tutar": 20000
+  },
+  {
+   "bolum": 5,
+   "aciklama": "8 yeni forma (TFF kuralı: İLK 11 + 7 yedek), 8 × 450 TL",
+   "tutar": -3600
+  },
+  {
+   "bolum": 5,
+   "aciklama": "Otobüs boyası mor-sarı (Karar #4)",
+   "tutar": -3000
   }
  ],
  "lig_tablosu": {
   "lig": "Halı Saha Ligi",
-  "hafta": 3,
+  "hafta": 4,
   "sampiyonluk": "5 galibiyetle üst lige çıkılır",
   "takimlar": [
    {
     "takim": "ANADOLUSPOR",
-    "O": 3,
-    "G": 1,
+    "O": 4,
+    "G": 2,
     "B": 2,
     "M": 0,
-    "AG": 7,
-    "YG": 6,
-    "P": 5
+    "AG": 10,
+    "YG": 7,
+    "P": 8
    },
    {
     "takim": "MUHTARLIK GENÇLİK",
-    "O": 3,
-    "G": 1,
+    "O": 4,
+    "G": 2,
     "B": 2,
     "M": 0,
-    "AG": 5,
+    "AG": 7,
+    "YG": 5,
+    "P": 8
+   },
+   {
+    "takim": "BERBER FK",
+    "O": 4,
+    "G": 2,
+    "B": 1,
+    "M": 1,
+    "AG": 4,
     "YG": 4,
+    "P": 7
+   },
+   {
+    "takim": "BAKKAL GÜCÜ",
+    "O": 4,
+    "G": 1,
+    "B": 2,
+    "M": 1,
+    "AG": 8,
+    "YG": 7,
     "P": 5
    },
    {
     "takim": "SANAYİ DEMİR",
-    "O": 3,
+    "O": 4,
     "G": 1,
     "B": 2,
-    "M": 0,
-    "AG": 4,
-    "YG": 3,
+    "M": 1,
+    "AG": 5,
+    "YG": 6,
     "P": 5
    },
    {
-    "takim": "BAKKAL GÜCÜ",
-    "O": 3,
-    "G": 1,
-    "B": 1,
-    "M": 1,
-    "AG": 6,
-    "YG": 5,
-    "P": 4
-   },
-   {
-    "takim": "BERBER FK",
-    "O": 3,
-    "G": 1,
-    "B": 1,
-    "M": 1,
-    "AG": 3,
-    "YG": 4,
-    "P": 4
-   },
-   {
     "takim": "KAHVECİ SPOR",
-    "O": 3,
+    "O": 4,
     "G": 1,
-    "B": 0,
+    "B": 1,
     "M": 2,
-    "AG": 4,
-    "YG": 4,
-    "P": 3
+    "AG": 6,
+    "YG": 6,
+    "P": 4
    },
    {
     "takim": "PAZAR YILDIZ",
-    "O": 3,
+    "O": 4,
     "G": 0,
     "B": 2,
-    "M": 1,
-    "AG": 3,
-    "YG": 4,
+    "M": 2,
+    "AG": 4,
+    "YG": 6,
     "P": 2
    },
    {
     "takim": "FIRIN SPOR",
-    "O": 3,
+    "O": 4,
     "G": 0,
     "B": 2,
-    "M": 1,
+    "M": 2,
     "AG": 4,
-    "YG": 6,
+    "YG": 7,
     "P": 2
    }
   ],
@@ -247,6 +274,12 @@
     "Muhtarlık Gençlik 2-2 Berber FK",
     "Kahveci Spor 1-2 Sanayi Demir",
     "Pazar Yıldız 2-2 Fırın Spor"
+   ],
+   "4": [
+    "Anadoluspor 3-1 Sanayi Demir",
+    "Muhtarlık Gençlik 2-1 Pazar Yıldız",
+    "Bakkal Gücü 2-2 Kahveci Spor",
+    "Berber FK 1-0 Fırın Spor"
    ]
   }
  },
@@ -291,7 +324,7 @@
     }
    ],
    "sonuc": null,
-   "not": "Kazanan yalnız sayfa sahibinin yorum ekran görüntülerinden ya da söylediğinden; yoksa oylama sürüyor. 2026-11-14 ekran görüntülerinde yalnız 1 oy görüldü (merveaynkfc: 3 = Projektörler) → Bölüm 5'te 'oylama sürüyor, Projektörler önde' denebilir; karar yok.",
+   "not": "Kazanan yalnız sayfa sahibinin yorum ekran görüntülerinden ya da söylediğinden; yoksa oylama sürüyor. 2026-11-14 ekran görüntülerinde yalnız 1 oy görüldü (merveaynkfc: 3 = Projektörler) → Bölüm 5'te 'oylama sürüyor, Projektörler önde' denebilir; karar yok. Bölüm 5'te 'oylama sürüyor, projektörler önde' dendi; seçenekler açık.",
    "gelen_oylar": [
     {
      "kullanici": "merveaynkfc",
@@ -324,7 +357,7 @@
   "durum": "Bölüm 4'te taşınıldı. 2026-11-13'ten beri yalnız yeni saha görselleri: eski_stadyum, _gece, _kale, _kulube, _soyunma, _tribun (+json, kalibre), _loca (+json, kalibre), _uzak. Halı saha görselleri ve eski tribün/loca kullanılmaz."
  },
  "otobus": {
-  "durum": "Bölüm 3'te geldi: belediyenin eski, dumanlı otobüsü (varliklar/karakter/otobus.png; boyalı hâli otobus_morsari.png) · Bölüm 4: Karar #3 tutmadı, Burak kalemle 'Anadoluspor' yazdı (varliklar/karakter/otobus_kalem.png)",
+  "durum": "Bölüm 3'te geldi: belediyenin eski, dumanlı otobüsü (varliklar/karakter/otobus.png; boyalı hâli otobus_morsari.png) · Bölüm 4: Karar #3 tutmadı, Burak kalemle 'Anadoluspor' yazdı (varliklar/karakter/otobus_kalem.png) · Bölüm 5: Karar #4 tuttu, otobüs mor-sarıya boyandı (otobus_morsari.png, −3.000 TL). Kasa 53.200 TL ile 50.000 hedefini geçti → Karar #5'e bağlandı.",
   "degisim": "kasa giderlerden sonra 50.000 TL'yi geçince yeni otobüs alınır",
   "yeni_otobus_hedefi_tl": 50000
  },
@@ -366,7 +399,8 @@
   "soru_bolumu": 5,
   "kural": "en çok beğenilen yorumdaki isim (sayfa sahibinin ekran görüntüsünden); uygunsuzsa sıradaki",
   "oneren": null,
-  "aciklandigi_bolum": null
+  "aciklandigi_bolum": null,
+  "soruldu": 5
  },
  "sayfa_sahibi_verisi": {
   "bolum": 2,
@@ -423,7 +457,8 @@
    "ad": "ANADOLU ARENA PARK",
    "karar_veren": "sayfa sahibi (2026-11-14 17:11)",
    "ilham": "taraftar önerisi 'Anadolu' (tarikozyakis, jsp_2677)",
-   "aciklanacagi_bolum": 5
+   "aciklanacagi_bolum": 5,
+   "aciklandi_bolum": 5
   }
  },
  "kadro_kurali": {

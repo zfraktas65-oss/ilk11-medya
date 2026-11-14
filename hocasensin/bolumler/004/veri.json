@@ -1,0 +1,15 @@
+{
+  "kaynak": "Metricool getAnalyticsDataByMetrics (2026-11-14 17:30, Europe/Istanbul) + sayfa sahibi verisi",
+  "metricool": {
+    "tarih_saat": "20261113152941",
+    "baglanti": "https://www.instagram.com/reel/Dfr83STMxg1/",
+    "begeni": 76,
+    "yorum": 122,
+    "izlenme": 2364,
+    "kaydetme": 2,
+    "paylasim": 5
+  },
+  "takipci_IGEV01": "0.0 (gecersiz/gecikmeli)",
+  "sayfa_sahibi": {"begeni": 200, "yorum": 250, "takipci": 325, "tarih": "2026-11-14 17:03"},
+  "kullanilan": {"begeni": 200, "yorum": 250, "izlenme": 2364, "takipci": 325, "not": "GOREV/bolum5_zorunlu: sayfa sahibinin sayıları Metricool yerine kullanılır"}
+}

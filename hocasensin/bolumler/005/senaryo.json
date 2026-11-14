@@ -1,0 +1,3026 @@
+{
+ "slug": "anadoluspor_bolum005",
+ "ses": "ses.mp3",
+ "kelimeler": "kelimeler.json",
+ "muzik": "neseli_1",
+ "kapak": "w:6+0.3",
+ "birlestir": [
+  [
+   [
+    "gün",
+    "beş"
+   ],
+   "Gün 5"
+  ],
+  [
+   [
+    "iki",
+    "yüz",
+    "beğeni"
+   ],
+   "200 beğeni"
+  ],
+  [
+   [
+    "iki",
+    "yüz",
+    "elli",
+    "yorum"
+   ],
+   "250 yorum"
+  ],
+  [
+   [
+    "yirmi",
+    "bin",
+    "lira"
+   ],
+   "20.000 lira"
+  ],
+  [
+   [
+    "karar",
+    "dört"
+   ],
+   "Karar #4"
+  ],
+  [
+   [
+    "on",
+    "sekiz"
+   ],
+   "18"
+  ],
+  [
+   [
+    "ilk",
+    "on",
+    "bir"
+   ],
+   "ilk 11"
+  ],
+  [
+   [
+    "yedi",
+    "yedek"
+   ],
+   "7 yedek"
+  ],
+  [
+   [
+    "sekiz",
+    "yeni"
+   ],
+   "8 yeni"
+  ],
+  [
+   [
+    "üç",
+    "bin",
+    "altı",
+    "yüz"
+   ],
+   "3.600"
+  ],
+  [
+   [
+    "üç",
+    "bin"
+   ],
+   "3.000"
+  ],
+  [
+   [
+    "elli",
+    "üç",
+    "bin",
+    "iki",
+    "yüz",
+    "lira"
+   ],
+   "53.200 lira"
+  ],
+  [
+   [
+    "dokuz",
+    "yüz",
+    "bir",
+    "taraftar"
+   ],
+   "901 taraftar"
+  ],
+  [
+   [
+    "üç",
+    "yüz",
+    "yirmi",
+    "beş",
+    "kişi"
+   ],
+   "325 kişi"
+  ],
+  [
+   [
+    "bir",
+    "sıfır"
+   ],
+   "1-0"
+  ],
+  [
+   [
+    "iki",
+    "bir"
+   ],
+   "2-1"
+  ],
+  [
+   [
+    "üç",
+    "bir"
+   ],
+   "3-1"
+  ],
+  [
+   [
+    "iki",
+    "kez"
+   ],
+   "2 kez"
+  ],
+  [
+   [
+    "sekiz",
+    "puanla"
+   ],
+   "8 puanla"
+  ],
+  [
+   [
+    "elli",
+    "bini"
+   ],
+   "50 bini"
+  ],
+  [
+   [
+    "karar",
+    "beş"
+   ],
+   "Karar #5"
+  ],
+  [
+   [
+    "iki",
+    "yüz",
+    "altmış",
+    "beğeniyi"
+   ],
+   "260 beğeniyi"
+  ],
+  [
+   [
+    "dördüncü",
+    "hafta"
+   ],
+   "4. hafta"
+  ]
+ ],
+ "sesler": [
+  {
+   "tip": "gum",
+   "t": "w:5"
+  },
+  {
+   "tip": "kasa",
+   "t": "w:25",
+   "ses": 1.0
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:34",
+   "ses": 0.6
+  },
+  {
+   "tip": "zil",
+   "t": "w:39",
+   "ses": 0.7
+  },
+  {
+   "tip": "kasa",
+   "t": "w:75",
+   "ses": 1.0
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:89",
+   "ses": 0.7
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:115",
+   "ses": 0.6
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:139",
+   "ses": 0.6
+  },
+  {
+   "tip": "duduk",
+   "t": "w:173"
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:178",
+   "ses": 0.9
+  },
+  {
+   "tip": "uzgun",
+   "t": "w:182",
+   "ses": 0.7
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:184",
+   "ses": 0.6
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:192",
+   "ses": 1.0
+  },
+  {
+   "tip": "kisa_duduk",
+   "t": "w:195"
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:198",
+   "ses": 1.0
+  },
+  {
+   "tip": "duduk",
+   "t": "we:200+0.9"
+  },
+  {
+   "tip": "zil",
+   "t": "we:200+1.8",
+   "ses": 0.9
+  },
+  {
+   "tip": "kasa",
+   "t": "w:210",
+   "ses": 0.9
+  },
+  {
+   "tip": "tezahurat",
+   "t": "w:231",
+   "ses": 0.5
+  },
+  {
+   "tip": "pop",
+   "t": "w:45"
+  },
+  {
+   "tip": "pop",
+   "t": "w:49"
+  },
+  {
+   "tip": "pop",
+   "t": "w:45"
+  },
+  {
+   "tip": "pop",
+   "t": "w:49"
+  },
+  {
+   "tip": "pop",
+   "t": "w:102"
+  },
+  {
+   "tip": "pop",
+   "t": "w:105"
+  },
+  {
+   "tip": "pop",
+   "t": "w:100"
+  },
+  {
+   "tip": "pop",
+   "t": "w:103"
+  },
+  {
+   "tip": "pop",
+   "t": "w:111"
+  },
+  {
+   "tip": "pop",
+   "t": "w:114"
+  },
+  {
+   "tip": "pop",
+   "t": "w:108"
+  },
+  {
+   "tip": "pop",
+   "t": "w:112"
+  },
+  {
+   "tip": "pop",
+   "t": "w:123"
+  },
+  {
+   "tip": "pop",
+   "t": "w:121"
+  },
+  {
+   "tip": "pop",
+   "t": "w:125"
+  },
+  {
+   "tip": "pop",
+   "t": "w:129"
+  },
+  {
+   "tip": "pop",
+   "t": "w:132"
+  },
+  {
+   "tip": "pop",
+   "t": "w:128"
+  },
+  {
+   "tip": "pop",
+   "t": "w:130"
+  },
+  {
+   "tip": "pop",
+   "t": "w:134"
+  },
+  {
+   "tip": "pop",
+   "t": "w:142"
+  },
+  {
+   "tip": "pop",
+   "t": "w:133"
+  },
+  {
+   "tip": "pop",
+   "t": "w:139"
+  },
+  {
+   "tip": "pop",
+   "t": "w:147"
+  },
+  {
+   "tip": "pop",
+   "t": "w:149"
+  }
+ ],
+ "sahneler": [
+  {
+   "bas": 0,
+   "arka": "eski_stadyum_uzak",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1680,
+     "h": 900,
+     "giris": "right",
+     "sure": 0.5,
+     "kos": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "seri",
+     "bolum": 5,
+     "bas": 0.05,
+     "y": 260,
+     "anim": "down"
+    },
+    {
+     "tip": "pankart",
+     "metin": "RESMİ BİLDİRİM",
+     "zemin": [
+      255,
+      250,
+      235
+     ],
+     "renk": "mor",
+     "egim": -4,
+     "bas": "w:0",
+     "y": 440
+    },
+    {
+     "tip": "damga",
+     "metin": "18 KİŞİLİK KADRO!",
+     "boyut": 92,
+     "egim": -8,
+     "bas": "w:5",
+     "y": 665,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:8-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1660,
+     "h": 980
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TAKİP ET",
+     "boyut": 74,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:8",
+     "y": 330,
+     "nabiz": true
+    },
+    {
+     "tip": "etiket",
+     "metin": "YORUMUNA MEVKİNİ YAZ",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:10",
+     "y": 470
+    }
+   ]
+  },
+  {
+   "bas": "w:13-0.05",
+   "arka": "eski_stadyum",
+   "bulanik": 4,
+   "zoom": [
+    1.04,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "necmi",
+     "x": 820,
+     "ayak": 1700,
+     "h": 880
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "baslik",
+     "metin": "GÜN 5",
+     "boyut": 230,
+     "bas": "w:13",
+     "bitis": "w:15-0.05",
+     "y": 420,
+     "anim": "stamp"
+    },
+    {
+     "tip": "begeni",
+     "metin": "200 BEĞENİ",
+     "bas": "w:17",
+     "x": 360,
+     "y": 470
+    },
+    {
+     "tip": "begeni",
+     "metin": "250 YORUM",
+     "zemin": "mavi",
+     "bas": "w:20",
+     "x": 380,
+     "y": 640
+    },
+    {
+     "tip": "begeni",
+     "metin": "+20.000 TL",
+     "zemin": "mor",
+     "bas": "w:25",
+     "x": 380,
+     "y": 810
+    }
+   ]
+  },
+  {
+   "bas": "w:29-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.55,
+     0.5
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "otobus_morsari",
+     "x": 540,
+     "ayak": 1580,
+     "h": 430,
+     "giris": "left",
+     "sure": 0.6,
+     "bas": "w:32"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "KARAR #4 TUTTU!",
+     "boyut": 64,
+     "renk": "beyaz",
+     "zemin": "yesil",
+     "egim": -3,
+     "bas": "w:29",
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "HEDEF 50 · GELEN 200",
+     "boyut": 48,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:30",
+     "y": 430
+    },
+    {
+     "tip": "damga",
+     "metin": "MOR-SARI!",
+     "boyut": 110,
+     "egim": -8,
+     "bas": "w:34",
+     "y": 640,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:36-0.05",
+   "arka": "eski_stadyum_soyunma",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 560,
+     "ayak": 1690,
+     "h": 940,
+     "giris": "right",
+     "sure": 0.45,
+     "kos": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "SICAK HABER!",
+     "boyut": 60,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "bas": "w:36",
+     "y": 280,
+     "anim": "stamp"
+    },
+    {
+     "tip": "pankart",
+     "metin": "RESMİ BİLDİRİM: AMATÖR KULÜPLERE",
+     "zemin": [
+      255,
+      250,
+      235
+     ],
+     "renk": "mor",
+     "egim": -3,
+     "bas": "w:39",
+     "y": 480
+    },
+    {
+     "tip": "etiket",
+     "metin": "TFF BİLDİRİMİ",
+     "boyut": 48,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:42",
+     "y": 650
+    }
+   ]
+  },
+  {
+   "bas": "w:44-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_stoper2",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:45",
+     "faz": 0.2
+    },
+    {
+     "ad": "oyuncu_libero",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:49",
+     "faz": 0.6
+    },
+    {
+     "ad": "oyuncu_sagbek",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:45",
+     "faz": 0
+    },
+    {
+     "ad": "oyuncu_kaleci2",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:49",
+     "faz": 0.4
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "damga",
+     "metin": "İLK 11 + 7 YEDEK",
+     "boyut": 96,
+     "egim": -8,
+     "bas": "w:45",
+     "y": 330,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "YANİ DAHA ÇOK KİŞİ TAKIMDA!",
+     "boyut": 52,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 2,
+     "bas": "w:51",
+     "y": 520
+    }
+   ]
+  },
+  {
+   "bas": "w:56-0.05",
+   "arka": "eski_stadyum_soyunma",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "burak",
+     "x": 540,
+     "ayak": 1690,
+     "h": 940
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "8 YENİ FORMA GELDİ!",
+     "boyut": 62,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:56",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "SIRTLARINDA SÜRPRİZ VAR...",
+     "boyut": 50,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:60",
+     "y": 440
+    },
+    {
+     "tip": "forma",
+     "isim": "?",
+     "no": "?",
+     "genislik": 300,
+     "x": 830,
+     "y": 900,
+     "bas": "w:61",
+     "dondur": 6
+    }
+   ]
+  },
+  {
+   "bas": "w:63-0.05",
+   "arka": "eski_stadyum_soyunma",
+   "bulanik": 6,
+   "karanlik": 0.8,
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "altyazi_y": 1395,
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "FORMA DUVARI",
+     "boyut": 60,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:63-0.05",
+     "y": 270,
+     "anim": "down"
+    },
+    {
+     "tip": "forma",
+     "isim": "@hasankaya.4444",
+     "no": "9",
+     "genislik": 280,
+     "x": 190,
+     "y": 560,
+     "bas": 24.6
+    },
+    {
+     "tip": "forma",
+     "isim": "@sezginturk_",
+     "no": "19",
+     "genislik": 280,
+     "x": 540,
+     "y": 560,
+     "bas": 24.83
+    },
+    {
+     "tip": "forma",
+     "isim": "@husynova_aytac",
+     "no": "23",
+     "genislik": 280,
+     "x": 890,
+     "y": 560,
+     "bas": 25.05
+    },
+    {
+     "tip": "forma",
+     "isim": "@renas_arhat__sozdar",
+     "no": "35",
+     "genislik": 280,
+     "x": 190,
+     "y": 880,
+     "bas": 25.27
+    },
+    {
+     "tip": "forma",
+     "isim": "@cevat12345hamza_1235",
+     "no": "4",
+     "genislik": 280,
+     "x": 540,
+     "y": 880,
+     "bas": 25.5
+    },
+    {
+     "tip": "forma",
+     "isim": "@ruzgarcatal9",
+     "no": "99",
+     "genislik": 280,
+     "x": 890,
+     "y": 880,
+     "bas": 25.73
+    },
+    {
+     "tip": "forma",
+     "isim": "@byat_las1617",
+     "no": "17",
+     "genislik": 280,
+     "x": 190,
+     "y": 1200,
+     "bas": 25.95
+    },
+    {
+     "tip": "forma",
+     "isim": "@fevziyeyoldasercekus",
+     "no": "3",
+     "genislik": 280,
+     "x": 540,
+     "y": 1200,
+     "bas": 26.17
+    },
+    {
+     "tip": "forma",
+     "isim": "@ruzo_bayroo31",
+     "no": "88",
+     "genislik": 280,
+     "x": 890,
+     "y": 1200,
+     "bas": 26.4
+    }
+   ]
+  },
+  {
+   "bas": "w:67-0.05",
+   "arka": "eski_stadyum_soyunma",
+   "bulanik": 10,
+   "karanlik": 0.7,
+   "zoom": [
+    1.06,
+    1.1
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "kasa",
+     "baslik": "KULÜP KASASI",
+     "satirlar": [
+      [
+       "DEVREDEN",
+       "39.800 TL",
+       "mor"
+      ],
+      [
+       "200 BEĞENİ × 100 TL",
+       "+20.000 TL"
+      ],
+      [
+       "8 YENİ FORMA (TFF KURALI)",
+       "−3.600 TL"
+      ],
+      [
+       "OTOBÜS BOYASI (KARAR #4)",
+       "−3.000 TL"
+      ]
+     ],
+     "kalan": "53.200 TL",
+     "not": "YENİ OTOBÜS HEDEFİ: 50.000 TL",
+     "bas": "w:67",
+     "y": 740
+    },
+    {
+     "tip": "damga",
+     "metin": "53.200 TL",
+     "boyut": 100,
+     "egim": -8,
+     "bas": "w:76",
+     "y": 1225,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:83-0.05",
+   "arka": "eski_stadyum_uzak",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "STADIMIZIN ADI BELLİ!",
+     "boyut": 58,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:83",
+     "y": 300
+    },
+    {
+     "tip": "pankart",
+     "metin": "ANADOLU ARENA PARK",
+     "zemin": "mor",
+     "renk": "sari",
+     "egim": -2,
+     "bas": "w:88",
+     "y": 520,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "TEŞEKKÜRLER @tarikozyakis · @jsp_2677",
+     "boyut": 36,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:85",
+     "y": 700
+    }
+   ]
+  },
+  {
+   "bas": "w:92-0.05",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1680,
+     "h": 960,
+     "giris": "up"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "EN ÇOK ISRAR EDENLER",
+     "boyut": 60,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:92",
+     "y": 300
+    },
+    {
+     "tip": "damga",
+     "metin": "BUGÜN SAHADA!",
+     "boyut": 96,
+     "egim": -8,
+     "bas": "w:97",
+     "y": 450,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:99-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_solbek",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:102",
+     "faz": 0.2,
+     "etiket": "muratlatuntas63",
+     "etiket_alt": "SOL BEK",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_stoper2",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:105",
+     "faz": 0.6,
+     "etiket": "atlas__efe_yola",
+     "etiket_alt": "STOPER",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "taraftar_kaleci",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:100",
+     "faz": 0,
+     "etiket": "tarikozyakis",
+     "etiket_alt": "KALECİ",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_stoper",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:103",
+     "faz": 0.4,
+     "etiket": "ahmeteymendumlupinar",
+     "etiket_alt": "STOPER",
+     "etiket_boyut": 28
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "İLK 11 · KALE VE DEFANS",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:99-0.05",
+     "y": 270,
+     "anim": "down"
+    },
+    {
+     "tip": "etiket",
+     "metin": "ŞEMA 4-4-2",
+     "boyut": 40,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:99-0.05",
+     "y": 380
+    }
+   ]
+  },
+  {
+   "bas": "w:108-0.05",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_solkanat",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:111",
+     "faz": 0.2,
+     "etiket": "rojvandikici1649",
+     "etiket_alt": "SOL KANAT",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_libero",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:114",
+     "faz": 0.6,
+     "etiket": "cinargulen808",
+     "etiket_alt": "ORTA SAHA",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_sagbek",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:108",
+     "faz": 0,
+     "etiket": "muhammed.nur36",
+     "etiket_alt": "SAĞ BEK",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_ortasaha",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:112",
+     "faz": 0.4,
+     "etiket": "rukiyecebrailk",
+     "etiket_alt": "ORTA SAHA",
+     "etiket_boyut": 28
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "İLK 11 · DEFANS VE ORTA SAHA",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:108-0.05",
+     "y": 270,
+     "anim": "down"
+    },
+    {
+     "tip": "damga",
+     "metin": "ÇINAR ARTIK İLK 11'DE!",
+     "boyut": 66,
+     "egim": -6,
+     "bas": "w:115",
+     "y": 520,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:120-0.05",
+   "arka": "eski_stadyum_kale",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "x": 540,
+     "ayak": 1450,
+     "h": 620,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:123",
+     "faz": 0.3,
+     "etiket": "gs_mert_bjk_fb",
+     "etiket_alt": "FORVET",
+     "etiket_boyut": 30
+    },
+    {
+     "ad": "oyuncu_sagkanat",
+     "x": 215,
+     "ayak": 1580,
+     "h": 700,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:121",
+     "faz": 0,
+     "etiket": "muhammed.emin.onaran",
+     "etiket_alt": "SAĞ KANAT",
+     "etiket_boyut": 30
+    },
+    {
+     "ad": "oyuncu_10",
+     "x": 865,
+     "ayak": 1580,
+     "h": 700,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:125",
+     "faz": 0.6,
+     "etiket": "kilinc_aslan_",
+     "etiket_alt": "FORVET",
+     "etiket_boyut": 30
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "İLK 11 · HÜCUM HATTI",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:120-0.05",
+     "y": 270,
+     "anim": "down"
+    }
+   ]
+  },
+  {
+   "bas": "w:127-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_ortasaha",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:129",
+     "faz": 0.2,
+     "etiket": "fataliyevramiz",
+     "etiket_alt": "ORTA SAHA",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_solkanat",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:132",
+     "faz": 0.6,
+     "etiket": "asil06065",
+     "etiket_alt": "KANAT",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_kaleci2",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:128",
+     "faz": 0,
+     "etiket": "nur_kralgms",
+     "etiket_alt": "YEDEK KALECİ",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_libero",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:130",
+     "faz": 0.4,
+     "etiket": "hiziralivatansever",
+     "etiket_alt": "ORTA SAHA",
+     "etiket_boyut": 28
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "YEDEKLER · 1 / 2",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:127-0.05",
+     "y": 270,
+     "anim": "down"
+    }
+   ]
+  },
+  {
+   "bas": "w:133-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.03
+   ],
+   "merkez": [
+    [
+     0.45,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_10",
+     "x": 410,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:134",
+     "faz": 0.2,
+     "etiket": "alperacar1077",
+     "etiket_alt": "FORVET",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "tribun_lideri",
+     "x": 920,
+     "ayak": 1385,
+     "h": 560,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:142",
+     "faz": 0.6,
+     "etiket": "kayratoksozz",
+     "etiket_alt": "TRİBÜN LİDERİ",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "forvet",
+     "x": 160,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:133",
+     "faz": 0,
+     "etiket": "aktas__mustafa_0227",
+     "etiket_alt": "FORVET",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 670,
+     "ayak": 1560,
+     "h": 640,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:139",
+     "faz": 0.4,
+     "etiket": "elif_priw55566",
+     "etiket_alt": "FORVET",
+     "etiket_boyut": 28
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "YEDEKLER 2 / 2 + TRİBÜN LİDERİ",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:133-0.05",
+     "y": 270,
+     "anim": "down"
+    },
+    {
+     "tip": "damga",
+     "metin": "İKİNCİ KADIN FUTBOLCUMUZ!",
+     "boyut": 62,
+     "egim": -6,
+     "bas": "w:136",
+     "y": 480,
+     "anim": "stamp",
+     "bitis": "w:140-0.05"
+    },
+    {
+     "tip": "etiket",
+     "metin": "DAVULUMUZ KAYRAT'TA!",
+     "boyut": 54,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 3,
+     "bas": "w:140",
+     "y": 480
+    }
+   ]
+  },
+  {
+   "bas": "w:143-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.04
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1450,
+     "h": 620,
+     "faz": 0.3
+    },
+    {
+     "ad": "yardimci_antrenor1",
+     "x": 215,
+     "ayak": 1580,
+     "h": 700,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:147",
+     "faz": 0,
+     "etiket": "hasan_zengi83",
+     "etiket_alt": "YARDIMCI ANTRENÖR",
+     "etiket_boyut": 28
+    },
+    {
+     "ad": "yardimci_antrenor2",
+     "x": 865,
+     "ayak": 1580,
+     "h": 700,
+     "giris": "pop",
+     "sure": 0.25,
+     "bas": "w:149",
+     "faz": 0.6,
+     "etiket": "s_ahinpars",
+     "etiket_alt": "YARDIMCI ANTRENÖR",
+     "etiket_boyut": 28
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TEKNİK EKİP",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:143-0.05",
+     "y": 270,
+     "anim": "down"
+    },
+    {
+     "tip": "etiket",
+     "metin": "YARDIMCI ANTRENÖRLER",
+     "boyut": 40,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:143-0.05",
+     "y": 380
+    }
+   ]
+  },
+  {
+   "bas": "w:150-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.03,
+    1.07
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "tribun_lideri",
+     "x": 900,
+     "ayak": 1440,
+     "h": 560,
+     "faz": 0.5
+    },
+    {
+     "ad": "oyuncu_10",
+     "x": 400,
+     "ayak": 1440,
+     "h": 560,
+     "faz": 0.2
+    },
+    {
+     "ad": "forvet",
+     "x": 180,
+     "ayak": 1640,
+     "h": 640,
+     "faz": 0.1
+    },
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 650,
+     "ayak": 1640,
+     "h": 640,
+     "faz": 0.4
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "YORUM YAP",
+     "boyut": 60,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": -3,
+     "bas": "w:153",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "BEĞEN",
+     "boyut": 60,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:156",
+     "y": 420
+    },
+    {
+     "tip": "etiket",
+     "metin": "PAYLAŞ",
+     "boyut": 60,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": "w:157",
+     "y": 540
+    },
+    {
+     "tip": "etiket",
+     "metin": "ARKADAŞINA GÖNDER",
+     "boyut": 60,
+     "renk": "sari",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:158",
+     "y": 660
+    }
+   ]
+  },
+  {
+   "bas": "w:160-0.05",
+   "arka": "eski_stadyum_tribun",
+   "zoom": [
+    1.75,
+    1.75
+   ],
+   "merkez": [
+    [
+     0.28,
+     0.5
+    ],
+    [
+     0.72,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "hamzaklnc13",
+     "harunalizade_",
+     "haticerhanhayta",
+     "hayri.pasa07",
+     "hira.ozgun",
+     "hus213406",
+     "husynova_aytac",
+     "ibrahimmertyazici9",
+     "idrisesen80",
+     "irfancabalak4627",
+     "isa_93628",
+     "jsp_2677",
+     "kazasahin",
+     "keziban_atc45",
+     "leonleon0809",
+     "leyladurmuuss",
+     "mecitcelik112",
+     "melahatceloglu",
+     "meral_ayhan45",
+     "metin10359",
+     "miracbaba01_",
+     "moldivya_59",
+     "mrvfnr",
+     "muhammededizgonultas",
+     "muhammedkilali",
+     "nazanabukan",
+     "nazifeyusuf1",
+     "qarayevali2016",
+     "realefedalmis",
+     "reistuza76"
+    ],
+    "etiket_boyut": 15,
+    "sayi": 14
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "901 TARAFTAR · TRİBÜN 50/50 · AYAKTA 851",
+     "boyut": 40,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:160",
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": 69.65,
+   "arka": "eski_stadyum_loca",
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "merkez": [
+    [
+     0.42,
+     0.5
+    ],
+    [
+     0.58,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "yakupoglusultan",
+     "yasercelik54",
+     "yasin_ramanov",
+     "yigitege4242",
+     "zaesburakaktas.2",
+     "_arda_saricicek",
+     "ali656527",
+     "ali_ucer01",
+     "atlaskabayel",
+     "baba841052",
+     "cemal_can5506",
+     "diriferdi",
+     "eda1993temiz_",
+     "emin.vision",
+     "enise__yldz276",
+     "ercagliyan",
+     "ercan_leao",
+     "f1zeus67",
+     "fatmaelbll81",
+     "fehmi.gonul"
+    ],
+    "etiket_boyut": 15,
+    "aralik": 1.3,
+    "tohum": 11
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "LOCA · 325 KİŞİLİK TEKNİK HEYET",
+     "boyut": 42,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": 69.65,
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": 71.43,
+   "arka": "eski_stadyum_loca",
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "merkez": [
+    [
+     0.58,
+     0.5
+    ],
+    [
+     0.42,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "feroo_yerturk",
+     "hakt2n6",
+     "hatun_inal",
+     "hayri.pasa07",
+     "hpmuratkural",
+     "imislifc2",
+     "kadriye_fz",
+     "kerim_ergin4646",
+     "mangohardal67",
+     "merveaynkfc",
+     "michel._olise_17",
+     "miracfiliz4545",
+     "nesibe.altay",
+     "nevincelik1970",
+     "oktayenes72",
+     "omer.canbuyukkaya10",
+     "omer90357",
+     "omerali_19007",
+     "ondersivasligil",
+     "orhan_sisek"
+    ],
+    "etiket_boyut": 15,
+    "aralik": 1.3,
+    "tohum": 12
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "İSİMLER EKRANDA!",
+     "boyut": 42,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": 71.43,
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": 73.21,
+   "arka": "eski_stadyum_loca",
+   "zoom": [
+    1.6,
+    1.6
+   ],
+   "merkez": [
+    [
+     0.42,
+     0.5
+    ],
+    [
+     0.58,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "isimler": [
+     "ozbendenizkok",
+     "pixermirac",
+     "pusatemiralpoglu",
+     "qarayevali2016",
+     "semra_kzmaz",
+     "serkanyilmazjr",
+     "wpberko",
+     "y64869993",
+     "yasav_umut.20",
+     "ysuf_metin",
+     "yusraakcora",
+     "yusuf_ugrl01",
+     "06furkan_bostan",
+     "aartur221",
+     "alfro_37",
+     "alis62278",
+     "aras.sara26",
+     "arda_sayioglu",
+     "asimakar68",
+     "atakan.3590"
+    ],
+    "etiket_boyut": 15,
+    "aralik": 1.3,
+    "tohum": 13
+   },
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "LOCAYA HOŞ GELDİNİZ",
+     "boyut": 42,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": 73.21,
+     "y": 250
+    }
+   ]
+  },
+  {
+   "bas": "w:172-0.05",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.52
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "x": 330,
+     "ayak": 1700,
+     "h": 760,
+     "giris": "left",
+     "sure": 0.4,
+     "kos": true,
+     "bas": "w:174"
+    },
+    {
+     "ad": "oyuncu_10",
+     "x": 760,
+     "ayak": 1700,
+     "h": 740,
+     "giris": "right",
+     "sure": 0.4,
+     "kos": true,
+     "bas": "w:175"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 0,
+     "dep_skor": 0,
+     "dakika": "1'",
+     "bas": "w:172",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "LİG 4. HAFTA · ANADOLU ARENA PARK",
+     "boyut": 42,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": "w:172",
+     "y": 470
+    },
+    {
+     "tip": "isim",
+     "no": "VS",
+     "ad": "SANAYİ DEMİR",
+     "alt": "LİGİN ZİRVE YARIŞI",
+     "bas": "w:175",
+     "x": 520,
+     "y": 640
+    }
+   ]
+  },
+  {
+   "bas": "w:177-0.05",
+   "arka": "eski_stadyum_kale",
+   "zoom": [
+    1.05,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.46
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "x": 540,
+     "ayak": 1740,
+     "h": 960,
+     "giris": "right",
+     "sure": 0.35,
+     "kos": true,
+     "etiket": "gs_mert_bjk_fb",
+     "etiket_alt": "FORVET"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 0,
+     "dep_skor": 0,
+     "dakika": "17'",
+     "bas": "w:177",
+     "y": 260,
+     "bitis": "w:178-0.03"
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 0,
+     "dakika": "18'",
+     "bas": "w:178",
+     "y": 260
+    },
+    {
+     "tip": "baslik",
+     "metin": "GOL!",
+     "boyut": 220,
+     "bas": "w:178",
+     "y": 560,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": "w:179-0.05",
+   "arka": "eski_stadyum_kale",
+   "zoom": [
+    1.3,
+    1.36
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.52,
+     0.42
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "forvet",
+     "x": 540,
+     "ayak": 1760,
+     "h": 1000,
+     "giris": "none",
+     "kos": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TEKRAR",
+     "boyut": 56,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "bas": "w:179-0.05",
+     "y": 280
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 0,
+     "dakika": "18'",
+     "bas": "w:179-0.05",
+     "y": 420
+    }
+   ]
+  },
+  {
+   "bas": "w:181-0.05",
+   "arka": "eski_stadyum_kulube",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "yardimci_antrenor1",
+     "x": 215,
+     "ayak": 1580,
+     "h": 700
+    },
+    {
+     "ad": "cem",
+     "x": 540,
+     "ayak": 1450,
+     "h": 620
+    },
+    {
+     "ad": "yardimci_antrenor2",
+     "x": 865,
+     "ayak": 1580,
+     "h": 700
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 0,
+     "dakika": "40'",
+     "bas": "w:181",
+     "y": 300,
+     "bitis": "w:182-0.03"
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 1,
+     "dakika": "41'",
+     "bas": "w:182",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "SANAYİ EŞİTLEDİ",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "bas": "w:182",
+     "y": 460
+    }
+   ]
+  },
+  {
+   "bas": "w:183-0.05",
+   "arka": "eski_stadyum_kale",
+   "zoom": [
+    1.02,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.44
+    ],
+    [
+     0.5,
+     0.44
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "taraftar_kaleci",
+     "x": 540,
+     "ayak": 1740,
+     "h": 920,
+     "etiket": "tarikozyakis",
+     "etiket_alt": "KALECİ"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 1,
+     "dakika": "57'",
+     "bas": "w:183",
+     "y": 300
+    },
+    {
+     "tip": "damga",
+     "metin": "KURTARDI!",
+     "boyut": 100,
+     "egim": -8,
+     "bas": "w:184",
+     "y": 580,
+     "anim": "stamp",
+     "bitis": "w:186-0.05"
+    },
+    {
+     "tip": "damga",
+     "metin": "BİR DAHA!",
+     "boyut": 110,
+     "egim": 6,
+     "bas": "w:186",
+     "y": 580,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:188-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.04,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.4,
+     0.55
+    ],
+    [
+     0.6,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_solkanat",
+     "x": 540,
+     "ayak": 1740,
+     "h": 940,
+     "giris": "left",
+     "sure": 0.3,
+     "kos": true,
+     "etiket": "rojvandikici1649",
+     "etiket_alt": "SOL KANAT"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 1,
+     "dakika": "63'",
+     "bas": "w:188",
+     "y": 260
+    },
+    {
+     "tip": "etiket",
+     "metin": "ORTA!",
+     "boyut": 64,
+     "renk": "siyah",
+     "zemin": "beyaz",
+     "egim": -6,
+     "bas": "w:189",
+     "y": 460
+    }
+   ]
+  },
+  {
+   "bas": "w:190-0.05",
+   "arka": "eski_stadyum_kale",
+   "zoom": [
+    1.06,
+    1.16
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.45
+    ],
+    [
+     0.5,
+     0.42
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_10",
+     "x": 540,
+     "ayak": 1740,
+     "h": 960,
+     "giris": "right",
+     "sure": 0.3,
+     "kos": true,
+     "etiket": "kilinc_aslan_",
+     "etiket_alt": "FORVET"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 1,
+     "dep_skor": 1,
+     "dakika": "64'",
+     "bas": "w:190",
+     "y": 260,
+     "bitis": "w:192-0.03"
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 2,
+     "dep_skor": 1,
+     "dakika": "64'",
+     "bas": "w:192",
+     "y": 260
+    },
+    {
+     "tip": "baslik",
+     "metin": "KAFA GOLÜ!",
+     "boyut": 160,
+     "bas": "w:192",
+     "y": 560,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": "w:193-0.05",
+   "arka": "eski_stadyum_tribun",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "sayi": 70,
+    "tohum": 5
+   },
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 2,
+     "dep_skor": 1,
+     "dakika": "65'",
+     "bas": "w:193-0.05",
+     "y": 280
+    },
+    {
+     "tip": "damga",
+     "metin": "2-1!",
+     "boyut": 130,
+     "egim": -8,
+     "bas": "w:193",
+     "y": 520,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:195-0.05",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.04,
+    1.14
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.52
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 540,
+     "ayak": 1740,
+     "h": 960,
+     "giris": "right",
+     "sure": 0.35,
+     "kos": true,
+     "etiket": "elif_priw55566",
+     "etiket_alt": "FORVET (YEDEKTEN)"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 2,
+     "dep_skor": 1,
+     "dakika": "80'",
+     "bas": "w:195",
+     "y": 260,
+     "bitis": "w:198-0.03"
+    },
+    {
+     "tip": "etiket",
+     "metin": "OYUNCU DEĞİŞİKLİĞİ: ELİF",
+     "boyut": 50,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -3,
+     "bas": "w:195",
+     "y": 420,
+     "bitis": "w:198-0.05"
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 3,
+     "dep_skor": 1,
+     "dakika": "88'",
+     "bas": "w:198",
+     "y": 260
+    },
+    {
+     "tip": "baslik",
+     "metin": "GOL!",
+     "boyut": 220,
+     "bas": "w:198",
+     "y": 560,
+     "anim": "stamp",
+     "titre": true
+    }
+   ]
+  },
+  {
+   "bas": "we:200+0.03",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.3,
+    1.36
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.52,
+     0.48
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 540,
+     "ayak": 1760,
+     "h": 1000,
+     "giris": "none",
+     "kos": true
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TEKRAR",
+     "boyut": 56,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": -3,
+     "bas": "we:200+0.03",
+     "y": 280
+    },
+    {
+     "tip": "skor",
+     "ev": "ANADOLUSPOR",
+     "dep": "SANAYİ DEMİR",
+     "ev_skor": 3,
+     "dep_skor": 1,
+     "dakika": "88'",
+     "bas": "we:200+0.03",
+     "y": 420
+    }
+   ]
+  },
+  {
+   "bas": "we:200+1.0",
+   "altyazi_y": false,
+   "arka": "eski_stadyum_gece",
+   "bulanik": 10,
+   "karanlik": 0.7,
+   "zoom": [
+    1.04,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "puan",
+     "baslik": "HALI SAHA LİGİ · 4. HAFTA",
+     "satirlar": [
+      [
+       "ANADOLUSPOR",
+       4,
+       2,
+       2,
+       0,
+       "+3",
+       8
+      ],
+      [
+       "MUHTARLIK GENÇLİK",
+       4,
+       2,
+       2,
+       0,
+       "+2",
+       8
+      ],
+      [
+       "BERBER FK",
+       4,
+       2,
+       1,
+       1,
+       "0",
+       7
+      ],
+      [
+       "BAKKAL GÜCÜ",
+       4,
+       1,
+       2,
+       1,
+       "+1",
+       5
+      ],
+      [
+       "SANAYİ DEMİR",
+       4,
+       1,
+       2,
+       1,
+       "-1",
+       5
+      ],
+      [
+       "KAHVECİ SPOR",
+       4,
+       1,
+       1,
+       2,
+       "0",
+       4
+      ],
+      [
+       "PAZAR YILDIZ",
+       4,
+       0,
+       2,
+       2,
+       "-2",
+       2
+      ],
+      [
+       "FIRIN SPOR",
+       4,
+       0,
+       2,
+       2,
+       "-3",
+       2
+      ]
+     ],
+     "eski": [
+      "ANADOLUSPOR",
+      "MUHTARLIK GENÇLİK",
+      "SANAYİ DEMİR",
+      "BAKKAL GÜCÜ",
+      "BERBER FK",
+      "KAHVECİ SPOR",
+      "PAZAR YILDIZ",
+      "FIRIN SPOR"
+     ],
+     "vurgu": "ANADOLUSPOR",
+     "rozet": "",
+     "alt": "ŞAMPİYON 5 GALİBİYETLE ÜST LİGE ÇIKAR",
+     "bas": "we:200+1.05",
+     "gecikme": 0.7,
+     "kayma": 1.1,
+     "y": 830
+    },
+    {
+     "tip": "etiket",
+     "metin": "ANADOLUSPOR 3-1 SANAYİ DEMİR",
+     "boyut": 50,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": "we:200+1.05",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "8 PUANLA ZİRVEDEYİZ!",
+     "boyut": 60,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:201",
+     "y": 1320,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:204-0.05",
+   "arka": "eski_stadyum_gece",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.4
+    ],
+    [
+     0.5,
+     0.35
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "necmi",
+     "x": 540,
+     "ayak": 1700,
+     "h": 900
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "SAHA OYLAMASI SÜRÜYOR",
+     "boyut": 58,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:204",
+     "y": 290
+    },
+    {
+     "tip": "etiket",
+     "metin": "3) PROJEKTÖRLER ÖNDE · 6.000 TL",
+     "boyut": 46,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:207",
+     "y": 420
+    },
+    {
+     "tip": "etiket",
+     "metin": "YORUMUNA 1 · 2 · 3 · 4 YAZ!",
+     "boyut": 44,
+     "renk": "siyah",
+     "zemin": "beyaz",
+     "egim": -2,
+     "bas": "w:206",
+     "y": 540
+    }
+   ]
+  },
+  {
+   "bas": "w:209-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "otobus_morsari",
+     "x": 540,
+     "ayak": 1600,
+     "h": 420,
+     "giris": "left",
+     "sure": 0.5
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "ilerleme",
+     "sol": "KASA 53.200 TL",
+     "sag": "YENİ OTOBÜS 50.000 TL",
+     "oran": 1.0,
+     "isaret": "HEDEF GEÇİLDİ!",
+     "bas": "w:209",
+     "y": 340
+    },
+    {
+     "tip": "damga",
+     "metin": "50.000 GEÇTİ!",
+     "boyut": 100,
+     "egim": -8,
+     "bas": "w:212",
+     "y": 600,
+     "anim": "stamp"
+    }
+   ]
+  },
+  {
+   "bas": "w:213-0.05",
+   "arka": "eski_stadyum_kale",
+   "bulanik": 6,
+   "karanlik": 0.75,
+   "zoom": [
+    1.05,
+    1.12
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.45
+    ],
+    [
+     0.5,
+     0.45
+    ]
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "KARAR #5",
+     "boyut": 80,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:213",
+     "y": 300,
+     "anim": "stamp"
+    },
+    {
+     "tip": "etiket",
+     "metin": "HEDEF: 260 BEĞENİ",
+     "boyut": 54,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:217",
+     "y": 440
+    },
+    {
+     "tip": "etiket",
+     "metin": "GEÇERSE",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "yesil",
+     "egim": 0,
+     "bas": "w:221",
+     "y": 600,
+     "x": 300
+    },
+    {
+     "tip": "secenek",
+     "harf": "A",
+     "ad": "YENİ OTOBÜS!",
+     "karakter": "cem",
+     "oran": 0.38,
+     "renk": [
+      130,
+      220,
+      150
+     ],
+     "bas": "w:222",
+     "x": 300,
+     "y": 900,
+     "dondur": 3
+    },
+    {
+     "tip": "etiket",
+     "metin": "GEÇMEZSE",
+     "boyut": 44,
+     "renk": "beyaz",
+     "zemin": "kirmizi",
+     "egim": 0,
+     "bas": "w:225",
+     "y": 600,
+     "x": 790
+    },
+    {
+     "tip": "secenek",
+     "harf": "B",
+     "ad": "PARA SAHAYA",
+     "karakter": "necmi",
+     "oran": 0.38,
+     "renk": [
+      255,
+      200,
+      120
+     ],
+     "bas": "w:226",
+     "x": 790,
+     "y": 900,
+     "dondur": -3
+    }
+   ]
+  },
+  {
+   "bas": "w:231-0.05",
+   "arka": "eski_stadyum_tribun",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tribun": {
+    "sayi": 70,
+    "tohum": 9
+   },
+   "karakterler": [
+    {
+     "ad": "tribun_lideri",
+     "x": 540,
+     "ayak": 1680,
+     "h": 760,
+     "giris": "up",
+     "etiket": "kayratoksozz",
+     "etiket_alt": "TRİBÜN LİDERİ"
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "pankart",
+     "metin": "TARAFTAR GRUBUMUZUN ADI?",
+     "zemin": "mor",
+     "renk": "sari",
+     "egim": -3,
+     "bas": "w:231",
+     "y": 300
+    },
+    {
+     "tip": "etiket",
+     "metin": "YORUMLARA YAZ!",
+     "boyut": 56,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": 2,
+     "bas": "w:236",
+     "y": 450
+    },
+    {
+     "tip": "etiket",
+     "metin": "EN ÇOK BEĞENİLEN KAZANIR",
+     "boyut": 46,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": -2,
+     "bas": "w:239",
+     "y": 570
+    }
+   ]
+  },
+  {
+   "bas": "w:243-0.05",
+   "arka": "eski_stadyum",
+   "zoom": [
+    1.06,
+    1.0
+   ],
+   "merkez": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "karakterler": [
+    {
+     "ad": "oyuncu_forvet_kadin",
+     "x": 180,
+     "ayak": 1640,
+     "h": 780,
+     "faz": 0.2
+    },
+    {
+     "ad": "oyuncu_10",
+     "x": 905,
+     "ayak": 1630,
+     "h": 770,
+     "faz": 0.6
+    },
+    {
+     "ad": "taraftar_kaleci",
+     "x": 370,
+     "ayak": 1650,
+     "h": 800,
+     "faz": 0.4
+    },
+    {
+     "ad": "cem",
+     "x": 650,
+     "ayak": 1680,
+     "h": 900
+    }
+   ],
+   "ogeler": [
+    {
+     "tip": "etiket",
+     "metin": "TAKİP ET",
+     "boyut": 84,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -3,
+     "bas": "w:243",
+     "y": 320,
+     "nabiz": true
+    },
+    {
+     "tip": "etiket",
+     "metin": "+ BEĞEN · YORUM YAZ",
+     "boyut": 48,
+     "renk": "beyaz",
+     "zemin": "mor",
+     "egim": 2,
+     "bas": "w:245",
+     "y": 470
+    },
+    {
+     "tip": "etiket",
+     "metin": "OTOBÜS MÜ SAHA MI? KARAR SENİN!",
+     "boyut": 46,
+     "renk": "siyah",
+     "zemin": "sari",
+     "egim": -2,
+     "bas": "w:248",
+     "y": 610
+    }
+   ]
+  }
+ ]
+}
