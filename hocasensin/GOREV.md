@@ -27,6 +27,10 @@ Kök klasör: `~/ilk11-medya/hocasensin` (aşağıda K). Önce **K/HIKAYE.md** (
 - **İsim gösterimi (çok isim olduğu için):** her bölümde en fazla ~30 tribün adı (tek çekim) ve ~60 loca adı (yeni sahada 20'şerlik üç çekim) gösterilir; önce `gosterildi_bolum` null olanlar, sonra en eski gösterilenler. Gösterilenlere `gosterildi_bolum` = M yaz. Böylece herkes sırayla ekrana gelir. `loca_kesik_isimler` gösterilmez.
 
 
+## Kadrodakilere çağrı (sayfa sahibi, 2026-11-14 — her bölüm)
+- Kadro (ve varsa teknik ekip) sahnelerinden hemen sonra ~3–4 sn: 'Kadroda adını gördüysen yorumlara buradayım yaz, videoyu beğen, paylaş ve arkadaşına gönder — takımını herkes görsün!' (her bölüm cümleyi biraz değiştir; doğal, yalvarmayan bir dil).
+- Ekranda sırayla pop sesiyle 4 hap: YORUM YAP · BEĞEN · PAYLAŞ · ARKADAŞINA GÖNDER (mor zemin sarı yazı, emoji yok). Arka plan kadro sahnesinin devamı olsun.
+
 ## Stat adı ve teknik ekip (sayfa sahibi, 2026-11-14)
 - Stadın adı **ANADOLU ARENA PARK** (taraftar önerisi 'Anadolu'dan, sayfa sahibi kararı). Bölüm 5'te açıklanır; sonra her bölümde stat bu adla anılır (`durum.json` → `stadyum_adi`).
 - **Yardımcı antrenörler (kalıcı):** @hasan_zengi83 (okunuş 'Hasan', figür `yardimci_antrenor1`) ve @s_ahinpars (okunuş 'Şahin', figür `yardimci_antrenor2`). Her bölüm yeniden seçilmezler; maç sahnelerinde kulübede Cem'in yanında görünebilir, adları gerektiğinde sesli söylenir (`durum.json` → `teknik_ekip`, `taraftarlar.json` → `roller`).
