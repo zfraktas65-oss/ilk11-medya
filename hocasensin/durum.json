@@ -61,7 +61,8 @@
   "2026-11-13 18:54: Sayfa sahibi: halı saha görsellerini ve eski tribünü artık kullanma; yeni sahanın görsellerini üret ve kullan; insanlara gerçek bir maç/video izliyormuş hissi ver (GOREV.md 'GÖRSEL KURAL'). Yeni saha görselleri üretildi ve tribün/loca sıraları ölçüldü.",
   "2026-11-14: sayfa sahibi — 'TFF bildirim gönderdi, amatör kulüplerde oyuncu sayısı ilk 11, yedekte 7 kişi.' Bölüm 5'ten itibaren kadro 11+7+TL. 14:11: kadro yine karakter animasyonu olsun, sığmazsa 3'er/4'er kişi gösterilsin (MOTOR.md → Kadro grupları).",
   "2026-11-14 17:46: Bölüm 5 otomatik görevle üretildi ve Metricool'a 19:00'a planlandı (post 428060165). Video 114 sn (78 MB; GitHub 100 MB sınırı için yeniden kodlandı). Instagram 20 @ sınırı nedeniyle açıklamada 18 oyuncu + tribün lideri + @hocasensin1 etiketlendi; yardımcı antrenörler @ olmadan yazıldı.",
-  "2026-11-14 19:20: Sayfa sahibi: saha çimleri, kale direkleri ve file, tribün koltukları da saha oylamasına girsin; Bölüm 6'da sorulsun (bolum6_zorunlu)."
+  "2026-11-14 19:20: Sayfa sahibi: saha çimleri, kale direkleri ve file, tribün koltukları da saha oylamasına girsin; Bölüm 6'da sorulsun (bolum6_zorunlu).",
+  "2026-11-14 19:25: Sayfa sahibi: toplam taraftar sayısı da gösterilsin → her bölüm TOPLAM TARAFTAR sayacı (tribün + loca)."
  ],
  "gecmis": [
   {
@@ -514,6 +515,7 @@
   "not": "Sayfa sahibi 2026-11-14: ikisi de yardımcı antrenör. Kalıcı roller (her bölüm yeniden seçilmez); maçlarda kulübede Cem'in yanında görünebilirler."
  },
  "bolum6_zorunlu": [
-  "SAHA OYLAMASI GENİŞLEDİ (sayfa sahibi, 2026-11-14 19:20, Bölüm 6'da ZORUNLU): 'Sahada neyi değiştirelim?' sorusu bu bölümde 6 seçenekle sorulur (durum.json → saha.acik_oylama.secenekler): 1) Yeni kale direkleri + file 3.500 TL · 2) Tribün boyası 4.000 TL · 3) Projektörler 6.000 TL · 4) Tribüne +50 koltuk 10.000 TL · 5) Saha çimleri 12.000 TL · 6) Yeni tribün koltukları 8.000 TL. Anlatım kısa ve tek-iki cümle (ör. 'Sahada neyi değiştirelim? Listeye çimler, kale direkleri ve tribün koltukları da girdi! Numaranı yorumuna yaz, en çok yazılanı yapıyoruz!'). Ekranda numaralı seçenekler fiyatlarıyla (sahne başına en çok 3 yazı kuralı için 1–3 ve 4–6 iki ardışık sahnede, ya da tek sahnede küçük boyutta alt alta; eski_stadyum / eski_stadyum_tribun / eski_stadyum_kale arka planlarıyla). Açıklamaya da 6 seçeneğin tamamı yazılır. Kazanan yalnız sayfa sahibinin ekran görüntüsünden ya da söylediğinden; bilgi yoksa uydurulmaz."
+  "SAHA OYLAMASI GENİŞLEDİ (sayfa sahibi, 2026-11-14 19:20, Bölüm 6'da ZORUNLU): 'Sahada neyi değiştirelim?' sorusu bu bölümde 6 seçenekle sorulur (durum.json → saha.acik_oylama.secenekler): 1) Yeni kale direkleri + file 3.500 TL · 2) Tribün boyası 4.000 TL · 3) Projektörler 6.000 TL · 4) Tribüne +50 koltuk 10.000 TL · 5) Saha çimleri 12.000 TL · 6) Yeni tribün koltukları 8.000 TL. Anlatım kısa ve tek-iki cümle (ör. 'Sahada neyi değiştirelim? Listeye çimler, kale direkleri ve tribün koltukları da girdi! Numaranı yorumuna yaz, en çok yazılanı yapıyoruz!'). Ekranda numaralı seçenekler fiyatlarıyla (sahne başına en çok 3 yazı kuralı için 1–3 ve 4–6 iki ardışık sahnede, ya da tek sahnede küçük boyutta alt alta; eski_stadyum / eski_stadyum_tribun / eski_stadyum_kale arka planlarıyla). Açıklamaya da 6 seçeneğin tamamı yazılır. Kazanan yalnız sayfa sahibinin ekran görüntüsünden ya da söylediğinden; bilgi yoksa uydurulmaz.",
+  "TOPLAM TARAFTAR (sayfa sahibi, 2026-11-14 19:25, Bölüm 6'dan itibaren HER bölüm): ekranda büyük `sayac` 'TOPLAM TARAFTAR' = tribun_toplam + takipci (ADIM 3'ten sonraki değerlerle; şu an 901 + 325 = 1.226), alt satır 'TRİBÜN <n> · LOCA <n>'; anlatımda tek cümle, açıklamada 📊 satırında. Ayrıntı: GOREV.md → 'Toplam taraftar sayısı'."
  ]
 }

@@ -31,6 +31,10 @@ Kök klasör: `~/ilk11-medya/hocasensin` (aşağıda K). Önce **K/HIKAYE.md** (
 - Kadro (ve varsa teknik ekip) sahnelerinden hemen sonra ~3–4 sn: 'Kadroda adını gördüysen yorumlara buradayım yaz, videoyu beğen, paylaş ve arkadaşına gönder — takımını herkes görsün!' (her bölüm cümleyi biraz değiştir; doğal, yalvarmayan bir dil).
 - Ekranda sırayla pop sesiyle 4 hap: YORUM YAP · BEĞEN · PAYLAŞ · ARKADAŞINA GÖNDER (mor zemin sarı yazı, emoji yok). Arka plan kadro sahnesinin devamı olsun.
 
+## Toplam taraftar sayısı (sayfa sahibi, 2026-11-14 19:25 — Bölüm 6'dan itibaren her bölüm)
+- Her bölümde ekranda büyük bir **TOPLAM TARAFTAR** sayacı gösterilir: `sayac` öğesi, `baslik` "TOPLAM TARAFTAR", `deger` = tribun_toplam + takipci (ADIM 3'te güncellenmiş hâlleriyle, python ile; ör. 901 + 325 = "1.226"), `alt` "TRİBÜN <tribun_toplam> · LOCA <takipci>". Yeri: tribün/loca isim çekimlerinden hemen önce ya da tribün sahnesinin başında (y 300–700; isim etiketleriyle çakışmasın), en az ~2 sn ekranda.
+- Anlatımda tek cümleyle toplam yazıyla söylenir (ör. "Toplam taraftarımız bin iki yüz yirmi altı oldu!"); `birlestir` ile altyazıda rakam. Açıklamadaki 📊 satırına da "Toplam taraftar: <n>" eklenir.
+
 ## Stat adı ve teknik ekip (sayfa sahibi, 2026-11-14)
 - Stadın adı **ANADOLU ARENA PARK** (taraftar önerisi 'Anadolu'dan, sayfa sahibi kararı). Bölüm 5'te açıklanır; sonra her bölümde stat bu adla anılır (`durum.json` → `stadyum_adi`).
 - **Yardımcı antrenörler (kalıcı):** @hasan_zengi83 (okunuş 'Hasan', figür `yardimci_antrenor1`) ve @s_ahinpars (okunuş 'Şahin', figür `yardimci_antrenor2`). Her bölüm yeniden seçilmezler; maç sahnelerinde kulübede Cem'in yanında görünebilir, adları gerektiğinde sesli söylenir (`durum.json` → `teknik_ekip`, `taraftarlar.json` → `roller`).
