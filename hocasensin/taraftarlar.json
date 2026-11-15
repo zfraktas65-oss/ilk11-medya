@@ -51,6 +51,32 @@
    "eklendi": "2026-11-15",
    "tanitildi_bolum": 6,
    "kalici": true
+  },
+  {
+   "rol": "maskot",
+   "unvan": "MASKOT",
+   "karakter": "maskot",
+   "kullanici": "murat52_70",
+   "okunus": "Murat",
+   "istek": "Abi beni maskot yap",
+   "secen": "sayfa sahibi (2026-11-15 14:06)",
+   "takip": true,
+   "eklendi": "2026-11-15",
+   "tanitildi_bolum": 6,
+   "kalici": true
+  },
+  {
+   "rol": "cayci",
+   "unvan": "ÇAYCI",
+   "karakter": "cayci",
+   "kullanici": "mustafaefesanal",
+   "okunus": "Mustafa",
+   "istek": "Beni çaycı",
+   "secen": "sayfa sahibi (2026-11-15 14:06)",
+   "takip": true,
+   "eklendi": "2026-11-15",
+   "tanitildi_bolum": 6,
+   "kalici": true
   }
  ],
  "kadro": [
