@@ -79,6 +79,10 @@ Lig sırası: Halı Saha Ligi → Mahalle Ligi → Amatör Lig → BAL → 3. Li
 | oyuncu_libero.png | **Ön libero** (6) | Dalgalı kumral saç, sakin; top koltuğunun altında, başparmak havada (2026-11-14) |
 | oyuncu_sagkanat.png | **Sağ kanat** (7) | Uçları sarıya boyalı diken saç, sarı bileklik, dil dışarıda çalım atarken (2026-11-14) |
 | oyuncu_kaleci2.png | **Yedek kaleci** (12) | Turuncu kaleci forması, omuz hizası dalgalı saç ve saç bandı, topu göğsünde tutuyor (2026-11-14) |
+| yedek_antrenor.png | **Yedek antrenör Balayev** (@balayevffs) | Bıyıklı, mor kasket, kronometre ve koniler (2026-11-15) |
+| maskot.png | **Maskot Murat** (@murat52_70) | Mor-beyaz top kostümü, sarı eldiven (2026-11-15) |
+| cayci.png | **Çaycı Mustafa** (@mustafaefesanal) | Mor önlük, çay tepsisi (2026-11-15) |
+| karaduman_baskan.png | **Karaduman Gücü başkanı** (kurgusal rakip) | Göbekli, kıvrık bıyıklı, siyah-turuncu eşofman, sahte altın zincir; kibirli ama komik, meydan okur (2026-11-15) |
 | otobus_kalem.png | **Eski otobüs, kalem yazılı** | Karar #3 tutmayınca Burak'ın kalemle yazdığı "Anadoluspor" (Bölüm 4) |
 | taraftar/t1–t8.png | Tribün taraftarları | Motor `tribun` alanıyla otomatik yerleştirir (genç, nine, bıyıklı amca, başörtülü genç kadın, kız çocuğu, korna öttüren, kalp tabelalı, simitli dede) |
 | _karakter_sayfasi.jpg | Tüm karakterlerin referans sayfası (yeni çizimlerde stil referansı) | |

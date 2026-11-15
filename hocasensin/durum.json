@@ -1,45 +1,36 @@
 {
- "son_bolum": 5,
- "son_bolum_tarihi": "2026-11-14",
- "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 5",
- "kasa_tl": 53200,
+ "son_bolum": 6,
+ "son_bolum_tarihi": "2026-11-15",
+ "son_bolum_aciklama_basi": "Anadoluspor · Bölüm 6",
+ "kasa_tl": 55900,
  "borc_tl": 0,
  "kira_haftalik_tl": 1500,
  "begeni_tl": 100,
  "sonraki_kira_bolumu": null,
- "tribun_toplam": 901,
+ "tribun_toplam": 1026,
  "takipci": 346,
  "lig": "Halı Saha Ligi",
- "lig_sirasi": [
-  "Halı Saha Ligi",
-  "Mahalle Ligi",
-  "Amatör Lig",
-  "BAL",
-  "3. Lig",
-  "2. Lig",
-  "1. Lig",
-  "Süper Lig"
- ],
+ "lig_sirasi": 2,
  "lig_atlama_galibiyet": 5,
  "mac": {
-  "oynanan": 4,
+  "oynanan": 5,
   "galibiyet": 2,
-  "beraberlik": 2,
+  "beraberlik": 3,
   "maglubiyet": 0,
   "lig_galibiyet": 2,
-  "son_skor": "Anadoluspor 3-1 Sanayi Demir (Bölüm 5, lig 4. hafta; goller: Mert 18', Kılınç Aslan 64' kafa (Rojvan asist), Elif 88' yedekten; Tarık iki kurtarış)",
+  "son_skor": "Anadoluspor 2-2 Berber FK (Bölüm 6, lig 5. hafta; Berber 9' ve 72', goller: Burak 35' (Ali Eymen asist), Sadettin 90'; Enes Arda 90+3' dev kurtarış). Muhtarlık 11 puanla zirveye çıktı, Anadoluspor 9 puanla 2.",
   "not": "Sayfa sahibi (2026-11-12): HER bölümde maç. Bölüm M = lig haftası M−1 (derbi hariç)."
  },
  "kaleci": "her bölüm kadroyla birlikte seçilir (Bölüm 2: @gultentalha). Necmi abi Karar #1 gereği kaleye geçti ama saat dolunca ışıkları kapatmak için bıraktı.",
  "acik_karar": {
-  "bolum": 5,
+  "bolum": 6,
   "metrik": "begeni",
-  "esik": 260,
-  "gecerse": "yeni takım otobüsü alınır (50.000 TL kasadan; ayrı coşkulu sahne; boyalı eski otobüs emekli/yedek)",
-  "gecmezse": "boyalı eski otobüsle devam; para sahaya (saha oylaması kazananı yapılır — kazanan yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden)",
-  "not": "Kasa (53.200) otobüs hedefi 50.000'i geçti; aynı gün otobüs boyandığı için otomatik alım yerine izleyiciye KARAR olarak soruldu (HIKAYE: otobüs 'büyük hedef ya da bir KARAR ile' değişir)."
+  "esik": 60,
+  "gecerse": "derbi için dev pankart yaptırılır (kasadan ~2.500 TL; Bölüm 8 derbisinde tribünde)",
+  "gecmezse": "pankartı taraftarlar (tribün lideri Melek önderliğinde) elle boyar — komik ve bedava",
+  "not": "Eşik 45 × 1,3 ≈ 60."
  },
- "yarin_soz": "Bölüm 6: MAÇ (lig 5. hafta); Karar #5 sonucu (260 beğeni → yeni otobüs 50.000 TL / boyalı otobüsle devam, para sahaya); derbi rakibi KARADUMAN GÜCÜ tanıtılır; saha oylaması sonucu yalnız sayfa sahibinin ekran görüntüsünden (yoksa 'oylama sürüyor'); taraftar grubu adı FİNAL OYLAMASI (3 finalist, bkz. taraftar_grubu); forma duvarı her bölüm.",
+ "yarin_soz": "Bölüm 7: MAÇ (lig 6. hafta) — zirveyi geri alma maçı; Karar #6 sonucu (60 beğeni → dev derbi pankartı / taraftarlar elle boyar); TARAFTAR GRUBU ADI açıklanır (GRUP 1 Anadolu Kardeşler · 2 Anadolu Pars · 3 Anadolu Kartalları — kazanan yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden; yoksa 'oylama sürüyor'); saha oylaması sonucu (yalnız sayfa sahibinden); Karaduman Gücü'nden derbi öncesi bir gönderme; forma duvarı ve toplam taraftar sayacı her bölüm.",
  "notlar": [
   "Bölüm 1'de kurallar anlatıldı: her beğeni 10 TL, her yorum tribünde 1 taraftar, haftalık kira 1.500 TL (kira çıkmazsa maç yok).",
   "2026-11-09: sayfa sahibi yorumculardan tribün lideri, forvet ve kaleci seçecek (kullanıcı adlarını o verir → taraftarlar.json). Bölüm 2'de üç rolün 'aranıyor' duyurusu yapılır ve tribün sahnesi başlar (her yorum = 1 taraftar).",
@@ -62,7 +53,8 @@
   "2026-11-14: sayfa sahibi — 'TFF bildirim gönderdi, amatör kulüplerde oyuncu sayısı ilk 11, yedekte 7 kişi.' Bölüm 5'ten itibaren kadro 11+7+TL. 14:11: kadro yine karakter animasyonu olsun, sığmazsa 3'er/4'er kişi gösterilsin (MOTOR.md → Kadro grupları).",
   "2026-11-14 17:46: Bölüm 5 otomatik görevle üretildi ve Metricool'a 19:00'a planlandı (post 428060165). Video 114 sn (78 MB; GitHub 100 MB sınırı için yeniden kodlandı). Instagram 20 @ sınırı nedeniyle açıklamada 18 oyuncu + tribün lideri + @hocasensin1 etiketlendi; yardımcı antrenörler @ olmadan yazıldı.",
   "2026-11-14 19:20: Sayfa sahibi: saha çimleri, kale direkleri ve file, tribün koltukları da saha oylamasına girsin; Bölüm 6'da sorulsun (bolum6_zorunlu).",
-  "2026-11-14 19:25: Sayfa sahibi: toplam taraftar sayısı da gösterilsin → her bölüm TOPLAM TARAFTAR sayacı (tribün + loca)."
+  "2026-11-14 19:25: Sayfa sahibi: toplam taraftar sayısı da gösterilsin → her bölüm TOPLAM TARAFTAR sayacı (tribün + loca).",
+  "2026-11-15: Bölüm 6 sayfa sahibinin isteğiyle öğlen elle üretildi ve sayfa sahibine gönderildi; kendisi paylaşıyor. 17:28 görevi son_bolum_tarihi bugün olduğu için çalışmaz."
  ],
  "gecmis": [
   {
@@ -107,6 +99,15 @@
    "izlenme": null,
    "metricool_post_id": 428060165,
    "baglanti": "https://www.instagram.com/reel/DfumfZrjskn/"
+  },
+  {
+   "bolum": 6,
+   "tarih": "2026-11-15",
+   "ozet": "Karar #5 tutmadı (45 beğeni): mor-sarı otobüsle devam, para sahaya. Israr edenlerin kadrosu (4-4-2; kalede sonunda Enes Arda, 3. kadın futbolcu Hilal Çağla, 99 numaralı Atlas), tribün lideri Melek. Yeni yedek antrenör Balayev; kulüp ailesi: maskot Murat, çaycı Mustafa (−1.200 / −600). Kasa 55.900 TL, toplam taraftar 1.372. Lig 5. hafta: Anadoluspor 2-2 Berber FK (Burak, Sadettin 90'; Enes Arda son saniye kurtarışı); Muhtarlık zirvede, biz 9 puanla 2. Karaduman Gücü başkanı meydan okudu: Komşu Derbisi geliyor. Saha oylaması 6 seçenekle sürüyor. Karar #6: 60 beğeni → dev derbi pankartı / elle boyama. Taraftar grubu finali: GRUP 1/2/3.",
+   "begeni": null,
+   "yorum": null,
+   "izlenme": null,
+   "paylasim": "sayfa sahibi elle paylaşıyor (Metricool'a planlanmadı)"
   }
  ],
  "kasa_defteri": [
@@ -169,95 +170,110 @@
    "bolum": 5,
    "aciklama": "Otobüs boyası mor-sarı (Karar #4)",
    "tutar": -3000
+  },
+  {
+   "bolum": 6,
+   "aciklama": "Bölüm 5: 45 beğeni × 100 TL",
+   "tutar": 4500
+  },
+  {
+   "bolum": 6,
+   "aciklama": "Maskot kostümü (maskot Murat)",
+   "tutar": -1200
+  },
+  {
+   "bolum": 6,
+   "aciklama": "Çay ocağı (çaycı Mustafa)",
+   "tutar": -600
   }
  ],
  "lig_tablosu": {
   "lig": "Halı Saha Ligi",
-  "hafta": 4,
+  "hafta": 5,
   "sampiyonluk": "5 galibiyetle üst lige çıkılır",
   "takimlar": [
    {
-    "takim": "ANADOLUSPOR",
-    "O": 4,
-    "G": 2,
+    "takim": "MUHTARLIK GENÇLİK",
+    "O": 5,
+    "G": 3,
     "B": 2,
     "M": 0,
-    "AG": 10,
-    "YG": 7,
-    "P": 8
+    "AG": 9,
+    "YG": 5,
+    "P": 11
    },
    {
-    "takim": "MUHTARLIK GENÇLİK",
-    "O": 4,
+    "takim": "ANADOLUSPOR",
+    "O": 5,
     "G": 2,
-    "B": 2,
+    "B": 3,
     "M": 0,
-    "AG": 7,
-    "YG": 5,
-    "P": 8
+    "AG": 12,
+    "YG": 9,
+    "P": 9
    },
    {
     "takim": "BERBER FK",
-    "O": 4,
+    "O": 5,
+    "G": 2,
+    "B": 2,
+    "M": 1,
+    "AG": 6,
+    "YG": 6,
+    "P": 8
+   },
+   {
+    "takim": "KAHVECİ SPOR",
+    "O": 5,
     "G": 2,
     "B": 1,
-    "M": 1,
-    "AG": 4,
-    "YG": 4,
+    "M": 2,
+    "AG": 7,
+    "YG": 6,
     "P": 7
    },
    {
     "takim": "BAKKAL GÜCÜ",
-    "O": 4,
+    "O": 5,
     "G": 1,
-    "B": 2,
+    "B": 3,
     "M": 1,
-    "AG": 8,
-    "YG": 7,
-    "P": 5
+    "AG": 9,
+    "YG": 8,
+    "P": 6
    },
    {
     "takim": "SANAYİ DEMİR",
-    "O": 4,
+    "O": 5,
     "G": 1,
     "B": 2,
-    "M": 1,
+    "M": 2,
     "AG": 5,
-    "YG": 6,
+    "YG": 7,
     "P": 5
    },
    {
-    "takim": "KAHVECİ SPOR",
-    "O": 4,
-    "G": 1,
-    "B": 1,
-    "M": 2,
-    "AG": 6,
-    "YG": 6,
-    "P": 4
-   },
-   {
     "takim": "PAZAR YILDIZ",
-    "O": 4,
+    "O": 5,
     "G": 0,
-    "B": 2,
+    "B": 3,
     "M": 2,
-    "AG": 4,
-    "YG": 6,
-    "P": 2
+    "AG": 5,
+    "YG": 7,
+    "P": 3
    },
    {
     "takim": "FIRIN SPOR",
-    "O": 4,
+    "O": 5,
     "G": 0,
     "B": 2,
-    "M": 2,
+    "M": 3,
     "AG": 4,
-    "YG": 7,
+    "YG": 9,
     "P": 2
    }
   ],
-  "anadoluspor_sira": 1,
+  "anadoluspor_sira": 2,
   "onceki_sira": 1,
   "hafta_sonuclari": {
    "1": [
@@ -283,6 +299,12 @@
     "Muhtarlık Gençlik 2-1 Pazar Yıldız",
     "Bakkal Gücü 2-2 Kahveci Spor",
     "Berber FK 1-0 Fırın Spor"
+   ],
+   "5": [
+    "Anadoluspor 2-2 Berber FK",
+    "Muhtarlık Gençlik 2-0 Fırın Spor",
+    "Bakkal Gücü 1-1 Pazar Yıldız",
+    "Sanayi Demir 0-1 Kahveci Spor"
    ]
   }
  },
@@ -405,7 +427,13 @@
   "tanitim_bolumu": 6,
   "ilk_derbi_bolumu": 8,
   "siklik": "yaklaşık her 4 maç bölümünde bir",
-  "skorlar": []
+  "skorlar": [],
+  "tanitildi": {
+   "bolum": 6,
+   "baskan_figur": "karaduman_baskan",
+   "renkler": "siyah-turuncu",
+   "not": "Başkan tribünde belirdi, Anadoluspor'u küçümsedi ve Komşu Derbisi'ne meydan okudu (Bölüm 8, kupa maçı)."
+  }
  },
  "taraftar_grubu": {
   "ad": null,
@@ -413,7 +441,7 @@
   "kural": "Bölüm 6'da 3 finalist oylanır: yorumlara 1 / 2 / 3; kazanan yalnız sayfa sahibinin ekran görüntüsünden/söylediğinden Bölüm 7'de açıklanır.",
   "oneren": null,
   "aciklandigi_bolum": null,
-  "soruldu": 5,
+  "soruldu": 6,
   "finalistler": [
    {
     "no": 1,
