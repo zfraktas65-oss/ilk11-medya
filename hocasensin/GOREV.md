@@ -38,6 +38,7 @@ Kök klasör: `~/ilk11-medya/hocasensin` (aşağıda K). Önce **K/HIKAYE.md** (
 ## Stat adı ve teknik ekip (sayfa sahibi, 2026-11-14)
 - Stadın adı **ANADOLU ARENA PARK** (taraftar önerisi 'Anadolu'dan, sayfa sahibi kararı). Bölüm 5'te açıklanır; sonra her bölümde stat bu adla anılır (`durum.json` → `stadyum_adi`).
 - **Yardımcı antrenörler (kalıcı):** @hasan_zengi83 (okunuş 'Hasan', figür `yardimci_antrenor1`) ve @s_ahinpars (okunuş 'Şahin', figür `yardimci_antrenor2`). Her bölüm yeniden seçilmezler; maç sahnelerinde kulübede Cem'in yanında görünebilir, adları gerektiğinde sesli söylenir (`durum.json` → `teknik_ekip`, `taraftarlar.json` → `roller`).
+- **Yedek antrenör (kalıcı, 2026-11-15):** @balayevffs (okunuş 'Balayev', figür `yedek_antrenor`). Teknik ekip sahnesinde ve kulübede yedeklerin başında görünebilir (`durum.json` → `teknik_ekip.yedek_antrenor`).
 
 ## 🏟️ YOL HARİTASI: Belediye sahası ve takım otobüsü (sayfa sahibi, 2026-11-11)
 **Arka plan:** Anadoluspor ilçenin tek takımı ve dikkat çekiyor. Taraftarın hızla çoğaldığını gören **Belediye Başkanı** kulübe eski bir saha (yıpranmış çim, paslı kaleler, kırık/eski tribünler, sönük ışıklar) ve eski bir **belediye otobüsünü** takım otobüsü olarak veriyor. Başkanın sözü: **"Saha bizden, geliştirme sizden."** Geliştirmelerin parası kulüp kasasından çıkar.

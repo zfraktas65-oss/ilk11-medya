@@ -38,6 +38,19 @@
    "eklendi": "2026-11-14",
    "tanitildi_bolum": 5,
    "kalici": true
+  },
+  {
+   "rol": "yedek_antrenor",
+   "unvan": "YEDEK ANTRENÖR",
+   "karakter": "yedek_antrenor",
+   "kullanici": "balayevffs",
+   "okunus": "Balayev",
+   "istek": "Abi orta saha ❤️ (Bölüm 4) / abi otobüs şoferi olurum ❤️ (Bölüm 5)",
+   "secen": "sayfa sahibi (2026-11-15 14:02: 'Balayevi yedek antrenör yap')",
+   "takip": true,
+   "eklendi": "2026-11-15",
+   "tanitildi_bolum": 6,
+   "kalici": true
   }
  ],
  "kadro": [
@@ -5192,7 +5205,8 @@
     "hasan_zengi83",
     "s_ahinpars"
    ],
-   "not": "Bölüm 5 yorumları + 346'lık takipçi ekran görüntüleri (sayfa sahibi 2026-11-15 13:56). Hiç oynamamış, ısrar eden (birden çok bölümde isteyen) ve takip edenler öne alındı. Hilal Çağla ve Hacer kadın figürüyle. atlasssay 'Forma 99' istedi → 99. Okunuşu belirsiz olanlar (esedli_erdogan, g.ecee1905) sesli okunmaz."
+   "not": "Bölüm 5 yorumları + 346'lık takipçi ekran görüntüleri (sayfa sahibi 2026-11-15 13:56). Hiç oynamamış, ısrar eden (birden çok bölümde isteyen) ve takip edenler öne alındı. Hilal Çağla ve Hacer kadın figürüyle. atlasssay 'Forma 99' istedi → 99. Okunuşu belirsiz olanlar (esedli_erdogan, g.ecee1905) sesli okunmaz.",
+   "yedek_antrenor": "balayevffs"
   }
  ],
  "takip_kaynagi": "Takip: sayfa sahibinin 2026-11-12 takipçi ekran görüntüleri (görünen ~175 ad; toplam 228) + 2026-11-10 listesi. Yorum: Bölüm 2 yorum ekran görüntüleri (215 kişi) + Bölüm 1. + 2026-11-14 17:00 takipçi ekran görüntüleri (görünen ~60 ad; toplam 325) ve Bölüm 4 yorum ekran görüntüleri (~95 kişi). + 2026-11-15 13:55 takipçi ekran görüntüleri (toplam 346) ve Bölüm 5 yorumları.",
