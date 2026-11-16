@@ -5,13 +5,13 @@
    "rol": "tribun_lideri",
    "unvan": "TRİBÜN LİDERİ",
    "karakter": "tribun_lideri",
-   "kullanici": "melky.ak",
-   "okunus": "Melek",
-   "istek": "Taraftar grubun adı bence Anadolu ateşi olsun 🔥",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "halitozgenur",
+   "okunus": "Halit",
+   "istek": "tribün",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yardimci_antrenor",
@@ -85,145 +85,143 @@
    "unvan": "KALECİ",
    "no": "1",
    "karakter": "taraftar_kaleci",
-   "kullanici": "enesardakaya20",
-   "okunus": "Enes Arda",
-   "istek": "Abi pls artık bi şans ver be kale olam 🙏🙏🙏 (Bölüm 4'te de 'Abi ben kale pls')",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "kullanici": "ruzgarcatal9",
+   "okunus": "Rüzgar",
+   "istek": "Abi kale lütfen",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "sol_bek",
    "unvan": "SOL BEK",
    "no": "3",
-   "karakter": "oyuncu_solbek",
-   "kullanici": "esedli_erdogan",
-   "okunus": "",
-   "istek": "Babi beni oyuncu yap hangi mevkini istiyorsan o mevkini yap ❤️❤️ (Bölüm 4: sol kanat, takip ediyorum)",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6,
-   "not": "okunuşu belirsiz (Esedli soyadı olabilir) → adı SESLİ okunmaz, yalnız etiket"
+   "karakter": "oyuncu_forvet_kadin",
+   "kullanici": "aysel.dogan81",
+   "okunus": "Aysel",
+   "istek": "Sol bek kendime çok güveniyom",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "stoper",
    "unvan": "STOPER",
    "no": "4",
    "karakter": "oyuncu_stoper",
-   "kullanici": "halbayevmurat",
-   "okunus": "Murat",
-   "istek": "Abi yorumumu bulamadım nolur stoper yapar mısın ❤️ (Bölüm 4: 'Abi stoper nolur')",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "barisyahyadmrci",
+   "okunus": "Barış",
+   "istek": "defans duvarım",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "stoper",
    "unvan": "STOPER",
    "no": "5",
    "karakter": "oyuncu_stoper2",
-   "kullanici": "mertefegulsadik",
-   "okunus": "Mert Efe",
-   "istek": "Abi takip ettim stoper (Bölüm 4: 'Abi stoper olumyum')",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "kerim4toprak",
+   "okunus": "Kerim",
+   "istek": "Kerim stoper",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "sag_bek",
    "unvan": "SAĞ BEK",
    "no": "2",
    "karakter": "oyuncu_sagbek",
-   "kullanici": "batuhan.2014",
-   "okunus": "Batuhan",
-   "istek": "Abi lütfen beni defans yapppp",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "kullanici": "2922kadir",
+   "okunus": "Kadir",
+   "istek": "Abi sağ bek",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
-   "rol": "sol_kanat",
-   "unvan": "SOL KANAT",
-   "no": "11",
-   "karakter": "oyuncu_solkanat",
-   "kullanici": "samet_sw10",
-   "okunus": "Samet",
-   "istek": "Abi ben yine yokum lütfen artık ver sol kanadı (Bölüm 4'te de istedi)",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "rol": "on_libero",
+   "unvan": "ÖN LİBERO",
+   "no": "6",
+   "karakter": "oyuncu_libero",
+   "kullanici": "omercan_.k28",
+   "okunus": "Ömer Can",
+   "istek": "Orta saha",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "orta_saha",
    "unvan": "ORTA SAHA",
    "no": "8",
    "karakter": "oyuncu_ortasaha",
-   "kullanici": "turkogluulviye",
-   "okunus": "Çınar Türkoğlu",
-   "istek": "Çınar Türkoğlu orta saha / Bana da görev",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "_arda_saricicek",
+   "okunus": "Arda",
+   "istek": "Sorry abi takip etmemişim hep yazıyom almıyon ortasaha",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "orta_saha",
    "unvan": "ORTA SAHA",
-   "no": "6",
+   "no": "10",
    "karakter": "oyuncu_forvet_kadin",
-   "kullanici": "hilalcaglaktas",
-   "okunus": "Hilal Çağla",
-   "istek": "Benide koyunnn",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "esma.cicekli",
+   "okunus": "Esma",
+   "istek": "Ortasahada oyniyimmi abican",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6,
-   "ozel": "takımın üçüncü kadın futbolcusu"
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
-   "rol": "sag_kanat",
-   "unvan": "SAĞ KANAT",
-   "no": "7",
-   "karakter": "oyuncu_sagkanat",
-   "kullanici": "michel._olise_17",
-   "okunus": "Ali Eymen",
-   "istek": "Sağ kanatta / Ben beni seçmiştin abi (Bölüm 4: 'Sağ kanat takip ettim a0li eymen')",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "rol": "sol_kanat",
+   "unvan": "SOL KANAT",
+   "no": "11",
+   "karakter": "oyuncu_solkanat",
+   "kullanici": "bilal134665",
+   "okunus": "Bilal",
+   "istek": "Slk",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "forvet",
    "unvan": "FORVET",
    "no": "9",
    "karakter": "forvet",
-   "kullanici": "zaesburakaktas.2",
-   "okunus": "Burak",
-   "istek": "Beni de koy forvete (Bölüm 4) / Anadolu Pars taraftar grubu olsun",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "yildiraysavas8912",
+   "okunus": "Yıldıray",
+   "istek": "Abi beni forvet yapar mısın lütfen",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
-   "rol": "forvet",
-   "unvan": "FORVET",
-   "no": "10",
-   "karakter": "oyuncu_10",
-   "kullanici": "sadettin0687",
-   "okunus": "Sadettin",
-   "istek": "Abi lütfen Allah çarpsın takipte çıkarım beni forvet oynat",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "rol": "sag_kanat",
+   "unvan": "SAĞ KANAT",
+   "no": "7",
+   "karakter": "oyuncu_sagkanat",
+   "kullanici": "muhsinyildiz685432",
+   "okunus": "Muhsin",
+   "istek": "Sağ kanat lütfen abi",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   }
  ],
  "eski_kadro": {
@@ -790,123 +788,123 @@
   },
   {
    "kullanici": "denizalpturmak",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "dilarakorkutbade",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "eminedurmus92",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "emir_b4rab",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "emirhaktan_107",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "enesardakaya20",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "esedli_erdogan",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "esrakocstlms",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "eymenali.65",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "eymenk15",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ferhat_bahar_ustundag",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ferman_sng_01",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "gulfer_kuru52",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "guven_yusra",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "halbayevmurat",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "hatebuny",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ismetfatmasert",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "karabulut8240",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "kerem32322",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "keziban_demir_49",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "maryamshukurova",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "melekuslusu9",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "mertefegulsadik",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "muhammedvelibardakci",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "mustafalinalbant",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ozektoprak9",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "player_caganwpn",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "rafiq32921",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ruzgarngalerisi60",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "selahattin_erten63",
-   "gosterildi_bolum": null
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "suzandeniz515",
@@ -952,19 +950,19 @@
   },
   {
    "kullanici": "4.muhammed.0",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "7allahyarovi",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "_emir_derya",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "_yoruk_rasitt_",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "aartur221",
@@ -972,27 +970,27 @@
   },
   {
    "kullanici": "abfulhamidbaba",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "adem_uratt",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ademulker21",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "adnanyalinkilic",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ahmet_kavc_80",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "al1yews_",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "alfro_37",
@@ -1000,7 +998,7 @@
   },
   {
    "kullanici": "aliaslanbnz",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "alis62278",
@@ -1008,7 +1006,7 @@
   },
   {
    "kullanici": "apoyr.z",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "aras.sara26",
@@ -1016,7 +1014,7 @@
   },
   {
    "kullanici": "arda_demirci0808",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "arda_sayioglu",
@@ -1028,7 +1026,7 @@
   },
   {
    "kullanici": "atabe.g",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "atakan.3590",
@@ -1036,11 +1034,11 @@
   },
   {
    "kullanici": "atar.kiymet",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ayaz61473",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ayazefeee_gk1",
@@ -1048,15 +1046,15 @@
   },
   {
    "kullanici": "ayazimsi_cocuk",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "aydnnmete",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "aydogduneriman08",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "aykut_memisoglu",
@@ -1076,7 +1074,7 @@
   },
   {
    "kullanici": "baharibrahim07",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "barisyahyadmrci",
@@ -1084,7 +1082,7 @@
   },
   {
    "kullanici": "beditasdemir_01",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "bendebilmiyomki61",
@@ -1092,11 +1090,11 @@
   },
   {
    "kullanici": "beratcelik41_",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "beyazid_16",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "bilal134665",
@@ -1112,7 +1110,7 @@
   },
   {
    "kullanici": "byat_las1617",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "cahid__202",
@@ -1124,19 +1122,19 @@
   },
   {
    "kullanici": "ciko37786",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "cinar24371",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "cinardemir058",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "cumaqbg.10",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "cumasahin636",
@@ -1144,11 +1142,11 @@
   },
   {
    "kullanici": "dadi_metin_taha",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "defne.efe.7967",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "demirhands.gk",
@@ -1160,19 +1158,19 @@
   },
   {
    "kullanici": "doganumutkunbetl",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "dtahmiscioglu",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "duygu_gocuklar",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "dwddwdm",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "efe91632",
@@ -1180,7 +1178,7 @@
   },
   {
    "kullanici": "efe_ugrac11",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "efekara661",
@@ -1188,7 +1186,7 @@
   },
   {
    "kullanici": "ekin3415357",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "emirhan_sumbul_33",
@@ -1196,7 +1194,7 @@
   },
   {
    "kullanici": "enes_kapankaya",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "enverali837",
@@ -1204,15 +1202,15 @@
   },
   {
    "kullanici": "envr_htc",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "erto.c1",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ertu3675",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "esma.cicekli",
@@ -1220,7 +1218,7 @@
   },
   {
    "kullanici": "esra_dulger",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "fatmaaaacfc",
@@ -1228,15 +1226,15 @@
   },
   {
    "kullanici": "gamidovyusuf",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "goknur730",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "gozde77305",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "gs_mert_bjk_fb",
@@ -1244,7 +1242,7 @@
   },
   {
    "kullanici": "gulbaycinar",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "haddurayfer879",
@@ -1260,7 +1258,7 @@
   },
   {
    "kullanici": "hamdi_gizem",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "hamza_ben2861",
@@ -1268,23 +1266,23 @@
   },
   {
    "kullanici": "hatice_altnbss",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "helvacioznur",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "hircafatma88",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "humasuer",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "huseyin_kyt76",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "huseyinoktay673",
@@ -1292,7 +1290,7 @@
   },
   {
    "kullanici": "ibrahsmbudak",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "ich.teymullahx",
@@ -1584,7 +1582,7 @@
   },
   {
    "kullanici": "tutucu.vlr02",
-   "gosterildi_bolum": 2
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "tuz_10.7",
@@ -1620,11 +1618,11 @@
   },
   {
    "kullanici": "yagiz_.m",
-   "gosterildi_bolum": 2
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "yagiz_yazicioglu54",
-   "gosterildi_bolum": 2
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "yagizkyaa_61",
@@ -1640,7 +1638,7 @@
   },
   {
    "kullanici": "yalcingelen",
-   "gosterildi_bolum": 2
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "yasercelik54",
@@ -1660,7 +1658,7 @@
   },
   {
    "kullanici": "yusuftopraktomruk",
-   "gosterildi_bolum": 2
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "zaesburakaktas.2",
@@ -1668,16 +1666,16 @@
   },
   {
    "kullanici": "zorbeymermi",
-   "gosterildi_bolum": 2,
+   "gosterildi_bolum": 7,
    "unvan": "YRD. HOCA"
   },
   {
    "kullanici": "yasar75899773993",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "dorukateskosar",
-   "gosterildi_bolum": 3
+   "gosterildi_bolum": 7
   },
   {
    "kullanici": "eymenaydn657",
@@ -2042,7 +2040,9 @@
    "mevki": "kaleci",
    "istek": "Abi kale lütfen",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": 5
   },
@@ -2186,7 +2186,9 @@
    "mevki": "stoper",
    "istek": "defans duvarım",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -2514,7 +2516,9 @@
    "mevki": "her_yer",
    "istek": "Abi ben şakana oynalım",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -2532,7 +2536,9 @@
    "mevki": "sol_kanat",
    "istek": "Slk",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -2568,7 +2574,9 @@
    "mevki": "sag_kanat",
    "istek": "Sağ kanat lütfen abi",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -2660,7 +2668,7 @@
    "takip": false,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "layla__1029",
@@ -3125,7 +3133,9 @@
    "mevki": "sol_kanat",
    "istek": "Sol kanat",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -3264,7 +3274,7 @@
    "takip": false,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "aydogduneriman08",
@@ -3536,7 +3546,9 @@
    "mevki": "orta_saha",
    "istek": "Orta saha",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3671,7 +3683,9 @@
    "mevki": "stoper",
    "istek": "Kerim stoper",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3727,7 +3741,9 @@
    "mevki": "kaleci",
    "istek": "Abi beni kaleci yap",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3772,7 +3788,9 @@
    "mevki": "sol_bek",
    "istek": "Sol bek kendime çok güveniyom",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3781,7 +3799,9 @@
    "mevki": "sag_bek",
    "istek": "Abi sağ bek",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12)",
    "formada_bolum": null
   },
@@ -3918,7 +3938,9 @@
    "mevki": "orta_saha",
    "istek": "Ortasahada oyniyimmi abican",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 2 yorumları (2026-11-12) + Bölüm 5 yorumları (2026-11-15)",
    "formada_bolum": null
   },
@@ -4084,7 +4106,9 @@
    "istek": "Abi beni forvet yapar mısın lütfen",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 1 yorumları (2026-11-10) + Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null,
    "mevki": "forvet"
@@ -4130,7 +4154,9 @@
    "istek": "tribün",
    "eklendi": "2026-11-10",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 1 yorumları (2026-11-10)",
    "formada_bolum": null
   },
@@ -4159,7 +4185,7 @@
    "takip": null,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "yazhoca",
@@ -4168,7 +4194,7 @@
    "takip": null,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "talip_kurt_1905",
@@ -4177,7 +4203,7 @@
    "takip": null,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "halbayevmurat",
@@ -4197,7 +4223,7 @@
    "takip": true,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "omerali_19007",
@@ -4206,7 +4232,7 @@
    "takip": true,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "yamal.6389",
@@ -4215,7 +4241,7 @@
    "takip": null,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "zelihayasartekin",
@@ -4224,7 +4250,7 @@
    "takip": null,
    "oynadigi_bolumler": [],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
-   "formada_bolum": null
+   "formada_bolum": 7
   },
   {
    "kullanici": "keziban_demir_49",
@@ -4388,7 +4414,9 @@
    "mevki": "orta_saha",
    "istek": "Sorry abi takip etmemişim hep yazıyom almıyon ortasaha",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -4406,7 +4434,9 @@
    "mevki": "sag_kanat",
    "istek": "Sağ kanat nolurrr",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -4541,7 +4571,9 @@
    "mevki": "forvet",
    "istek": "Forvet",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -4606,7 +4638,9 @@
    "mevki": "defans",
    "istek": "Defansta daha iyiyim ben",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -4689,7 +4723,9 @@
    "mevki": "stoper",
    "istek": "Stp",
    "takip": true,
-   "oynadigi_bolumler": [],
+   "oynadigi_bolumler": [
+    7
+   ],
    "kaynak": "Bölüm 4 yorumları (2026-11-14)",
    "formada_bolum": null
   },
@@ -5233,6 +5269,40 @@
    ],
    "not": "Bölüm 5 yorumları + 346'lık takipçi ekran görüntüleri (sayfa sahibi 2026-11-15 13:56). Hiç oynamamış, ısrar eden (birden çok bölümde isteyen) ve takip edenler öne alındı. Hilal Çağla ve Hacer kadın figürüyle. atlasssay 'Forma 99' istedi → 99. Okunuşu belirsiz olanlar (esedli_erdogan, g.ecee1905) sesli okunmaz.",
    "yedek_antrenor": "balayevffs"
+  },
+  {
+   "bolum": 7,
+   "tarih": "2026-11-16",
+   "sema": "4-3-3",
+   "oyuncular": [
+    "ruzgarcatal9",
+    "aysel.dogan81",
+    "barisyahyadmrci",
+    "kerim4toprak",
+    "2922kadir",
+    "omercan_.k28",
+    "_arda_saricicek",
+    "esma.cicekli",
+    "bilal134665",
+    "yildiraysavas8912",
+    "muhsinyildiz685432"
+   ],
+   "yedekler": [
+    "mirhat_tuna",
+    "hayri.pasa07",
+    "bxeatwxx",
+    "cemal_can5506",
+    "orhan_sisek",
+    "pusatemiralpoglu",
+    "eda1993temiz_"
+   ],
+   "tribun_lideri": "halitozgenur",
+   "yardimci_antrenorler": [
+    "hasan_zengi83",
+    "s_ahinpars"
+   ],
+   "yedek_antrenor": "balayevffs",
+   "not": "Otomatik görev (sayfa sahibinden Bölüm 6 yorum/kadro verisi gelmedi): adaylar havuzundan takip eden + hiç oynamamış + birden çok bölümde isteyenler öne alındı (muhsinyildiz685432, esma.cicekli, bilal134665, hayri.pasa07, yildiraysavas8912, bxeatwxx; _arda_saricicek 'takip etmemişim' demişti, artık takipte). Aysel, Esma ve Eda kadın figürüyle. bxeatwxx'in okunuşu belirsiz → sesli okunmadı."
   }
  ],
  "takip_kaynagi": "Takip: sayfa sahibinin 2026-11-12 takipçi ekran görüntüleri (görünen ~175 ad; toplam 228) + 2026-11-10 listesi. Yorum: Bölüm 2 yorum ekran görüntüleri (215 kişi) + Bölüm 1. + 2026-11-14 17:00 takipçi ekran görüntüleri (görünen ~60 ad; toplam 325) ve Bölüm 4 yorum ekran görüntüleri (~95 kişi). + 2026-11-15 13:55 takipçi ekran görüntüleri (toplam 346) ve Bölüm 5 yorumları.",
@@ -5242,93 +5312,91 @@
    "unvan": "YEDEK KALECİ",
    "no": "12",
    "karakter": "oyuncu_kaleci2",
-   "kullanici": "mehmetfurkanengin",
-   "okunus": "Mehmet Furkan",
-   "istek": "Yedek kaleci olmak istiyorum",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "mirhat_tuna",
+   "okunus": "Mirhat",
+   "istek": "Abi beni kaleci yap",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
    "unvan": "SOL KANAT",
    "no": "13",
    "karakter": "oyuncu_solkanat",
-   "kullanici": "urfanonur",
-   "okunus": "Onur",
-   "istek": "Abi sol kanat çok hızlıyım çapında atarım bire bir asla kaybetmem",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "kullanici": "hayri.pasa07",
+   "okunus": "Hayri",
+   "istek": "Sol kanat",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
-   "unvan": "KANAT",
+   "unvan": "HER YER",
    "no": "14",
-   "karakter": "oyuncu_sagkanat",
-   "kullanici": "firathtm_1907",
-   "okunus": "Fırat",
-   "istek": "Sol kanat Fırat",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
+   "karakter": "oyuncu_ortasaha",
+   "kullanici": "bxeatwxx",
+   "okunus": "",
+   "istek": "Abi ben şakana oynalım",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
    "takip": true,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
-   "unvan": "ORTA SAHA",
+   "unvan": "STOPER",
    "no": "15",
-   "karakter": "oyuncu_libero",
-   "kullanici": "mirac_x797",
-   "okunus": "Miraç",
-   "istek": "Abi lütfen beni istediğin yere koyabilirsin benide takıma al",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "karakter": "oyuncu_stoper",
+   "kullanici": "cemal_can5506",
+   "okunus": "Cemal Can",
+   "istek": "Stp",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
-   "unvan": "ORTA SAHA",
+   "unvan": "FORVET",
    "no": "16",
-   "karakter": "oyuncu_forvet_kadin",
-   "kullanici": "hacer.kahraman.735",
-   "okunus": "Hacer",
-   "istek": "Orta saha yap abi lütfen",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6
+   "karakter": "forvet",
+   "kullanici": "orhan_sisek",
+   "okunus": "Orhan",
+   "istek": "Forvet",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
    "unvan": "SAĞ KANAT",
    "no": "17",
-   "karakter": "oyuncu_10",
-   "kullanici": "g.ecee1905",
-   "okunus": "",
-   "istek": "Ya beni bi sağ kanata alın (Bölüm 4'te de istedi)",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6,
-   "not": "okunuşu belirsiz → adı sesli okunmaz"
+   "karakter": "oyuncu_sagkanat",
+   "kullanici": "pusatemiralpoglu",
+   "okunus": "Pusat Emir",
+   "istek": "Sağ kanat nolurrr",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   },
   {
    "rol": "yedek",
-   "unvan": "FORVET",
-   "no": "99",
-   "karakter": "forvet",
-   "kullanici": "atlasssay",
-   "okunus": "Atlas",
-   "istek": "Forvet / Forma 99",
-   "secen": "Claude (Bölüm 5 yorumları, 2026-11-15; öncelik: hiç oynamamış + ısrar eden + takip eden)",
-   "takip": null,
-   "eklendi": "2026-11-15",
-   "tanitildi_bolum": 6,
-   "ozel": "forma numarası isteğiyle 99"
+   "unvan": "DEFANS",
+   "no": "18",
+   "karakter": "oyuncu_forvet_kadin",
+   "kullanici": "eda1993temiz_",
+   "okunus": "Eda",
+   "istek": "Defansta daha iyiyim ben",
+   "secen": "Claude (Bölüm 7 otomatik görev, 2026-11-16; öncelik: hiç oynamamış + birden çok bölümde isteyen + takip eden)",
+   "takip": true,
+   "eklendi": "2026-11-16",
+   "tanitildi_bolum": 7
   }
  ],
  "loca_kesik_isimler": {
